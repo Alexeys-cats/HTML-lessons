@@ -36,6 +36,45 @@
     </main>
     <div class="search">
         <input type="text" placeholder="Поиск по тегам, стилям или скриптам...">
+        <div class="borderfiltres">
+            <div class="filters">
+                <div class="filters_header" onclick="toggleSingleFilter(this)">
+                    <span>html</span></div>
+                    <div class="filters_content">
+                        <div class="html-inputs">
+                            <label><input type="checkbox">Парные теги</label>
+                            <label><input type="checkbox">Одиночные теги</label>
+                            <label><input type="checkbox">Блочные теги</label>
+                            <label><input type="checkbox">Строчные теги</label>
+                            <label><input type="checkbox">Новые теги HTML5</label>
+                            <label><input type="checkbox">Устаревшие теги</label>
+                            <label><input type="checkbox">Нестандартные теги</label>
+                            <label><input type="checkbox">Теги верхнего уровня</label>
+                            <label><input type="checkbox">Теги головы HTML-документа</label>
+                            <label><input type="checkbox">Семантические теги</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filters">
+                    <div class="filters_header" onclick="toggleSingleFilter(this)">
+                        <span>CSS</span>
+                        <div class="filters_content">
+                            <div class="html-inputs">
+                                <label><input type="checkbox">Универсальный селектор</label>
+                                <label><input type="checkbox">Селектор по тегу</label>
+                                <label><input type="checkbox">Селектор класса</label>
+                                <label><input type="checkbox">Селектор по идентификатору</label>
+                                <label><input type="checkbox">Селектор атрибута</label>
+                                <label><input type="checkbox">Псевдоклассы</label>
+                                <label><input type="checkbox">Псевдоэлемент</label>
+                                <label><input type="checkbox">Составные селекторы</label>
+                                <label><input type="checkbox">CSS селекторы потомков</label>
+                                <label><input type="checkbox">Дочерние селекторы CSS - сиблинги</label>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
     </div>
 <!-- </div>
 
@@ -91,7 +130,7 @@
             <code>&lt;<a href="https://github.com/kitrasta/HTML-lessons">HTML-ссылка</a>&gt; см. ссылку ниже</code>
         </p>
         <a href="https://htmlreference.io/element/a/#footer">Посмотреть пример наглядно</a> -->
-    </div> -->
+    </div> 
     <div class="boxline">
         <h3>Тег <code>&lt;html&gt;</code></h3>
         <p><strong>Описание:</strong> Корневой элемент HTML-документа. Все остальные элементы должны быть вложены в него.</p>
