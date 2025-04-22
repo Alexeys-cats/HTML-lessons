@@ -1,8 +1,8 @@
-@import url(/assets/css/header.css);
-@import url(/assets/css/main.css);
-@import url(/assets/css/section.css);
-@import url(/assets/css/footer.css);
-@import url(/assets/fonts/font.css);
+@import url(./assets/css/header.css);
+@import url(./assets/css/main.css);
+@import url(./assets/css/section.css);
+@import url(./assets/css/footer.css);
+@import url(./assets/fonts/font.css);
 
 * {
   box-sizing: border-box;
