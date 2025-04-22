@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/root.css" />
+    <title>HTML</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">TEST</div>
+      <nav>
+        <a href="#">TEST</a>
+        <a href="#">TEST</a>
+        <a href="#">TEST</a>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>Изучаем HTML, CSS и JavaScript</h1>
+
+      <div class="cards">
+        <a href="htmlpage.html">
+          <div class="card html">HTML — структура страницы</div>
+        </a>
+        <a href="csspage.html">
+          <div class="card css">CSS — стилизация и оформление</div>
+        </a>
+        <a href="javascriptpage.html">
+          <div class="card js">JavaScript — поведение и логика</div>
+        </a>
+      </div>
+    </main>
+    <div class="search">
+      <input type="text" placeholder="Поиск по тегам, стилям или скриптам..." />
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="container-content">
+          <div class="content-item">
+            <div class="content-item-title">
+              <h2>Основные тэги/структура страницы</h2>
+              <p>
+                Основные теги HTML, которые используются для создания структуры
+                веб-страницы.
+              </p>
+            </div>
+            <div class="content-item-card">
+              <div class="boxline">
+                <h3>Тег <code>&lt;!DOCTYPE&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Указывает тип документа и версию
+                  HTML, которую использует страница.
+                </p>
+                <p>
+                  <strong>Пример:</strong> <code>&lt;!DOCTYPE html&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/doctype/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;html&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Корневой элемент HTML-документа,
+                  внутри которого находятся все остальные элементы страницы.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;html&gt;&lt;/html&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/html/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;head&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Содержит мета-информацию о
+                  документе, такую как заголовок, ссылки на стили, скрипты и
+                  другие мета-данные.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;head&gt;&lt;/head&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/head/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;body&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Основное содержимое веб-страницы,
+                  которое отображается на экране.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;body&gt;Контент страницы&lt;/body&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/body/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;title&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет название документа,
+                  которое отображается в заголовке окна браузера или вкладке.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;title&gt;Моя страница&lt;/title&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/title/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;meta&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Используется для задания
+                  мета-данных, таких как кодировка, описание страницы, ключевые
+                  слова и другие данные.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;meta charset="UTF-8"&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/meta/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;link&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Используется для связи документа с
+                  внешними ресурсами, такими как стили CSS.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/link/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;script&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Используется для вставки и
+                  выполнения JavaScript-кода на странице.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;script&gt;console.log("Привет,
+                    мир!");&lt;/script&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/script/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;a&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет гиперссылку, которая
+                  может вести на другую страницу или ресурс.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;a href="https://example.com"&gt;Перейти на
+                    сайт&lt;/a&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/a/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;p&gt;</code></h3>
+                <p><strong>Описание:</strong> Определяет абзац текста.</p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;p&gt;Привет, мир!&lt;/p&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/p/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+              <div class="boxline">
+                <h3>Тег <code>&lt;h1&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет заголовок первого уровня
+                  — наивысший уровень заголовка на странице.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;h1&gt;Мой блог&lt;/h1&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/h1/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;h2&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет заголовок второго
+                  уровня, ниже заголовка первого уровня.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;h2&gt;Моя статья&lt;/h2&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/h2/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;h3&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет заголовок третьего
+                  уровня, используется для подразделов.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;h3&gt;Введение&lt;/h3&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/h3/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;h4&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет заголовок четвёртого
+                  уровня, используется для более мелких подразделов.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;h4&gt;Тема 1&lt;/h4&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/h4/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;h5&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет заголовок пятого уровня,
+                  обычно используется для ещё более мелких подразделов.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;h5&gt;Подтема 1.1&lt;/h5&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/h5/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;h6&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет заголовок шестого
+                  уровня, обычно используется для наименее важных подразделов.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;h6&gt;Подтема 1.1.1&lt;/h6&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/h6/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;ul&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет ненумерованный список.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;ul&gt;&lt;li&gt;Элемент
+                    списка&lt;/li&gt;&lt;/ul&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/ul/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;ol&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет нумерованный список.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;ol&gt;&lt;li&gt;Первый
+                    элемент&lt;/li&gt;&lt;/ol&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/ol/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;li&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет элемент списка,
+                  используется внутри <code>&lt;ul&gt;</code> или
+                  <code>&lt;ol&gt;</code>.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;li&gt;Элемент списка&lt;/li&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/li/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;img&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Используется для вставки
+                  изображения на страницу.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;img src="image.jpg" alt="Описание
+                    изображения"&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/img/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+              <div class="boxline">
+                <h3>Тег <code>&lt;table&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Используется для создания таблицы.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;table&gt;&lt;tr&gt;&lt;td&gt;Ячейка
+                    1&lt;/td&gt;&lt;td&gt;Ячейка
+                    2&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/table/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;tr&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет строку таблицы,
+                  используется внутри тега <code>&lt;table&gt;</code>.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;tr&gt;&lt;td&gt;Ячейка 1&lt;/td&gt;&lt;td&gt;Ячейка
+                    2&lt;/td&gt;&lt;/tr&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/tr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;td&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет ячейку таблицы,
+                  используется внутри тега <code>&lt;tr&gt;</code>.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;td&gt;Содержимое ячейки&lt;/td&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/td/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;th&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет заголовочную ячейку
+                  таблицы. Обычно используется для заголовков столбцов или
+                  строк.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;th&gt;Заголовок&lt;/th&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/th/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;caption&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Добавляет заголовок к таблице. Он
+                  будет располагаться над таблицей.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;caption&gt;Моя таблица&lt;/caption&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/caption/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;form&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет форму для ввода данных
+                  от пользователя, которая может отправлять эти данные на
+                  сервер.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;form action="submit_form.php"&gt;&lt;input
+                    type="text"&gt;&lt;/form&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/form/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;input&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет поле для ввода данных.
+                  Используется внутри формы для ввода текста, чисел и других
+                  типов данных.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;input type="text" name="username"&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/input/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;button&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет кнопку, которую можно
+                  использовать в формах или для других действий на странице.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;button type="submit"&gt;Отправить&lt;/button&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/button/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;select&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Создаёт выпадающий список для
+                  выбора значений.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;select&gt;&lt;option&gt;Первый
+                    вариант&lt;/option&gt;&lt;option&gt;Второй
+                    вариант&lt;/option&gt;&lt;/select&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/select/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;option&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет элемент в выпадающем
+                  списке, созданном с помощью тега <code>&lt;select&gt;</code>.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;option value="1"&gt;Первый вариант&lt;/option&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/option/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+              <div class="boxline">
+                <h3>Тег <code>&lt;div&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Используется для группировки
+                  элементов в контейнер. Очень часто применяется для стилизации
+                  или структурирования страницы.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;div class="container"&gt;Контент&lt;/div&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/div/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;span&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Лёгкий, строчный контейнер для
+                  текста или других элементов. Обычно используется для
+                  применения стилей к части текста.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;span class="highlight"&gt;Текст&lt;/span&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/span/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;strong&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет текст, который нужно
+                  выделить жирным шрифтом. Обычно используется для выделения
+                  важного контента.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;strong&gt;Важное сообщение&lt;/strong&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/strong/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;em&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет текст, который следует
+                  выделить курсивом. Обычно используется для выделения важности
+                  текста.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;em&gt;Это важно&lt;/em&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/em/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;br&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Вставляет разрыв строки в тексте,
+                  не создавая нового абзаца.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>Текст перед разрывом&lt;br&gt;Текст после разрыва</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/br/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;hr&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Вставляет горизонтальную линию
+                  (разделитель), обычно используется для отделения блоков
+                  контента.
+                </p>
+                <p><strong>Пример:</strong> <code>&lt;hr&gt;</code></p>
+                <a
+                  href="https://htmlreference.io/element/hr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;blockquote&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Используется для выделения цитаты
+                  или длинного фрагмента текста. Обычно текст цитаты размещается
+                  с отступом.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;blockquote&gt;Это цитата&lt;/blockquote&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/blockquote/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;q&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет короткую цитату. В
+                  отличие от <code>&lt;blockquote&gt;</code>, не делает отступа
+                  для текста.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;q&gt;Это короткая цитата&lt;/q&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/q/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;code&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет фрагмент кода. Обычно
+                  используется для отображения кода программирования.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;code&gt;console.log("Hello,
+                    World!");&lt;/code&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/code/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;pre&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет текст, который должен
+                  быть отображён в фиксированном формате, включая пробелы и
+                  разрывы строк.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;pre&gt; Это пример текста с пробелами&lt;/pre&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/pre/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+              <div class="boxline">
+                <h3>Тег <code>&lt;a&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Создаёт гиперссылку на другую
+                  страницу, сайт или якорь внутри документа.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;a href="https://example.com"&gt;Перейти на
+                    сайт&lt;/a&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/a/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;img&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Отображает изображение на странице.
+                  Для указания пути к файлу используется атрибут
+                  <code>src</code>.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;img src="image.jpg" alt="Описание
+                    изображения"&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/img/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;figure&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Используется для группировки
+                  медиа-объектов с подписями — изображений, графиков,
+                  иллюстраций.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;figure&gt;&lt;img
+                    src="image.jpg"&gt;&lt;figcaption&gt;Описание&lt;/figcaption&gt;&lt;/figure&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/figure/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;figcaption&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Добавляет подпись для содержимого
+                  внутри <code>&lt;figure&gt;</code>.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;figcaption&gt;Это подпись
+                    изображения&lt;/figcaption&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/figcaption/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;nav&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет блок для навигации по
+                  сайту, в котором обычно размещают меню ссылок.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;nav&gt;&lt;a
+                    href="/"&gt;Главная&lt;/a&gt;&lt;/nav&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/nav/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;header&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет "шапку" документа или
+                  раздела. Чаще всего содержит логотип, название и меню
+                  навигации.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;header&gt;&lt;h1&gt;Заголовок
+                    сайта&lt;/h1&gt;&lt;/header&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/header/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;footer&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет "подвал" документа или
+                  секции. Обычно содержит контактную информацию и копирайты.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;footer&gt;© 2025 Все права
+                    защищены&lt;/footer&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/footer/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;section&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Разделяет контент на логические
+                  блоки, которые обычно объединены общей темой.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;section&gt;&lt;h2&gt;Раздел
+                    1&lt;/h2&gt;&lt;/section&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/section/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;article&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет самостоятельный и
+                  законченый контент, например новость, пост в блоге или
+                  комментарий.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;article&gt;&lt;h2&gt;Заголовок
+                    статьи&lt;/h2&gt;&lt;/article&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/article/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;aside&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет контент, косвенно
+                  связанный с основным содержимым. Обычно используется для
+                  боковых панелей с дополнительной информацией.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;aside&gt;Полезная информация&lt;/aside&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/aside/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+              <div class="boxline">
+                <h3>Тег <code>&lt;a&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Создаёт гиперссылку на другую
+                  страницу, сайт или якорь внутри документа.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;a href="https://example.com"&gt;Перейти на
+                    сайт&lt;/a&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/a/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;img&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Отображает изображение на странице.
+                  Для указания пути к файлу используется атрибут
+                  <code>src</code>.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;img src="image.jpg" alt="Описание
+                    изображения"&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/img/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;figure&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Используется для группировки
+                  медиа-объектов с подписями — изображений, графиков,
+                  иллюстраций.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;figure&gt;&lt;img
+                    src="image.jpg"&gt;&lt;figcaption&gt;Описание&lt;/figcaption&gt;&lt;/figure&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/figure/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;figcaption&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Добавляет подпись для содержимого
+                  внутри <code>&lt;figure&gt;</code>.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;figcaption&gt;Это подпись
+                    изображения&lt;/figcaption&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/figcaption/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;nav&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет блок для навигации по
+                  сайту, в котором обычно размещают меню ссылок.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;nav&gt;&lt;a
+                    href="/"&gt;Главная&lt;/a&gt;&lt;/nav&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/nav/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;header&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет "шапку" документа или
+                  раздела. Чаще всего содержит логотип, название и меню
+                  навигации.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;header&gt;&lt;h1&gt;Заголовок
+                    сайта&lt;/h1&gt;&lt;/header&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/header/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;footer&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет "подвал" документа или
+                  секции. Обычно содержит контактную информацию и копирайты.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;footer&gt;© 2025 Все права
+                    защищены&lt;/footer&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/footer/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;section&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Разделяет контент на логические
+                  блоки, которые обычно объединены общей темой.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;section&gt;&lt;h2&gt;Раздел
+                    1&lt;/h2&gt;&lt;/section&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/section/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;article&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет самостоятельный и
+                  законченый контент, например новость, пост в блоге или
+                  комментарий.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;article&gt;&lt;h2&gt;Заголовок
+                    статьи&lt;/h2&gt;&lt;/article&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/article/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;aside&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет контент, косвенно
+                  связанный с основным содержимым. Обычно используется для
+                  боковых панелей с дополнительной информацией.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;aside&gt;Полезная информация&lt;/aside&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/aside/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+              <div class="boxline">
+                <h3>Тег <code>&lt;table&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Используется для создания таблицы.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;table&gt;&lt;tr&gt;&lt;td&gt;Ячейка&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/table/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;tr&gt;</code></h3>
+                <p><strong>Описание:</strong> Определяет строку таблицы.</p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;tr&gt;&lt;td&gt;Текст&lt;/td&gt;&lt;/tr&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/tr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;td&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Создаёт ячейку с данными внутри
+                  строки таблицы.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;td&gt;Данные&lt;/td&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/td/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;th&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Определяет заголовочную ячейку
+                  таблицы (обычно выделяется жирным и выравнивается по центру).
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;th&gt;Заголовок&lt;/th&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/th/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;thead&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Группирует заголовочную часть
+                  таблицы.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Название&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/thead/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;tbody&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Группирует основное содержимое
+                  таблицы.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Данные&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/tbody/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;tfoot&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Группирует нижнюю часть таблицы,
+                  обычно используется для итоговых строк.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;tfoot&gt;&lt;tr&gt;&lt;td&gt;Итого&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/tfoot/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;form&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Контейнер для формы, в котором
+                  размещаются поля для ввода, кнопки и другие элементы
+                  управления.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;form action="/submit"&gt;&lt;input
+                    type="text"&gt;&lt;/form&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/form/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;input&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Поле для ввода данных. Может быть
+                  текстовым, числовым, чекбоксом, радиокнопкой и др.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code>&lt;input type="text" placeholder="Ваше имя"&gt;</code>
+                </p>
+                <a
+                  href="https://htmlreference.io/element/input/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+
+              <div class="boxline">
+                <h3>Тег <code>&lt;label&gt;</code></h3>
+                <p>
+                  <strong>Описание:</strong> Подпись для поля формы, связывается
+                  с элементом с помощью атрибута <code>for</code>.
+                </p>
+                <p>
+                  <strong>Пример:</strong>
+                  <code
+                    >&lt;label for="name"&gt;Имя:&lt;/label&gt;&lt;input
+                    id="name" type="text"&gt;</code
+                  >
+                </p>
+                <a
+                  href="https://htmlreference.io/element/label/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Посмотреть пример</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <div class="borderfiltres">
+            <div class="filters">
+                <div class="filters_header" onclick="toggleSingleFilter(this)">
+                    <span>html</span></div>
+                    <div class="filters_content">
+                        <div class="html-inputs">
+                            <label><input type="checkbox">Парные теги</label>
+                            <label><input type="checkbox">Одиночные теги</label>
+                            <label><input type="checkbox">Блочные теги</label>
+                            <label><input type="checkbox">Строчные теги</label>
+                            <label><input type="checkbox">Новые теги HTML5</label>
+                            <label><input type="checkbox">Устаревшие теги</label>
+                            <label><input type="checkbox">Нестандартные теги</label>
+                            <label><input type="checkbox">Теги верхнего уровня</label>
+                            <label><input type="checkbox">Теги головы HTML-документа</label>
+                            <label><input type="checkbox">Семантические теги</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filters">
+                    <div class="filters_header" onclick="toggleSingleFilter(this)">
+                        <span>CSS</span>
+                        <div class="filters_content">
+                            <div class="html-inputs">
+                                <label><input type="checkbox">Универсальный селектор</label>
+                                <label><input type="checkbox">Селектор по тегу</label>
+                                <label><input type="checkbox">Селектор класса</label>
+                                <label><input type="checkbox">Селектор по идентификатору</label>
+                                <label><input type="checkbox">Селектор атрибута</label>
+                                <label><input type="checkbox">Псевдоклассы</label>
+                                <label><input type="checkbox">Псевдоэлемент</label>
+                                <label><input type="checkbox">Составные селекторы</label>
+                                <label><input type="checkbox">CSS селекторы потомков</label>
+                                <label><input type="checkbox">Дочерние селекторы CSS - сиблинги</label>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+    </div> -->
+    <script src="/assets/js/searchonsite.js"></script>
+    <footer>
+      © 2025 TEST. Все права возможно когда нибудь будут защищены.
+    </footer>
+  </body>
+</html>
