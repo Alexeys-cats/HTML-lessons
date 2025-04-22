@@ -1,0 +1,53 @@
+@import url(/assets/css/header.css);
+@import url(/assets/css/main.css);
+@import url(/assets/css/footer.css);
+@import url(/assets/css/section.css);
+@import url(/assets/fonts/font.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f3f6fb;
+  color: #0b1d39;
+  padding: 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.search input {
+  width: 60%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+

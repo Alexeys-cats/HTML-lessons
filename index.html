@@ -1,48 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/root.css" />
     <title>Справочник HHTML, CSS и JavaScript</title>
-</head>
-
-</body>
-
-<link rel="stylesheet" href="./root.css">
-
-<script src="searchonsite.js"></script>
-
-<header>
-    <div class="logo">TEST</div>
-    <nav>
+  </head>
+  <body>
+    <header>
+      <div class="logo">TEST</div>
+      <nav>
         <a href="#">TEST</a>
         <a href="#">TEST</a>
         <a href="#">TEST</a>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<main class="container">
+    <main class="container">
+      <h1>Изучаем HTML, CSS и JavaScript</h1>
 
-    <h1>Изучаем HTML, CSS и JavaScript</h1>
+      <div class="cards">
+        <a href="/pages/htmlpage.html">
+          <div class="card html">HTML — структура страницы</div>
+        </a>
+        <a href="/pages/csspage.html">
+          <div class="card css">CSS — стилизация и оформление</div>
+        </a>
+        <a href="/pages/javascriptpage.html">
+          <div class="card js">JavaScript — поведение и логика</div>
+        </a>
+      </div>
+    </main>
 
-    <div class="cards">
-        <a href="htmlpage.html">
-            <div class="card html">HTML — структура страницы</div>
-        </a>
-        <a href="csspage.html">
-            <div class="card css">CSS — стилизация и оформление</div>
-        </a>
-        <a href="javascriptpage.html">
-            <div class="card js">JavaScript — поведение и логика</div>
-        </a>
+    <div class="search">
+      <input type="text" placeholder="Поиск по тегам, стилям или скриптам..." />
     </div>
-</main>
-
-<div class="search">
-    <input type="text" placeholder="Поиск по тегам, стилям или скриптам...">
-</div>
-<!-- <div class="borderfiltres">
+    <!-- <div class="borderfiltres">
 <div class="filters">
     <div class="filters_header" onclick="toggleSingleFilter(this)">
         <span>html</span></div>
@@ -81,11 +74,9 @@
         </div>
 </div>
 </div> -->
-
-<footer>
-    © 2025 TEST. Все права возможно когда нибудь будут защищены.
-</footer>
-
-</body>
-
+    <script src="/assets/js/searchonsite.js"></script>
+    <footer>
+      © 2025 TEST. Все права возможно когда нибудь будут защищены.
+    </footer>
+  </body>
 </html>
