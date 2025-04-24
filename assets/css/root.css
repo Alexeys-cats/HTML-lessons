@@ -29,13 +29,14 @@ body {
 }
 
 .search {
+  max-width: 1200px;
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
 }
 
 .search input {
-  width: 60%;
+  width: 100%;
   padding: 12px 20px;
   font-size: 16px;
   border-radius: 12px;

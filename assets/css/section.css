@@ -17,10 +17,11 @@
 }
 
 .boxline {
+  position: relative;
   width: 100%;
   max-width: 350px;
   background-color: #f9f9f9;
-  padding: 20px;
+  padding: 20px 20px 40px 20px;
   border-radius: 10px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 
@@ -45,10 +46,11 @@
   }
 
   a {
-    margin-top: 10px;
     color: #1a73e8;
     text-decoration: none;
     font-weight: bold;
+    bottom: 10px;
+    position: absolute;
   }
 
   a:hover {
