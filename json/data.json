@@ -1,0 +1,722 @@
+[
+  {
+    "tag": "<html>",
+    "description": "Корневой элемент HTML-документа, внутри которого находятся все остальные элементы страницы.",
+    "example": "<html></html>",
+    "link": "https://htmlreference.io/element/html/"
+  },
+  {
+    "tag": "<head>",
+    "description": "Содержит мета-информацию о документе, такую как заголовок, ссылки на стили, скрипты и другие мета-данные.",
+    "example": "<head></head>",
+    "link": "https://htmlreference.io/element/head/"
+  },
+  {
+    "tag": "<body>",
+    "description": "Основное содержимое веб-страницы, которое отображается на экране.",
+    "example": "<body>Контент страницы</body>",
+    "link": "https://htmlreference.io/element/body/"
+  },
+  {
+    "tag": "<title>",
+    "description": "Определяет название документа, которое отображается в заголовке окна браузера или вкладке.",
+    "example": "<title>Моя страница</title>",
+    "link": "https://htmlreference.io/element/title/"
+  },
+  {
+    "tag": "<meta>",
+    "description": "Используется для задания мета-данных, таких как кодировка, описание страницы, ключевые слова и другие данные.",
+    "example": "<meta charset=\"UTF-8\">",
+    "link": "https://htmlreference.io/element/meta/"
+  },
+  {
+    "tag": "<link>",
+    "description": "Используется для связи документа с внешними ресурсами, такими как стили CSS.",
+    "example": "<link rel=\"stylesheet\" href=\"styles.css\">",
+    "link": "https://htmlreference.io/element/link/"
+  },
+  {
+    "tag": "<script>",
+    "description": "Используется для вставки и выполнения JavaScript-кода на странице.",
+    "example": "<script>console.log(\"Привет, мир!\");</script>",
+    "link": "https://htmlreference.io/element/script/"
+  },
+  {
+    "tag": "<a>",
+    "description": "Определяет гиперссылку, которая может вести на другую страницу или ресурс.",
+    "example": "<a href=\"https://example.com\">Перейти на сайт</a>",
+    "link": "https://htmlreference.io/element/a/"
+  },
+  {
+    "tag": "<p>",
+    "description": "Определяет абзац текста.",
+    "example": "<p>Привет, мир!</p>",
+    "link": "https://htmlreference.io/element/p/"
+  },
+  {
+    "tag": "<h1>",
+    "description": "Определяет заголовок первого уровня — наивысший уровень заголовка на странице.",
+    "example": "<h1>Мой блог</h1>",
+    "link": "https://htmlreference.io/element/h1/"
+  },
+  {
+    "tag": "<h2>",
+    "description": "Определяет заголовок второго уровня, ниже заголовка первого уровня.",
+    "example": "<h2>Моя статья</h2>",
+    "link": "https://htmlreference.io/element/h2/"
+  },
+  {
+    "tag": "<h3>",
+    "description": "Определяет заголовок третьего уровня, используется для подразделов.",
+    "example": "<h3>Введение</h3>",
+    "link": "https://htmlreference.io/element/h3/"
+  },
+  {
+    "tag": "<h4>",
+    "description": "Определяет заголовок четвёртого уровня, используется для более мелких подразделов.",
+    "example": "<h4>Тема 1</h4>",
+    "link": "https://htmlreference.io/element/h4/"
+  },
+  {
+    "tag": "<h5>",
+    "description": "Определяет заголовок пятого уровня, обычно используется для ещё более мелких подразделов.",
+    "example": "<h5>Подтема 1.1</h5>",
+    "link": "https://htmlreference.io/element/h5/"
+  },
+  {
+    "tag": "<h6>",
+    "description": "Определяет заголовок шестого уровня, обычно используется для наименее важных подразделов.",
+    "example": "<h6>Подтема 1.1.1</h6>",
+    "link": "https://htmlreference.io/element/h6/"
+  },
+  {
+    "tag": "<ul>",
+    "description": "Определяет ненумерованный список.",
+    "example": "<ul><li>Элемент списка</li></ul>",
+    "link": "https://htmlreference.io/element/ul/"
+  },
+  {
+    "tag": "<ol>",
+    "description": "Определяет нумерованный список.",
+    "example": "<ol><li>Первый элемент</li></ol>",
+    "link": "https://htmlreference.io/element/ol/"
+  },
+  {
+    "tag": "<li>",
+    "description": "Определяет элемент списка, используется внутри <ul> или <ol>.",
+    "example": "<li>Элемент списка</li>",
+    "link": "https://htmlreference.io/element/li/"
+  },
+  {
+    "tag": "<img>",
+    "description": "Используется для вставки изображения на страницу.",
+    "example": "<img src=\"image.jpg\" alt=\"Описание изображения\">",
+    "link": "https://htmlreference.io/element/img/"
+  },
+  {
+    "tag": "<table>",
+    "description": "Используется для создания таблицы.",
+    "example": "<table><tr><td>Ячейка 1</td><td>Ячейка 2</td></tr></table>",
+    "link": "https://htmlreference.io/element/table/"
+  },
+  {
+    "tag": "<tr>",
+    "description": "Определяет строку таблицы, используется внутри тега <table>.",
+    "example": "<tr><td>Ячейка 1</td><td>Ячейка 2</td></tr>",
+    "link": "https://htmlreference.io/element/tr/"
+  },
+  {
+    "tag": "<td>",
+    "description": "Определяет ячейку таблицы, используется внутри тега <tr>.",
+    "example": "<td>Содержимое ячейки</td>",
+    "link": "https://htmlreference.io/element/td/"
+  },
+  {
+    "tag": "<th>",
+    "description": "Определяет заголовочную ячейку таблицы. Обычно используется для заголовков столбцов или строк.",
+    "example": "<th>Заголовок</th>",
+    "link": "https://htmlreference.io/element/th/"
+  },
+  {
+    "tag": "<caption>",
+    "description": "Добавляет заголовок к таблице. Он будет располагаться над таблицей.",
+    "example": "<caption>Моя таблица</caption>",
+    "link": "https://htmlreference.io/element/caption/"
+  },
+  {
+    "tag": "<form>",
+    "description": "Определяет форму для ввода данных от пользователя, которая может отправлять эти данные на сервер.",
+    "example": "<form action=\"submit_form.php\"><input type=\"text\"></form>",
+    "link": "https://htmlreference.io/element/form/"
+  },
+  {
+    "tag": "<input>",
+    "description": "Определяет поле для ввода данных. Используется внутри формы для ввода текста, чисел и других типов данных.",
+    "example": "<input type=\"text\" name=\"username\">",
+    "link": "https://htmlreference.io/element/input/"
+  },
+  {
+    "tag": "<button>",
+    "description": "Определяет кнопку, которую можно использовать в формах или для других действий на странице.",
+    "example": "<button type=\"submit\">Отправить</button>",
+    "link": "https://htmlreference.io/element/button/"
+  },
+  {
+    "tag": "<select>",
+    "description": "Создаёт выпадающий список для выбора значений.",
+    "example": "<select><option>Первый вариант</option><option>Второй вариант</option></select>",
+    "link": "https://htmlreference.io/element/select/"
+  },
+  {
+    "tag": "<option>",
+    "description": "Определяет элемент в выпадающем списке, созданном с помощью тега <select>.",
+    "example": "<option value=\"1\">Первый вариант</option>",
+    "link": "https://htmlreference.io/element/option/"
+  },
+  {
+    "tag": "<div>",
+    "description": "Используется для группировки элементов в контейнер. Очень часто применяется для стилизации или структурирования страницы.",
+    "example": "<div class=\"container\">Контент</div>",
+    "link": "https://htmlreference.io/element/div/"
+  },
+  {
+    "tag": "<span>",
+    "description": "Лёгкий, строчный контейнер для текста или других элементов. Обычно используется для применения стилей к части текста.",
+    "example": "<span class=\"highlight\">Текст</span>",
+    "link": "https://htmlreference.io/element/span/"
+  },
+  {
+    "tag": "<strong>",
+    "description": "Определяет текст, который нужно выделить жирным шрифтом. Обычно используется для выделения важного контента.",
+    "example": "<strong>Важное сообщение</strong>",
+    "link": "https://htmlreference.io/element/strong/"
+  },
+  {
+    "tag": "<em>",
+    "description": "Определяет текст, который следует выделить курсивом. Обычно используется для выделения важности текста.",
+    "example": "<em>Это важно</em>",
+    "link": "https://htmlreference.io/element/em/"
+  },
+  {
+    "tag": "<br>",
+    "description": "Вставляет разрыв строки в тексте, не создавая нового абзаца.",
+    "example": "Текст перед разрывом<br>Текст после разрыва",
+    "link": "https://htmlreference.io/element/br/"
+  },
+  {
+    "tag": "<hr>",
+    "description": "Вставляет горизонтальную линию (разделитель), обычно используется для отделения блоков контента.",
+    "example": "<hr>",
+    "link": "https://htmlreference.io/element/hr/"
+  },
+  {
+    "tag": "<blockquote>",
+    "description": "Используется для выделения цитаты или длинного фрагмента текста. Обычно текст цитаты размещается с отступом.",
+    "example": "<blockquote>Это цитата</blockquote>",
+    "link": "https://htmlreference.io/element/blockquote/"
+  },
+  {
+    "tag": "<q>",
+    "description": "Определяет короткую цитату. В отличие от <blockquote>, не делает отступа для текста.",
+    "example": "<q>Это короткая цитата</q>",
+    "link": "https://htmlreference.io/element/q/"
+  },
+  {
+    "tag": "<code>",
+    "description": "Определяет фрагмент кода. Обычно используется для отображения кода программирования.",
+    "example": "<code>console.log(\"Hello, World!\");</code>",
+    "link": "https://htmlreference.io/element/code/"
+  },
+  {
+    "tag": "<pre>",
+    "description": "Определяет текст, который должен быть отображён в фиксированном формате, включая пробелы и разрывы строк.",
+    "example": "<pre> Это пример текста с пробелами</pre>",
+    "link": "https://htmlreference.io/element/pre/"
+  },
+  {
+    "tag": "<a>",
+    "description": "Создаёт гиперссылку на другую страницу, сайт или якорь внутри документа.",
+    "example": "<a href='https://example.com'>Перейти на сайт</a>",
+    "link": "https://htmlreference.io/element/a/"
+  },
+  {
+    "tag": "<img>",
+    "description": "Отображает изображение на странице. Для указания пути к файлу используется атрибут src.",
+    "example": "<img src='image.jpg' alt='Описание изображения'>",
+    "link": "https://htmlreference.io/element/img/"
+  },
+  {
+    "tag": "<figure>",
+    "description": "Используется для группировки медиа-объектов с подписями — изображений, графиков, иллюстраций.",
+    "example": "<figure><img src='image.jpg'><figcaption>Описание</figcaption></figure>",
+    "link": "https://htmlreference.io/element/figure/"
+  },
+  {
+    "tag": "<figcaption>",
+    "description": "Добавляет подпись для содержимого внутри <figure>.",
+    "example": "<figcaption>Это подпись изображения</figcaption>",
+    "link": "https://htmlreference.io/element/figcaption/"
+  },
+  {
+    "tag": "<nav>",
+    "description": "Определяет блок для навигации по сайту, в котором обычно размещают меню ссылок.",
+    "example": "<nav><a href='/'>Главная</a></nav>",
+    "link": "https://htmlreference.io/element/nav/"
+  },
+  {
+    "tag": "<header>",
+    "description": "Определяет 'шапку' документа или раздела. Чаще всего содержит логотип, название и меню навигации.",
+    "example": "<header><h1>Заголовок сайта</h1></header>",
+    "link": "https://htmlreference.io/element/header/"
+  },
+  {
+    "tag": "<footer>",
+    "description": "Определяет 'подвал' документа или секции. Обычно содержит контактную информацию и копирайты.",
+    "example": "<footer>© 2025 Все права защищены</footer>",
+    "link": "https://htmlreference.io/element/footer/"
+  },
+  {
+    "tag": "<section>",
+    "description": "Разделяет контент на логические блоки, которые обычно объединены общей темой.",
+    "example": "<section><h2>Раздел 1</h2></section>",
+    "link": "https://htmlreference.io/element/section/"
+  },
+  {
+    "tag": "<article>",
+    "description": "Определяет самостоятельный и законченный контент, например новость, пост в блоге или комментарий.",
+    "example": "<article><h2>Заголовок статьи</h2></article>",
+    "link": "https://htmlreference.io/element/article/"
+  },
+  {
+    "tag": "<aside>",
+    "description": "Определяет контент, косвенно связанный с основным содержимым. Обычно используется для боковых панелей с дополнительной информацией.",
+    "example": "<aside>Полезная информация</aside>",
+    "link": "https://htmlreference.io/element/aside/"
+  },
+  {
+    "tag": "<table>",
+    "description": "Используется для создания таблицы.",
+    "example": "<table><tr><td>Ячейка</td></tr></table>",
+    "link": "https://htmlreference.io/element/table/"
+  },
+  {
+    "tag": "<tr>",
+    "description": "Определяет строку таблицы.",
+    "example": "<tr><td>Текст</td></tr>",
+    "link": "https://htmlreference.io/element/tr/"
+  },
+  {
+    "tag": "<td>",
+    "description": "Создаёт ячейку с данными внутри строки таблицы.",
+    "example": "<td>Данные</td>",
+    "link": "https://htmlreference.io/element/td/"
+  },
+  {
+    "tag": "<th>",
+    "description": "Определяет заголовочную ячейку таблицы (обычно выделяется жирным и выравнивается по центру).",
+    "example": "<th>Заголовок</th>",
+    "link": "https://htmlreference.io/element/th/"
+  },
+  {
+    "tag": "<thead>",
+    "description": "Группирует заголовочную часть таблицы.",
+    "example": "<thead><tr><th>Название</th></tr></thead>",
+    "link": "https://htmlreference.io/element/thead/"
+  },
+  {
+    "tag": "<tbody>",
+    "description": "Группирует основное содержимое таблицы.",
+    "example": "<tbody><tr><td>Данные</td></tr></tbody>",
+    "link": "https://htmlreference.io/element/tbody/"
+  },
+  {
+    "tag": "<tfoot>",
+    "description": "Группирует нижнюю часть таблицы, обычно используется для итоговых строк.",
+    "example": "<tfoot><tr><td>Итого</td></tr></tfoot>",
+    "link": "https://htmlreference.io/element/tfoot/"
+  },
+  {
+    "tag": "<form>",
+    "description": "Контейнер для формы, в котором размещаются поля для ввода, кнопки и другие элементы управления.",
+    "example": "<form action='/submit'><input type='text'></form>",
+    "link": "https://htmlreference.io/element/form/"
+  },
+  {
+    "tag": "<input>",
+    "description": "Поле для ввода данных. Может быть текстовым, числовым, чекбоксом, радиокнопкой и др.",
+    "example": "<input type='text' placeholder='Ваше имя'>",
+    "link": "https://htmlreference.io/element/input/"
+  },
+  {
+    "tag": "<label>",
+    "description": "Подпись для поля формы, связывается с элементом с помощью атрибута 'for'.",
+    "example": "<label for='name'>Имя:</label><input id='name' type='text'>",
+    "link": "https://htmlreference.io/element/label/"
+  },
+  {
+    "tag": "color",
+    "description": "Определяет цвет текста элемента.",
+    "example": "p { color: red; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/color"
+  },
+  {
+    "tag": "background-color",
+    "description": "Устанавливает цвет фона для элемента.",
+    "example": "div { background-color: #f0f0f0; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/background-color"
+  },
+  {
+    "tag": "font-size",
+    "description": "Определяет размер шрифта текста.",
+    "example": "h1 { font-size: 32px; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/font-size"
+  },
+  {
+    "tag": "font-weight",
+    "description": "Задаёт толщину шрифта (жирность).",
+    "example": "strong { font-weight: bold; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/font-weight"
+  },
+  {
+    "tag": "text-align",
+    "description": "Определяет выравнивание текста внутри элемента.",
+    "example": "p { text-align: center; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/text-align"
+  },
+  {
+    "tag": "margin",
+    "description": "Устанавливает внешний отступ элемента (расстояние до других элементов).",
+    "example": "div { margin: 20px; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/margin"
+  },
+  {
+    "tag": "padding",
+    "description": "Определяет внутренний отступ между содержимым и границей элемента.",
+    "example": "div { padding: 10px; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/padding"
+  },
+  {
+    "tag": "border",
+    "description": "Добавляет рамку вокруг элемента.",
+    "example": "div { border: 1px solid black; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/border"
+  },
+  {
+    "tag": "visibility",
+    "description": "Управляет видимостью элемента, не удаляя его из документа. Значения: visible, hidden, collapse.",
+    "example": "div { visibility: hidden; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/visibility"
+  },
+  {
+    "tag": "pointer-events",
+    "description": "Управляет обработкой событий мыши для элемента.",
+    "example": "div { pointer-events: none; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/pointer-events"
+  },
+  {
+    "tag": "white-space",
+    "description": "Управляет тем, как браузер обрабатывает пробелы внутри элемента.",
+    "example": "p { white-space: nowrap; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/white-space"
+  },
+  {
+    "tag": "word-wrap",
+    "description": "Управляет переносом длинных слов внутри контейнера.",
+    "example": "div { word-wrap: break-word; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/overflow-wrap"
+  },
+  {
+    "tag": "clip-path",
+    "description": "Ограничивает область видимости элемента по заданной фигуре.",
+    "example": "img { clip-path: circle(50%); }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/clip-path"
+  },
+  {
+    "tag": "filter",
+    "description": "Применяет графические эффекты (размытие, контраст и т.д.) к элементу.",
+    "example": "img { filter: grayscale(100%); }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/filter"
+  },
+  {
+    "tag": "backdrop-filter",
+    "description": "Применяет графические эффекты к фону, находящемуся за элементом.",
+    "example": "div { backdrop-filter: blur(5px); }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/backdrop-filter"
+  },
+  {
+    "tag": "aspect-ratio",
+    "description": "Определяет соотношение сторон для элемента.",
+    "example": "div { aspect-ratio: 16 / 9; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/aspect-ratio"
+  },
+  {
+    "tag": "@keyframes",
+    "description": "Определяет ключевые кадры для CSS-анимации. Используется совместно с animation.",
+    "example": "@keyframes fadeIn {\n  from { opacity: 0; }\n  to { opacity: 1; }\n}",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/@keyframes"
+  },
+  {
+    "tag": "animation",
+    "description": "Позволяет задавать анимацию для элемента с помощью ключевых кадров @keyframes.",
+    "example": "div { animation: fadeIn 1s ease forwards; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/animation"
+  },
+  {
+    "tag": "animation-delay",
+    "description": "Устанавливает задержку перед началом анимации.",
+    "example": "div { animation-delay: 0.5s; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/animation-delay"
+  },
+  {
+    "tag": "animation-iteration-count",
+    "description": "Определяет, сколько раз должна проигрываться анимация. Можно указать infinite для бесконечного повтора.",
+    "example": "div { animation-iteration-count: infinite; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/animation-iteration-count"
+  },
+  {
+    "tag": "will-change",
+    "description": "Подсказывает браузеру, какие свойства элемента могут измениться в будущем, для подготовки оптимизации рендеринга.",
+    "example": "div { will-change: transform; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/will-change"
+  },
+  {
+    "tag": "transition",
+    "description": "Устанавливает плавный переход между двумя состояниями элемента при изменении CSS-свойств.",
+    "example": "button { transition: background-color 0.3s ease; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/transition"
+  },
+  {
+    "tag": "display: flex",
+    "description": "Включает flex-контейнер, внутри которого элементы автоматически становятся флекс-элементами с гибким позиционированием.",
+    "example": "div { display: flex; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/flex"
+  },
+  {
+    "tag": "justify-content",
+    "description": "Определяет выравнивание флекс-элементов вдоль главной оси.",
+    "example": "div { justify-content: center; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/justify-content"
+  },
+  {
+    "tag": "align-items",
+    "description": "Выравнивает элементы по поперечной оси внутри флекс-контейнера.",
+    "example": "div { align-items: center; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/align-items"
+  },
+  {
+    "tag": "flex-wrap",
+    "description": "Управляет переносом флекс-элементов на новую строку, если они не помещаются.",
+    "example": "div { flex-wrap: wrap; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/flex-wrap"
+  },
+  {
+    "tag": "flex",
+    "description": "Краткая запись для flex-grow, flex-shrink и flex-basis. Управляет тем, как элемент растет, сжимается и занимает пространство.",
+    "example": "div { flex: 1; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/flex"
+  },
+  {
+    "tag": "display: grid",
+    "description": "Включает Grid Layout для контейнера, создавая двумерную сетку для размещения элементов.",
+    "example": "div { display: grid; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/grid"
+  },
+  {
+    "tag": "grid-template-columns",
+    "description": "Определяет количество и ширину колонок в grid-сетке.",
+    "example": "div { grid-template-columns: repeat(3, 1fr); }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/grid-template-columns"
+  },
+  {
+    "tag": "gap",
+    "description": "Задает расстояние между строками и колонками в Grid или Flex контейнере.",
+    "example": "div { gap: 20px; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/gap"
+  },
+  {
+    "tag": "position",
+    "description": "Определяет метод позиционирования элемента относительно его родителя или документа. Может быть static, relative, absolute, fixed, sticky.",
+    "example": "div { position: absolute; top: 10px; left: 20px; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/position"
+  },
+  {
+    "tag": "top/right/bottom/left",
+    "description": "Определяют смещение элемента относительно его контейнера. Используется с позиционированием absolute, relative, fixed.",
+    "example": "div { position: absolute; top: 20px; left: 30px; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/top"
+  },
+  {
+    "tag": "z-index",
+    "description": "Определяет порядок наложения элементов, если они пересекаются. Элементы с более высоким значением z-index будут отображаться поверх элементов с более низким значением.",
+    "example": "div { position: absolute; z-index: 10; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/z-index"
+  },
+  {
+    "tag": "background-position",
+    "description": "Определяет начальную позицию фонового изображения в контейнере.",
+    "example": "div { background-position: center; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/background-position"
+  },
+  {
+    "tag": "background-size",
+    "description": "Определяет размер фонового изображения. Можно использовать значения в пикселях, процентах, или специальные ключевые слова, как cover или contain.",
+    "example": "div { background-size: cover; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/background-size"
+  },
+  {
+    "tag": "background-attachment",
+    "description": "Определяет, будет ли фоновое изображение прокручиваться вместе с содержимым страницы или оставаться на месте.",
+    "example": "div { background-attachment: fixed; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/background-attachment"
+  },
+  {
+    "tag": "object-fit",
+    "description": "Определяет, как содержимое элемента (например, изображения или видео) будет масштабироваться внутри его контейнера.",
+    "example": "img { object-fit: cover; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/object-fit"
+  },
+  {
+    "tag": "object-position",
+    "description": "Определяет начальное положение содержимого (например, изображения или видео) в пределах контейнера, когда используется свойство object-fit.",
+    "example": "img { object-position: center; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/object-position"
+  },
+  {
+    "tag": "transform",
+    "description": "Позволяет применять 2D и 3D трансформации к элементам, такие как перемещения, масштабирование, наклон и повороты.",
+    "example": "div { transform: rotate(45deg); }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/transform"
+  },
+  {
+    "tag": "rotate()",
+    "description": "Поворачивает элемент на указанный угол в градусах (например, deg).",
+    "example": "div { transform: rotate(90deg); }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/transform-function/rotate"
+  },
+  {
+    "tag": "scale()",
+    "description": "Изменяет размер элемента, увеличивая или уменьшая его.",
+    "example": "div { transform: scale(1.5); }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/transform-function/scale"
+  },
+  {
+    "tag": "translate()",
+    "description": "Перемещает элемент по осям X и Y на заданное расстояние.",
+    "example": "div { transform: translate(50px, 100px); }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/transform-function/translate"
+  },
+  {
+    "tag": "skew()",
+    "description": "Наклоняет элемент по осям X и Y на заданные углы.",
+    "example": "div { transform: skew(30deg, 20deg); }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/transform-function/skew"
+  },
+  {
+    "tag": "filter",
+    "description": "Применяет графические эффекты, такие как размытие, изменение яркости, контраста и других параметров изображения или элемента.",
+    "example": "img { filter: blur(5px); }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/filter"
+  },
+  {
+    "tag": "blur()",
+    "description": "Применяет эффект размытия к элементу.",
+    "example": "img { filter: blur(8px); }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/filter/blur"
+  },
+  {
+    "tag": "brightness()",
+    "description": "Регулирует яркость изображения. Значение 100% — это исходное изображение, значение меньше 100% делает изображение темнее, а больше — ярче.",
+    "example": "img { filter: brightness(150%); }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/filter/brightness"
+  },
+  {
+    "tag": "contrast()",
+    "description": "Управляет контрастностью изображения. Значение 100% — это исходное изображение.",
+    "example": "img { filter: contrast(200%); }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/filter/contrast"
+  },
+  {
+    "tag": "grayscale()",
+    "description": "Применяет эффект монохромности к изображению, преобразуя его в черно-белое.",
+    "example": "img { filter: grayscale(100%); }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/filter/grayscale"
+  },
+  {
+    "tag": "sepia()",
+    "description": "Применяет эффект сепии к изображению, придавая ему старинный вид.",
+    "example": "img { filter: sepia(100%); }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/filter/sepia"
+  },
+  {
+    "tag": "font-family",
+    "description": "Определяет шрифт, который будет использоваться для текста. Можно указать несколько шрифтов через запятую, чтобы браузер выбрал первый доступный.",
+    "example": "p { font-family: Arial, sans-serif; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/font-family"
+  },
+  {
+    "tag": "font-size",
+    "description": "Определяет размер шрифта. Можно использовать различные единицы измерения: пиксели (px), эм (em), проценты (%), рем (rem).",
+    "example": "p { font-size: 16px; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/font-size"
+  },
+  {
+    "tag": "line-height",
+    "description": "Определяет высоту строки, что влияет на расстояние между строками текста в абзаце.",
+    "example": "p { line-height: 1.5; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/line-height"
+  },
+  {
+    "tag": "font-weight",
+    "description": "Определяет жирность текста. Может принимать значения от normal до bold или числовые значения от 100 до 900.",
+    "example": "p { font-weight: bold; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/font-weight"
+  },
+  {
+    "tag": "font-style",
+    "description": "Определяет стиль шрифта, например, наклонный (курсив) или обычный.",
+    "example": "p { font-style: italic; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/font-style"
+  },
+  {
+    "tag": "text-transform",
+    "description": "Определяет, как будет отображаться текст: все буквы в верхнем регистре, в нижнем, или первая буква каждого слова с заглавной.",
+    "example": "p { text-transform: uppercase; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/text-transform"
+  },
+  {
+    "tag": "letter-spacing",
+    "description": "Определяет расстояние между символами текста.",
+    "example": "p { letter-spacing: 2px; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/letter-spacing"
+  },
+  {
+    "tag": "word-spacing",
+    "description": "Определяет расстояние между словами в тексте.",
+    "example": "p { word-spacing: 5px; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/word-spacing"
+  },
+  {
+    "tag": "text-align",
+    "description": "Определяет выравнивание текста по горизонтали. Можно выравнивать текст по левому краю, по центру, по правому краю или по ширине.",
+    "example": "p { text-align: center; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/text-align"
+  },
+  {
+    "tag": "text-indent",
+    "description": "Определяет отступ первой строки текста.",
+    "example": "p { text-indent: 20px; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/text-indent"
+  },
+  {
+    "tag": "text-decoration",
+    "description": "Добавляет текстовые украшения, такие как подчеркивание, перечеркивание или надчеркивание.",
+    "example": "a { text-decoration: underline; }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/text-decoration"
+  },
+  {
+    "tag": "text-shadow",
+    "description": "Добавляет тень к тексту. Можно задать смещение по осям X и Y, а также цвет и размытие тени.",
+    "example": "p { text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); }",
+    "link": "https://developer.mozilla.org/ru/docs/Web/CSS/text-shadow"
+  }
+]
