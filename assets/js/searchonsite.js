@@ -40,7 +40,7 @@ function getJsonPath() {
   
   function searchTags() {
     const input = document.getElementById('search-input');
-    const query = input?.value.toLowerCase() ?? '';
+    const query = input?.value.toLowerCase().trim() ?? '';
     const cards = document.querySelectorAll('.boxline');
   
     cards.forEach(card => {

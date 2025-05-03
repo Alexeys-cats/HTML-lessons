@@ -1,0 +1,737 @@
+[
+	{
+	  "name": "a",
+	  "start": "<a>",
+	  "end": "</a>",
+	  "description": "Создаёт гиперссылку.",
+	  "example": "<a href=\"https://example.com\">Перейти на сайт</a>"
+	},
+	{
+	  "name": "abbr",
+	  "start": "<abbr>",
+	  "end": "</abbr>",
+	  "description": "Обозначает аббревиатуру или акроним.",
+	  "example": "<abbr title=\"HyperText Markup Language\">HTML</abbr>"
+	},
+	{
+	  "name": "address",
+	  "start": "<address>",
+	  "end": "</address>",
+	  "description": "Определяет контактную информацию.",
+	  "example": "<address>г. Москва, ул. Пример, д. 1</address>"
+	},
+	{
+	  "name": "area",
+	  "start": "<area>",
+	  "end": null,
+	  "description": "Определяет активную область на карте изображения.",
+	  "example": "<area shape=\"rect\" coords=\"34,44,270,350\" href=\"example.html\">"
+	},
+	{
+	  "name": "article",
+	  "start": "<article>",
+	  "end": "</article>",
+	  "description": "Независимый раздел документа.",
+	  "example": "<article><h2>Заголовок статьи</h2><p>Содержимое...</p></article>"
+	},
+	{
+	  "name": "aside",
+	  "start": "<aside>",
+	  "end": "</aside>",
+	  "description": "Дополнительный контент сбоку от основного.",
+	  "example": "<aside><p>Примечание</p></aside>"
+	},
+	{
+	  "name": "audio",
+	  "start": "<audio>",
+	  "end": "</audio",
+	  "description": "Воспроизводит звуковой контент.",
+	  "example": "<audio controls><source src=\"audio.mp3\" type=\"audio/mpeg\">Ваш браузер не поддерживает аудио.</audio>"
+	},
+	{
+	  "name": "b",
+	  "start": "<b>",
+	  "end": "</b>",
+	  "description": "Жирное начертание текста без логического акцента.",
+	  "example": "<b>Важный текст</b>"
+	},
+	{
+	  "name": "base",
+	  "start": "<base>",
+	  "end": null,
+	  "description": "Устанавливает базовый URL для всех относительных ссылок в документе.",
+	  "example": "<base href=\"https://example.com/\">"
+	},
+	{
+	  "name": "bdi",
+	  "start": "<bdi>",
+	  "end": "</bdi>",
+	  "description": "Изолирует текст, который может иметь другое направление письма.",
+	  "example": "<bdi>علي</bdi> выиграл соревнование."
+	},
+	{
+	  "name": "bdo",
+	  "start": "<bdo>",
+	  "end": "</bdo>",
+	  "description": "Переопределяет направление текста.",
+	  "example": "<bdo dir=\"rtl\">Текст справа налево</bdo>"
+	},
+	{
+	  "name": "blockquote",
+	  "start": "<blockquote>",
+	  "end": "</blockquote>",
+	  "description": "Цитата из другого источника.",
+	  "example": "<blockquote cite=\"https://example.com\">Это цитата.</blockquote>"
+	},
+	{
+	  "name": "body",
+	  "start": "<body>",
+	  "end": "</body>",
+	  "description": "Основное содержимое HTML-документа.",
+	  "example": "<body><p>Пример текста в теле страницы</p></body>"
+	},
+	{
+	  "name": "br",
+	  "start": "<br>",
+	  "end": null,
+	  "description": "Разрыв строки.",
+	  "example": "Строка 1<br>Строка 2"
+	},
+	{
+	  "name": "button",
+	  "start": "<button>",
+	  "end": null,
+	  "description": "Создаёт интерактивную кнопку.",
+	  "example": "<button>Нажми меня</button>"
+	},
+	{
+		"name": "colgroup",
+		"start": "<colgroup>",
+		"end": "</colgroup>",
+		"description": "Группирует столбцы в таблице.",
+		"example": "<table>\n  <colgroup>\n    <col span='2' style='background-color:lightgrey'>\n  </colgroup>\n  <tr><td>1</td><td>2</td></tr>\n</table>"
+	  },
+	  {
+		"name": "datalist",
+		"start": "<datalist>",
+		"end": "</datalist>",
+		"description": "Определяет список предопределённых значений для элемента <input>.",
+		"example": "<input list='browsers'>\n<datalist id='browsers'>\n  <option value='Chrome'>\n  <option value='Firefox'>\n</datalist>"
+	  },
+	  {
+		"name": "dd",
+		"start": "<dd>",
+		"end": "</dd>",
+		"description": "Описание термина в списке описаний.",
+		"example": "<dl>\n  <dt>HTML</dt>\n  <dd>Язык разметки гипертекста</dd>\n</dl>"
+	  },
+	  {
+		"name": "del",
+		"start": "<del>",
+		"end": "</del>",
+		"description": "Помечает удалённый текст.",
+		"example": "<p>Этот текст был <del>удалён</del>.</p>"
+	  },
+	  {
+		"name": "details",
+		"start": "<details>",
+		"end": "</details>",
+		"description": "Создаёт интерактивный элемент, который можно раскрыть для получения дополнительной информации.",
+		"example": "<details>\n  <summary>Подробнее</summary>\n  <p>Дополнительная информация</p>\n</details>"
+	  },
+	  {
+		"name": "dfn",
+		"start": "<dfn>",
+		"end": "</dfn>",
+		"description": "Определяет термин, который будет описан или определён.",
+		"example": "<p><dfn>HTML</dfn> — это язык разметки.</p>"
+	  },
+	  {
+		"name": "dialog",
+		"start": "<dialog>",
+		"end": "</dialog>",
+		"description": "Создаёт диалоговое окно или всплывающее окно.",
+		"example": "<dialog open>Привет! Я диалог.</dialog>"
+	  },
+	  {
+		"name": "div",
+		"start": "<div>",
+		"end": "</div>",
+		"description": "Контейнер для блочного содержимого без определённого смысла.",
+		"example": "<div class='container'>Контент внутри блока</div>"
+	  },
+	  {
+		"name": "dl",
+		"start": "<dl>",
+		"end": "</dl>",
+		"description": "Определяет список описаний.",
+		"example": "<dl>\n  <dt>CSS</dt>\n  <dd>Таблицы каскадных стилей</dd>\n</dl>"
+	  },
+	  {
+		"name": "dt",
+		"start": "<dt>",
+		"end": "</dt>",
+		"description": "Обозначает термин в списке описаний.",
+		"example": "<dl>\n  <dt>JavaScript</dt>\n  <dd>Язык программирования для веба</dd>\n</dl>"
+	  },
+	  {
+		"name": "em",
+		"start": "<em>",
+		"end": "</em>",
+		"description": "Выделяет текст курсивом, придавая ему смысловую важность.",
+		"example": "<p>Это <em>важный</em> момент.</p>"
+	  },
+	  {
+		"name": "embed",
+		"start": "<embed>",
+		"end": "</embed>",
+		"description": "Встраивает внешнее приложение, например, видео или флеш-контент.",
+		"example": "<embed src='video.mp4' width='400' height='300'>"
+	  },
+	  {
+		"name": "fieldset",
+		"start": "<fieldset>",
+		"end": "</fieldset>",
+		"description": "Группирует связанные элементы формы.",
+		"example": "<fieldset>\n  <legend>Информация</legend>\n  <label>Имя: <input type='text'></label>\n</fieldset>"
+	  },
+	  {
+		"name": "figcaption",
+		"start": "<figcaption>",
+		"end": "</figcaption>",
+		"description": "Подпись к элементу <figure>.",
+		"example": "<figure>\n  <img src='image.jpg'>\n  <figcaption>Описание изображения</figcaption>\n</figure>"
+	  },
+	  {
+		"name": "figure",
+		"start": "<figure>",
+		"end": "</figure>",
+		"description": "Группирует изображение с подписью.",
+		"example": "<figure>\n  <img src='photo.jpg'>\n  <figcaption>Пейзаж</figcaption>\n</figure>"
+	  },
+	  {
+		"name": "footer",
+		"start": "<footer>",
+		"end": "</footer>",
+		"description": "Определяет нижний колонтитул (подвал) документа или раздела.",
+		"example": "<footer>\n  <p>&copy; 2025 Мой сайт</p>\n</footer>"
+	  },
+	  {
+		"name": "form",
+		"start": "<form>",
+		"end": "</form>",
+		"description": "Определяет форму для ввода данных.",
+		"example": "<form action='/submit' method='post'>\n  <input type='text' name='name'>\n  <button type='submit'>Отправить</button>\n</form>"
+	  },
+	  {
+		"name": "h1",
+		"start": "<h1>",
+		"end": "</h1>",
+		"description": "Заголовок первого уровня — самый важный.",
+		"example": "<h1>Главный заголовок</h1>"
+	  },
+	  {
+		"name": "h2",
+		"start": "<h2>",
+		"end": "</h2>",
+		"description": "Заголовок второго уровня.",
+		"example": "<h2>Подзаголовок раздела</h2>"
+	  },
+	  {
+		"name": "h3",
+		"start": "<h3>",
+		"end": "</h3>",
+		"description": "Заголовок третьего уровня.",
+		"example": "<h3>Подраздел темы</h3>"
+	  },
+	  {
+		"name": "h4",
+		"start": "<h4>",
+		"end": "</h4>",
+		"description": "Заголовок четвёртого уровня.",
+		"example": "<h4>Заголовок подраздела</h4>"
+	  },
+	  {
+		"name": "h5",
+		"start": "<h5>",
+		"end": "</h5>",
+		"description": "Заголовок пятого уровня.",
+		"example": "<h5>Дополнительная информация</h5>"
+	  },
+	  {
+		"name": "h6",
+		"start": "<h6>",
+		"end": "</h6>",
+		"description": "Заголовок шестого, наименее важного уровня.",
+		"example": "<h6>Мелкий заголовок</h6>"
+	  },
+	  {
+		"name": "head",
+		"start": "<head>",
+		"end": "</head>",
+		"description": "Содержит метаинформацию о документе: теги title, meta, link и др.",
+		"example": "<head>\n  <title>Мой сайт</title>\n  <meta charset='UTF-8'>\n</head>"
+	  },
+	  {
+		"name": "header",
+		"start": "<header>",
+		"end": "</header>",
+		"description": "Определяет верхнюю часть страницы или раздела (например, логотип, меню).",
+		"example": "<header>\n  <h1>Мой сайт</h1>\n  <nav>...</nav>\n</header>"
+	  },
+	  {
+		"name": "hr",
+		"start": "<hr>",
+		"end": null,
+		"description": "Горизонтальная линия, используется для разделения контента.",
+		"example": "<p>Первый абзац</p>\n<hr>\n<p>Второй абзац</p>"
+	  },
+	  {
+		"name": "html",
+		"start": "<html>",
+		"end": "</html>",
+		"description": "Корневой элемент HTML-документа, содержит все остальные элементы.",
+		"example": "<!DOCTYPE html>\n<html>\n  <head>...</head>\n  <body>...</body>\n</html>"
+	  },
+	  {
+		"name": "i",
+		"start": "<i>",
+		"end": "</i>",
+		"description": "Курсивное начертание текста без смыслового выделения.",
+		"example": "<p>Слово на <i>латинском</i> языке.</p>"
+	  },
+	  {
+		"name": "iframe",
+		"start": "<iframe>",
+		"end": "</iframe>",
+		"description": "Встраивает другой HTML-документ в текущую страницу.",
+		"example": "<iframe src='https://www.youtube.com/embed/example'></iframe>"
+	  },
+	  {
+		"name": "img",
+		"start": "<img>",
+		"end": null,
+		"description": "Вставляет изображение.",
+		"example": "<img src='image.jpg' alt='Описание изображения'>"
+	  },
+	  {
+		"name": "input",
+		"start": "<input>",
+		"end": null,
+		"description": "Создаёт интерактивный элемент для ввода данных.",
+		"example": "<input type='text' placeholder='Введите текст'>"
+	  },
+	  {
+		"name": "ins",
+		"start": "<ins>",
+		"end": "</ins>",
+		"description": "Отмечает вставленный текст, обычно с подчеркиванием.",
+		"example": "<p>Этот текст был <ins>добавлен</ins> после редактирования.</p>"
+	  },
+	  {
+		"name": "kbd",
+		"start": "<kbd>",
+		"end": "</kbd>",
+		"description": "Окружает текст, который вводится с клавиатуры.",
+		"example": "<p>Для выхода из программы нажмите <kbd>Ctrl + C</kbd>.</p>"
+	  },
+	  {
+		"name": "keygen",
+		"start": "<keygen>",
+		"end": null,
+		"description": "Создаёт элемент для генерации ключей, используется в формах (устаревший тег).",
+		"example": "<form>\n  <keygen name='name'></keygen>\n</form>"
+	  },
+	  {
+		"name": "label",
+		"start": "<label>",
+		"end": "</label>",
+		"description": "Связывает метку с элементом формы, например, с полем ввода.",
+		"example": "<label for='name'>Ваше имя:</label>\n<input type='text' id='name'>"
+	  },
+	  {
+		"name": "legend",
+		"start": "<legend>",
+		"end": "</legend>",
+		"description": "Определяет заголовок для элемента <fieldset>.",
+		"example": "<fieldset>\n  <legend>Личные данные</legend>\n  <input type='text' placeholder='Ваше имя'>\n</fieldset>"
+	  },
+	  {
+		"name": "li",
+		"start": "<li>",
+		"end": "</li>",
+		"description": "Определяет элемент списка (неупорядоченного, упорядоченного или меню).",
+		"example": "<ul>\n  <li>Элемент списка 1</li>\n  <li>Элемент списка 2</li>\n</ul>"
+	  },
+	  {
+		"name": "link",
+		"start": "<link>",
+		"end": null,
+		"description": "Связывает документ с внешним ресурсом, обычно используется для подключения CSS.",
+		"example": "<link rel='stylesheet' href='styles.css'>"
+	  },
+	  {
+		"name": "main",
+		"start": "<main>",
+		"end": "</main>",
+		"description": "Определяет основной контент документа, который связан с основной темой страницы.",
+		"example": "<main>\n  <article>\n    <h1>Основная статья</h1>\n    <p>Контент статьи...</p>\n  </article>\n</main>"
+	  },
+	  {
+		"name": "map",
+		"start": "<map>",
+		"end": "</map>",
+		"description": "Определяет карту изображения для ссылок, используемая с тегом <area>.",
+		"example": "<map name='image-map'>\n  <area shape='rect' coords='34,44,270,350' alt='Описание' href='https://example.com'>\n</map>"
+	  },
+	  {
+		"name": "mark",
+		"start": "<mark>",
+		"end": "</mark>",
+		"description": "Подсвечивает текст, который должен быть выделен как важный.",
+		"example": "<p>Этот текст <mark>выделен</mark> для акцента.</p>"
+	  },
+	  {
+		"name": "menu",
+		"start": "<menu>",
+		"end": "</menu>",
+		"description": "Определяет список команд, обычно используется для контекстного меню или панели инструментов.",
+		"example": "<menu>\n  <li><a href='#'>Опция 1</a></li>\n  <li><a href='#'>Опция 2</a></li>\n</menu>"
+	  },
+	  {
+		"name": "menuitem",
+		"start": "<menuitem>",
+		"end": "</menuitem>",
+		"description": "Используется внутри тега <menu> для создания пунктов меню (устаревший тег).",
+		"example": "<menu>\n  <menuitem label='Открыть' onclick='openFile()'></menuitem>\n  <menuitem label='Закрыть' onclick='closeFile()'></menuitem>\n</menu>"
+	  },
+	  {
+		"name": "meta",
+		"start": "<meta>",
+		"end": null,
+		"description": "Представляет метаинформацию о документе, такую как кодировка, описание, автор и ключевые слова.",
+		"example": "<meta charset='UTF-8'>\n<meta name='description' content='Пример сайта'>\n<meta name='author' content='Имя автора'>"
+	  },
+	  {
+		"name": "meter",
+		"start": "<meter>",
+		"end": "</meter>",
+		"description": "Используется для отображения измеренного значения в пределах заданного диапазона, например, прогресса или уровня.",
+		"example": "<meter value='0.7' min='0' max='1'>70%</meter>"
+	  },
+	  {
+		"name": "nav",
+		"start": "<nav>",
+		"end": "</nav>",
+		"description": "Определяет секцию навигации в документе, обычно для ссылок или меню.",
+		"example": "<nav>\n  <ul>\n    <li><a href='#'>Главная</a></li>\n    <li><a href='#'>О нас</a></li>\n  </ul>\n</nav>"
+	  },
+	  {
+		"name": "noscript",
+		"start": "<noscript>",
+		"end": "</noscript>",
+		"description": "Определяет контент, который будет отображаться, если в браузере отключен JavaScript.",
+		"example": "<noscript>Для просмотра этого контента включите JavaScript в вашем браузере.</noscript>"
+	  },
+	  {
+		"name": "object",
+		"start": "<object>",
+		"end": "</object>",
+		"description": "Встраивает внешние ресурсы (например, мультимедийные файлы, приложения), такие как Flash или Java applets.",
+		"example": "<object data='movie.swf' type='application/x-shockwave-flash'></object>"
+	  },
+	  {
+		"name": "ol",
+		"start": "<ol>",
+		"end": "</ol>",
+		"description": "Создаёт упорядоченный список (с номерами или другими маркерами).",
+		"example": "<ol>\n  <li>Первый элемент</li>\n  <li>Второй элемент</li>\n</ol>"
+	  },
+	  {
+		"name": "optgroup",
+		"start": "<optgroup>",
+		"end": "</optgroup>",
+		"description": "Группирует элементы <option> в выпадающем списке <select>.",
+		"example": "<select>\n  <optgroup label='Фрукты'>\n    <option value='apple'>Яблоко</option>\n    <option value='banana'>Банан</option>\n  </optgroup>\n  <optgroup label='Овощи'>\n    <option value='carrot'>Морковь</option>\n  </optgroup>\n</select>"
+	  },
+	  {
+		"name": "option",
+		"start": "<option>",
+		"end": "</option>",
+		"description": "Определяет пункт списка в выпадающем списке <select>.",
+		"example": "<select>\n  <option value='1'>Опция 1</option>\n  <option value='2'>Опция 2</option>\n</select>"
+	  },
+	  {
+		"name": "output",
+		"start": "<output>",
+		"end": "</output>",
+		"description": "Представляет результат вычислений, например, через формы.",
+		"example": "<form>\n  <input type='number' id='a'>\n  <input type='number' id='b'>\n  <output name='result' for='a b'>Результат</output>\n</form>"
+	  },
+	  {
+		"name": "p",
+		"start": "<p>",
+		"end": "</p>",
+		"description": "Определяет параграф текста.",
+		"example": "<p>Это пример текста в параграфе.</p>"
+	  },
+	  {
+		"name": "param",
+		"start": "<param>",
+		"end": "</param>",
+		"description": "Представляет параметр для элемента <object>.",
+		"example": "<object data='movie.swf' type='application/x-shockwave-flash'>\n  <param name='autoplay' value='true'>\n</object>"
+	  },
+	  {
+		"name": "pre",
+		"start": "<pre>",
+		"end": "</pre>",
+		"description": "Определяет предварительно отформатированный текст, где сохраняются пробелы и переносы строк.",
+		"example": "<pre>\n  Пример текста с пробелами и\n  новыми строками.\n</pre>"
+	  },
+	  {
+		"name": "progress",
+		"start": "<progress>",
+		"end": "</progress>",
+		"description": "Отображает индикатор прогресса для задания задачи.",
+		"example": "<progress value='22' max='100'>22%</progress>"
+	  },
+	  {
+		"name": "q",
+		"start": "<q>",
+		"end": "</q>",
+		"description": "Используется для встраивания кратких цитат в тексте.",
+		"example": "<p>Он сказал: <q>Привет, как дела?</q></p>"
+	  },
+	  {
+		"name": "rp",
+		"start": "<rp>",
+		"end": "</rp>",
+		"description": "Используется в сочетании с <ruby>, чтобы определить, как показывать родительские элементы в браузерах, которые не поддерживают ruby-нотации.",
+		"example": "<ruby>漢<rp>(</rp><rt>kan</rt><rp>)</rp></ruby>"
+	  },
+	  {
+		"name": "rt",
+		"start": "<rt>",
+		"end": "</rt>",
+		"description": "Определяет текст, который будет отображаться как аннотация для символов в теге <ruby>.",
+		"example": "<ruby>漢<rt>kan</rt></ruby>"
+	  },
+	  {
+		"name": "ruby",
+		"start": "<ruby>",
+		"end": "</ruby>",
+		"description": "Используется для создания текста, который будет иметь дополнительные символы (аннотации), например, в китайских или японских иероглифах.",
+		"example": "<ruby>漢<rt>kan</rt></ruby>"
+	  },
+	  {
+		"name": "s",
+		"start": "<s>",
+		"end": "</s>",
+		"description": "Определяет текст, который должен быть зачеркнут.",
+		"example": "<p>Это <s>устаревшая информация</s>.</p>"
+	  },
+	  {
+		"name": "samp",
+		"start": "<samp>",
+		"end": "</samp>",
+		"description": "Отображает пример вывода программы или текст, который должен восприниматься как результат обработки данных.",
+		"example": "<p>Командный вывод: <samp>Команда не найдена</samp></p>"
+	  },
+	  {
+		"name": "script",
+		"start": "<script>",
+		"end": "</script>",
+		"description": "Определяет скрипт, обычно JavaScript, который выполняется в браузере.",
+		"example": "<script>\n  alert('Привет, мир!');\n</script>"
+	  },
+	  {
+		"name": "section",
+		"start": "<section>",
+		"end": "</section>",
+		"description": "Определяет секцию документа, которая имеет самостоятельное значение, например, главы или разделы.",
+		"example": "<section>\n  <h2>Заголовок раздела</h2>\n  <p>Содержание раздела.</p>\n</section>"
+	  },
+	  {
+		"name": "select",
+		"start": "<select>",
+		"end": "</select>",
+		"description": "Создаёт выпадающий список для выбора одного или нескольких значений.",
+		"example": "<select>\n  <option value='1'>Опция 1</option>\n  <option value='2'>Опция 2</option>\n</select>"
+	  },
+	  {
+		"name": "small",
+		"start": "<small>",
+		"end": "</small>",
+		"description": "Уменьшает размер текста.",
+		"example": "<p>Это <small>мелкий текст</small>.</p>"
+	  },
+	  {
+		"name": "source",
+		"start": "<source>",
+		"end": null,
+		"description": "Используется в элементах <audio> и <video> для указания источников медиафайлов.",
+		"example": "<audio>\n  <source src='audio.mp3' type='audio/mp3'>\n</audio>"
+	  },
+	  {
+		"name": "span",
+		"start": "<span>",
+		"end": "</span>",
+		"description": "Создаёт строчный элемент, который может быть использован для стилизации части текста.",
+		"example": "<p>Это <span style='color:red'>красный</span> текст.</p>"
+	  },
+	  {
+		"name": "strong",
+		"start": "<strong>",
+		"end": "</strong>",
+		"description": "Определяет важный текст, который обычно отображается жирным шрифтом.",
+		"example": "<p><strong>Внимание!</strong> Это важная информация.</p>"
+	  },
+	  {
+		"name": "style",
+		"start": "<style>",
+		"end": "</style>",
+		"description": "Определяет внутренние стили CSS для документа.",
+		"example": "<style>\n  p { color: red; }\n</style>"
+	  },
+	  {
+		"name": "sub",
+		"start": "<sub>",
+		"end": "</sub>",
+		"description": "Определяет подстрочный текст.",
+		"example": "<p>H<sub>2</sub>O — вода.</p>"
+	  },
+	  {
+		"name": "summary",
+		"start": "<summary>",
+		"end": "</summary>",
+		"description": "Определяет видимую заголовок для элемента <details>, который может быть раскрыт или скрыт.",
+		"example": "<details>\n  <summary>Подробнее</summary>\n  <p>Текст, который раскрывается.</p>\n</details>"
+	  },
+	  {
+		"name": "sup",
+		"start": "<sup>",
+		"end": "</sup>",
+		"description": "Определяет надстрочный текст.",
+		"example": "<p>H<sup>2</sup>O — вода.</p>"
+	  },
+	  {
+		"name": "table",
+		"start": "<table>",
+		"end": "</table>",
+		"description": "Создаёт таблицу.",
+		"example": "<table>\n  <tr>\n    <th>Имя</th>\n    <th>Возраст</th>\n  </tr>\n  <tr>\n    <td>Иван</td>\n    <td>25</td>\n  </tr>\n</table>"
+	  },
+	  {
+		"name": "tbody",
+		"start": "<tbody>",
+		"end": "</tbody>",
+		"description": "Группирует тело таблицы, используется в сочетании с <thead> и <tfoot>.",
+		"example": "<table>\n  <thead>\n    <tr><th>Имя</th><th>Возраст</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>Иван</td><td>25</td></tr>\n  </tbody>\n</table>"
+	  },
+	  {
+		"name": "td",
+		"start": "<td>",
+		"end": "</td>",
+		"description": "Создаёт ячейку таблицы.",
+		"example": "<table>\n  <tr>\n    <td>Иван</td>\n    <td>25</td>\n  </tr>\n</table>"
+	  },
+	  {
+		"name": "template",
+		"start": "<template>",
+		"end": "</template>",
+		"description": "Представляет шаблон HTML-кода, который не отображается при загрузке страницы, но может быть использован в JavaScript.",
+		"example": "<template id='my-template'>\n  <p>Это мой шаблон!</p>\n</template>"
+	  },
+	  {
+		"name": "textarea",
+		"start": "<textarea>",
+		"end": "</textarea>",
+		"description": "Создаёт многострочное текстовое поле.",
+		"example": "<textarea rows='4' cols='50'>Ваш текст</textarea>"
+	  },
+	  {
+		"name": "tfoot",
+		"start": "<tfoot>",
+		"end": "</tfoot>",
+		"description": "Группирует футер таблицы, обычно используется для вывода итоговых данных.",
+		"example": "<table>\n  <tfoot>\n    <tr><td>Итого</td><td>100</td></tr>\n  </tfoot>\n</table>"
+	  },
+	  {
+		"name": "th",
+		"start": "<th>",
+		"end": "</th>",
+		"description": "Создаёт заголовочную ячейку таблицы.",
+		"example": "<table>\n  <tr>\n    <th>Имя</th>\n    <th>Возраст</th>\n  </tr>\n</table>"
+	  },
+	  {
+		"name": "thead",
+		"start": "<thead>",
+		"end": "</thead>",
+		"description": "Группирует заголовок таблицы, используется вместе с <tbody> и <tfoot>.",
+		"example": "<table>\n  <thead>\n    <tr><th>Имя</th><th>Возраст</th></tr>\n  </thead>\n</table>"
+	  },
+	  {
+		"name": "time",
+		"start": "<time>",
+		"end": "</time>",
+		"description": "Определяет дату и время.",
+		"example": "<time datetime='2025-05-01'>1 мая 2025 года</time>"
+	  },
+	  {
+		"name": "title",
+		"start": "<title>",
+		"end": "</title>",
+		"description": "Определяет название документа, которое отображается в заголовке вкладки браузера.",
+		"example": "<title>Моя веб-страница</title>"
+	  },
+	  {
+		"name": "tr",
+		"start": "<tr>",
+		"end": "</tr>",
+		"description": "Создаёт строку таблицы.",
+		"example": "<table>\n  <tr>\n    <td>Иван</td>\n    <td>25</td>\n  </tr>\n</table>"
+	  },
+	  {
+		"name": "track",
+		"start": "<track>",
+		"end": null,
+		"description": "Используется для добавления субтитров, аудиотреков или других дорожек в видео или аудио.",
+		"example": "<video>\n  <source src='movie.mp4' type='video/mp4'>\n  <track src='subtitles_en.vtt' kind='subtitles' srclang='en' label='English'>\n</video>"
+	  },
+	  {
+		"name": "u",
+		"start": "<u>",
+		"end": "</u>",
+		"description": "Определяет текст, который должен быть подчеркнут.",
+		"example": "<p><u>Это подчеркнутый текст</u></p>"
+	  },
+	  {
+		"name": "ul",
+		"start": "<ul>",
+		"end": "</ul>",
+		"description": "Создаёт неупорядоченный список (с маркерами).",
+		"example": "<ul>\n  <li>Пункт 1</li>\n  <li>Пункт 2</li>\n</ul>"
+	  },
+	  {
+		"name": "var",
+		"start": "<var>",
+		"end": "</var>",
+		"description": "Определяет переменную в математическом выражении или скрипте.",
+		"example": "<p>Переменная <var>x</var> равна 10.</p>"
+	  },
+	  {
+		"name": "video",
+		"start": "<video>",
+		"end": "</video>",
+		"description": "Определяет элемент для встраивания видеоконтента.",
+		"example": "<video controls>\n  <source src='movie.mp4' type='video/mp4'>\n</video>"
+	  },
+	  {
+		"name": "wbr",
+		"start": "<wbr>",
+		"end": null,
+		"description": "Указывает возможное место для разрыва строки в длинных словах или URL.",
+		"example": "<p>Это длинное слово: supercalifragilistic<wbr>expialidocious.</p>"
+	  }
+  ]
