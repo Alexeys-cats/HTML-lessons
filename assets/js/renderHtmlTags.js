@@ -26,7 +26,7 @@ const renderTags = (tags) => {
     example.innerHTML = `<strong>Пример:</strong> <code>${escapeHTML(tag.example)}</code>`;
     card.appendChild(example);
     const link = document.createElement("a");
-    link.href = `https://htmlreference.io/element/${escapeHTML(tag.name)}/`;
+    link.href = `https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/${escapeHTML(tag.name)}/`;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
     link.textContent = "Посмотреть пример";
