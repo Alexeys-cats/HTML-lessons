@@ -1,0 +1,179 @@
+/* Общие стили для викторины */
+.quiz-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Стили для экранов */
+.quiz-section {
+    display: none;
+}
+
+.quiz-section.active {
+    display: block;
+}
+
+/* Приветственный экран */
+#welcome-screen h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #0b1d39;
+    text-align: center;
+}
+.form-group {
+    text-align: center;
+}
+
+#welcome-screen form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+#welcome-screen input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    
+}
+
+#welcome-screen button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#welcome-screen button:hover {
+    background-color: #45a049;
+}
+
+/* Вопросы */
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.quiz-header span {
+    font-weight: bold;
+    
+}
+
+#question-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #0b1d39;
+}
+
+#options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+    border-color: #4CAF50;
+}
+
+.option input {
+    margin-right: 10px;
+}
+
+#feedback-container {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#feedback-container.correct {
+    color: green;
+}
+
+#feedback-container.incorrect {
+    color: red;
+}
+
+#next-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#next-button:hover {
+    background-color: #45a049;
+}
+
+/* Экран результатов */
+#result-screen h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #0b1d39;
+}
+
+.final-result {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.final-result p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+#result-percentage {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+#result-actions button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#result-actions button:hover {
+    background-color: #45a049;
+}
+

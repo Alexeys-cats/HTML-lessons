@@ -19,7 +19,9 @@
 
   .js {
     background-color: #f7df1e;
-    color: #000;
+  }
+  .quiz {
+    background-color: rgb(6, 212, 248);
   }
 }
 
