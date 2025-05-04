@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/root.css" />
+    <title>Проверь себя</title>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">TEST</div>
+        <nav>
+          <a href="#">TEST</a>
+          <a href="#">TEST</a>
+          <a href="#">TEST</a>
+        </nav>
+      </header>
+    <div class="quiz-container">
+        <!-- WELCOME SCREEN -->
+        <section id="welcome-screen" class="quiz-section active">
+            <h1>Welcome to QUIZ</h1>
+            <form id="player-form">
+                <div class="form-group">
+                    <label for="player-name">Type your name</label>
+                    <input type="text" id="player-name" name="player-name" required>
+                </div>
+                <button type="submit" class="btn">Start game</button>
+            </form>
+        </section>
+    
+        <!-- QUIZ QUESTIONS SCREEN -->
+        <section id="question-screen" class="quiz-section">
+            <div class="quiz-header">
+                <div class="player-info">
+                    <span>Player: <span id="current-player">PlayerName</span></span>
+                </div>
+                <div class="quiz-progress">
+                    <span>Question: <span id="current-question">1</span> from <span id="total-questions">10</span></span>
+                </div>
+                <div class="quiz-score">
+                    <span>Score: <span id="current-score">0</span></span>
+                </div>
+            </div>
+    
+            <div id="question-container">
+                <h2 id="question-text">Some question</h2>
+                <div id="options-container">
+                    <!-- TEMPLATES WILL BE GENERATED -->
+                </div>
+    
+                <div id="feedback-container" class="hidden">
+                    <p id="feedback-text">Some helper text</p>
+                    <button id="next-button" class="btn">Next question</button>
+                </div>
+            </div>
+        </section>
+    
+        <!-- RESULT SCREEN -->
+        <section id="result-screen" class="quiz-section">
+            <h2>Results of quiz</h2>
+            <div class="final-result">
+                <p>Congratulations, <span id="result-player-name">Player 1</span>!</p>
+                <p>Your results: <span id="result-score">0<span> from </span><span id="result-total">10</span></span></p>
+                <p id="result-percentage">50%</p>
+            </div>
+            <div id="result-score"></div>
+            <div id="result-actions">
+                <button id="restart-button" class="btn">Restart</button>
+            </div>
+        </section>
+    </div>
+    
+    <template id="option-template">
+        <div class="option">
+            <input type="radio" name="quiz-option" id="" >
+            <label for=""></label>
+        </div>
+    </template>
+    <footer>
+        © 2025 TEST. Все права возможно когда нибудь будут защищены.
+      </footer>
+      <script src="../assets/js/quiz.js"></script>
+</body>
+</html>
