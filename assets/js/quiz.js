@@ -31,10 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let hasAnswered = false;
     let quizQuestions = [];
 
-    // JSON файл динамически
+    // JSON файл статически
     function getJsonPath() {
-        const depth = location.pathname.split('/').length - 2;
-        return `${'../'.repeat(depth)}assets/json/data-quiz.json`;
+        return '/repository-name/assets/json/data-quiz.json'; // Замените repository-name на имя вашего репозитория
     }
 
     // Функция для перемешивания массива
@@ -46,11 +45,16 @@ document.addEventListener("DOMContentLoaded", () => {
         return array;
     }
 
-    //  вопросы из JSON
+    // Загрузка вопросов из JSON
     fetch(getJsonPath())
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Ошибка загрузки JSON: ${response.status}`);
+            }
+            return response.json();
+        })
         .then(data => {
-            quizQuestions = shuffleArray(data).slice(0, 15); // Берём только 15 случайных 
+            quizQuestions = shuffleArray(data).slice(0, 15); // Берём только 15 случайных
             questionsCount = quizQuestions.length;
 
             if (resultTotal) {
@@ -65,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 console.error("Элемент total-questions не найден в DOM");
             }
 
-            console.log("Вопросы загружены и перемешаны:", quizQuestions); // Проверяем, что вопросы загружены и перемешаны
+            console.log("Вопросы загружены и перемешаны:", quizQuestions);
         })
         .catch(error => console.error("Ошибка при загрузке JSON:", error));
 
