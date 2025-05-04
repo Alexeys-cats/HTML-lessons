@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     
     function getJsonPath() {
-        return '/html-lessonsgit/assets/json/data-quiz.json'; 
+        return '/HTML-lessons/assets/json/data-quiz.json'; 
     }
 
     // Функция для перемешивания массива
