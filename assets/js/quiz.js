@@ -31,9 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let hasAnswered = false;
     let quizQuestions = [];
 
-    // JSON файл статически
+    
     function getJsonPath() {
-        return '/repository-name/assets/json/data-quiz.json'; // Замените repository-name на имя вашего репозитория
+        return '/html-lessonsgit/assets/json/data-quiz.json'; 
     }
 
     // Функция для перемешивания массива
