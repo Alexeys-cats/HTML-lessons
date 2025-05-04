@@ -3,6 +3,7 @@
 @import url(section.css);
 @import url(footer.css);
 @import url(../fonts/font.css);
+@import url(quiz.css);
 
 * {
   box-sizing: border-box;
