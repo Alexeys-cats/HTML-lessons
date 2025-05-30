@@ -18,9 +18,18 @@ body {
   padding: 0;
 }
 
+body.dark-theme {
+  background-color: black;
+  color: white;
+}
+
 .logo {
   font-size: 24px;
   font-weight: 700;
+}
+.logo img {
+  width: 70px;
+  height: auto;
 }
 
 .container {
