@@ -1,14 +1,14 @@
 header {
-  background-color: #1e1e1e;
-  color: white;
-  padding: 20px 40px;
+  background-color: var(--bg-tertiary);
+  color: var(--text-light);
+  padding: 0 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 nav a {
-  color: white;
+  color: var(--text-light);
   text-decoration: none;
   margin-left: 24px;
   font-weight: 500;

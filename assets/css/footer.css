@@ -3,5 +3,10 @@ footer {
   padding: 20px;
   text-align: center;
   font-size: 14px;
-  color: #888;
+  color: var(--text-tertiary);
+  transition: color 0.3s ease;
+}
+
+body.dark-theme footer {
+  color: var(--text-tertiary);
 }

@@ -1,15 +1,14 @@
-/* Общие стили для викторины */
 .quiz-container {
     max-width: 800px;
     margin: 40px auto;
-    background: white;
+    background: var(--bg-primary);
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--shadow-light);
     overflow: hidden;
     padding: 20px;
+    transition: all 0.3s ease;
 }
 
-/* Стили для экранов */
 .quiz-section {
     display: none;
 }
@@ -18,13 +17,12 @@
     display: block;
 }
 
-/* Приветственный экран */
 #welcome-screen h1 {
     font-size: 28px;
     margin-bottom: 20px;
     text-align: center;
-    color: #0b1d39;
-    text-align: center;
+    color: var(--heading-secondary);
+    transition: color 0.3s ease;
 }
 .form-group {
     text-align: center;
@@ -40,35 +38,38 @@
 #welcome-screen input {
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-secondary);
     border-radius: 8px;
     width: 80%;
     max-width: 400px;
-    
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    transition: all 0.3s ease;
 }
 
 #welcome-screen button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: var(--accent-primary);
+    color: var(--text-light);
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
 }
 
 #welcome-screen button:hover {
-    background-color: #45a049;
+    background-color: var(--accent-secondary);
+    transform: translateY(-2px);
 }
 
-/* Вопросы */
 .quiz-header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
     font-size: 16px;
-    color: #333;
+    color: var(--text-primary);
+    transition: color 0.3s ease;
 }
 
 .quiz-header span {
@@ -79,7 +80,8 @@
 #question-container h2 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #0b1d39;
+    color: var(--heading-secondary);
+    transition: color 0.3s ease;
 }
 
 #options-container {
@@ -92,15 +94,18 @@
     display: flex;
     align-items: center;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-secondary);
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s, border-color 0.3s;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: all 0.3s ease;
 }
 
 .option:hover {
-    background-color: #f0f0f0;
-    border-color: #4CAF50;
+    background-color: var(--bg-tertiary);
+    border-color: var(--accent-primary);
+    transform: translateY(-1px);
 }
 
 .option input {
@@ -114,35 +119,36 @@
 }
 
 #feedback-container.correct {
-    color: green;
+    color: var(--success-text);
 }
 
 #feedback-container.incorrect {
-    color: red;
+    color: var(--code-text);
 }
 
 #next-button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: var(--accent-primary);
+    color: var(--text-light);
     border: none;
     border-radius: 8px;
     cursor: pointer;
     margin-top: 20px;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
 }
 
 #next-button:hover {
-    background-color: #45a049;
+    background-color: var(--accent-secondary);
+    transform: translateY(-2px);
 }
 
-/* Экран результатов */
 #result-screen h2 {
     font-size: 28px;
     margin-bottom: 20px;
     text-align: center;
-    color: #0b1d39;
+    color: var(--heading-secondary);
+    transition: color 0.3s ease;
 }
 
 .final-result {
@@ -153,27 +159,66 @@
 .final-result p {
     font-size: 18px;
     margin: 10px 0;
-    color: #333;
+    color: var(--text-primary);
+    transition: color 0.3s ease;
 }
 
 #result-percentage {
     font-size: 24px;
     font-weight: bold;
-    color: #4CAF50;
+    color: var(--accent-primary);
+    transition: color 0.3s ease;
 }
 
 #result-actions button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: var(--accent-primary);
+    color: var(--text-light);
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
 }
 
 #result-actions button:hover {
-    background-color: #45a049;
+    background-color: var(--accent-secondary);
+    transform: translateY(-2px);
+}
+
+/* Темная тема для викторины */
+body.dark-theme .quiz-container {
+    background: var(--bg-primary);
+    box-shadow: 0 4px 8px var(--shadow-light);
+}
+
+body.dark-theme #welcome-screen input {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    border-color: var(--border-primary);
+}
+
+body.dark-theme #welcome-screen input:focus {
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 2px var(--shadow-focus);
+}
+
+body.dark-theme .option {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    border-color: var(--border-primary);
+}
+
+body.dark-theme .option:hover {
+    background-color: var(--bg-secondary);
+    border-color: var(--accent-primary);
+}
+
+body.dark-theme #feedback-container.correct {
+    color: var(--success-text);
+}
+
+body.dark-theme #feedback-container.incorrect {
+    color: var(--code-text);
 }
 

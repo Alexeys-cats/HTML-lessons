@@ -1,0 +1,138 @@
+/* CSS переменные для цветовой схемы */
+
+:root {
+  /* Основные цвета фона */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9f9f9;
+  --bg-tertiary: #f8f9fa;
+  --bg-section: #ffffff;
+  
+  /* Цвета текста */
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-tertiary: #999999;
+  --text-light: #ffffff;
+  
+  /* Цвета заголовков */
+  --heading-primary: #333333;
+  --heading-secondary: #0b1d39;
+  
+  /* Цвета акцента и ссылок */
+  --accent-primary: #4285f4;
+  --accent-secondary: #1a73e8;
+  --link-primary: #1a73e8;
+  --link-hover: #1565c0;
+  
+  /* Цвета карточек */
+  --card-html-primary: #ff5722;
+  --card-html-secondary: #ff8a65;
+  --card-css-primary: #2196f3;
+  --card-css-secondary: #64b5f6;
+  --card-js-primary: #f7df1e;
+  --card-js-secondary: #fff176;
+  --card-quiz-primary: #06d4f8;
+  --card-quiz-secondary: #4fc3f7;
+  
+  /* Цвета типов результатов */
+  --result-html: #ff6b35;
+  --result-css: #1572b6;
+  --result-quiz: #f7df1e;
+  
+  /* Цвета границ и разделителей */
+  --border-primary: #e9ecef;
+  --border-secondary: #ddd;
+  --border-tertiary: #c3e6cb;
+  
+  /* Цвета теней */
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-medium: rgba(0, 0, 0, 0.15);
+  --shadow-heavy: rgba(0, 0, 0, 0.2);
+  --shadow-focus: rgba(66, 133, 244, 0.2);
+  
+  /* Цвета состояний */
+  --success-bg: #d4edda;
+  --success-text: #155724;
+  --success-border: #c3e6cb;
+  
+  /* Цвета для кода */
+  --code-bg: #f1f1f1;
+  --code-text: #c73b3b;
+  --code-text-alt: #e83e8c;
+  --code-border: #e9ecef;
+  --code-text-muted: #495057;
+  
+  /* Цвета кнопок */
+  --btn-reset-bg: #6c757d;
+  --btn-reset-hover: #5a6268;
+  --btn-theme-bg: var(--bg-primary);
+  --btn-theme-hover: #f8f9fa;
+}
+
+/* Темная тема */
+body.dark-theme {
+  /* Основные цвета фона */
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2a2a2a;
+  --bg-tertiary: #333333;
+  --bg-section: #0f0f0f;
+  
+  /* Цвета текста */
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --text-tertiary: #999999;
+  --text-light: #ffffff;
+  
+  /* Цвета заголовков */
+  --heading-primary: #ffffff;
+  --heading-secondary: #ffffff;
+  
+  /* Цвета акцента и ссылок */
+  --accent-primary: #4285f4;
+  --accent-secondary: #64b5f6;
+  --link-primary: #64b5f6;
+  --link-hover: #90caf9;
+  
+  /* Цвета карточек для темной темы */
+  --card-html-primary: #d84315;
+  --card-html-secondary: #ff5722;
+  --card-css-primary: #1565c0;
+  --card-css-secondary: #2196f3;
+  --card-js-primary: #f57c00;
+  --card-js-secondary: #f7df1e;
+  --card-quiz-primary: #0288d1;
+  --card-quiz-secondary: #06d4f8;
+  
+  /* Цвета типов результатов остаются теми же */
+  --result-html: #ff6b35;
+  --result-css: #1572b6;
+  --result-quiz: #f7df1e;
+  
+  /* Цвета границ и разделителей */
+  --border-primary: #555555;
+  --border-secondary: #555555;
+  --border-tertiary: #444444;
+  
+  /* Цвета теней */
+  --shadow-light: rgba(0, 0, 0, 0.3);
+  --shadow-medium: rgba(0, 0, 0, 0.4);
+  --shadow-heavy: rgba(0, 0, 0, 0.5);
+  --shadow-focus: rgba(66, 133, 244, 0.3);
+  
+  /* Цвета состояний */
+  --success-bg: #1e4d2b;
+  --success-text: #a7d4b4;
+  --success-border: #2d5a36;
+  
+  /* Цвета для кода */
+  --code-bg: #333333;
+  --code-text: #ff6b6b;
+  --code-text-alt: #ff6b6b;
+  --code-border: #444444;
+  --code-text-muted: #cccccc;
+  
+  /* Цвета кнопок */
+  --btn-reset-bg: #444444;
+  --btn-reset-hover: #555555;
+  --btn-theme-bg: var(--bg-primary);
+  --btn-theme-hover: #333333;
+} 

@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return '/HTML-lessons/assets/json/data-quiz.json'; 
     }
 
-    // Функция для перемешивания массива
     function shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -45,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return array;
     }
 
-    // Загрузка вопросов из JSON
+    
     fetch(getJsonPath())
         .then(response => {
             if (!response.ok) {
@@ -54,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return response.json();
         })
         .then(data => {
-            quizQuestions = shuffleArray(data).slice(0, 15); // Берём только 15 случайных
+            quizQuestions = shuffleArray(data).slice(0, 15); 
             questionsCount = quizQuestions.length;
 
             if (resultTotal) {
@@ -99,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
             loadQuestion(currentQuestion);
         } else {
             showResults();
-            nextButton.disabled = true; // Блокируем кнопку в конце
+            nextButton.disabled = true; 
         }
     });
 
@@ -108,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function loadQuestion(index) {
         if (index >= quizQuestions.length) {
             console.log("Игра завершена, больше вопросов нет.");
-            return; // если игра завершена
+            return; 
         }
 
         nextButton.disabled = true;
@@ -119,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
         currentQuestionDisplay.textContent = index + 1;
         const question = quizQuestions[index];
         questionText.innerText = question.question;
-        optionsContainer.innerHTML = ""; // Очищаем контейнер вариантов
+        optionsContainer.innerHTML = ""; 
 
         feedBackContainer.classList.add("hidden");
         feedBackContainer.classList.remove("correct");
@@ -152,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (hasAnswered) return;
 
         hasAnswered = true;
-        nextButton.disabled = false; // Разблокируем кнопку 
+        nextButton.disabled = false; 
         const question = quizQuestions[currentQuestion];
         const options = optionsContainer.querySelectorAll('.option');
         feedBackContainer.classList.remove("hidden");

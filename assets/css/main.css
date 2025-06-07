@@ -10,18 +10,20 @@
   }
 
   .html {
-    background-color: #ff5722;
+    background: linear-gradient(135deg, var(--card-html-primary), var(--card-html-secondary));
   }
 
   .css {
-    background-color: #2196f3;
+    background: linear-gradient(135deg, var(--card-css-primary), var(--card-css-secondary));
   }
 
   .js {
-    background-color: #f7df1e;
+    background: linear-gradient(135deg, var(--card-js-primary), var(--card-js-secondary));
+    color: var(--text-primary);
   }
+  
   .quiz {
-    background-color: rgb(6, 212, 248);
+    background: linear-gradient(135deg, var(--card-quiz-primary), var(--card-quiz-secondary));
   }
 }
 
@@ -29,12 +31,86 @@
   width: 300px;
   height: 200px;
   border-radius: 16px;
-  color: white;
+  color: var(--text-light);
   padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 18px;
   font-weight: 600;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px var(--shadow-light);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 32px var(--shadow-medium);
+}
+
+.card:active {
+  transform: translateY(-4px) scale(1.01);
+  transition: all 0.1s ease;
+}
+
+body.dark-theme .cards .html {
+  background: linear-gradient(135deg, var(--card-html-primary), var(--card-html-secondary));
+}
+
+body.dark-theme .cards .css {
+  background: linear-gradient(135deg, var(--card-css-primary), var(--card-css-secondary));
+}
+
+body.dark-theme .cards .js {
+  background: linear-gradient(135deg, var(--card-js-primary), var(--card-js-secondary));
+  color: var(--text-primary);
+}
+
+body.dark-theme .cards .quiz {
+  background: linear-gradient(135deg, var(--card-quiz-primary), var(--card-quiz-secondary));
+}
+
+body.dark-theme .card {
+  box-shadow: 0 4px 16px var(--shadow-light);
+}
+
+body.dark-theme .card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 32px var(--shadow-medium);
+}
+
+body.dark-theme .card:active {
+  transform: translateY(-4px) scale(1.01);
+}
+
+@media (max-width: 768px) {
+  .cards {
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .card {
+    width: 280px;
+    height: 160px;
+    padding: 20px;
+    font-size: 16px;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px) scale(1.01);
+  }
+}
+
+@media (max-width: 480px) {
+  .cards {
+    gap: 12px;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 300px;
+    height: 140px;
+    padding: 16px;
+    font-size: 15px;
+  }
 }
