@@ -1,10 +1,10 @@
-const escapeHTML = (str) => {
-	return str
-	  .replace(/&/g, "&amp;")
-	  .replace(/</g, "&lt;")
-	  .replace(/>/g, "&gt;")
-	  .replace(/"/g, "&quot;")
-	  .replace(/'/g, "&#039;");
+const escapeHTML2 = (str) => {
+    return str
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
   };
   
   async function loadTags() {
@@ -29,18 +29,18 @@ const escapeHTML = (str) => {
       card.classList.add("boxline");
       
       const name = document.createElement("h3");
-      name.innerHTML = `Тег <code>&lt;${escapeHTML(tag.name)}&gt;</code>`;
+      name.innerHTML = `Тег <code>&lt;${escapeHTML2(tag.name)}&gt;</code>`;
       card.appendChild(name);
       
       const description = document.createElement("p");
-      description.innerHTML = `<strong>Описание:</strong>${escapeHTML(tag.description)}`;
+      description.innerHTML = `<strong>Описание:</strong>${escapeHTML2(tag.description)}`;
       card.appendChild(description);
       
       const example = document.createElement("p");
-      example.innerHTML = `<strong>Пример:</strong> <code>${escapeHTML(tag.example)}</code>`;
+      example.innerHTML = `<strong>Пример:</strong> <code>${escapeHTML2(tag.example)}</code>`;
       card.appendChild(example);
       const link = document.createElement("a");
-      link.href = `https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/${escapeHTML(tag.name)}/`;
+      link.href = `https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/${escapeHTML2(tag.name)}/`;
       link.target = "_blank";
       link.rel = "noopener noreferrer";
       link.textContent = "Посмотреть пример";
