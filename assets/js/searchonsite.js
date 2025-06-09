@@ -12,17 +12,12 @@ let cssData = {};
 let quizData = [];
 let allData = [];
 
-function getJsonPath(fileName) {
-    const depth = window.location.pathname.split('/').length - 2;
-    return `${'../'.repeat(depth)}assets/json/${fileName}`;
-}
-
 async function loadAllData() {
     try {
         const [htmlResponse, cssResponse, quizResponse] = await Promise.all([
-            fetch(getJsonPath('data-html.json')),
-            fetch(getJsonPath('data-css.json')),
-            fetch(getJsonPath('data-quiz.json'))
+            await fetch("../assets/json/data-html.json"),
+            await fetch("../assets/json/data-css.json"),
+            await fetch("../assets/json/data-quiz.json")
         ]);
 
         if (!htmlResponse.ok || !cssResponse.ok || !quizResponse.ok) {
@@ -291,7 +286,10 @@ document.addEventListener('DOMContentLoaded', () => {
         input.addEventListener('input', debouncedSearch);
     }
     
-    initializeFilters();
+    // Инициализируем фильтры после создания интерфейса
+    setTimeout(() => {
+        initializeFilters();
+    }, 100);
 });
 
 let filtersState = {
@@ -316,6 +314,9 @@ let filtersState = {
 };
 
 function initializeFilters() {
+    
+    // Добавляем обработчики кликов для мобильных устройств
+    initializeMobileFilters();
     
     ['html', 'css', 'quiz'].forEach(type => {
         const checkbox = document.getElementById(`filter-${type}`);
@@ -491,6 +492,56 @@ function updateResultsInfo(count, query = '') {
     }
 }
 
+function initializeMobileFilters() {
+    // Проверяем, являемся ли мы на мобильном устройстве
+    const isMobile = window.innerWidth <= 768 || 'ontouchstart' in window;
+    
+    if (isMobile) {
+        // Добавляем обработчики кликов для заголовков фильтров
+        document.querySelectorAll('.filter-block').forEach(filterBlock => {
+            // Пропускаем кнопку сброса
+            if (filterBlock.classList.contains('reset-block')) return;
+            
+            const filterTitle = filterBlock.querySelector('.filter-title');
+            if (filterTitle && !filterTitle.hasAttribute('data-mobile-initialized')) {
+                filterTitle.setAttribute('data-mobile-initialized', 'true');
+                filterTitle.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    toggleFilterDropdown(filterBlock);
+                });
+            }
+        });
+        
+        // Закрываем фильтры при клике вне их (добавляем только один раз)
+        if (!document.body.hasAttribute('data-mobile-click-initialized')) {
+            document.body.setAttribute('data-mobile-click-initialized', 'true');
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.filter-block')) {
+                    closeAllFilters();
+                }
+            });
+        }
+    }
+}
+
+function toggleFilterDropdown(filterBlock) {
+    const isActive = filterBlock.classList.contains('active');
+    
+    // Закрываем все другие фильтры
+    closeAllFilters();
+    
+    // Переключаем текущий фильтр
+    if (!isActive) {
+        filterBlock.classList.add('active');
+    }
+}
+
+function closeAllFilters() {
+    document.querySelectorAll('.filter-block.active').forEach(block => {
+        block.classList.remove('active');
+    });
+}
+
 function resetFilters() {
     filtersState = {
         contentTypes: { html: true, css: true, quiz: true },
@@ -521,6 +572,8 @@ function resetFilters() {
     const limitSelect = document.getElementById('results-limit');
     if (limitSelect) limitSelect.value = 'all';
     
+    // Закрываем все фильтры
+    closeAllFilters();
     
     updateSearchData();
     handleSearch();
