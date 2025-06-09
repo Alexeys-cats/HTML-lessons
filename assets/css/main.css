@@ -101,16 +101,4 @@ body.dark-theme .card:active {
   }
 }
 
-@media (max-width: 480px) {
-  .cards {
-    gap: 12px;
-  }
-  
-  .card {
-    width: 100%;
-    max-width: 300px;
-    height: 140px;
-    padding: 16px;
-    font-size: 15px;
-  }
-}
+
