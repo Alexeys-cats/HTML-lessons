@@ -67,18 +67,18 @@ function prepareSearchData() {
         });
     });
 
-    quizData.forEach((item, index) => {
-        allData.push({
-            type: 'quiz',
-            name: `Вопрос ${index + 1}`,
-            title: item.question,
-            description: item.explanation,
-            theme: item.theme,
-            options: item.options,
-            correctAnswer: item.correctAnswer,
-            searchText: `${item.question} ${item.explanation} ${item.theme} ${item.options.join(' ')}`.toLowerCase()
-        });
-    });
+    // quizData.forEach((item, index) => {
+    //     allData.push({
+    //         type: 'quiz',
+    //         name: `Вопрос ${index + 1}`,
+    //         title: item.question,
+    //         description: item.explanation,
+    //         theme: item.theme,
+    //         options: item.options,
+    //         correctAnswer: item.correctAnswer,
+    //         searchText: `${item.question} ${item.explanation} ${item.theme} ${item.options.join(' ')}`.toLowerCase()
+    //     });
+    // });
 }
 
 function performSearch(query) {
