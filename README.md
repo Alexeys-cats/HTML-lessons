@@ -1,6 +1,6 @@
-# React + TypeScript + Vite
+# ReactP + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a minimal setup to get ReactP working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
 
@@ -39,7 +39,7 @@ export default tseslint.config([
 ])
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for ReactP-specific lint rules:
 
 ```js
 // eslint.config.js
@@ -52,9 +52,9 @@ export default tseslint.config([
     files: ['**/*.{ts,tsx}'],
     extends: [
       // Other configs...
-      // Enable lint rules for React
+      // Enable lint rules for ReactP
       reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
+      // Enable lint rules for ReactP DOM
       reactDom.configs.recommended,
     ],
     languageOptions: {
