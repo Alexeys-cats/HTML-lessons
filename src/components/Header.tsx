@@ -1,8 +1,13 @@
 import { Link } from 'react-router-dom';
+import { Button, HStack } from '@chakra-ui/react';
 
 const Header = () => {
   return (
     <header className="header">
+      <HStack>
+        <Button>Click me</Button>
+        <Button>Click me</Button>
+      </HStack>
       <nav className="top-nav">
         <Link to="/" className="logo">
           <span>SOVIT</span>
