@@ -1,27 +1,28 @@
-import { NavLink } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { FaHtml5, FaCss3Alt, FaJs, FaHome } from 'react-icons/fa';
+import clsx from 'clsx';
+
+interface MenuItem {
+  name: string;
+  icon: React.ReactElement;
+  path: string;
+}
+
+export const menuItems: MenuItem[] = [
+  { name: 'Home', icon: <FaHome />, path: '/' },
+  { name: 'HTML', icon: <FaHtml5 />, path: '/html' },
+  { name: 'CSS', icon: <FaCss3Alt />, path: '/css' },
+  { name: 'JavaScript', icon: <FaJs />, path: '/javascript' },
+];
 
 const Menu = () => {
+  const location = useLocation();
+  const pathname = location.pathname;
+
   return (
-    <nav className="card-menu">
-      <NavLink to="/html" className="card-link">
-        HTML
-      </NavLink>
-      <NavLink to="/css" className="card-link">
-        CSS
-      </NavLink>
-      <NavLink to="/js" className="card-link">
-        JavaScript
-      </NavLink>
-      <NavLink to="/ts" className="card-link">
-        TypeScript
-      </NavLink>
-      <NavLink to="/react" className="card-link">
-        React
-      </NavLink>
-      <NavLink to="/quiz" className="card-link">
-        Quiz
-      </NavLink>
-    </nav>
+    <>
+      
+    </>
   );
 };
 
