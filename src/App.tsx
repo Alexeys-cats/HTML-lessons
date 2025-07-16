@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
+// import Header from './components/Header';
 import Menu from './components/Menu';
 import Home from './pages/Home';
 import HTML from './pages/HTML';
@@ -12,7 +12,7 @@ import Quiz from './pages/Quiz';
 const App = () => {
   return (
     <BrowserRouter>
-      <Header />
+      {/* <Header /> */}
       <Menu />
       <Routes>
         <Route path="/" element={<Home />} />
