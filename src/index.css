@@ -1,4 +1,9 @@
 @import "tailwindcss";
+:root {
+	/* Цвета */
+	--primary-color: #00DBDB;
+	--input-color: #D9D9D9;
+}
 
 body {
 	box-sizing: border-box;
