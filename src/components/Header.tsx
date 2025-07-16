@@ -1,7 +1,10 @@
 // import { Link } from 'react-router-dom';
 
 const Header = () => {
-  return <></>;
+  return;
+  <header className="">
+    <>HEADER</>
+  </header>;
 };
 
 export default Header;
