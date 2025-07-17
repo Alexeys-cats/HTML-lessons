@@ -3,6 +3,7 @@
 	/* Цвета */
 	--primary-color: #00DBDB;
 	--input-color: #D9D9D9;
+}
 
 @layer customRounded {
   .rounded-custom {
