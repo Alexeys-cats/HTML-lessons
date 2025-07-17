@@ -9,11 +9,11 @@ interface MenuItem {
 }
 
 export const menuItems: MenuItem[] = [
-  { name: '', icon: <FaHome />, path: '/' },
-  { name: '', icon: <FaHtml5 />, path: '/html' },
-  { name: '', icon: <FaCss3Alt />, path: '/css' },
-  { name: '', icon: <FaJs />, path: '/javascript' },
-  { name: '', icon: <FaGamepad />, path: '/quiz' },
+  { name: 'Home', icon: <FaHome />, path: '/' },
+  { name: 'HTML', icon: <FaHtml5 />, path: '/html' },
+  { name: 'CSS', icon: <FaCss3Alt />, path: '/css' },
+  { name: 'JS', icon: <FaJs />, path: '/js' },
+  { name: 'Quiz', icon: <FaGamepad />, path: '/quiz' },
 ];
 
 const Menu = () => {
@@ -39,7 +39,7 @@ const Menu = () => {
               className={clsx(
                 'flex items-center gap-x-2',
                 isActive
-                  ? 'text-[#00DBDB] drop-shadow-xl/50 md:translate-y-[-4px] sm:translate-y-[-4px] duration-300'
+                  ? 'text-[#00DBDB] animate-bounce-short drop-shadow-xl/50'
                   : 'text-white hover:text-[#83FFFF] transition-all duration-300',
                 'xl:translate-y-0 xl:hover:translate-y-[-4px] xl:hover:text-[#00DBDB] xl:hover:drop-shadow-xl/50'
               )}
