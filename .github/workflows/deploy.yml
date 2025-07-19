@@ -27,14 +27,16 @@ jobs:
       - name: Build
         run: npm run build:ci
 
+      # Настройка правильного пути для GitHub Pages
       - name: Configure base path
         run: |
           # Создаем файл .nojekyll, чтобы избежать обработки файлов Jekyll'ом
           touch dist/.nojekyll
 
+      # Деплой на GitHub Pages в корневую директорию (основная версия)
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist
-          branch: gh-pages
-          clean: true
+          folder: dist # Директория, которую нужно разместить на GitHub Pages
+          branch: gh-pages # Ветка, в которую будет публиковаться сборка
+          clean-exclude: preview/ # Не удалять директорию preview, содержащую сборки фича-веток

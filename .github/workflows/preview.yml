@@ -1,0 +1,51 @@
+name: Feature Branch Preview
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Get branch name
+        id: branch-name
+        uses: tj-actions/branch-names@v7
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build:ci
+        env:
+          VITE_BASE_PATH: /HTML-lessons/preview/${{ steps.branch-name.outputs.current_branch }}
+
+      - name: Update base path in HTML
+        run: |
+          # Создаем .nojekyll для GitHub Pages
+          touch dist/.nojekyll
+          
+          # Обновляем базовый путь в index.html, если это необходимо
+          BRANCH_PATH=$(echo ${{ steps.branch-name.outputs.current_branch }} | sed 's/\//-/g')
+          sed -i "s|<base href=\"/HTML-lessons/\">|<base href=\"/HTML-lessons/preview/${BRANCH_PATH}/\">|" dist/index.html || true
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
+          branch: gh-pages
+          target-folder: preview/${{ steps.branch-name.outputs.current_branch }}
+          clean: true
