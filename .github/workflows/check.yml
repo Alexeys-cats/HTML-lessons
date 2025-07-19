@@ -30,36 +30,44 @@ jobs:
         id: lint
         run: |
           npm run lint > lint.log 2>&1 || true
-          tail -n 50 lint.log
+          tail -n 50 lint.log | npx strip-ansi > lint.clean.log
+          cat lint.clean.log
+          if grep -q "error" lint.clean.log; then echo "::set-output name=lint_status::❌"; else echo "::set-output name=lint_status::✅"; fi
           echo "lint_result<<EOF" >> $GITHUB_OUTPUT
-          tail -n 50 lint.log >> $GITHUB_OUTPUT
+          cat lint.clean.log >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Run Prettier check
         id: prettier
         run: |
           npm run format:check > prettier.log 2>&1 || true
-          tail -n 50 prettier.log
+          tail -n 50 prettier.log | npx strip-ansi > prettier.clean.log
+          cat prettier.clean.log
+          if grep -q "code style issues found" prettier.clean.log; then echo "::set-output name=prettier_status::❌"; else echo "::set-output name=prettier_status::✅"; fi
           echo "prettier_result<<EOF" >> $GITHUB_OUTPUT
-          tail -n 50 prettier.log >> $GITHUB_OUTPUT
+          cat prettier.clean.log >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Run typescript type checks
         id: typecheck
         run: |
           npm run typecheck > typecheck.log 2>&1 || true
-          tail -n 50 typecheck.log
+          tail -n 50 typecheck.log | npx strip-ansi > typecheck.clean.log
+          cat typecheck.clean.log
+          if grep -q "error" typecheck.clean.log; then echo "::set-output name=typecheck_status::❌"; else echo "::set-output name=typecheck_status::✅"; fi
           echo "typecheck_result<<EOF" >> $GITHUB_OUTPUT
-          tail -n 50 typecheck.log >> $GITHUB_OUTPUT
+          cat typecheck.clean.log >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Build React app
         id: build
         run: |
           npm run build:ci > build.log 2>&1 || true
-          tail -n 50 build.log
+          tail -n 50 build.log | npx strip-ansi > build.clean.log
+          cat build.clean.log
+          if grep -q "error" build.clean.log; then echo "::set-output name=build_status::❌"; else echo "::set-output name=build_status::✅"; fi
           echo "build_result<<EOF" >> $GITHUB_OUTPUT
-          tail -n 50 build.log >> $GITHUB_OUTPUT
+          cat build.clean.log >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Generate summary for PR
@@ -69,16 +77,16 @@ jobs:
           echo '' >> $GITHUB_STEP_SUMMARY
           echo '✅ Проверка завершена!' >> $GITHUB_STEP_SUMMARY
           echo '' >> $GITHUB_STEP_SUMMARY
-          echo '#### Линтинг:' >> $GITHUB_STEP_SUMMARY
+          echo "#### Линтинг: ${{ steps.lint.outputs.lint_status }}" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.lint.outputs.lint_result }}" >> $GITHUB_STEP_SUMMARY
           echo '' >> $GITHUB_STEP_SUMMARY
-          echo '#### Prettier:' >> $GITHUB_STEP_SUMMARY
+          echo "#### Prettier: ${{ steps.prettier.outputs.prettier_status }}" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.prettier.outputs.prettier_result }}" >> $GITHUB_STEP_SUMMARY
           echo '' >> $GITHUB_STEP_SUMMARY
-          echo '#### Typecheck:' >> $GITHUB_STEP_SUMMARY
+          echo "#### Typecheck: ${{ steps.typecheck.outputs.typecheck_status }}" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.typecheck.outputs.typecheck_result }}" >> $GITHUB_STEP_SUMMARY
           echo '' >> $GITHUB_STEP_SUMMARY
-          echo '#### Build:' >> $GITHUB_STEP_SUMMARY
+          echo "#### Build: ${{ steps.build.outputs.build_status }}" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.build.outputs.build_result }}" >> $GITHUB_STEP_SUMMARY
           echo '' >> $GITHUB_STEP_SUMMARY
           echo "- [Логи CI](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY
@@ -91,16 +99,16 @@ jobs:
           message: |
             ✅ Проверка завершена!
             
-            #### Линтинг:
+            #### Линтинг: ${{ steps.lint.outputs.lint_status }}
             ${{ steps.lint.outputs.lint_result }}
             
-            #### Prettier:
+            #### Prettier: ${{ steps.prettier.outputs.prettier_status }}
             ${{ steps.prettier.outputs.prettier_result }}
             
-            #### Typecheck:
+            #### Typecheck: ${{ steps.typecheck.outputs.typecheck_status }}
             ${{ steps.typecheck.outputs.typecheck_result }}
             
-            #### Build:
+            #### Build: ${{ steps.build.outputs.build_status }}
             ${{ steps.build.outputs.build_result }}
             
             [Логи CI](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
