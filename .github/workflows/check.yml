@@ -22,15 +22,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: |
+          npm ci --verbose
+          npm list --depth=0
 
       - name: Lint code
         id: lint
         run: |
           npm run lint > lint.log 2>&1 || true
-          npx strip-ansi lint.log > lint.clean.log
+          sed 's/\x1b\[[0-9;]*m//g' lint.log > lint.clean.log
           tail -n 50 lint.clean.log > lint.tail.log
           cat lint.tail.log
           if grep -q "error" lint.tail.log; then echo "lint_status=❌" >> $GITHUB_OUTPUT; else echo "lint_status=✅" >> $GITHUB_OUTPUT; fi
@@ -45,7 +48,7 @@ jobs:
         id: prettier
         run: |
           npm run format:check > prettier.log 2>&1 || true
-          npx strip-ansi prettier.log > prettier.clean.log
+          sed 's/\x1b\[[0-9;]*m//g' prettier.log > prettier.clean.log
           tail -n 50 prettier.clean.log > prettier.tail.log
           cat prettier.tail.log
           if grep -q "code style issues found" prettier.tail.log; then echo "prettier_status=❌" >> $GITHUB_OUTPUT; else echo "prettier_status=✅" >> $GITHUB_OUTPUT; fi
@@ -60,7 +63,7 @@ jobs:
         id: typecheck
         run: |
           npm run typecheck > typecheck.log 2>&1 || true
-          npx strip-ansi typecheck.log > typecheck.clean.log
+          sed 's/\x1b\[[0-9;]*m//g' typecheck.log > typecheck.clean.log
           tail -n 50 typecheck.clean.log > typecheck.tail.log
           cat typecheck.tail.log
           if grep -q "error" typecheck.tail.log; then echo "typecheck_status=❌" >> $GITHUB_OUTPUT; else echo "typecheck_status=✅" >> $GITHUB_OUTPUT; fi
@@ -75,7 +78,7 @@ jobs:
         id: build
         run: |
           npm run build:ci > build.log 2>&1 || true
-          npx strip-ansi build.log > build.clean.log
+          sed 's/\x1b\[[0-9;]*m//g' build.log > build.clean.log
           tail -n 50 build.clean.log > build.tail.log
           cat build.tail.log
           if grep -q "error" build.tail.log; then echo "build_status=❌" >> $GITHUB_OUTPUT; else echo "build_status=✅" >> $GITHUB_OUTPUT; fi

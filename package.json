@@ -11,8 +11,8 @@
     "deploy:prod": "npm run build:prod && gh-pages -d dist -b gh-pages -r https://github.com/Alexeys-cats/HTML-lessons.git",
     "typecheck": "tsc --noEmit --skipLibCheck",
     "preview": "vite preview",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
