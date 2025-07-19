@@ -1,0 +1,3603 @@
+[
+  {
+    "id": "73cd26d2-c8d6-477c-b9fb-79dc211845dc",
+    "question": "Что такое DOM в контексте веб-разработки?",
+    "options": [
+      "Документ объектной модели",
+      "Динамический оператор метода",
+      "Дополнительный оптимизированный модуль",
+      "Детальный обработчик метаданных"
+    ],
+    "correctAnswer": 0,
+    "explanation": "DOM (Document Object Model) - это программный интерфейс, который представляет HTML-документ в виде древовидной структуры объектов.",
+    "theme": "js"
+  },
+  {
+    "id": "136a5407-b635-480e-b57d-423e90503f29",
+    "question": "Какой метод используется для поиска элемента по ID?",
+    "options": [
+      "document.findElementById()",
+      "document.getElementById()",
+      "document.querySelector('#id')",
+      "document.getElementByName()"
+    ],
+    "correctAnswer": 1,
+    "explanation": "document.getElementById() - стандартный метод для поиска элемента по его уникальному идентификатору.",
+    "theme": "js"
+  },
+  {
+    "id": "f87bf044-1232-473e-87fb-15f257f7afc1",
+    "question": "Как добавить новый класс к элементу с помощью JavaScript?",
+    "options": [
+      "element.class += 'новый-класс'",
+      "element.className += 'новый-класс'",
+      "element.classList.add('новый-класс')",
+      "element.addClassName('новый-класс')"
+    ],
+    "correctAnswer": 2,
+    "explanation": "element.classList.add() - современный метод для добавления класса к элементу.",
+    "theme": "js"
+  },
+  {
+    "id": "2c5ded0d-12e9-45b9-a74f-625d653c76f5",
+    "question": "Какой метод используется для создания нового элемента в DOM?",
+    "options": [
+      "document.createElement()",
+      "document.newElement()",
+      "document.addElement()",
+      "document.makeElement()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "document.createElement() создает новый HTML-элемент, который затем можно добавить в DOM.",
+    "theme": "js"
+  },
+  {
+    "id": "00b3a1e3-9ffb-4aa1-8159-c58eeeccce6e",
+    "question": "Как добавить созданный элемент в DOM?",
+    "options": [
+      "document.append(element)",
+      "document.body.appendChild(element)",
+      "element.appendTo(document.body)",
+      "document.body.insert(element)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "appendChild() добавляет элемент как последний дочерний элемент к указанному родителю.",
+    "theme": "js"
+  },
+  {
+    "id": "90e4dd4e-f790-4cdd-a2f2-717a2f9044ed",
+    "question": "Как удалить элемент из DOM?",
+    "options": [
+      "element.delete()",
+      "document.removeElement(element)",
+      "element.remove()",
+      "document.deleteNode(element)"
+    ],
+    "correctAnswer": 2,
+    "explanation": "element.remove() - современный метод для удаления элемента из DOM.",
+    "theme": "js"
+  },
+  {
+    "id": "53b593ad-4a97-4eea-a9dd-ea9ac75ac9bb",
+    "question": "Какой метод используется для добавления обработчика события?",
+    "options": [
+      "element.addEventListener()",
+      "element.attachEvent()",
+      "element.on()",
+      "element.handleEvent()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "addEventListener() - стандартный метод для назначения обработчика события элементу.",
+    "theme": "js"
+  },
+  {
+    "id": "5608b211-144e-453d-b8be-b4dd949e8d4a",
+    "question": "Что такое событийное делегирование?",
+    "options": [
+      "Передача события от одного элемента к другому",
+      "Назначение нескольких обработчиков на одно событие",
+      "Обработка событий на родительском элементе вместо дочерних",
+      "Отмена стандартного поведения событий"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Событийное делегирование - это техника, когда обработчик назначается родительскому элементу вместо множества дочерних, что улучшает производительность.",
+    "theme": "js"
+  },
+  {
+    "id": "6f25a822-26ec-40ce-ac5b-12f2e56da183",
+    "question": "Как изменить стиль элемента с помощью JavaScript?",
+    "options": [
+      "element.style = 'color: red'",
+      "element.css('color', 'red')",
+      "element.style.color = 'red'",
+      "element.setStyle('color', 'red')"
+    ],
+    "correctAnswer": 2,
+    "explanation": "element.style.имя_свойства позволяет изменять инлайн-стили элемента.",
+    "theme": "js"
+  },
+  {
+    "id": "6a3e1c09-b67e-4569-9c42-b44ed2c9f94a",
+    "question": "Что делает метод querySelector?",
+    "options": [
+      "Возвращает все элементы, соответствующие CSS-селектору",
+      "Возвращает первый элемент, соответствующий CSS-селектору",
+      "Возвращает элемент по его ID",
+      "Возвращает коллекцию элементов по их имени тега"
+    ],
+    "correctAnswer": 1,
+    "explanation": "querySelector() возвращает первый элемент, который соответствует указанному CSS-селектору.",
+    "theme": "js"
+  },
+  {
+    "id": "cafc6aa5-9dbf-4bea-ad01-480edd3fd2fe",
+    "question": "Как получить значение атрибута элемента?",
+    "options": [
+      "element.value('атрибут')",
+      "element.getAttribute('атрибут')",
+      "element.атрибут",
+      "element.getProperty('атрибут')"
+    ],
+    "correctAnswer": 1,
+    "explanation": "getAttribute() возвращает значение указанного атрибута элемента.",
+    "theme": "js"
+  },
+  {
+    "id": "1d6c71d1-4f80-4c19-be6d-5fdb583c7adc",
+    "question": "Какой метод используется для получения всех элементов по CSS-селектору?",
+    "options": [
+      "document.getElements()",
+      "document.querySelectorAll()",
+      "document.getElementsBySelector()",
+      "document.findAll()"
+    ],
+    "correctAnswer": 1,
+    "explanation": "querySelectorAll() возвращает статический NodeList, содержащий все элементы, соответствующие CSS-селектору.",
+    "theme": "js"
+  },
+  {
+    "id": "46e7f05d-cc71-490f-a615-4c6903fa80ee",
+    "question": "Что означает 'всплытие событий' (event bubbling)?",
+    "options": [
+      "Распространение события от родительского элемента к дочерним",
+      "Распространение события от дочернего элемента к родительским",
+      "Отмена события до его обработки",
+      "Создание нескольких одинаковых событий одновременно"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Всплытие - это механизм распространения события от элемента, на котором оно возникло, вверх по дереву DOM к родителям.",
+    "theme": "js"
+  },
+  {
+    "id": "e5e811e9-d8d4-4e0f-994c-d05fd470f7c2",
+    "question": "Как клонировать содержимое HTML-шаблона?",
+    "options": [
+      "template.copy(true)",
+      "template.clone()",
+      "template.content.cloneNode(true)",
+      "template.duplicate()"
+    ],
+    "correctAnswer": 2,
+    "explanation": "content.cloneNode(true) возвращает полную копию содержимого шаблона, включая все дочерние элементы.",
+    "theme": "js"
+  },
+  {
+    "id": "69103a9c-0ac7-438f-b8ef-338e04f052a6",
+    "question": "Как получить текст элемента в JavaScript?",
+    "options": [
+      "element.innerHTML",
+      "element.textContent",
+      "element.value",
+      "element.innerText"
+    ],
+    "correctAnswer": 1,
+    "explanation": "textContent возвращает текстовое содержимое элемента, включая скрытые элементы, без HTML-разметки.",
+    "theme": "js"
+  },
+  {
+    "id": "d3f5a3eb-51db-42a3-9c37-87481dc49a2c",
+    "question": "Как запретить стандартное поведение события?",
+    "options": [
+      "event.stopPropagation()",
+      "event.preventDefault()",
+      "event.cancel()",
+      "event.stop()"
+    ],
+    "correctAnswer": 1,
+    "explanation": "preventDefault() предотвращает стандартное поведение события, например, отправку формы.",
+    "theme": "js"
+  },
+  {
+    "id": "da8027e8-530a-4400-b26a-17ef156a6745",
+    "question": "Что такое JSON в JavaScript?",
+    "options": [
+      "Формат обмена данными",
+      "Библиотека для анимации",
+      "Тип переменной",
+      "Метод для DOM"
+    ],
+    "correctAnswer": 0,
+    "explanation": "JSON (JavaScript Object Notation) - это формат для обмена данными, основанный на JavaScript-объектах.",
+    "theme": "js"
+  },
+  {
+    "id": "7efaf97b-1173-4443-9338-8e8d2f987112",
+    "question": "Как преобразовать строку в число в JavaScript?",
+    "options": [
+      "parseInt(string)",
+      "string.toNumber()",
+      "convert(string)",
+      "Number.parse(string)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "parseInt() преобразует строку в целое число, а parseFloat() - в число с плавающей точкой.",
+    "theme": "js"
+  },
+  {
+    "id": "a256a5a6-3fd8-46d8-97e4-1390a5cc97e7",
+    "question": "Что такое замыкание в JavaScript?",
+    "options": [
+      "Функция, которая запоминает свои внешние переменные",
+      "Метод для закрытия окна",
+      "Тип данных",
+      "Событие DOM"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Замыкание - это функция, которая имеет доступ к переменным из своей внешней области видимости даже после завершения внешней функции.",
+    "theme": "js"
+  },
+  {
+    "id": "99e3c8e5-f1ae-4178-8643-40a0b023ad23",
+    "question": "Как выполнить код через определенное время?",
+    "options": [
+      "setTimeout(function, delay)",
+      "delay(function, time)",
+      "setInterval(function, delay)",
+      "wait(function, time)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "setTimeout() выполняет функцию один раз после указанной задержки в миллисекундах.",
+    "theme": "js"
+  },
+  {
+    "id": "478bdc06-2c16-4922-8b34-d55eb61b40e1",
+    "question": "Что такое Promise в JavaScript?",
+    "options": [
+      "Объект для асинхронных операций",
+      "Тип данных для массивов",
+      "Метод для DOM",
+      "Функция для циклов"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Promise представляет результат асинхронной операции, который может быть выполнен, отклонен или находиться в ожидании.",
+    "theme": "js"
+  },
+  {
+    "id": "f9c8b64b-fc40-4437-bbb4-315082a610eb",
+    "question": "Как получить текущую дату в JavaScript?",
+    "options": [
+      "new Date()",
+      "Date.now()",
+      "getDate()",
+      "currentDate()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "new Date() создает объект с текущей датой и временем.",
+    "theme": "js"
+  },
+  {
+    "id": "77ec33af-8f7b-4477-b0ec-f5073c425e74",
+    "question": "Что такое метод Array.map()?",
+    "options": [
+      "Метод для удаления элементов",
+      "Метод для создания нового массива с результатами функции",
+      "Метод для сортировки",
+      "Метод для объединения массивов"
+    ],
+    "correctAnswer": 1,
+    "explanation": "map() создает новый массив, применяя функцию к каждому элементу исходного массива.",
+    "theme": "js"
+  },
+  {
+    "id": "a4e5001c-fe27-4a5d-a749-be05525379a2",
+    "question": "Как проверить, является ли переменная массивом?",
+    "options": [
+      "typeof variable === 'array'",
+      "variable.isArray()",
+      "Array.isArray(variable)",
+      "variable instanceof Array"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Array.isArray() - надежный способ проверки, является ли значение массивом.",
+    "theme": "js"
+  },
+  {
+    "id": "702c614b-5999-4dd4-9e35-ca0ed185a39c",
+    "question": "Что такое async/await в JavaScript?",
+    "options": [
+      "Синтаксис для работы с асинхронными функциями",
+      "Метод для циклов",
+      "Тип данных",
+      "Событие DOM"
+    ],
+    "correctAnswer": 0,
+    "explanation": "async/await упрощает работу с асинхронными операциями, делая код похожим на синхронный.",
+    "theme": "js"
+  },
+  {
+    "id": "129f726c-a908-44aa-913a-97843c42ef3e",
+    "question": "Как добавить элемент в конец массива?",
+    "options": [
+      "array.add(element)",
+      "array.push(element)",
+      "array.append(element)",
+      "array.insert(element)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Метод push() добавляет элемент в конец массива.",
+    "theme": "js"
+  },
+  {
+    "id": "db010438-f8b2-47ed-b9d4-eed43173fce9",
+    "question": "Что такое localStorage в JavaScript?",
+    "options": [
+      "Объект для хранения данных в браузере",
+      "Тип данных",
+      "Метод для DOM",
+      "Библиотека для анимации"
+    ],
+    "correctAnswer": 0,
+    "explanation": "localStorage позволяет сохранять ключ-значение данные в браузере без истечения срока действия.",
+    "theme": "js"
+  },
+  {
+    "id": "f0c7fd70-8c21-4e34-93f4-d17525c87649",
+    "question": "Как удалить обработчик события в JavaScript?",
+    "options": [
+      "element.removeEventListener()",
+      "element.detachEvent()",
+      "element.off()",
+      "element.cancelEvent()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "removeEventListener() удаляет ранее назначенный обработчик события.",
+    "theme": "js"
+  },
+  {
+    "id": "f45f55e4-3cf1-41a6-9f32-d23ccdf7ec94",
+    "question": "Что такое метод Array.filter()?",
+    "options": [
+      "Метод для сортировки массива",
+      "Метод для создания нового массива с элементами, прошедшими проверку",
+      "Метод для объединения массивов",
+      "Метод для удаления элементов"
+    ],
+    "correctAnswer": 1,
+    "explanation": "filter() создает новый массив, содержащий только элементы, удовлетворяющие условию функции.",
+    "theme": "js"
+  },
+  {
+    "id": "827839f4-81a1-46b4-8459-330c8ba6b793",
+    "question": "Как получить ширину элемента в JavaScript?",
+    "options": [
+      "element.width",
+      "element.offsetWidth",
+      "element.style.width",
+      "element.getWidth()"
+    ],
+    "correctAnswer": 1,
+    "explanation": "offsetWidth возвращает ширину элемента, включая padding, border и scrollbar.",
+    "theme": "js"
+  },
+  {
+    "id": "1005fd82-c04c-40bf-b335-cd26146ec51c",
+    "question": "Что такое событие load в JavaScript?",
+    "options": [
+      "Событие при клике на элемент",
+      "Событие при полной загрузке ресурса",
+      "Событие при отправке формы",
+      "Событие при наведении мыши"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Событие load срабатывает, когда ресурс (например, страница или изображение) полностью загружен.",
+    "theme": "js"
+  },
+  {
+    "id": "2633a505-4c16-4944-98f3-5efabb9d3c45",
+    "question": "Как изменить содержимое элемента в JavaScript?",
+    "options": [
+      "element.innerHTML = 'новый текст'",
+      "element.text = 'новый текст'",
+      "element.content = 'новый текст'",
+      "element.value = 'новый текст'"
+    ],
+    "correctAnswer": 0,
+    "explanation": "innerHTML позволяет изменять HTML-содержимое элемента, включая теги.",
+    "theme": "js"
+  },
+  {
+    "id": "ea37e82b-35fd-4086-a260-76609e921cae",
+    "question": "Что делает метод Array.reduce() в JavaScript?",
+    "options": [
+      "Создает новый массив",
+      "Сокращает массив до одного значения",
+      "Сортирует массив",
+      "Фильтрует элементы массива"
+    ],
+    "correctAnswer": 1,
+    "explanation": "reduce() применяет функцию к каждому элементу массива, сводя его к одному значению, например, сумме.",
+    "theme": "js"
+  },
+  {
+    "id": "b1308271-5cb0-46f5-b032-f4ab0372beb6",
+    "question": "Как получить родительский элемент в JavaScript?",
+    "options": [
+      "element.parentNode",
+      "element.parent",
+      "element.root",
+      "element.getParent()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "parentNode возвращает родительский узел элемента в DOM-дереве.",
+    "theme": "js"
+  },
+  {
+    "id": "f85fd29d-6d99-4b9c-a72a-10ca94bdd166",
+    "question": "Что такое метод fetch() в JavaScript?",
+    "options": [
+      "Метод для выполнения циклов",
+      "Метод для выполнения HTTP-запросов",
+      "Метод для работы с массивами",
+      "Метод для управления DOM"
+    ],
+    "correctAnswer": 1,
+    "explanation": "fetch() используется для выполнения асинхронных HTTP-запросов, возвращая Promise.",
+    "theme": "js"
+  },
+  {
+    "id": "0eaefaf7-8bff-4bdd-bdc5-c5992a1476ee",
+    "question": "Как проверить наличие класса у элемента?",
+    "options": [
+      "element.hasClass('class')",
+      "element.classList.contains('class')",
+      "element.className.includes('class')",
+      "element.containsClass('class')"
+    ],
+    "correctAnswer": 1,
+    "explanation": "classList.contains() проверяет, есть ли указанный класс у элемента.",
+    "theme": "js"
+  },
+  {
+    "id": "fbd4b79f-76a6-4f58-bb79-5610454c73d9",
+    "question": "Что такое событие click в JavaScript?",
+    "options": [
+      "Событие при наведении мыши",
+      "Событие при клике на элемент",
+      "Событие при загрузке страницы",
+      "Событие при изменении поля"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Событие click срабатывает, когда пользователь кликает на элемент.",
+    "theme": "js"
+  },
+  {
+    "id": "4372a522-6669-49e9-ad49-858dfb1d99e4",
+    "question": "Как преобразовать объект в строку JSON?",
+    "options": [
+      "JSON.stringify(object)",
+      "object.toJSON()",
+      "JSON.parse(object)",
+      "object.stringify()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "JSON.stringify() преобразует JavaScript-объект в строку в формате JSON.",
+    "theme": "js"
+  },
+  {
+    "id": "f413a00c-228f-4879-96bb-fc4e379c5b0f",
+    "question": "Что такое метод Array.forEach()?",
+    "options": [
+      "Метод для фильтрации массива",
+      "Метод для выполнения функции для каждого элемента",
+      "Метод для сортировки массива",
+      "Метод для объединения массивов"
+    ],
+    "correctAnswer": 1,
+    "explanation": "forEach() выполняет указанную функцию для каждого элемента массива, не создавая новый массив.",
+    "theme": "js"
+  },
+  {
+    "id": "eaa62c47-d4c3-489f-ad8e-1cc51b790888",
+    "question": "Как остановить распространение события в JavaScript?",
+    "options": [
+      "event.preventDefault()",
+      "event.stopPropagation()",
+      "event.cancel()",
+      "event.stop()"
+    ],
+    "correctAnswer": 1,
+    "explanation": "stopPropagation() предотвращает дальнейшее всплытие события по DOM-дереву.",
+    "theme": "js"
+  },
+  {
+    "id": "831e5a15-92dc-443f-9139-e1ff9b1e820c",
+    "question": "Что такое sessionStorage в JavaScript?",
+    "options": [
+      "Объект для хранения данных на время сессии",
+      "Метод для управления DOM",
+      "Тип данных",
+      "Библиотека для анимации"
+    ],
+    "correctAnswer": 0,
+    "explanation": "sessionStorage сохраняет данные в браузере до закрытия вкладки.",
+    "theme": "js"
+  },
+  {
+    "id": "55c648b8-31a8-4b1e-b3e6-efd9a305aefc",
+    "question": "Как получить все дочерние элементы в JavaScript?",
+    "options": [
+      "element.children",
+      "element.childNodes",
+      "element.getChildren()",
+      "element.nodes"
+    ],
+    "correctAnswer": 0,
+    "explanation": "element.children возвращает коллекцию дочерних HTML-элементов, исключая текстовые узлы.",
+    "theme": "js"
+  },
+  {
+    "id": "bd5062f3-100e-4f94-99c0-ccb27f5e5649",
+    "question": "Что такое метод Array.slice()?",
+    "options": [
+      "Метод для удаления элементов",
+      "Метод для копирования части массива",
+      "Метод для сортировки массива",
+      "Метод для объединения массивов"
+    ],
+    "correctAnswer": 1,
+    "explanation": "slice() возвращает новый массив, содержащий копию части исходного массива.",
+    "theme": "js"
+  },
+  {
+    "id": "a360c46a-98e5-4bd1-aee9-944ea5561789",
+    "question": "Как добавить атрибут элементу в JavaScript?",
+    "options": [
+      "element.setAttribute('name', 'value')",
+      "element.addAttribute('name', 'value')",
+      "element.attribute('name', 'value')",
+      "element.set('name', 'value')"
+    ],
+    "correctAnswer": 0,
+    "explanation": "setAttribute() устанавливает значение указанного атрибута для элемента.",
+    "theme": "js"
+  },
+  {
+    "id": "70e780cc-31f1-4926-a9af-bc253c4a460a",
+    "question": "Что такое событие input в JavaScript?",
+    "options": [
+      "Событие при клике на элемент",
+      "Событие при изменении значения поля ввода",
+      "Событие при загрузке страницы",
+      "Событие при наведении мыши"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Событие input срабатывает при каждом изменении значения в поле ввода.",
+    "theme": "js"
+  },
+  {
+    "id": "0d55f62c-4719-4d4b-95d8-d8da25935034",
+    "question": "Как получить координаты элемента на странице?",
+    "options": [
+      "element.getBoundingClientRect()",
+      "element.getPosition()",
+      "element.offset()",
+      "element.coords()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "getBoundingClientRect() возвращает объект с координатами и размерами элемента относительно окна браузера.",
+    "theme": "js"
+  },
+  {
+    "id": "53b00547-10de-43c8-b0e9-325337082a68",
+    "question": "Что такое метод Array.find()?",
+    "options": [
+      "Метод для сортировки массива",
+      "Метод для поиска первого элемента, удовлетворяющего условию",
+      "Метод для объединения массивов",
+      "Метод для удаления элементов"
+    ],
+    "correctAnswer": 1,
+    "explanation": "find() возвращает первый элемент массива, удовлетворяющий условию функции, или undefined.",
+    "theme": "js"
+  },
+  {
+    "id": "f7968ddc-21b2-469f-9899-28d5b0b80fcf",
+    "question": "Как выполнить код с регулярным интервалом?",
+    "options": [
+      "setTimeout(function, delay)",
+      "setInterval(function, delay)",
+      "delay(function, time)",
+      "repeat(function, time)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "setInterval() выполняет функцию повторно через заданный интервал в миллисекундах.",
+    "theme": "js"
+  },
+  {
+    "id": "c34ce891-b6af-48fe-b886-aa56f678ed85",
+    "question": "Что такое метод Array.includes()?",
+    "options": [
+      "Метод для добавления элементов",
+      "Метод для проверки наличия элемента в массиве",
+      "Метод для сортировки массива",
+      "Метод для объединения массивов"
+    ],
+    "correctAnswer": 1,
+    "explanation": "includes() проверяет, содержит ли массив указанный элемент, возвращая true или false.",
+    "theme": "js"
+  },
+  {
+    "id": "63aac70d-22b1-4f00-a7c3-56168a24e167",
+    "question": "Как очистить интервал в JavaScript?",
+    "options": [
+      "clearInterval(id)",
+      "stopInterval(id)",
+      "cancelInterval(id)",
+      "clearTimeout(id)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "clearInterval() останавливает выполнение функции, запущенной через setInterval(), по её идентификатору.",
+    "theme": "js"
+  },
+  {
+    "id": "d4df55cc-e769-413c-a9c2-dd3d06f4a317",
+    "question": "Что такое метод document.createTextNode()?",
+    "options": [
+      "Метод для создания текстового узла",
+      "Метод для создания элемента",
+      "Метод для удаления текста",
+      "Метод для изменения стилей"
+    ],
+    "correctAnswer": 0,
+    "explanation": "createTextNode() создает текстовый узел, который можно добавить к элементу в DOM.",
+    "theme": "js"
+  },
+  {
+    "id": "f606c36e-50bb-4f3e-9fa9-b65d82e11955",
+    "question": "Как получить значение поля формы в JavaScript?",
+    "options": [
+      "element.value",
+      "element.text",
+      "element.content",
+      "element.innerValue"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство value возвращает или устанавливает значение поля формы, например, <input>.",
+    "theme": "js"
+  },
+  {
+    "id": "f03bc4fc-d729-45da-be4e-1045be7c761c",
+    "question": "Что такое метод Array.sort()?",
+    "options": [
+      "Метод для фильтрации массива",
+      "Метод для сортировки элементов массива",
+      "Метод для объединения массивов",
+      "Метод для удаления элементов"
+    ],
+    "correctAnswer": 1,
+    "explanation": "sort() сортирует элементы массива, опционально с функцией сравнения.",
+    "theme": "js"
+  },
+  {
+    "id": "2051c5ec-ca87-4f2a-a2ee-50734de295d2",
+    "question": "Как проверить, существует ли элемент в DOM?",
+    "options": [
+      "document.exists(element)",
+      "element !== null",
+      "element.isPresent()",
+      "document.contains(element)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Проверка element !== null после выборки (например, getElementById) подтверждает существование элемента.",
+    "theme": "js"
+  },
+  {
+    "id": "7731789c-a887-47db-a932-ba4274dd9e72",
+    "question": "Что такое метод document.createDocumentFragment()?",
+    "options": [
+      "Метод для создания пустого DOM-дерева",
+      "Метод для создания фрагмента документа",
+      "Метод для удаления элементов",
+      "Метод для копирования DOM"
+    ],
+    "correctAnswer": 1,
+    "explanation": "createDocumentFragment() создает легковесный контейнер для временного хранения узлов перед добавлением в DOM.",
+    "theme": "js"
+  },
+  {
+    "id": "a596a232-9f00-4c73-8fa4-0fceea505f1a",
+    "question": "Как получить URL текущей страницы в JavaScript?",
+    "options": [
+      "window.location.href",
+      "document.url",
+      "window.url",
+      "location.path"
+    ],
+    "correctAnswer": 0,
+    "explanation": "window.location.href возвращает полный URL текущей страницы.",
+    "theme": "js"
+  },
+  {
+    "id": "a53c0346-e698-4768-9ce3-3c0aae1c40c7",
+    "question": "Что такое метод Array.join()?",
+    "options": [
+      "Метод для добавления элементов",
+      "Метод для объединения элементов массива в строку",
+      "Метод для сортировки массива",
+      "Метод для фильтрации массива"
+    ],
+    "correctAnswer": 1,
+    "explanation": "join() объединяет элементы массива в строку с указанным разделителем.",
+    "theme": "js"
+  },
+  {
+    "id": "b83f8b78-4f7a-4899-90f2-862ceb504334",
+    "question": "Как заменить элемент в DOM?",
+    "options": [
+      "element.replaceWith(newElement)",
+      "element.replace(newElement)",
+      "element.swap(newElement)",
+      "element.change(newElement)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "replaceWith() заменяет элемент в DOM на новый элемент или узел.",
+    "theme": "js"
+  },
+  {
+    "id": "631f2d99-4ee1-41a1-9924-2afd65a112a4",
+    "question": "Что такое событие submit в JavaScript?",
+    "options": [
+      "Событие при клике на элемент",
+      "Событие при отправке формы",
+      "Событие при загрузке страницы",
+      "Событие при наведении мыши"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Событие submit срабатывает при отправке формы, например, при нажатии кнопки submit.",
+    "theme": "js"
+  },
+  {
+    "id": "fb708543-e138-4704-844b-863e3e82bdc2",
+    "question": "Как получить первый дочерний элемент в JavaScript?",
+    "options": [
+      "element.firstChild",
+      "element.firstElement",
+      "element.child[0]",
+      "element.getFirst()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "firstChild возвращает первый дочерний узел, включая текстовые узлы; для элементов лучше использовать firstElementChild.",
+    "theme": "js"
+  },
+  {
+    "id": "9e44d7a9-78ad-4c16-8bfd-1875443cff70",
+    "question": "Что такое метод Array.concat()?",
+    "options": [
+      "Метод для сортировки массива",
+      "Метод для объединения двух или более массивов",
+      "Метод для фильтрации массива",
+      "Метод для удаления элементов"
+    ],
+    "correctAnswer": 1,
+    "explanation": "concat() создает новый массив, объединяя исходный массив с другими массивами или значениями.",
+    "theme": "js"
+  },
+  {
+    "id": "bb88be1f-bc12-41d1-bbf3-f4a6bb62c538",
+    "question": "Как изменить заголовок страницы в JavaScript?",
+    "options": [
+      "document.title = 'Новый заголовок'",
+      "document.head.title = 'Новый заголовок'",
+      "window.title = 'Новый заголовок'",
+      "document.setTitle('Новый заголовок')"
+    ],
+    "correctAnswer": 0,
+    "explanation": "document.title изменяет текст в теге <title>, отображаемый на вкладке браузера.",
+    "theme": "js"
+  },
+  {
+    "id": "50783108-1c61-4501-b37d-c484de412f73",
+    "question": "Что такое метод Array.every()?",
+    "options": [
+      "Метод для проверки, удовлетворяют ли все элементы условию",
+      "Метод для сортировки массива",
+      "Метод для объединения массивов",
+      "Метод для удаления элементов"
+    ],
+    "correctAnswer": 0,
+    "explanation": "every() возвращает true, если все элементы массива удовлетворяют условию функции.",
+    "theme": "js"
+  },
+  {
+    "id": "3da763c7-807b-478e-823e-393ffd2c16d1",
+    "question": "Как получить последний дочерний элемент в JavaScript?",
+    "options": [
+      "element.lastChild",
+      "element.lastElement",
+      "element.child[-1]",
+      "element.getLast()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "lastChild возвращает последний дочерний узел; для элементов лучше использовать lastElementChild.",
+    "theme": "js"
+  },
+  {
+    "id": "b75e9c0a-9e4b-49e2-875b-add91fdd38fe",
+    "question": "Что такое метод Array.some()?",
+    "options": [
+      "Метод для проверки, удовлетворяет ли хотя бы один элемент условию",
+      "Метод для сортировки массива",
+      "Метод для объединения массивов",
+      "Метод для удаления элементов"
+    ],
+    "correctAnswer": 0,
+    "explanation": "some() возвращает true, если хотя бы один элемент массива удовлетворяет условию функции.",
+    "theme": "js"
+  },
+  {
+    "id": "b4e8d746-73a1-4913-a49f-ea64f13163c3",
+    "question": "Как удалить атрибут элемента в JavaScript?",
+    "options": [
+      "element.removeAttribute('name')",
+      "element.deleteAttribute('name')",
+      "element.clearAttribute('name')",
+      "element.remove('name')"
+    ],
+    "correctAnswer": 0,
+    "explanation": "removeAttribute() удаляет указанный атрибут из элемента.",
+    "theme": "js"
+  },
+  {
+    "id": "5f3dad5e-f3b4-48e9-88bb-93d4474d0c91",
+    "question": "Что такое событие mouseover в JavaScript?",
+    "options": [
+      "Событие при клике на элемент",
+      "Событие при наведении мыши на элемент",
+      "Событие при отправке формы",
+      "Событие при загрузке страницы"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Событие mouseover срабатывает, когда курсор мыши входит в область элемента.",
+    "theme": "js"
+  },
+  {
+    "id": "fe653ac5-b5a8-45ae-b4e7-8625b0d957ca",
+    "question": "Как получить список всех классов элемента?",
+    "options": [
+      "element.classList",
+      "element.classes",
+      "element.getClasses()",
+      "element.classNames"
+    ],
+    "correctAnswer": 0,
+    "explanation": "classList возвращает объект DOMTokenList, содержащий все классы элемента.",
+    "theme": "js"
+  },
+  {
+    "id": "1044fd03-620b-4d0c-8202-f37ae7760126",
+    "question": "Что такое метод Array.reverse()?",
+    "options": [
+      "Метод для сортировки массива",
+      "Метод для изменения порядка элементов на обратный",
+      "Метод для фильтрации массива",
+      "Метод для объединения массивов"
+    ],
+    "correctAnswer": 1,
+    "explanation": "reverse() изменяет порядок элементов в массиве на обратный, модифицируя исходный массив.",
+    "theme": "js"
+  },
+  {
+    "id": "55b1ac42-cd74-4dc1-a248-2c98c74ac78f",
+    "question": "Как получить значение CSS-свойства элемента?",
+    "options": [
+      "getComputedStyle(element).getPropertyValue('property')",
+      "element.style.get('property')",
+      "element.getStyle('property')",
+      "window.getStyle(element, 'property')"
+    ],
+    "correctAnswer": 0,
+    "explanation": "getComputedStyle() возвращает вычисленные стили элемента, а getPropertyValue() извлекает значение свойства.",
+    "theme": "js"
+  },
+  {
+    "id": "c5cb5e54-f85e-434a-bdd9-59e2f07dca5f",
+    "question": "Как добавить элемент в начало массива?",
+    "options": [
+      "array.addFirst(element)",
+      "array.unshift(element)",
+      "array.insert(element)",
+      "array.prepend(element)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "unshift() добавляет элемент в начало массива, сдвигая остальные элементы.",
+    "theme": "js"
+  },
+  {
+    "id": "eefc32f3-edd4-4598-b237-04e965a1e99a",
+    "question": "Что такое событие keydown в JavaScript?",
+    "options": [
+      "Событие при отпускании клавиши",
+      "Событие при нажатии клавиши",
+      "Событие при вводе текста",
+      "Событие при фокусе"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Событие keydown срабатывает, когда пользователь нажимает клавишу на клавиатуре.",
+    "theme": "js"
+  },
+  {
+    "id": "e687f13c-c71e-48fe-878c-5056d0e9f0fe",
+    "question": "Как преобразовать строку JSON в объект?",
+    "options": [
+      "JSON.parse(string)",
+      "string.toObject()",
+      "JSON.stringify(string)",
+      "object.parse(string)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "JSON.parse() преобразует строку JSON в JavaScript-объект.",
+    "theme": "js"
+  },
+  {
+    "id": "9d432d8e-217a-403a-bf49-9bffd86f5ad5",
+    "question": "Что такое метод Array.splice()?",
+    "options": [
+      "Метод для копирования массива",
+      "Метод для добавления или удаления элементов в массиве",
+      "Метод для сортировки массива",
+      "Метод для фильтрации массива"
+    ],
+    "correctAnswer": 1,
+    "explanation": "splice() изменяет массив, добавляя или удаляя элементы с указанной позиции.",
+    "theme": "js"
+  },
+  {
+    "id": "c0ef46e5-e457-484e-af86-c89839bdbcbe",
+    "question": "Как получить доступ к данным data-* атрибутов?",
+    "options": [
+      "element.dataset",
+      "element.data",
+      "element.getData()",
+      "element.attributes.data"
+    ],
+    "correctAnswer": 0,
+    "explanation": "dataset предоставляет объект с данными из data-* атрибутов, например, element.dataset.name.",
+    "theme": "js"
+  },
+  {
+    "id": "2df9cea9-15d0-46c1-8e51-04919333d7fe",
+    "question": "Что такое метод window.alert()?",
+    "options": [
+      "Метод для отображения диалогового окна",
+      "Метод для изменения стилей",
+      "Метод для выполнения HTTP-запросов",
+      "Метод для работы с массивами"
+    ],
+    "correctAnswer": 0,
+    "explanation": "window.alert() отображает простое диалоговое окно с сообщением и кнопкой OK.",
+    "theme": "js"
+  },
+  {
+    "id": "d2a45fe7-43d6-4d30-be79-9c1cf14907dc",
+    "question": "Как получить текущий путь URL без домена?",
+    "options": [
+      "window.location.pathname",
+      "window.location.href",
+      "document.path",
+      "location.url"
+    ],
+    "correctAnswer": 0,
+    "explanation": "window.location.pathname возвращает путь URL, например, '/page' для 'example.com/page'.",
+    "theme": "js"
+  },
+  {
+    "id": "e8fe7be2-8b5b-4f3d-aa9e-30cb2da8ffbe",
+    "question": "Что такое метод Array.pop()?",
+    "options": [
+      "Метод для добавления элемента в конец",
+      "Метод для удаления последнего элемента",
+      "Метод для сортировки массива",
+      "Метод для фильтрации массива"
+    ],
+    "correctAnswer": 1,
+    "explanation": "pop() удаляет и возвращает последний элемент массива.",
+    "theme": "js"
+  },
+  {
+    "id": "2fbb892c-e5b7-4a2c-a5ae-2df1f4846984",
+    "question": "Как проверить, поддерживает ли браузер API?",
+    "options": [
+      "'api' in window",
+      "window.hasAPI('api')",
+      "browser.supports('api')",
+      "api.exists()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Оператор in проверяет наличие свойства (API) в объекте window, например, 'geolocation' in navigator.",
+    "theme": "js"
+  },
+  {
+    "id": "a775da31-c0ba-4bf4-8dc9-fac1d16accb9",
+    "question": "Что такое метод window.confirm()?",
+    "options": [
+      "Метод для отображения диалогового окна с подтверждением",
+      "Метод для изменения стилей",
+      "Метод для выполнения HTTP-запросов",
+      "Метод для работы с массивами"
+    ],
+    "correctAnswer": 0,
+    "explanation": "window.confirm() отображает диалоговое окно с кнопками OK и Cancel, возвращая true или false.",
+    "theme": "js"
+  },
+  {
+    "id": "341816a8-c71e-4731-8cef-93f129f2af0c",
+    "question": "Как получить высоту элемента в JavaScript?",
+    "options": [
+      "element.height",
+      "element.offsetHeight",
+      "element.style.height",
+      "element.getHeight()"
+    ],
+    "correctAnswer": 1,
+    "explanation": "offsetHeight возвращает высоту элемента, включая padding, border и scrollbar.",
+    "theme": "js"
+  },
+  {
+    "id": "3ed21b12-2aec-4973-8ad1-a03845f20032",
+    "question": "Что такое метод Array.shift()?",
+    "options": [
+      "Метод для добавления элемента в начало",
+      "Метод для удаления первого элемента",
+      "Метод для сортировки массива",
+      "Метод для фильтрации массива"
+    ],
+    "correctAnswer": 1,
+    "explanation": "shift() удаляет и возвращает первый элемент массива, сдвигая остальные.",
+    "theme": "js"
+  },
+  {
+    "id": "eb8fe354-a009-4f03-a4b6-90e07798f4a5",
+    "question": "Как перезагрузить страницу в JavaScript?",
+    "options": [
+      "window.location.reload()",
+      "document.refresh()",
+      "window.refresh()",
+      "location.restart()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "window.location.reload() перезагружает текущую страницу.",
+    "theme": "js"
+  },
+  {
+    "id": "d1636450-b5bb-44ce-85c2-9358c58d5b43",
+    "question": "Что такое метод window.prompt()?",
+    "options": [
+      "Метод для отображения окна с полем ввода",
+      "Метод для изменения стилей",
+      "Метод для выполнения HTTP-запросов",
+      "Метод для работы с массивами"
+    ],
+    "correctAnswer": 0,
+    "explanation": "window.prompt() отображает диалоговое окно с полем ввода текста, возвращая введенное значение или null.",
+    "theme": "js"
+  },
+  {
+    "id": "d69a53eb-b625-488a-ba8b-9bdc75d8c6b7",
+    "question": "Как получить доступ к форме по её имени?",
+    "options": [
+      "document.forms['name']",
+      "document.getForm('name')",
+      "document.form('name')",
+      "window.forms['name']"
+    ],
+    "correctAnswer": 0,
+    "explanation": "document.forms['name'] возвращает форму с указанным атрибутом name.",
+    "theme": "js"
+  },
+  {
+    "id": "07da7f77-0b0a-461f-8f7a-590e685a6149",
+    "question": "Что такое метод Object.keys()?",
+    "options": [
+      "Метод для сортировки объекта",
+      "Метод для получения массива ключей объекта",
+      "Метод для объединения объектов",
+      "Метод для удаления ключей"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Object.keys() возвращает массив строк, представляющих ключи перечисляемых свойств объекта.",
+    "theme": "js"
+  },
+  {
+    "id": "80268bca-a3ac-48cd-81e5-4c2726848135",
+    "question": "Как проверить тип переменной в JavaScript?",
+    "options": [
+      "typeof variable",
+      "variable.type()",
+      "getType(variable)",
+      "variable instanceof Type"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Оператор typeof возвращает строку, указывающую тип переменной, например, 'string' или 'object'.",
+    "theme": "js"
+  },
+  {
+    "id": "b60f674d-7a78-469d-a9d9-bcb61273db18",
+    "question": "Что такое метод Array.indexOf()?",
+    "options": [
+      "Метод для добавления элемента",
+      "Метод для поиска индекса элемента в массиве",
+      "Метод для сортировки массива",
+      "Метод для фильтрации массива"
+    ],
+    "correctAnswer": 1,
+    "explanation": "indexOf() возвращает первый индекс элемента в массиве или -1, если элемент не найден.",
+    "theme": "js"
+  },
+  {
+    "id": "e396be72-37df-48ea-83f5-d620a2bfe839",
+    "question": "Как создать копию объекта в JavaScript?",
+    "options": [
+      "Object.copy(object)",
+      "Object.assign({}, object)",
+      "object.clone()",
+      "new Object(object)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Object.assign({}, object) создает поверхностную копию объекта.",
+    "theme": "js"
+  },
+  {
+    "id": "b530954f-2798-4e7d-890a-bfe7ff2df973",
+    "question": "Что такое событие focus в JavaScript?",
+    "options": [
+      "Событие при клике на элемент",
+      "Событие при получении элементом фокуса",
+      "Событие при отправке формы",
+      "Событие при наведении мыши"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Событие focus срабатывает, когда элемент, например, поле ввода, получает фокус.",
+    "theme": "js"
+  },
+  {
+    "id": "af2e4eda-c1a0-43b8-9dbd-9db48e4c366e",
+    "question": "Как объединить два объекта в JavaScript?",
+    "options": [
+      "Object.merge(obj1, obj2)",
+      "Object.assign(obj1, obj2)",
+      "obj1.concat(obj2)",
+      "obj1 + obj2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Object.assign() копирует свойства из одного объекта в другой, объединяя их.",
+    "theme": "js"
+  },
+  {
+    "id": "17204a3f-ac4c-4c12-916c-7ae167db22d6",
+    "question": "Что такое метод String.split()?",
+    "options": [
+      "Метод для объединения строк",
+      "Метод для разделения строки на массив",
+      "Метод для замены подстроки",
+      "Метод для обрезки строки"
+    ],
+    "correctAnswer": 1,
+    "explanation": "split() разделяет строку на массив подстрок на основе указанного разделителя.",
+    "theme": "js"
+  },
+  {
+    "id": "3ce536f7-329a-4200-bfd9-bf045b258039",
+    "question": "Как получить случайное число в JavaScript?",
+    "options": [
+      "Math.random()",
+      "Random.number()",
+      "Math.rand()",
+      "Number.random()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Math.random() возвращает случайное число от 0 (включительно) до 1 (исключительно).",
+    "theme": "js"
+  },
+  {
+    "id": "d7b95c6e-6030-4a0f-a025-bb6564acf92d",
+    "question": "Что такое метод document.getElementsByTagName()?",
+    "options": [
+      "Метод для поиска элементов по классу",
+      "Метод для поиска элементов по имени тега",
+      "Метод для поиска элементов по ID",
+      "Метод для создания элементов"
+    ],
+    "correctAnswer": 1,
+    "explanation": "getElementsByTagName() возвращает коллекцию элементов с указанным именем тега, например, 'div'.",
+    "theme": "js"
+  },
+  {
+    "id": "fcdb51b4-bcf1-4ebc-9671-905b2a101e35",
+    "question": "Как округлить число до ближайшего целого в JavaScript?",
+    "options": [
+      "Math.round(number)",
+      "Math.floor(number)",
+      "Math.ceil(number)",
+      "Math.trunc(number)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Math.round() округляет число до ближайшего целого, например, 3.6 становится 4.",
+    "theme": "js"
+  },
+  {
+    "id": "80da35b0-9aff-43bb-8d21-4be04eeb5ca3",
+    "question": "Что такое событие blur в JavaScript?",
+    "options": [
+      "Событие при клике на элемент",
+      "Событие при потере фокуса элементом",
+      "Событие при отправке формы",
+      "Событие при наведении мыши"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Событие blur срабатывает, когда элемент, например, поле ввода, теряет фокус.",
+    "theme": "js"
+  },
+  {
+    "id": "797c2a3a-27c1-4fbf-8891-6b184e6617b1",
+    "question": "Как проверить, является ли значение объектом?",
+    "options": [
+      "typeof value === 'object' && value !== null",
+      "value instanceof Object",
+      "isObject(value)",
+      "value.type === 'object'"
+    ],
+    "correctAnswer": 0,
+    "explanation": "typeof возвращает 'object' для объектов, но нужно исключить null, так как typeof null === 'object'.",
+    "theme": "js"
+  },
+  {
+    "id": "771e135a-717b-4825-a67f-975dac22c601",
+    "question": "Что такое метод String.replace()?",
+    "options": [
+      "Метод для объединения строк",
+      "Метод для замены подстроки в строке",
+      "Метод для разделения строки",
+      "Метод для обрезки строки"
+    ],
+    "correctAnswer": 1,
+    "explanation": "replace() заменяет первое вхождение подстроки или шаблона на новое значение.",
+    "theme": "js"
+  },
+  {
+    "id": "84af0391-6c1f-4cb7-b459-33741b8e8de7",
+    "question": "Как получить длину строки в JavaScript?",
+    "options": [
+      "string.length",
+      "string.size()",
+      "string.count()",
+      "length(string)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство length возвращает количество символов в строке.",
+    "theme": "js"
+  },
+  {
+    "id": "e37e54bd-6e58-4f45-be7c-3ef2b0d3b5af",
+    "question": "Что такое метод document.getElementsByClassName()?",
+    "options": [
+      "Метод для поиска элементов по ID",
+      "Метод для поиска элементов по классу",
+      "Метод для поиска элементов по тегу",
+      "Метод для создания элементов"
+    ],
+    "correctAnswer": 1,
+    "explanation": "getElementsByClassName() возвращает коллекцию элементов с указанным классом.",
+    "theme": "js"
+  },
+  {
+    "id": "fad21957-4918-4428-832c-fe86d2c24eb2",
+    "question": "Как получить минимальное значение из массива?",
+    "options": [
+      "Math.min(...array)",
+      "array.min()",
+      "Math.minimum(array)",
+      "array.reduceMin()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Math.min() с оператором spread (...) возвращает минимальное значение из массива.",
+    "theme": "js"
+  },
+  {
+    "id": "88057789-ba0e-4b65-a7c8-cf725e271323",
+    "question": "Что такое метод String.toUpperCase()?",
+    "options": [
+      "Метод для преобразования строки в нижний регистр",
+      "Метод для преобразования строки в верхний регистр",
+      "Метод для обрезки строки",
+      "Метод для замены подстроки"
+    ],
+    "correctAnswer": 1,
+    "explanation": "toUpperCase() преобразует все символы строки в верхний регистр.",
+    "theme": "js"
+  },
+  {
+    "id": "99256779-6fa8-49c7-8c3f-7af2fce34e3a",
+    "question": "Как добавить несколько элементов в массив?",
+    "options": [
+      "array.addAll(elements)",
+      "array.push(...elements)",
+      "array.append(elements)",
+      "array.insertAll(elements)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "push() с оператором spread (...) добавляет несколько элементов в конец массива.",
+    "theme": "js"
+  },
+  {
+    "id": "1061b8ee-7696-4aec-a147-5eb4bb95a207",
+    "question": "Что такое метод Number.toFixed()?",
+    "options": [
+      "Метод для округления числа до заданного количества знаков",
+      "Метод для преобразования строки в число",
+      "Метод для проверки, является ли значение числом",
+      "Метод для генерации случайного числа"
+    ],
+    "correctAnswer": 0,
+    "explanation": "toFixed(n) округляет число до n знаков после запятой и возвращает строку.",
+    "theme": "js"
+  },
+  {
+    "id": "bf955b26-fddb-4427-90be-bda407f4da7e",
+    "question": "Как получить текущий timestamp в JavaScript?",
+    "options": [
+      "Date.now()",
+      "new Date().timestamp()",
+      "Time.now()",
+      "Date.current()"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Date.now() возвращает текущий timestamp в миллисекундах с 1 января 1970 года.",
+    "theme": "js"
+  },
+  {
+    "id": "98233be0-f9a4-4177-ad9b-f00437cc14c5",
+    "question": "Что такое метод Object.values()?",
+    "options": [
+      "Метод для получения массива значений объекта",
+      "Метод для сортировки объекта",
+      "Метод для объединения объектов",
+      "Метод для удаления значений"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Object.values() возвращает массив значений перечисляемых свойств объекта.",
+    "theme": "js"
+  },
+  {
+    "id": "7c0affc2-dc93-4a25-9913-2453e243c64e",
+    "question": "Как проверить, является ли значение числом?",
+    "options": [
+      "typeof value === 'number' && !isNaN(value)",
+      "value.isNumber()",
+      "Number.isNumber(value)",
+      "value instanceof Number"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Проверка typeof и !isNaN исключает NaN, обеспечивая, что значение является числом.",
+    "theme": "js"
+  },
+  {
+    "id": "de5a477b-7ba9-4ccc-bfaf-7b7f14f1b5e6",
+    "question": "Что такое метод String.trim()?",
+    "options": [
+      "Метод для удаления пробелов с начала и конца строки",
+      "Метод для обрезки строки до заданной длины",
+      "Метод для замены пробелов",
+      "Метод для преобразования строки"
+    ],
+    "correctAnswer": 0,
+    "explanation": "trim() удаляет пробелы (и другие пробельные символы) с начала и конца строки.",
+    "theme": "js"
+  },
+  {
+    "id": "e5b3dfc7-8372-42e6-97d2-71f791054933",
+    "question": "Как получить доступ к элементу по индексу в NodeList?",
+    "options": [
+      "nodeList[index]",
+      "nodeList.get(index)",
+      "nodeList.item(index)",
+      "nodeList.at(index)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "NodeList поддерживает доступ по индексу через nodeList[index] или nodeList.item(index).",
+    "theme": "js"
+  },
+  {
+    "id": "323a7b41-66eb-432a-8e17-2f5a9151366f",
+    "question": "Что такое HTML?",
+    "options": [
+      "Язык программирования",
+      "Язык разметки гипертекста",
+      "Система управления базами данных",
+      "Библиотека для стилизации"
+    ],
+    "correctAnswer": 1,
+    "explanation": "HTML (HyperText Markup Language) — это язык разметки, используемый для создания структуры веб-страниц.",
+    "theme": "html"
+  },
+  {
+    "id": "3e79f236-34eb-4741-8e6d-73ca32be22ce",
+    "question": "Какой тег используется для создания заголовка первого уровня?",
+    "options": [
+      "<header>",
+      "<h1>",
+      "<title>",
+      "<h>"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Тег <h1> используется для создания заголовка первого уровня, самого крупного по умолчанию.",
+    "theme": "html"
+  },
+  {
+    "id": "bddeb335-4b24-4527-b347-ceb77adb89f4",
+    "question": "Какой тег задает основной контент страницы?",
+    "options": [
+      "<body>",
+      "<main>",
+      "<section>",
+      "<article>"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Тег <main> определяет основной контент страницы, который должен быть уникальным.",
+    "theme": "html"
+  },
+  {
+    "id": "48339d4e-8db5-48a1-bb20-cc77c0b784df",
+    "question": "Какой атрибут указывает адрес ссылки в теге <a>?",
+    "options": [
+      "src",
+      "href",
+      "link",
+      "url"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Атрибут href (hypertext reference) задает URL, на который ведет ссылка.",
+    "theme": "html"
+  },
+  {
+    "id": "aa2de0f6-84c1-47ad-afdb-054178ab5ec4",
+    "question": "Какой тег используется для вставки изображения?",
+    "options": [
+      "<img>",
+      "<image>",
+      "<picture>",
+      "<src>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <img> используется для вставки изображений, с атрибутом src для указания пути к файлу.",
+    "theme": "html"
+  },
+  {
+    "id": "8013e358-01d5-4a61-8f55-700af0af2f6b",
+    "question": "Что делает атрибут alt в теге <img>?",
+    "options": [
+      "Задает размер изображения",
+      "Указывает альтернативный текст",
+      "Определяет стиль изображения",
+      "Задает путь к изображению"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Атрибут alt предоставляет текстовое описание изображения для доступности и поисковых систем.",
+    "theme": "html"
+  },
+  {
+    "id": "49a322f5-7d10-4bc4-850f-e7965131ecab",
+    "question": "Какой тег используется для создания ненумерованного списка?",
+    "options": [
+      "<ol>",
+      "<ul>",
+      "<li>",
+      "<list>"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Тег <ul> создает ненумерованный (маркированный) список, элементы которого оборачиваются в <li>.",
+    "theme": "html"
+  },
+  {
+    "id": "758f3f42-5237-4139-9ff1-2e416f69a78c",
+    "question": "Какой тег используется для создания нумерованного списка?",
+    "options": [
+      "<ol>",
+      "<ul>",
+      "<li>",
+      "<dl>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <ol> создает нумерованный (упорядоченный) список, элементы которого оборачиваются в <li>.",
+    "theme": "html"
+  },
+  {
+    "id": "46d7fa5d-b4fd-4e54-a471-e82dc3c77ac5",
+    "question": "Какой тег задает заголовок HTML-документа?",
+    "options": [
+      "<head>",
+      "<title>",
+      "<header>",
+      "<h1>"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Тег <title> задает заголовок документа, отображаемый на вкладке браузера.",
+    "theme": "html"
+  },
+  {
+    "id": "09ec5a92-0200-492b-a18c-f3d1ba8b6e76",
+    "question": "Какой тег определяет метаданные документа?",
+    "options": [
+      "<meta>",
+      "<head>",
+      "<info>",
+      "<data>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <meta> используется для указания метаданных, таких как кодировка или описание страницы.",
+    "theme": "html"
+  },
+  {
+    "id": "feab8740-e7ac-4eba-9bd3-b1e90ff02d4d",
+    "question": "Какой атрибут указывает кодировку документа?",
+    "options": [
+      "<meta charset='UTF-8'>",
+      "<meta encoding='UTF-8'>",
+      "<meta type='UTF-8'>",
+      "<meta lang='UTF-8'>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Атрибут charset в теге <meta> задает кодировку документа, обычно UTF-8.",
+    "theme": "html"
+  },
+  {
+    "id": "c1a7ce06-266d-4d27-936c-acf1930b415d",
+    "question": "Какой тег используется для создания таблицы?",
+    "options": [
+      "<table>",
+      "<grid>",
+      "<tr>",
+      "<td>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <table> создает таблицу, внутри которой используются <tr> для строк и <td> для ячеек.",
+    "theme": "html"
+  },
+  {
+    "id": "122553a3-7ecc-4f96-8bef-5c8bb852de1a",
+    "question": "Что делает тег <tr> в таблице?",
+    "options": [
+      "Создает ячейку",
+      "Создает строку",
+      "Создает столбец",
+      "Создает заголовок таблицы"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Тег <tr> (table row) определяет строку в таблице.",
+    "theme": "html"
+  },
+  {
+    "id": "b9d55edd-a3f0-46d5-9dea-596a5d5e0d7d",
+    "question": "Какой тег создает ячейку заголовка в таблице?",
+    "options": [
+      "<td>",
+      "<th>",
+      "<tr>",
+      "<caption>"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Тег <th> создает ячейку заголовка в таблице, обычно с жирным текстом и выравниванием по центру.",
+    "theme": "html"
+  },
+  {
+    "id": "1a7f4836-3418-4334-996a-fbf2848d5bbc",
+    "question": "Какой тег используется для создания формы?",
+    "options": [
+      "<form>",
+      "<input>",
+      "<button>",
+      "<field>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <form> создает форму для ввода данных пользователем, с атрибутами action и method.",
+    "theme": "html"
+  },
+  {
+    "id": "257f89b8-e7f5-449f-ac95-7adcb14a5cb7",
+    "question": "Какой атрибут формы указывает, куда отправлять данные?",
+    "options": [
+      "method",
+      "action",
+      "target",
+      "submit"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Атрибут action задает URL, на который отправляются данные формы при отправке.",
+    "theme": "html"
+  },
+  {
+    "id": "d5b5e9cf-957a-4bff-822c-39e21e65ec55",
+    "question": "Какой тег создает поле ввода текста?",
+    "options": [
+      "<input type='text'>",
+      "<text>",
+      "<field>",
+      "<input type='string'>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <input> с атрибутом type='text' создает однострочное текстовое поле.",
+    "theme": "html"
+  },
+  {
+    "id": "aa49e9a9-099e-4b9f-a2c2-1397d90f5912",
+    "question": "Какой тег создает кнопку отправки формы?",
+    "options": [
+      "<button>",
+      "<input type='submit'>",
+      "<submit>",
+      "<send>"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Тег <input type='submit'> создает кнопку для отправки данных формы.",
+    "theme": "html"
+  },
+  {
+    "id": "58c8ecaa-b8db-4f81-bb32-794eb8ee049f",
+    "question": "Какой тег используется для группировки элементов формы?",
+    "options": [
+      "<group>",
+      "<fieldset>",
+      "<form>",
+      "<section>"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Тег <fieldset> группирует связанные элементы формы, часто с <legend> для заголовка.",
+    "theme": "html"
+  },
+  {
+    "id": "6ab1d3da-5d7c-48b5-ae67-1a3198f6f66e",
+    "question": "Какой тег задает подпись для группы элементов формы?",
+    "options": [
+      "<label>",
+      "<legend>",
+      "<caption>",
+      "<title>"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Тег <legend> задает подпись для группы элементов, обернутых в <fieldset>.",
+    "theme": "html"
+  },
+  {
+    "id": "c9daf637-c913-4dc0-88bf-50a8148b9492",
+    "question": "Какой тег используется для создания выпадающего списка?",
+    "options": [
+      "<select>",
+      "<dropdown>",
+      "<list>",
+      "<option>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <select> создает выпадающий список, а <option> задает элементы списка.",
+    "theme": "html"
+  },
+  {
+    "id": "dfbdb444-0cf5-486c-b9ed-8572fad115e6",
+    "question": "Какой тег определяет элемент выпадающего списка?",
+    "options": [
+      "<item>",
+      "<option>",
+      "<select>",
+      "<value>"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Тег <option> задает отдельный элемент внутри <select> для выпадающего списка.",
+    "theme": "html"
+  },
+  {
+    "id": "c83effce-efca-4639-88b4-cb02ce010c9b",
+    "question": "Какой атрибут указывает выбранный по умолчанию элемент в <select>?",
+    "options": [
+      "selected",
+      "default",
+      "checked",
+      "value"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Атрибут selected в теге <option> указывает, что этот элемент выбран по умолчанию.",
+    "theme": "html"
+  },
+  {
+    "id": "4828f266-928b-4de1-bd90-d48dce49894e",
+    "question": "Какой тег создает многострочное текстовое поле?",
+    "options": [
+      "<input type='textarea'>",
+      "<textarea>",
+      "<text>",
+      "<input type='multiline'>"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Тег <textarea> создает многострочное поле для ввода текста.",
+    "theme": "html"
+  },
+  {
+    "id": "4e20b620-9e0a-482a-b294-bdbb956d3eda",
+    "question": "Какой атрибут задает язык документа?",
+    "options": [
+      "lang",
+      "language",
+      "locale",
+      "dir"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Атрибут lang в теге <html> задает язык документа, например, lang='en' для английского.",
+    "theme": "html"
+  },
+  {
+    "id": "920087dd-f6ba-44cb-bf9a-b097784855d6",
+    "question": "Какой тег используется для семантического выделения текста?",
+    "options": [
+      "<b>",
+      "<strong>",
+      "<i>",
+      "<em>"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Тег <strong> выделяет текст как важный, обычно отображая его жирным шрифтом.",
+    "theme": "html"
+  },
+  {
+    "id": "6f0a133e-d4d4-40dd-8267-1d080c77b67d",
+    "question": "Какой тег используется для курсивного текста с семантическим акцентом?",
+    "options": [
+      "<i>",
+      "<em>",
+      "<italic>",
+      "<b>"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Тег <em> выделяет текст с акцентом, обычно отображая его курсивом.",
+    "theme": "html"
+  },
+  {
+    "id": "97fcbd77-320d-45c1-86ba-1056ef99118f",
+    "question": "Какой тег создает горизонтальную линию?",
+    "options": [
+      "<hr>",
+      "<line>",
+      "<br>",
+      "<divider>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <hr> создает горизонтальную линию для разделения контента.",
+    "theme": "html"
+  },
+  {
+    "id": "5acbec7a-f879-4b4e-9edf-a5701260e3f6",
+    "question": "Какой тег используется для переноса строки?",
+    "options": [
+      "<br>",
+      "<nl>",
+      "<break>",
+      "<line>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <br> создает перенос строки в тексте без начала нового абзаца.",
+    "theme": "html"
+  },
+  {
+    "id": "4f935abf-8e40-49b1-b3d3-ddcb6abdbd6a",
+    "question": "Какой тег определяет абзац?",
+    "options": [
+      "<p>",
+      "<div>",
+      "<span>",
+      "<text>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <p> создает абзац текста, обычно с отступами сверху и снизу.",
+    "theme": "html"
+  },
+  {
+    "id": "e46dbc18-6514-4acc-ad8f-862f96e36e0c",
+    "question": "Какой тег используется для вставки видео?",
+    "options": [
+      "<video>",
+      "<media>",
+      "<movie>",
+      "<clip>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <video> используется для вставки видеоконтента с атрибутами src или <source>.",
+    "theme": "html"
+  },
+  {
+    "id": "27942d94-5914-48b1-aac2-dafc0a25920d",
+    "question": "Какой тег используется для вставки аудио?",
+    "options": [
+      "<audio>",
+      "<sound>",
+      "<media>",
+      "<track>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <audio> используется для вставки аудиоконтента с атрибутами src или <source>.",
+    "theme": "html"
+  },
+  {
+    "id": "e697d0a3-8d30-442b-adbf-d14f113f75df",
+    "question": "Какой атрибут тега <video> включает элементы управления?",
+    "options": [
+      "controls",
+      "play",
+      "ui",
+      "showcontrols"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Атрибут controls добавляет стандартные элементы управления, такие как воспроизведение и громкость.",
+    "theme": "html"
+  },
+  {
+    "id": "261b8ab7-d0c0-459d-a68a-c32fc9608634",
+    "question": "Какой тег используется для определения навигационного меню?",
+    "options": [
+      "<nav>",
+      "<menu>",
+      "<links>",
+      "<header>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <nav> определяет блок навигационных ссылок, таких как меню сайта.",
+    "theme": "html"
+  },
+  {
+    "id": "09dc68dc-1d51-40ce-b117-9d8bb9998302",
+    "question": "Какой тег создает футер страницы?",
+    "options": [
+      "<footer>",
+      "<bottom>",
+      "<end>",
+      "<section>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <footer> определяет нижнюю часть страницы, обычно содержащую авторские права или контакты.",
+    "theme": "html"
+  },
+  {
+    "id": "4f2f8a96-10ea-479c-a93e-cb1205cb1b92",
+    "question": "Какой тег используется для создания статьи?",
+    "options": [
+      "<article>",
+      "<post>",
+      "<content>",
+      "<section>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <article> определяет независимый, самодостаточный контент, например, новость или пост.",
+    "theme": "html"
+  },
+  {
+    "id": "8626e13e-96e4-4391-b511-722daf2eca98",
+    "question": "Какой тег используется для группировки контента?",
+    "options": [
+      "<div>",
+      "<group>",
+      "<block>",
+      "<container>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <div> — универсальный контейнер для группировки и стилизации контента.",
+    "theme": "html"
+  },
+  {
+    "id": "e51d9a9e-a98d-46f9-9ebb-f7e9f2c1bf0f",
+    "question": "Какой тег используется для выделения инлайн-элементов?",
+    "options": [
+      "<span>",
+      "<div>",
+      "<block>",
+      "<inline>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <span> используется для выделения или стилизации части текста внутри строки.",
+    "theme": "html"
+  },
+  {
+    "id": "56943138-2aa2-4041-a022-5d2cf122c9fb",
+    "question": "Какой атрибут задает уникальный идентификатор элемента?",
+    "options": [
+      "class",
+      "id",
+      "name",
+      "key"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Атрибут id задает уникальный идентификатор для элемента, используемый в CSS и JavaScript.",
+    "theme": "html"
+  },
+  {
+    "id": "82bfa18e-2fa1-4969-aa15-cd0bd35dfe60",
+    "question": "Какой атрибут задает класс для стилизации?",
+    "options": [
+      "style",
+      "class",
+      "id",
+      "type"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Атрибут class задает один или несколько классов для стилизации через CSS.",
+    "theme": "html"
+  },
+  {
+    "id": "ac166613-0230-4b6c-85a6-dd2e24a243a8",
+    "question": "Какой тег используется для вставки JavaScript в HTML?",
+    "options": [
+      "<script>",
+      "<js>",
+      "<code>",
+      "<javascript>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <script> используется для вставки или подключения JavaScript-кода.",
+    "theme": "html"
+  },
+  {
+    "id": "e6a5b4a2-08eb-45e1-ad8e-5e8d7319bf29",
+    "question": "Какой тег подключает внешний CSS-файл?",
+    "options": [
+      "<style>",
+      "<link>",
+      "<css>",
+      "<script>"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Тег <link> с атрибутами rel='stylesheet' и href подключает внешний CSS-файл.",
+    "theme": "html"
+  },
+  {
+    "id": "013d1a12-6aaf-4a70-b9e2-eaf980d48450",
+    "question": "Какой атрибут тега <link> указывает тип подключаемого ресурса?",
+    "options": [
+      "type",
+      "rel",
+      "href",
+      "src"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Атрибут rel, например, rel='stylesheet', указывает отношение между документом и ресурсом.",
+    "theme": "html"
+  },
+  {
+    "id": "15a4b5b5-8ce5-433b-ae8f-0e3552d8aa85",
+    "question": "Какой тег используется для определения стилей внутри HTML?",
+    "options": [
+      "<style>",
+      "<css>",
+      "<format>",
+      "<design>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <style> содержит CSS-правила для стилизации элементов документа.",
+    "theme": "html"
+  },
+  {
+    "id": "f963bdd4-6f55-4c72-9472-5d5c48c77ae7",
+    "question": "Какой тег создает описание для списка определений?",
+    "options": [
+      "<dt>",
+      "<dd>",
+      "<dl>",
+      "<term>"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Тег <dd> задает описание термина в списке определений, созданном с помощью <dl>.",
+    "theme": "html"
+  },
+  {
+    "id": "56ca50db-ea3c-4f91-8692-b0e413215cf6",
+    "question": "Какой тег задает термин в списке определений?",
+    "options": [
+      "<dt>",
+      "<dd>",
+      "<dl>",
+      "<def>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <dt> задает термин в списке определений, за которым следует описание в <dd>.",
+    "theme": "html"
+  },
+  {
+    "id": "f1815695-9fc2-4343-9958-19c8b6837def",
+    "question": "Какой тег создает список определений?",
+    "options": [
+      "<dl>",
+      "<ul>",
+      "<ol>",
+      "<list>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <dl> создает список определений, содержащий пары терминов (<dt>) и описаний (<dd>).",
+    "theme": "html"
+  },
+  {
+    "id": "3da02f34-339e-44c3-a4f2-9b96390a9012",
+    "question": "Какой атрибут тега <input> делает поле обязательным?",
+    "options": [
+      "required",
+      "mandatory",
+      "validate",
+      "must"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Атрибут required делает поле ввода обязательным для заполнения перед отправкой формы.",
+    "theme": "html"
+  },
+  {
+    "id": "04d3fec7-6fa0-4837-a943-eaa963e59316",
+    "question": "Какой тег используется для создания радиокнопки?",
+    "options": [
+      "<input type='radio'>",
+      "<input type='checkbox'>",
+      "<radio>",
+      "<button>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <input type='radio'> создает радиокнопку для выбора одного варианта из группы.",
+    "theme": "html"
+  },
+  {
+    "id": "042712ae-dce9-4a90-a6f0-4b897ae74622",
+    "question": "Какой атрибут группирует радиокнопки?",
+    "options": [
+      "group",
+      "name",
+      "id",
+      "class"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Атрибут name с одинаковым значением группирует радиокнопки, позволяя выбрать только одну.",
+    "theme": "html"
+  },
+  {
+    "id": "d83e4b78-6384-464a-bf6b-1cc2e671818c",
+    "question": "Какой тег создает флажок (checkbox)?",
+    "options": [
+      "<input type='checkbox'>",
+      "<input type='radio'>",
+      "<check>",
+      "<input type='toggle'>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <input type='checkbox'> создает флажок для множественного выбора.",
+    "theme": "html"
+  },
+  {
+    "id": "7cb3a75f-8644-4031-840d-0dd817910dd1",
+    "question": "Какой атрибут указывает начальное значение поля ввода?",
+    "options": [
+      "value",
+      "default",
+      "placeholder",
+      "text"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Атрибут value задает начальное значение поля ввода, например, в <input>.",
+    "theme": "html"
+  },
+  {
+    "id": "ea9d4d16-01d4-4da9-8a4f-718061342ff0",
+    "question": "Какой атрибут задает подсказку в поле ввода?",
+    "options": [
+      "hint",
+      "placeholder",
+      "tooltip",
+      "title"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Атрибут placeholder отображает подсказку в поле ввода до ввода текста.",
+    "theme": "html"
+  },
+  {
+    "id": "89886eb7-96e8-4f37-8caf-5665d543eb0c",
+    "question": "Какой тег создает область для интерактивного контента?",
+    "options": [
+      "<canvas>",
+      "<draw>",
+      "<graphic>",
+      "<svg>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <canvas> создает область для рисования графики с помощью JavaScript.",
+    "theme": "html"
+  },
+  {
+    "id": "f13eaaa0-fcac-4792-a36c-3392203ebef4",
+    "question": "Какой тег используется для вставки SVG-графики?",
+    "options": [
+      "<svg>",
+      "<canvas>",
+      "<graphic>",
+      "<vector>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <svg> используется для создания масштабируемой векторной графики.",
+    "theme": "html"
+  },
+  {
+    "id": "c1c20458-c5a7-4eab-b594-7872494cd95f",
+    "question": "Какой атрибут тега <img> задает ширину изображения?",
+    "options": [
+      "width",
+      "size",
+      "w",
+      "length"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Атрибут width задает ширину изображения в пикселях или процентах.",
+    "theme": "html"
+  },
+  {
+    "id": "316c6675-3741-4631-9490-cc0f5b420264",
+    "question": "Какой тег используется для создания заголовка таблицы?",
+    "options": [
+      "<caption>",
+      "<title>",
+      "<header>",
+      "<th>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <caption> задает заголовок таблицы, отображаемый над или под таблицей.",
+    "theme": "html"
+  },
+  {
+    "id": "64ded574-5301-47ba-aaa9-fbbdfeaf8faf",
+    "question": "Какой атрибут объединяет ячейки по горизонтали в таблице?",
+    "options": [
+      "colspan",
+      "rowspan",
+      "merge",
+      "span"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Атрибут colspan объединяет несколько ячеек по горизонтали в одну.",
+    "theme": "html"
+  },
+  {
+    "id": "fcc5ff46-93b8-409c-92b0-01f7f8ef3b31",
+    "question": "Какой атрибут объединяет ячейки по вертикали в таблице?",
+    "options": [
+      "rowspan",
+      "colspan",
+      "merge",
+      "span"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Атрибут rowspan объединяет несколько ячеек по вертикали в одну.",
+    "theme": "html"
+  },
+  {
+    "id": "c439b73e-a047-404b-a61a-7ac41f997938",
+    "question": "Какой тег задает содержимое, которое отображается, если видео не поддерживается?",
+    "options": [
+      "<fallback>",
+      "<source>",
+      "<track>",
+      "Текст внутри <video>"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Текст, размещенный внутри тега <video>, отображается, если браузер не поддерживает видео.",
+    "theme": "html"
+  },
+  {
+    "id": "d52891e6-0085-4446-9184-bb5d99dd8f49",
+    "question": "Какой тег задает субтитры для видео?",
+    "options": [
+      "<track>",
+      "<subtitle>",
+      "<caption>",
+      "<text>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <track> с атрибутом kind='subtitles' задает субтитры или другие текстовые дорожки.",
+    "theme": "html"
+  },
+  {
+    "id": "82678643-b2fe-477e-afab-c58822b44df2",
+    "question": "Какой атрибут тега <form> задает метод отправки данных?",
+    "options": [
+      "method",
+      "action",
+      "type",
+      "send"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Атрибут method задает HTTP-метод отправки формы, например, GET или POST.",
+    "theme": "html"
+  },
+  {
+    "id": "50a390a1-0c4e-4ff2-b396-c88d5d2b3906",
+    "question": "Какой тег создает область для встраивания внешнего контента?",
+    "options": [
+      "<iframe>",
+      "<embed>",
+      "<object>",
+      "<frame>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <iframe> встраивает внешний контент, такой как веб-страницы или видео, в документ.",
+    "theme": "html"
+  },
+  {
+    "id": "61db97cb-1621-4521-b1f2-19af0d6487d4",
+    "question": "Какой атрибут тега <iframe> задает источник контента?",
+    "options": [
+      "src",
+      "href",
+      "link",
+      "url"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Атрибут src задает URL встраиваемого контента для <iframe>.",
+    "theme": "html"
+  },
+  {
+    "id": "9538a522-c18d-4c6c-b9fc-a4f56934896a",
+    "question": "Какой тег используется для выделения цитаты?",
+    "options": [
+      "<quote>",
+      "<blockquote>",
+      "<q>",
+      "<cite>"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Тег <blockquote> выделяет длинные цитаты, обычно с отступом.",
+    "theme": "html"
+  },
+  {
+    "id": "d1e6238b-bfd6-447d-8d9d-a86129af5b8d",
+    "question": "Какой тег используется для коротких цитат в тексте?",
+    "options": [
+      "<q>",
+      "<blockquote>",
+      "<cite>",
+      "<quote>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <q> выделяет короткие цитаты, обычно добавляя кавычки.",
+    "theme": "html"
+  },
+  {
+    "id": "e7cdaa14-795b-492a-98d0-20b27b4604d1",
+    "question": "Какой тег указывает источник цитаты?",
+    "options": [
+      "<cite>",
+      "<source>",
+      "<ref>",
+      "<link>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <cite> указывает источник цитаты, например, название книги или автора.",
+    "theme": "html"
+  },
+  {
+    "id": "9e86d094-6d9b-464c-b70a-c0afcb3e653e",
+    "question": "Какой атрибут задает направление текста?",
+    "options": [
+      "dir",
+      "align",
+      "lang",
+      "text"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Атрибут dir задает направление текста, например, dir='rtl' для письма справа налево.",
+    "theme": "html"
+  },
+  {
+    "id": "32f2ec75-c1bd-4f4c-949a-34642c435ad8",
+    "question": "Какой тег создает область для вывода результата формы?",
+    "options": [
+      "<output>",
+      "<result>",
+      "<display>",
+      "<value>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <output> отображает результат вычислений или действий в форме.",
+    "theme": "html"
+  },
+  {
+    "id": "7c743ab8-3e35-459e-9be5-b8fdfee7487c",
+    "question": "Какой атрибут тега <input> задает максимальную длину текста?",
+    "options": [
+      "maxlength",
+      "length",
+      "size",
+      "limit"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Атрибут maxlength ограничивает количество символов, вводимых в поле.",
+    "theme": "html"
+  },
+  {
+    "id": "d61b91fc-b2bd-4aca-8987-540bb627ef2e",
+    "question": "Какой тег задает область для прогресс-бара?",
+    "options": [
+      "<progress>",
+      "<meter>",
+      "<bar>",
+      "<status>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <progress> создает индикатор выполнения задачи, например, загрузки.",
+    "theme": "html"
+  },
+  {
+    "id": "d2479315-24f8-4920-b8cb-c0fd8709e541",
+    "question": "Какой тег отображает измеряемое значение в диапазоне?",
+    "options": [
+      "<meter>",
+      "<progress>",
+      "<range>",
+      "<value>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <meter> отображает значение в заданном диапазоне, например, уровень заряда.",
+    "theme": "html"
+  },
+  {
+    "id": "2f96d0fa-2fb5-44b1-96c1-0654f290a33f",
+    "question": "Какой атрибут тега <input> задает тип поля для выбора файла?",
+    "options": [
+      "type='file'",
+      "type='upload'",
+      "type='attachment'",
+      "type='select'"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <input type='file'> создает поле для выбора и загрузки файлов.",
+    "theme": "html"
+  },
+  {
+    "id": "479eb826-5d5b-4897-ba81-9646bc403100",
+    "question": "Какой тег создает область для всплывающих подсказок?",
+    "options": [
+      "<details>",
+      "<summary>",
+      "<tooltip>",
+      "<info>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <details> создает раскрывающийся блок с дополнительной информацией.",
+    "theme": "html"
+  },
+  {
+    "id": "952c413a-5c34-43b4-bac5-1d7a840dc22f",
+    "question": "Какой тег задает заголовок для <details>?",
+    "options": [
+      "<summary>",
+      "<title>",
+      "<header>",
+      "<caption>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <summary> задает видимый заголовок для содержимого тега <details>.",
+    "theme": "html"
+  },
+  {
+    "id": "0d02b849-6200-40e3-98b3-1c562790cee1",
+    "question": "Какой атрибут тега <a> открывает ссылку в новой вкладке?",
+    "options": [
+      "target='_blank'",
+      "newtab",
+      "open='new'",
+      "window='blank'"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Атрибут target='_blank' открывает ссылку в новой вкладке или окне.",
+    "theme": "html"
+  },
+  {
+    "id": "ec59c004-aaac-46e4-bd54-90c44de160ec",
+    "question": "Какой тег используется для выделения кода?",
+    "options": [
+      "<code>",
+      "<pre>",
+      "<kbd>",
+      "<samp>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <code> выделяет фрагменты кода, обычно с моноширинным шрифтом.",
+    "theme": "html"
+  },
+  {
+    "id": "042d42b5-716d-4646-87b1-806fda63804a",
+    "question": "Какой тег сохраняет форматирование текста, включая пробелы?",
+    "options": [
+      "<pre>",
+      "<code>",
+      "<text>",
+      "<format>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <pre> сохраняет пробелы и переносы строк, как они написаны в коде.",
+    "theme": "html"
+  },
+  {
+    "id": "f933bf82-b23f-4144-85cb-fbc22fdfe5bd",
+    "question": "Какой тег выделяет текст, вводимый пользователем?",
+    "options": [
+      "<kbd>",
+      "<code>",
+      "<samp>",
+      "<input>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <kbd> выделяет текст, представляющий ввод пользователя, например, клавиши.",
+    "theme": "html"
+  },
+  {
+    "id": "eda2ba72-52b6-41d5-b1fc-8a6be0db9d4a",
+    "question": "Какой тег представляет вывод программы?",
+    "options": [
+      "<samp>",
+      "<code>",
+      "<kbd>",
+      "<output>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <samp> выделяет текст, представляющий вывод программы или скрипта.",
+    "theme": "html"
+  },
+  {
+    "id": "0642884a-f687-4d4d-9b05-356f19462a3d",
+    "question": "Какой атрибут тега <input> задает шаблон ввода?",
+    "options": [
+      "pattern",
+      "regex",
+      "format",
+      "validate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Атрибут pattern задает регулярное выражение для проверки ввода в поле.",
+    "theme": "html"
+  },
+  {
+    "id": "b65f3e09-5dba-4f26-9ddc-7e23e3431b0d",
+    "question": "Какой тег создает область для семантического раздела?",
+    "options": [
+      "<section>",
+      "<div>",
+      "<block>",
+      "<part>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <section> определяет тематический раздел документа, часто с заголовком.",
+    "theme": "html"
+  },
+  {
+    "id": "c25dc639-4606-42b1-b5f0-f7875f813eb4",
+    "question": "Какой атрибут указывает доступность элемента для редактирования?",
+    "options": [
+      "contenteditable",
+      "editable",
+      "modify",
+      "write"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Атрибут contenteditable='true' позволяет пользователю редактировать содержимое элемента.",
+    "theme": "html"
+  },
+  {
+    "id": "f03dc7c5-297a-4157-8971-8943e450a884",
+    "question": "Какой атрибут скрывает элемент от рендеринга?",
+    "options": [
+      "hidden",
+      "visible='false'",
+      "display='none'",
+      "show='false'"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Атрибут hidden скрывает элемент, эквивалентно CSS display: none.",
+    "theme": "html"
+  },
+  {
+    "id": "2608353a-d70b-49de-bb62-eb47e3a6b410",
+    "question": "Какой тег используется для создания шаблона контента?",
+    "options": [
+      "<template>",
+      "<pattern>",
+      "<model>",
+      "<blueprint>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <template> содержит контент, который не отображается, но может быть клонирован через JavaScript.",
+    "theme": "html"
+  },
+  {
+    "id": "5051ffd9-62b2-409e-9394-bcef6c0c1c5c",
+    "question": "Какой атрибут тега <meta> задает описание страницы?",
+    "options": [
+      "name='description'",
+      "content='description'",
+      "meta='description'",
+      "type='description'"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <meta name='description' content='...'> задает описание страницы для поисковых систем.",
+    "theme": "html"
+  },
+  {
+    "id": "812879c1-3192-44a7-bf7e-4e03fac13e04",
+    "question": "Какой атрибут тега <input> отключает поле ввода?",
+    "options": [
+      "disabled",
+      "readonly",
+      "off",
+      "locked"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Атрибут disabled делает поле ввода неактивным и недоступным для взаимодействия.",
+    "theme": "html"
+  },
+  {
+    "id": "bd98a971-98de-415b-a3fd-3e88a56b91ef",
+    "question": "Какой тег задает содержимое, отображаемое в неподдерживаемых браузерах?",
+    "options": [
+      "<noscript>",
+      "<fallback>",
+      "<nobrowser>",
+      "<default>"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Тег <noscript> отображает содержимое, если JavaScript отключен в браузере.",
+    "theme": "html"
+  },
+  {
+    "id": "efb6ed88-0ac2-48ea-b698-8f71d529acc3",
+    "question": "Что такое CSS?",
+    "options": [
+      "Язык программирования",
+      "Каскадные таблицы стилей",
+      "Язык разметки",
+      "Библиотека для анимации"
+    ],
+    "correctAnswer": 1,
+    "explanation": "CSS (Cascading Style Sheets) — это язык стилей, используемый для оформления и стилизации HTML-документов.",
+    "theme": "css"
+  },
+  {
+    "id": "a69c7dd6-70bc-4a17-a10e-d6652e758581",
+    "question": "Как подключить CSS к HTML-документу?",
+    "options": [
+      "<style src='styles.css'>",
+      "<link rel='stylesheet' href='styles.css'>",
+      "<css href='styles.css'>",
+      "<script src='styles.css'>"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Тег <link> с атрибутами rel='stylesheet' и href подключает внешний CSS-файл к HTML.",
+    "theme": "css"
+  },
+  {
+    "id": "7d6905da-2b03-4b0e-8255-983269e8c45f",
+    "question": "Где в HTML-документе размещается внутренний CSS?",
+    "options": [
+      "В теге <body>",
+      "В теге <style> внутри <head>",
+      "В теге <css>",
+      "В атрибуте style тега <html>"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Внутренний CSS размещается в теге <style>, обычно внутри <head>, для стилизации документа.",
+    "theme": "css"
+  },
+  {
+    "id": "9b9fb08a-4e14-4b63-bebe-6c37340e7fdc",
+    "question": "Как задать стиль непосредственно в HTML-элементе?",
+    "options": [
+      "Использовать атрибут css",
+      "Использовать атрибут style",
+      "Использовать тег <inline>",
+      "Использовать атрибут class"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Атрибут style позволяет задавать инлайн-CSS непосредственно в HTML-элементе, например, style='color: red;'.",
+    "theme": "css"
+  },
+  {
+    "id": "ebd4e99f-af17-4499-ac93-60ecfb7eb836",
+    "question": "Что такое CSS-селектор?",
+    "options": [
+      "Правило для анимации",
+      "Элемент для выбора HTML-тегов",
+      "Синтаксис для подключения стилей",
+      "Атрибут для задания цвета"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Селектор определяет, к каким HTML-элементам применяются CSS-правила, например, по тегу, классу или ID.",
+    "theme": "css"
+  },
+  {
+    "id": "b9aad06f-df11-4965-a6e1-b001fea88c3c",
+    "question": "Какой селектор выбирает элемент по ID?",
+    "options": [
+      ".id",
+      "#id",
+      "id",
+      "*id"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Селектор #id выбирает элемент с уникальным идентификатором, например, #myId.",
+    "theme": "css"
+  },
+  {
+    "id": "361c2b01-2f25-4e39-ab3c-b95c75cbcf9a",
+    "question": "Какой селектор выбирает элементы по классу?",
+    "options": [
+      ".class",
+      "#class",
+      "class",
+      "*class"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Селектор .class выбирает все элементы с указанным классом, например, .myClass.",
+    "theme": "css"
+  },
+  {
+    "id": "798dac20-697a-442a-9887-7a26cf9493b5",
+    "question": "Какой селектор выбирает все элементы на странице?",
+    "options": [
+      "*",
+      "all",
+      "everything",
+      "global"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Универсальный селектор * выбирает все элементы в документе.",
+    "theme": "css"
+  },
+  {
+    "id": "24eca6a2-b62a-4e98-b83d-0be9a282fed6",
+    "question": "Что такое каскадирование в CSS?",
+    "options": [
+      "Порядок применения стилей по их приоритету",
+      "Анимация элементов",
+      "Группировка селекторов",
+      "Подключение нескольких CSS-файлов"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Каскадирование определяет, какие стили применяются, основываясь на приоритете и порядке правил.",
+    "theme": "css"
+  },
+  {
+    "id": "db65d176-a9d5-4b8b-b44f-3c9952e16071",
+    "question": "Какое свойство задает цвет текста?",
+    "options": [
+      "color",
+      "text-color",
+      "font-color",
+      "foreground"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство color задает цвет текста элемента, например, color: red;.",
+    "theme": "css"
+  },
+  {
+    "id": "6cadb02e-a88c-4ff9-a7f5-bb54a0a4c2b8",
+    "question": "Какое свойство задает размер шрифта?",
+    "options": [
+      "font-size",
+      "text-size",
+      "size",
+      "font-height"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство font-size задает размер шрифта, например, font-size: 16px;.",
+    "theme": "css"
+  },
+  {
+    "id": "db756e3c-72cc-4953-be02-82ec90c5db16",
+    "question": "Какое свойство задает семейство шрифта?",
+    "options": [
+      "font-family",
+      "font-type",
+      "text-family",
+      "font"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство font-family задает шрифт текста, например, font-family: Arial, sans-serif;.",
+    "theme": "css"
+  },
+  {
+    "id": "c428d840-e6a2-41b0-858a-b6fcd3575eb7",
+    "question": "Какое свойство задает толщину шрифта?",
+    "options": [
+      "font-weight",
+      "font-size",
+      "font-style",
+      "text-weight"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство font-weight задает толщину шрифта, например, font-weight: bold;.",
+    "theme": "css"
+  },
+  {
+    "id": "00377a88-c1ba-47ff-a7ed-b6be11fdb954",
+    "question": "Какое свойство делает текст курсивным?",
+    "options": [
+      "font-style: italic;",
+      "text-style: italic;",
+      "font: italic;",
+      "style: italic;"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство font-style со значением italic делает текст курсивным.",
+    "theme": "css"
+  },
+  {
+    "id": "1565fd04-45b2-43ea-8564-d006a639826e",
+    "question": "Какое свойство задает выравнивание текста?",
+    "options": [
+      "text-align",
+      "align",
+      "text-justify",
+      "justify"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство text-align задает горизонтальное выравнивание текста, например, text-align: center;.",
+    "theme": "css"
+  },
+  {
+    "id": "0a8ea417-9569-467e-b765-45e19c276397",
+    "question": "Какое свойство задает межбуквенный интервал?",
+    "options": [
+      "letter-spacing",
+      "word-spacing",
+      "text-spacing",
+      "font-spacing"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство letter-spacing задает расстояние между буквами, например, letter-spacing: 2px;.",
+    "theme": "css"
+  },
+  {
+    "id": "4a12c443-c5f0-487a-baf0-d2fb3a8272db",
+    "question": "Какое свойство задает межсловный интервал?",
+    "options": [
+      "word-spacing",
+      "letter-spacing",
+      "text-spacing",
+      "space"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство word-spacing задает расстояние между словами, например, word-spacing: 5px;.",
+    "theme": "css"
+  },
+  {
+    "id": "a1b82e4c-ed66-4f9d-b671-12a012c8a395",
+    "question": "Какое свойство задает высоту строки текста?",
+    "options": [
+      "line-height",
+      "text-height",
+      "font-height",
+      "height"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство line-height задает высоту строки, влияя на межстрочный интервал, например, line-height: 1.5;.",
+    "theme": "css"
+  },
+  {
+    "id": "d34215c0-7094-4d20-8407-01428a5b3b0b",
+    "question": "Какое свойство задает фон элемента?",
+    "options": [
+      "background",
+      "color",
+      "fill",
+      "bg"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство background задает фоновые характеристики, например, background: #fff;.",
+    "theme": "css"
+  },
+  {
+    "id": "8d7a81b2-1f9f-4de8-a270-0be2b13e67e2",
+    "question": "Какое свойство задает цвет фона?",
+    "options": [
+      "background-color",
+      "color",
+      "bg-color",
+      "fill-color"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство background-color задает цвет фона элемента, например, background-color: blue;.",
+    "theme": "css"
+  },
+  {
+    "id": "0c8cb64d-9045-462c-91d6-563c6ba8f23a",
+    "question": "Какое свойство задает фоновое изображение?",
+    "options": [
+      "background-image",
+      "image",
+      "bg-image",
+      "background-src"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство background-image задает изображение для фона, например, background-image: url('image.jpg');.",
+    "theme": "css"
+  },
+  {
+    "id": "92101956-1cff-4641-9d92-1057743acbaf",
+    "question": "Какое свойство управляет повторением фонового изображения?",
+    "options": [
+      "background-repeat",
+      "image-repeat",
+      "bg-repeat",
+      "repeat"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство background-repeat определяет, повторяется ли изображение, например, background-repeat: no-repeat;.",
+    "theme": "css"
+  },
+  {
+    "id": "3b130ad8-5cc7-4f67-a6ad-13bc10f9e2fc",
+    "question": "Какое свойство задает позицию фонового изображения?",
+    "options": [
+      "background-position",
+      "image-position",
+      "bg-position",
+      "position"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство background-position задает положение фона, например, background-position: center;.",
+    "theme": "css"
+  },
+  {
+    "id": "d9be5a1b-4092-47ca-b9f4-7cc9f58a2794",
+    "question": "Какое свойство задает ширину элемента?",
+    "options": [
+      "width",
+      "size",
+      "w",
+      "element-width"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство width задает ширину элемента, например, width: 200px;.",
+    "theme": "css"
+  },
+  {
+    "id": "d398bf4e-ec23-4f82-b9ea-c258888c48e7",
+    "question": "Какое свойство задает высоту элемента?",
+    "options": [
+      "height",
+      "size",
+      "h",
+      "element-height"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство height задает высоту элемента, например, height: 100px;.",
+    "theme": "css"
+  },
+  {
+    "id": "1212bc90-d3f2-46d3-bf68-97efe533de3b",
+    "question": "Какое свойство задает внешний отступ элемента?",
+    "options": [
+      "margin",
+      "padding",
+      "spacing",
+      "border"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство margin задает внешний отступ, например, margin: 10px;.",
+    "theme": "css"
+  },
+  {
+    "id": "9fa099b0-d84c-4fee-9dd4-8b0273c6b0f0",
+    "question": "Какое свойство задает внутренний отступ элемента?",
+    "options": [
+      "padding",
+      "margin",
+      "spacing",
+      "border"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство padding задает внутренний отступ, например, padding: 15px;.",
+    "theme": "css"
+  },
+  {
+    "id": "b2b13379-8293-467d-87a8-eeade975f7ab",
+    "question": "Какое свойство задает границу элемента?",
+    "options": [
+      "border",
+      "outline",
+      "edge",
+      "frame"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство border задает стиль, ширину и цвет границы, например, border: 1px solid black;.",
+    "theme": "css"
+  },
+  {
+    "id": "adfd5d9a-4680-4a68-9979-a13c0e469482",
+    "question": "Какое свойство задает ширину границы?",
+    "options": [
+      "border-width",
+      "border-size",
+      "border-thickness",
+      "width"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство border-width задает толщину границы, например, border-width: 2px;.",
+    "theme": "css"
+  },
+  {
+    "id": "4ca644f7-6d4c-4636-8b14-3083f2d110ce",
+    "question": "Какое свойство задает стиль границы?",
+    "options": [
+      "border-style",
+      "border-type",
+      "border-format",
+      "style"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство border-style задает стиль границы, например, border-style: dashed;.",
+    "theme": "css"
+  },
+  {
+    "id": "3781f29e-cf62-45a7-bbd0-455550261fd7",
+    "question": "Какое свойство задает цвет границы?",
+    "options": [
+      "border-color",
+      "border-shade",
+      "border-hue",
+      "color"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство border-color задает цвет границы, например, border-color: red;.",
+    "theme": "css"
+  },
+  {
+    "id": "44a0f3a4-41f5-4caf-864c-ad1b8476aec4",
+    "question": "Какое свойство задает скругление углов элемента?",
+    "options": [
+      "border-radius",
+      "corner-radius",
+      "border-curve",
+      "round"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство border-radius задает радиус скругления углов, например, border-radius: 10px;.",
+    "theme": "css"
+  },
+  {
+    "id": "13d0c286-82a3-4e2c-9d96-9e21a33b9aea",
+    "question": "Какое свойство управляет отображением элемента?",
+    "options": [
+      "display",
+      "visibility",
+      "show",
+      "render"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство display определяет, как элемент отображается, например, display: block; или display: none;.",
+    "theme": "css"
+  },
+  {
+    "id": "c69ffbb9-a0e8-457f-8f41-9452aac1bbed",
+    "question": "Какое значение display делает элемент блочным?",
+    "options": [
+      "block",
+      "inline",
+      "flex",
+      "grid"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Значение display: block; делает элемент блочным, занимающим всю ширину контейнера.",
+    "theme": "css"
+  },
+  {
+    "id": "b053c1fb-af6c-4984-a797-c6d78901673f",
+    "question": "Какое значение display делает элемент строчным?",
+    "options": [
+      "inline",
+      "block",
+      "flex",
+      "grid"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Значение display: inline; делает элемент строчным, не создавая перенос строки.",
+    "theme": "css"
+  },
+  {
+    "id": "35568bfa-8cb4-4662-a414-ee6fcf91d75c",
+    "question": "Какое значение display скрывает элемент?",
+    "options": [
+      "none",
+      "hidden",
+      "invisible",
+      "off"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Значение display: none; скрывает элемент, убирая его из потока документа.",
+    "theme": "css"
+  },
+  {
+    "id": "31beb97a-c4a6-4028-907b-4c488ce82a7e",
+    "question": "Какое свойство управляет видимостью элемента?",
+    "options": [
+      "visibility",
+      "display",
+      "opacity",
+      "show"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство visibility управляет видимостью, например, visibility: hidden; скрывает элемент, сохраняя его место.",
+    "theme": "css"
+  },
+  {
+    "id": "ebd8a979-f4da-4875-96a5-a14ceeebd5b6",
+    "question": "Какое свойство задает прозрачность элемента?",
+    "options": [
+      "opacity",
+      "visibility",
+      "transparent",
+      "alpha"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство opacity задает прозрачность от 0 (полностью прозрачный) до 1, например, opacity: 0.5;.",
+    "theme": "css"
+  },
+  {
+    "id": "90324242-6cdf-4e47-a416-5b4bb7973f6f",
+    "question": "Какое свойство задает позиционирование элемента?",
+    "options": [
+      "position",
+      "placement",
+      "layout",
+      "align"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство position определяет тип позиционирования, например, position: relative; или position: absolute;.",
+    "theme": "css"
+  },
+  {
+    "id": "b3647526-4089-422f-a256-f2a299a0e22f",
+    "question": "Какое значение position убирает элемент из потока документа?",
+    "options": [
+      "absolute",
+      "relative",
+      "static",
+      "fixed"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Значение position: absolute; убирает элемент из потока, позиционируя его относительно ближайшего позиционированного предка.",
+    "theme": "css"
+  },
+  {
+    "id": "d2e431b0-87cb-461d-8da5-c45992025c2a",
+    "question": "Какое свойство задает смещение сверху для позиционированного элемента?",
+    "options": [
+      "top",
+      "margin-top",
+      "offset-top",
+      "position-top"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство top задает смещение сверху для элементов с position: absolute, fixed или relative.",
+    "theme": "css"
+  },
+  {
+    "id": "b18fb37a-6d2f-4f68-8e1d-4f1ad2336bdb",
+    "question": "Какое свойство задает тень элемента?",
+    "options": [
+      "box-shadow",
+      "shadow",
+      "border-shadow",
+      "element-shadow"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство box-shadow задает тень, например, box-shadow: 2px 2px 5px rgba(0,0,0,0.3);.",
+    "theme": "css"
+  },
+  {
+    "id": "0945026a-c685-40e4-930e-bb5046dbcd57",
+    "question": "Какое свойство задает тень текста?",
+    "options": [
+      "text-shadow",
+      "shadow",
+      "font-shadow",
+      "text-effect"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство text-shadow задает тень текста, например, text-shadow: 1px 1px 2px black;.",
+    "theme": "css"
+  },
+  {
+    "id": "ea96f986-2908-4800-b293-705fb50533d2",
+    "question": "Какое свойство управляет выравниванием flex-элементов по главной оси?",
+    "options": [
+      "justify-content",
+      "align-items",
+      "flex-align",
+      "align-content"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство justify-content управляет выравниванием flex-элементов по главной оси, например, justify-content: center;.",
+    "theme": "css"
+  },
+  {
+    "id": "96539a7b-0e26-4b61-9075-253c811f3f10",
+    "question": "Какое свойство управляет выравниванием flex-элементов по поперечной оси?",
+    "options": [
+      "align-items",
+      "justify-content",
+      "flex-align",
+      "align-content"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство align-items управляет выравниванием flex-элементов по поперечной оси, например, align-items: center;.",
+    "theme": "css"
+  },
+  {
+    "id": "7ee67528-14cb-4aff-9159-9c96a515f610",
+    "question": "Какое свойство включает flex-контейнер?",
+    "options": [
+      "display: flex;",
+      "flex: on;",
+      "layout: flex;",
+      "display: inline-flex;"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство display: flex; превращает элемент в flex-контейнер, активируя flexbox.",
+    "theme": "css"
+  },
+  {
+    "id": "701984e7-9db1-4cc5-946a-b2857fa031a0",
+    "question": "Какое свойство задает направление flex-элементов?",
+    "options": [
+      "flex-direction",
+      "flex-flow",
+      "direction",
+      "flex-align"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство flex-direction задает направление главной оси, например, flex-direction: row; или column;.",
+    "theme": "css"
+  },
+  {
+    "id": "640c4174-0edc-4cab-8e39-de540a86d0ab",
+    "question": "Какое свойство задает перенос flex-элементов на новую строку?",
+    "options": [
+      "flex-wrap",
+      "wrap",
+      "flex-flow",
+      "break"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство flex-wrap управляет переносом элементов, например, flex-wrap: wrap;.",
+    "theme": "css"
+  },
+  {
+    "id": "e948e1fa-2573-4844-b1a1-ca0e2696c872",
+    "question": "Какое свойство включает grid-контейнер?",
+    "options": [
+      "display: grid;",
+      "grid: on;",
+      "layout: grid;",
+      "display: inline-grid;"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство display: grid; превращает элемент в grid-контейнер, активируя CSS Grid.",
+    "theme": "css"
+  },
+  {
+    "id": "e661a1f8-5ebb-4b1f-9a56-f49dffcd458f",
+    "question": "Какое свойство задает количество и размеры столбцов в grid?",
+    "options": [
+      "grid-template-columns",
+      "grid-columns",
+      "columns",
+      "grid-layout"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство grid-template-columns задает структуру столбцов, например, grid-template-columns: 1fr 2fr;.",
+    "theme": "css"
+  },
+  {
+    "id": "6c6c48e5-9c96-4da0-966d-0010da8c4569",
+    "question": "Какое свойство задает количество и размеры строк в grid?",
+    "options": [
+      "grid-template-rows",
+      "grid-rows",
+      "rows",
+      "grid-layout"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство grid-template-rows задает структуру строк, например, grid-template-rows: 100px 200px;.",
+    "theme": "css"
+  },
+  {
+    "id": "d4986732-3961-4420-a03f-43d10cc8f2cb",
+    "question": "Какое свойство задает промежутки между grid-элементами?",
+    "options": [
+      "gap",
+      "grid-gap",
+      "spacing",
+      "margin"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство gap задает промежутки между grid-элементами, например, gap: 10px;.",
+    "theme": "css"
+  },
+  {
+    "id": "72c4f7cf-ac9b-47bf-83c4-9da18a86da45",
+    "question": "Какое свойство управляет анимацией элемента?",
+    "options": [
+      "animation",
+      "transition",
+      "animate",
+      "effect"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство animation задает параметры анимации, например, animation: slide 2s ease-in-out;.",
+    "theme": "css"
+  },
+  {
+    "id": "2dd74d7b-4e9f-4585-a98f-eaa94878d96f",
+    "question": "Какое свойство управляет плавным изменением стилей?",
+    "options": [
+      "transition",
+      "animation",
+      "transform",
+      "effect"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство transition задает плавное изменение стилей, например, transition: all 0.3s ease;.",
+    "theme": "css"
+  },
+  {
+    "id": "ed499e0f-2074-4d2e-8f52-96c40a376f19",
+    "question": "Какое свойство задает трансформацию элемента?",
+    "options": [
+      "transform",
+      "transition",
+      "animation",
+      "rotate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство transform изменяет внешний вид элемента, например, transform: rotate(45deg);.",
+    "theme": "css"
+  },
+  {
+    "id": "297564bb-bfb7-46fa-a29a-d53c2bbb3138",
+    "question": "Какое свойство задает порядок наложения элементов?",
+    "options": [
+      "z-index",
+      "layer",
+      "stack",
+      "order"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство z-index определяет порядок наложения элементов, например, z-index: 10;.",
+    "theme": "css"
+  },
+  {
+    "id": "2b8a1f17-47e4-45cc-8d5e-6c99ec5e22a9",
+    "question": "Какое свойство задает тип курсора при наведении?",
+    "options": [
+      "cursor",
+      "pointer",
+      "hover",
+      "mouse"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство cursor задает тип курсора, например, cursor: pointer;.",
+    "theme": "css"
+  },
+  {
+    "id": "37469f48-27e0-448b-8728-ecf782b603db",
+    "question": "Какое свойство задает режим обтекания элемента?",
+    "options": [
+      "float",
+      "flow",
+      "wrap",
+      "clear"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство float определяет обтекание элемента, например, float: left;.",
+    "theme": "css"
+  },
+  {
+    "id": "7a24cfd3-ee62-4502-a23b-e9628a9cc8f7",
+    "question": "Какое свойство отменяет обтекание вокруг элемента?",
+    "options": [
+      "clear",
+      "float",
+      "overflow",
+      "wrap"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство clear отменяет обтекание, например, clear: both;.",
+    "theme": "css"
+  },
+  {
+    "id": "cbf87cdc-023c-42a0-94fa-c62cbab7a808",
+    "question": "Какое свойство задает максимальную ширину элемента?",
+    "options": [
+      "max-width",
+      "width-max",
+      "limit-width",
+      "max-size"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство max-width ограничивает максимальную ширину, например, max-width: 500px;.",
+    "theme": "css"
+  },
+  {
+    "id": "6aea43bb-16b1-46d4-ad1b-ee2abb96221c",
+    "question": "Какое свойство задает минимальную высоту элемента?",
+    "options": [
+      "min-height",
+      "height-min",
+      "limit-height",
+      "min-size"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство min-height задает минимальную высоту, например, min-height: 100px;.",
+    "theme": "css"
+  },
+  {
+    "id": "02e3b131-68e7-47fc-ac8d-d3dc6e536319",
+    "question": "Какое свойство управляет поведением содержимого при переполнении?",
+    "options": [
+      "overflow",
+      "clip",
+      "scroll",
+      "hidden"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство overflow управляет переполнением, например, overflow: auto; добавляет прокрутку.",
+    "theme": "css"
+  },
+  {
+    "id": "c271ea51-c19c-4d7c-a7fd-f14b8e212276",
+    "question": "Какое свойство задает тип списка для <ul> или <ol>?",
+    "options": [
+      "list-style-type",
+      "list-type",
+      "style-list",
+      "list-marker"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство list-style-type задает тип маркера списка, например, list-style-type: disc;.",
+    "theme": "css"
+  },
+  {
+    "id": "cf1e1190-d4d0-46be-af48-acfe7ccf0bf1",
+    "question": "Какое свойство задает изображение для маркера списка?",
+    "options": [
+      "list-style-image",
+      "list-image",
+      "marker-image",
+      "list-style"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство list-style-image задает изображение для маркера, например, list-style-image: url('marker.png');.",
+    "theme": "css"
+  },
+  {
+    "id": "36712ce0-cbdc-4b5d-8608-abf6d457f91b",
+    "question": "Какое свойство центрирует блочный элемент по горизонтали?",
+    "options": [
+      "margin: auto;",
+      "align: center;",
+      "center: true;",
+      "text-align: center;"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство margin: auto; с заданной шириной центрирует блочный элемент по горизонтали.",
+    "theme": "css"
+  },
+  {
+    "id": "a6973652-d636-4e1d-9ab5-d9a2b6c68018",
+    "question": "Какое свойство задает начертание текста, например, подчеркивание?",
+    "options": [
+      "text-decoration",
+      "font-decoration",
+      "text-style",
+      "decoration"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство text-decoration задает оформление текста, например, text-decoration: underline;.",
+    "theme": "css"
+  },
+  {
+    "id": "bf5c2fc4-c87a-44db-aa59-7e085f1cc3be",
+    "question": "Какое свойство задает радиус тени элемента?",
+    "options": [
+      "box-shadow: blur;",
+      "shadow-radius",
+      "blur-radius",
+      "box-shadow"
+    ],
+    "correctAnswer": 0,
+    "explanation": "В свойстве box-shadow третий параметр задает радиус размытия, например, box-shadow: 0 0 10px black;.",
+    "theme": "css"
+  },
+  {
+    "id": "ccca7925-fb0d-47a3-b472-3be7aec0e8ed",
+    "question": "Какое свойство задает порядок элементов во flex-контейнере?",
+    "options": [
+      "order",
+      "flex-order",
+      "position",
+      "z-index"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство order задает порядок flex-элементов, например, order: 1;.",
+    "theme": "css"
+  },
+  {
+    "id": "98e07740-549e-4fa6-a765-fb00be3e82c8",
+    "question": "Какое свойство задает базовую ширину flex-элемента?",
+    "options": [
+      "flex-basis",
+      "flex-size",
+      "basis",
+      "width"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство flex-basis задает начальный размер flex-элемента, например, flex-basis: 200px;.",
+    "theme": "css"
+  },
+  {
+    "id": "02bd8de7-9763-4b9f-a719-baea8939c2d4",
+    "question": "Какое свойство задает способность flex-элемента расти?",
+    "options": [
+      "flex-grow",
+      "flex-expand",
+      "grow",
+      "flex-size"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство flex-grow определяет, насколько элемент может увеличиваться, например, flex-grow: 1;.",
+    "theme": "css"
+  },
+  {
+    "id": "7c848f45-8f40-49da-bb56-35396a3c3a99",
+    "question": "Какое свойство задает способность flex-элемента сжиматься?",
+    "options": [
+      "flex-shrink",
+      "flex-reduce",
+      "shrink",
+      "flex-size"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство flex-shrink определяет, насколько элемент может сжиматься, например, flex-shrink: 1;.",
+    "theme": "css"
+  },
+  {
+    "id": "6ae74ea2-d455-43ff-8271-a1f3b60d065c",
+    "question": "Какое свойство задает выравнивание grid-элементов по горизонтали?",
+    "options": [
+      "justify-items",
+      "align-items",
+      "grid-justify",
+      "justify-content"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство justify-items выравнивает grid-элементы по горизонтали, например, justify-items: center;.",
+    "theme": "css"
+  },
+  {
+    "id": "50d31184-14cc-406d-a0ac-0c770030e7a9",
+    "question": "Какое свойство задает выравнивание grid-элементов по вертикали?",
+    "options": [
+      "align-items",
+      "justify-items",
+      "grid-align",
+      "align-content"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство align-items выравнивает grid-элементы по вертикали, например, align-items: center;.",
+    "theme": "css"
+  },
+  {
+    "id": "c7e2a9d1-c0b6-42e3-ae46-e651dadca608",
+    "question": "Какое свойство задает длительность transition?",
+    "options": [
+      "transition-duration",
+      "transition-time",
+      "duration",
+      "transition-length"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство transition-duration задает время перехода, например, transition-duration: 0.5s;.",
+    "theme": "css"
+  },
+  {
+    "id": "ce285c4d-224a-4064-bb12-1a81b004e57f",
+    "question": "Какое свойство задает функцию времени для transition?",
+    "options": [
+      "transition-timing-function",
+      "transition-ease",
+      "timing",
+      "transition-curve"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство transition-timing-function задает скорость изменения, например, transition-timing-function: ease-in;.",
+    "theme": "css"
+  },
+  {
+    "id": "63662a0d-3c11-4b91-a58d-415c17d503ed",
+    "question": "Какое свойство задает начальную точку трансформации?",
+    "options": [
+      "transform-origin",
+      "transform-point",
+      "origin",
+      "transform-start"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство transform-origin задает точку трансформации, например, transform-origin: center;.",
+    "theme": "css"
+  },
+  {
+    "id": "ddefc6aa-2478-41f7-91a3-64a1ecace14d",
+    "question": "Какое свойство задает перспективу для 3D-трансформаций?",
+    "options": [
+      "perspective",
+      "depth",
+      "3d",
+      "view"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство perspective задает глубину перспективы, например, perspective: 1000px;.",
+    "theme": "css"
+  },
+  {
+    "id": "83deb92b-9b6b-4c02-a544-eb771c2de672",
+    "question": "Какое свойство задает стиль обводки элемента?",
+    "options": [
+      "outline",
+      "border",
+      "stroke",
+      "frame"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство outline задает обводку вокруг элемента, не влияя на поток, например, outline: 2px solid blue;.",
+    "theme": "css"
+  },
+  {
+    "id": "f32d1111-1efc-478e-8d4d-1c485f80ad18",
+    "question": "Какое свойство задает смещение обводки?",
+    "options": [
+      "outline-offset",
+      "outline-margin",
+      "offset",
+      "outline-space"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство outline-offset задает расстояние обводки от границы, например, outline-offset: 5px;.",
+    "theme": "css"
+  },
+  {
+    "id": "72764adf-f439-4671-9c3f-80601d085e02",
+    "question": "Какое свойство задает режим наложения элементов?",
+    "options": [
+      "mix-blend-mode",
+      "blend-mode",
+      "overlay",
+      "mix-mode"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Свойство mix-blend-mode задает режим наложения, например, mix-blend-mode: multiply;.",
+    "theme": "css"
+  }
+]
