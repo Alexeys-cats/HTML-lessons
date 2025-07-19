@@ -39,7 +39,8 @@ export const Text = (props: Iprops) => {
 
   return (
     <TextTag
-      className={cn(textSize[variant],
+      className={cn(
+        textSize[variant],
         error && 'texr-red-500',
         readonly && 'opacity-50',
         className
