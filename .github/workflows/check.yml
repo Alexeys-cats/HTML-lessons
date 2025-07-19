@@ -23,16 +23,25 @@ jobs:
         run: npm ci
 
       - name: Lint code
-        run: npm run lint
-        continue-on-error: true
+        id: lint
+        run: |
+          npm run lint > lint.log 2>&1 || true
+          tail -n 50 lint.log
+          echo "::set-output name=lint_result::$(tail -n 50 lint.log | sed ':a;N;$!ba;s/\n/\\n/g')"
 
       - name: Run Prettier check
-        run: npm run format:check
-        continue-on-error: true
+        id: prettier
+        run: |
+          npm run format:check > prettier.log 2>&1 || true
+          tail -n 50 prettier.log
+          echo "::set-output name=prettier_result::$(tail -n 50 prettier.log | sed ':a;N;$!ba;s/\n/\\n/g')"
 
       - name: Run typescript type checks
-        run: npm run typecheck
-        continue-on-error: true
+        id: typecheck
+        run: |
+          npm run typecheck > typecheck.log 2>&1 || true
+          tail -n 50 typecheck.log
+          echo "::set-output name=typecheck_result::$(tail -n 50 typecheck.log | sed ':a;N;$!ba;s/\n/\\n/g')"
 
   build:
     runs-on: ubuntu-latest
@@ -50,4 +59,49 @@ jobs:
         run: npm ci
 
       - name: Build React app
-        run: npm run build:ci
+        id: build
+        run: |
+          npm run build:ci > build.log 2>&1 || true
+          tail -n 50 build.log
+          echo "::set-output name=build_result::$(tail -n 50 build.log | sed ':a;N;$!ba;s/\n/\\n/g')"
+
+      - name: Generate summary for PR
+        run: |
+          echo '### CI Summary' >> $GITHUB_STEP_SUMMARY
+          echo '' >> $GITHUB_STEP_SUMMARY
+          echo '✅ Проверка завершена!' >> $GITHUB_STEP_SUMMARY
+          echo '' >> $GITHUB_STEP_SUMMARY
+          echo '#### Линтинг:' >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.lint.outputs.lint_result }}" >> $GITHUB_STEP_SUMMARY
+          echo '' >> $GITHUB_STEP_SUMMARY
+          echo '#### Prettier:' >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.prettier.outputs.prettier_result }}" >> $GITHUB_STEP_SUMMARY
+          echo '' >> $GITHUB_STEP_SUMMARY
+          echo '#### Typecheck:' >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.typecheck.outputs.typecheck_result }}" >> $GITHUB_STEP_SUMMARY
+          echo '' >> $GITHUB_STEP_SUMMARY
+          echo '#### Build:' >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.build.outputs.build_result }}" >> $GITHUB_STEP_SUMMARY
+          echo '' >> $GITHUB_STEP_SUMMARY
+          echo "- [Логи CI](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY
+
+      - name: Comment PR with check result
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: check-result
+          message: |
+            ✅ Проверка завершена!
+            
+            #### Линтинг:
+            ${{ steps.lint.outputs.lint_result }}
+            
+            #### Prettier:
+            ${{ steps.prettier.outputs.prettier_result }}
+            
+            #### Typecheck:
+            ${{ steps.typecheck.outputs.typecheck_result }}
+            
+            #### Build:
+            ${{ steps.build.outputs.build_result }}
+            
+            [Логи CI](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})

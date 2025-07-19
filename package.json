@@ -7,10 +7,6 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "build:ci": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
-    "format": "prettier --write .",
     "format:check": "prettier --check .",
     "typecheck": "tsc --noEmit --skipLibCheck"
   },
