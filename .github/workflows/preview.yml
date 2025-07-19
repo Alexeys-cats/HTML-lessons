@@ -4,9 +4,12 @@ on:
   push:
     branches-ignore:
       - main
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   deploy-preview:
@@ -49,3 +52,23 @@ jobs:
           branch: gh-pages
           target-folder: preview/${{ steps.branch-name.outputs.current_branch }}
           clean: true
+
+      - name: Find Pull Request
+        uses: jwalton/gh-find-current-pr@v1
+        id: find-pr
+        if: github.event_name == 'push' || github.event_name == 'pull_request'
+        with:
+          state: open
+
+      - name: Add or update comment with preview link
+        if: steps.find-pr.outputs.number
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          number: ${{ steps.find-pr.outputs.number }}
+          header: preview
+          message: |
+            🚀 **Превью фича-стенда готово!**
+            
+            Проверить изменения можно по ссылке: [Фича-стенд на GitHub Pages](https://${{ github.repository_owner }}.github.io/HTML-lessons/preview/${{ steps.branch-name.outputs.current_branch }}/)
+            
+            _Автоматически создано из ветки: ${{ steps.branch-name.outputs.current_branch }}_
