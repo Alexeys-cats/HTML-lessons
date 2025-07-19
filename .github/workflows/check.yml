@@ -131,3 +131,15 @@ jobs:
             ${{ steps.build.outputs.build_result }}
 
             [Логи CI](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+
+      - name: Fail if any check failed
+        run: |
+          if [[ "${{ steps.lint.outputs.lint_status }}" == "❌" || \
+                "${{ steps.prettier.outputs.prettier_status }}" == "❌" || \
+                "${{ steps.typecheck.outputs.typecheck_status }}" == "❌" || \
+                "${{ steps.build.outputs.build_status }}" == "❌" ]]; then
+            echo "❌ Один или несколько этапов проверки завершились с ошибками"
+            exit 1
+          else
+            echo "✅ Все проверки прошли успешно"
+          fi
