@@ -6,9 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:ci": "vite build",
+    "build:prod": "cross-env BASE_PATH=/HTML-lessons/ vite build",
+    "deploy:prod": "npm run build:prod && gh-pages -d dist -b gh-pages -r https://github.com/Alexeys-cats/HTML-lessons.git",
+    "typecheck": "tsc --noEmit --skipLibCheck",
     "preview": "vite preview",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
@@ -44,6 +48,7 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.2.0",
     "prettier": "^3.6.2",
+    "strip-ansi": "^7.1.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.35.1",
     "vite": "^7.0.0"

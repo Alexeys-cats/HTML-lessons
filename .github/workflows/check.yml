@@ -1,0 +1,145 @@
+name: Check-and-build Code
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          npm ci --verbose
+          npm list --depth=0
+
+      - name: Lint code
+        id: lint
+        run: |
+          npm run lint > lint.log 2>&1 || true
+          sed 's/\x1b\[[0-9;]*m//g' lint.log > lint.clean.log
+          tail -n 50 lint.clean.log > lint.tail.log
+          cat lint.tail.log
+          if grep -q "error" lint.tail.log; then echo "lint_status=❌" >> $GITHUB_OUTPUT; else echo "lint_status=✅" >> $GITHUB_OUTPUT; fi
+          echo "lint_result<<EOF" >> $GITHUB_OUTPUT
+          echo '```' >> $GITHUB_OUTPUT
+          cat lint.tail.log >> $GITHUB_OUTPUT
+          echo '```' >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+        continue-on-error: true
+
+      - name: Run Prettier check
+        id: prettier
+        run: |
+          npm run format:check > prettier.log 2>&1 || true
+          sed 's/\x1b\[[0-9;]*m//g' prettier.log > prettier.clean.log
+          tail -n 50 prettier.clean.log > prettier.tail.log
+          cat prettier.tail.log
+          if grep -q "code style issues found" prettier.tail.log; then echo "prettier_status=❌" >> $GITHUB_OUTPUT; else echo "prettier_status=✅" >> $GITHUB_OUTPUT; fi
+          echo "prettier_result<<EOF" >> $GITHUB_OUTPUT
+          echo '```' >> $GITHUB_OUTPUT
+          cat prettier.tail.log >> $GITHUB_OUTPUT
+          echo '```' >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+        continue-on-error: true
+
+      - name: Run typescript type checks
+        id: typecheck
+        run: |
+          npm run typecheck > typecheck.log 2>&1 || true
+          sed 's/\x1b\[[0-9;]*m//g' typecheck.log > typecheck.clean.log
+          tail -n 50 typecheck.clean.log > typecheck.tail.log
+          cat typecheck.tail.log
+          if grep -q "error" typecheck.tail.log; then echo "typecheck_status=❌" >> $GITHUB_OUTPUT; else echo "typecheck_status=✅" >> $GITHUB_OUTPUT; fi
+          echo "typecheck_result<<EOF" >> $GITHUB_OUTPUT
+          echo '```' >> $GITHUB_OUTPUT
+          cat typecheck.tail.log >> $GITHUB_OUTPUT
+          echo '```' >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+        continue-on-error: true
+
+      - name: Build React app
+        id: build
+        run: |
+          npm run build:ci > build.log 2>&1 || true
+          sed 's/\x1b\[[0-9;]*m//g' build.log > build.clean.log
+          tail -n 50 build.clean.log > build.tail.log
+          cat build.tail.log
+          if grep -q "error" build.tail.log; then echo "build_status=❌" >> $GITHUB_OUTPUT; else echo "build_status=✅" >> $GITHUB_OUTPUT; fi
+          echo "build_result<<EOF" >> $GITHUB_OUTPUT
+          echo '```' >> $GITHUB_OUTPUT
+          cat build.tail.log >> $GITHUB_OUTPUT
+          echo '```' >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+        continue-on-error: true
+
+      - name: Generate summary for PR
+        if: github.event_name == 'pull_request'
+        run: |
+          echo '### CI Summary' >> $GITHUB_STEP_SUMMARY
+          echo '' >> $GITHUB_STEP_SUMMARY
+          echo '✅ Проверка завершена!' >> $GITHUB_STEP_SUMMARY
+          echo '' >> $GITHUB_STEP_SUMMARY
+          echo "#### Линтинг: ${{ steps.lint.outputs.lint_status }}" >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.lint.outputs.lint_result }}" >> $GITHUB_STEP_SUMMARY
+          echo '' >> $GITHUB_STEP_SUMMARY
+          echo "#### Prettier: ${{ steps.prettier.outputs.prettier_status }}" >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.prettier.outputs.prettier_result }}" >> $GITHUB_STEP_SUMMARY
+          echo '' >> $GITHUB_STEP_SUMMARY
+          echo "#### Typecheck: ${{ steps.typecheck.outputs.typecheck_status }}" >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.typecheck.outputs.typecheck_result }}" >> $GITHUB_STEP_SUMMARY
+          echo '' >> $GITHUB_STEP_SUMMARY
+          echo "#### Build: ${{ steps.build.outputs.build_status }}" >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.build.outputs.build_result }}" >> $GITHUB_STEP_SUMMARY
+          echo '' >> $GITHUB_STEP_SUMMARY
+          echo "- [Логи CI](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY
+
+      - name: Comment PR with check result
+        if: github.event_name == 'pull_request'
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: check-result
+          message: |
+            ✅ Проверка завершена!
+
+            #### Линтинг: ${{ steps.lint.outputs.lint_status }}
+            ${{ steps.lint.outputs.lint_result }}
+
+            #### Prettier: ${{ steps.prettier.outputs.prettier_status }}
+            ${{ steps.prettier.outputs.prettier_result }}
+
+            #### Typecheck: ${{ steps.typecheck.outputs.typecheck_status }}
+            ${{ steps.typecheck.outputs.typecheck_result }}
+
+            #### Build: ${{ steps.build.outputs.build_status }}
+            ${{ steps.build.outputs.build_result }}
+
+            [Логи CI](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+
+      - name: Fail if any check failed
+        run: |
+          if [[ "${{ steps.lint.outputs.lint_status }}" == "❌" || \
+                "${{ steps.prettier.outputs.prettier_status }}" == "❌" || \
+                "${{ steps.typecheck.outputs.typecheck_status }}" == "❌" || \
+                "${{ steps.build.outputs.build_status }}" == "❌" ]]; then
+            echo "❌ Один или несколько этапов проверки завершились с ошибками"
+            exit 1
+          else
+            echo "✅ Все проверки прошли успешно"
+          fi

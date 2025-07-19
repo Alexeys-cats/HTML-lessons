@@ -55,11 +55,7 @@
     "webkit": false,
     "syntax": "(initial)|(inherit)|(unset)",
     "initial": "none",
-    "values": [
-      "initial",
-      "inherit",
-      "unset"
-    ]
+    "values": ["initial", "inherit", "unset"]
   },
   "animation": {
     "id": "629c4ee3-3260-4d0b-8038-c43790ec4d5b",
@@ -86,11 +82,7 @@
     "webkit": true,
     "syntax": "([time])|(initial)|(inherit)",
     "initial": "0s",
-    "values": [
-      "[time]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[time]", "initial", "inherit"]
   },
   "animation-direction": {
     "id": "6b5bac0f-83de-4915-a447-0ba14e987bc4",
@@ -113,11 +105,7 @@
     "webkit": true,
     "syntax": "([time])|(initial)|(inherit)",
     "initial": "0",
-    "values": [
-      "[time]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[time]", "initial", "inherit"]
   },
   "animation-fill-mode": {
     "id": "4ec59f54-c61e-44e7-a2eb-b3f0a765ac9e",
@@ -125,14 +113,7 @@
     "webkit": true,
     "syntax": "(none)|(forwards)|(backwards)|(both)|(initial)|(inherit)",
     "initial": "none",
-    "values": [
-      "none",
-      "forwards",
-      "backwards",
-      "both",
-      "initial",
-      "inherit"
-    ]
+    "values": ["none", "forwards", "backwards", "both", "initial", "inherit"]
   },
   "animation-iteration-count": {
     "id": "44c66535-9277-446d-bc78-209eca13603f",
@@ -140,12 +121,7 @@
     "webkit": true,
     "syntax": "([number])|(infinite)|(initial)|(inherit)",
     "initial": "1",
-    "values": [
-      "[number]",
-      "infinite",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[number]", "infinite", "initial", "inherit"]
   },
   "animation-name": {
     "id": "4fae26f8-44a2-4103-a154-abf3f48b3cff",
@@ -153,12 +129,7 @@
     "webkit": true,
     "syntax": "([label])|(none)|(initial)|(inherit)",
     "initial": "none",
-    "values": [
-      "[label]",
-      "none",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[label]", "none", "initial", "inherit"]
   },
   "animation-play-state": {
     "id": "6ab92f2f-0176-4cc9-afb9-cc760a97b8fe",
@@ -166,12 +137,7 @@
     "webkit": true,
     "syntax": "(paused)|(running)|(initial)|(inherit)",
     "initial": "running",
-    "values": [
-      "paused",
-      "running",
-      "initial",
-      "inherit"
-    ]
+    "values": ["paused", "running", "initial", "inherit"]
   },
   "animation-timing-function": {
     "id": "bde3170f-625a-4994-bf5d-15f6224c048b",
@@ -199,12 +165,7 @@
     "webkit": true,
     "syntax": "(visible)|(hidden)|(initial)|(inherit)",
     "initial": "visible",
-    "values": [
-      "visible",
-      "hidden",
-      "initial",
-      "inherit"
-    ]
+    "values": ["visible", "hidden", "initial", "inherit"]
   },
   "background": {
     "id": "0266737e-4d02-4695-b749-66b739a12ea5",
@@ -231,13 +192,7 @@
     "webkit": false,
     "syntax": "(scroll)|(fixed)|(local)|(initial)|(inherit)",
     "initial": "scroll",
-    "values": [
-      "scroll",
-      "fixed",
-      "local",
-      "initial",
-      "inherit"
-    ]
+    "values": ["scroll", "fixed", "local", "initial", "inherit"]
   },
   "background-blend-mode": {
     "id": "d73d444a-6d40-48df-a1c9-5251c65bf590",
@@ -264,13 +219,7 @@
     "webkit": false,
     "syntax": "(border-box)|(padding-box)|(content-box)|(initial)|(inherit)",
     "initial": "border-box",
-    "values": [
-      "border-box",
-      "padding-box",
-      "content-box",
-      "initial",
-      "inherit"
-    ]
+    "values": ["border-box", "padding-box", "content-box", "initial", "inherit"]
   },
   "background-color": {
     "id": "8c593319-4c22-4a1b-9740-b92a2292631e",
@@ -278,12 +227,7 @@
     "webkit": false,
     "syntax": "([color])|(transparent)|(initial)|(inherit)",
     "initial": "transparent",
-    "values": [
-      "[color]",
-      "transparent",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[color]", "transparent", "initial", "inherit"]
   },
   "background-image": {
     "id": "fa7d739d-c87f-47d3-b71d-49af1965dd00",
@@ -308,13 +252,7 @@
     "webkit": false,
     "syntax": "(padding-box)|(border-box)|(content-box)|(initial)|(inherit)",
     "initial": "padding-box",
-    "values": [
-      "padding-box",
-      "border-box",
-      "content-box",
-      "initial",
-      "inherit"
-    ]
+    "values": ["padding-box", "border-box", "content-box", "initial", "inherit"]
   },
   "background-position": {
     "id": "14d638aa-b6f5-49ef-8cc3-ed874e8e2f54",
@@ -361,14 +299,7 @@
     "webkit": true,
     "syntax": "(auto)|([length])|(cover)|(contain)|(initial)|(inherit)",
     "initial": "auto",
-    "values": [
-      "auto",
-      "[length]",
-      "cover",
-      "contain",
-      "initial",
-      "inherit"
-    ]
+    "values": ["auto", "[length]", "cover", "contain", "initial", "inherit"]
   },
   "border": {
     "id": "5cdee33a-43f3-4162-b5d3-3df859cc7450",
@@ -404,12 +335,7 @@
     "webkit": false,
     "syntax": "([color])|(transparent)|(initial)|(inherit)",
     "initial": "The current color of the element",
-    "values": [
-      "[color]",
-      "transparent",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[color]", "transparent", "initial", "inherit"]
   },
   "border-bottom-left-radius": {
     "id": "4ef6c4bc-33cc-4f7f-8d0b-12aaec1d43d7",
@@ -417,12 +343,7 @@
     "webkit": true,
     "syntax": "(([length])|([percent])){1,2}|(initial)|(inherit)",
     "initial": "0",
-    "values": [
-      "[length]",
-      "[percent]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[length]", "[percent]", "initial", "inherit"]
   },
   "border-bottom-right-radius": {
     "id": "58359384-d67e-44ae-86ef-28003a76110a",
@@ -430,12 +351,7 @@
     "webkit": true,
     "syntax": "(([length])|([percent])){1,2}|(initial)|(inherit)",
     "initial": "0",
-    "values": [
-      "[length]",
-      "[percent]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[length]", "[percent]", "initial", "inherit"]
   },
   "border-bottom-style": {
     "id": "1d5b4989-27f3-4779-afe2-d8885e8e6581",
@@ -464,14 +380,7 @@
     "webkit": false,
     "syntax": "(medium)|(thin)|(thick)|([length])|(initial)|(inherit)",
     "initial": "medium",
-    "values": [
-      "medium",
-      "thin",
-      "thick",
-      "[length]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["medium", "thin", "thick", "[length]", "initial", "inherit"]
   },
   "border-collapse": {
     "id": "e64bd02d-0d6e-4120-9608-006bf388635c",
@@ -479,12 +388,7 @@
     "webkit": false,
     "syntax": "(separate)|(collapse)|(initial)|(inherit)",
     "initial": "separate",
-    "values": [
-      "separate",
-      "collapse",
-      "initial",
-      "inherit"
-    ]
+    "values": ["separate", "collapse", "initial", "inherit"]
   },
   "border-color": {
     "id": "c611faee-fd08-4836-804d-475d0c7d14a6",
@@ -492,12 +396,7 @@
     "webkit": false,
     "syntax": "([color])|(transparent)|(initial)|(inherit)",
     "initial": "The current color of the element",
-    "values": [
-      "[color]",
-      "transparent",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[color]", "transparent", "initial", "inherit"]
   },
   "border-image": {
     "id": "87a466f4-701b-4274-b9c8-08af18e0c50e",
@@ -521,12 +420,7 @@
     "webkit": false,
     "syntax": "([length])|([number])|(initial)|(inherit)",
     "initial": "0",
-    "values": [
-      "[length]",
-      "[number]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[length]", "[number]", "initial", "inherit"]
   },
   "border-image-repeat": {
     "id": "2023d0a3-2959-4c05-af1e-167b583d637e",
@@ -534,14 +428,7 @@
     "webkit": false,
     "syntax": "(stretch)|(repeat)|(round)|(initial)|(inherit)",
     "initial": "stretch",
-    "values": [
-      "stretch",
-      "repeat",
-      "round",
-      "space",
-      "initial",
-      "inherit"
-    ]
+    "values": ["stretch", "repeat", "round", "space", "initial", "inherit"]
   },
   "border-image-slice": {
     "id": "93468263-6bff-43f5-ae1d-c22b1120f212",
@@ -549,13 +436,7 @@
     "webkit": false,
     "syntax": "([number])|([percent])|(fill)|(initial)|(inherit)",
     "initial": "100%",
-    "values": [
-      "[number]",
-      "[percent]",
-      "fill",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[number]", "[percent]", "fill", "initial", "inherit"]
   },
   "border-image-source": {
     "id": "4ab46a41-05ad-4db0-81c7-7ed41584bcd5",
@@ -563,12 +444,7 @@
     "webkit": false,
     "syntax": "(none)|(image)|(initial)|(inherit)",
     "initial": "none",
-    "values": [
-      "none",
-      "image",
-      "initial",
-      "inherit"
-    ]
+    "values": ["none", "image", "initial", "inherit"]
   },
   "border-image-width": {
     "id": "4df3e42d-fa51-4d84-9255-758f0d173b1c",
@@ -605,12 +481,7 @@
     "webkit": false,
     "syntax": "([color])|(transparent)|(initial)|(inherit)",
     "initial": "The current color of the element",
-    "values": [
-      "[color]",
-      "transparent",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[color]", "transparent", "initial", "inherit"]
   },
   "border-left-style": {
     "id": "c9473b5f-8ece-4815-8858-f38ec6c9dd05",
@@ -639,14 +510,7 @@
     "webkit": false,
     "syntax": "(medium)|(thin)|(thick)|([length])|(initial)|(inherit)",
     "initial": "medium",
-    "values": [
-      "medium",
-      "thin",
-      "thick",
-      "[length]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["medium", "thin", "thick", "[length]", "initial", "inherit"]
   },
   "border-radius": {
     "id": "5f38adf1-bcc9-450a-97c5-23aebc3a37d1",
@@ -654,12 +518,7 @@
     "webkit": true,
     "syntax": "(([length])|[percent]){1:4}|(initial)|(inherit)",
     "initial": "0",
-    "values": [
-      "[length]",
-      "[percent]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[length]", "[percent]", "initial", "inherit"]
   },
   "border-right": {
     "id": "9519809e-2315-4633-8546-5b706c371665",
@@ -681,12 +540,7 @@
     "webkit": false,
     "syntax": "([color])|(transparent)|(initial)|(inherit)",
     "initial": "black",
-    "values": [
-      "[color]",
-      "transparent",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[color]", "transparent", "initial", "inherit"]
   },
   "border-right-style": {
     "id": "3d88a273-f246-402f-aa0b-690c87ca1fd2",
@@ -715,14 +569,7 @@
     "webkit": false,
     "syntax": "(medium)|(thin)|(thick)|([length])|(initial)|(inherit)",
     "initial": "medium",
-    "values": [
-      "medium",
-      "thin",
-      "thick",
-      "[length]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["medium", "thin", "thick", "[length]", "initial", "inherit"]
   },
   "border-spacing": {
     "id": "dcbb3159-94c2-46be-bae2-bff8d1f2e841",
@@ -730,11 +577,7 @@
     "webkit": false,
     "syntax": "([length]){1,2}|(initial)|(inherit)",
     "initial": "2px",
-    "values": [
-      "[length]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[length]", "initial", "inherit"]
   },
   "border-style": {
     "id": "abb08ebe-dc53-4c99-911b-07d95c387a70",
@@ -777,12 +620,7 @@
     "webkit": false,
     "syntax": "([color])|(transparent)|(initial)|(inherit)",
     "initial": "The current color of the element",
-    "values": [
-      "[color]",
-      "transparent",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[color]", "transparent", "initial", "inherit"]
   },
   "border-top-left-radius": {
     "id": "9248b412-6cad-4a3e-999a-de752fced3ae",
@@ -790,12 +628,7 @@
     "webkit": true,
     "syntax": "(([length])|[percent]){1,2}|(initial)|(inherit)",
     "initial": "0",
-    "values": [
-      "[length]",
-      "[percent]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[length]", "[percent]", "initial", "inherit"]
   },
   "border-top-right-radius": {
     "id": "82403818-d875-4694-9a4c-7f500b84d55f",
@@ -803,12 +636,7 @@
     "webkit": true,
     "syntax": "(([length])|[percent]){1,2}|(initial)|(inherit)",
     "initial": "0",
-    "values": [
-      "[length]",
-      "[percent]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[length]", "[percent]", "initial", "inherit"]
   },
   "border-top-style": {
     "id": "7a745c4b-244d-49e1-b117-a1a3bb78db5d",
@@ -837,14 +665,7 @@
     "webkit": false,
     "syntax": "(medium)|(thin)|(thick)|([length])|(initial)|(inherit)",
     "initial": "medium",
-    "values": [
-      "medium",
-      "thin",
-      "thick",
-      "[length]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["medium", "thin", "thick", "[length]", "initial", "inherit"]
   },
   "border-width": {
     "id": "d75ef932-e2c9-499b-8997-111b04f9ff30",
@@ -852,14 +673,7 @@
     "webkit": false,
     "syntax": "(medium)|(thin)|(thick)|([length])|(initial)|(inherit)",
     "initial": "medium",
-    "values": [
-      "medium",
-      "thin",
-      "thick",
-      "[length]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["medium", "thin", "thick", "[length]", "initial", "inherit"]
   },
   "bottom": {
     "id": "7fa9bc58-becc-433f-8f3e-b6364036ccce",
@@ -867,13 +681,7 @@
     "webkit": false,
     "syntax": "(auto)|([length])|(initial)|(inherit)",
     "initial": "auto",
-    "values": [
-      "auto",
-      "[length]",
-      "[percent]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["auto", "[length]", "[percent]", "initial", "inherit"]
   },
   "box-decoration-break": {
     "id": "1e1cd700-b7c5-427e-b958-744565ec379f",
@@ -881,12 +689,7 @@
     "webkit": true,
     "syntax": "(slice)|(clone)|(initial)|(inherit)|(unset)",
     "initial": "slice",
-    "values": [
-      "slice",
-      "clone",
-      "initial",
-      "inherit"
-    ]
+    "values": ["slice", "clone", "initial", "inherit"]
   },
   "box-shadow": {
     "id": "e73bc580-8c66-4ea4-9b90-f0f320b3c3ed",
@@ -912,12 +715,7 @@
     "webkit": true,
     "syntax": "(content-box)|(border-box)|(initial)|(inherit)",
     "initial": "content-box",
-    "values": [
-      "content-box",
-      "border-box",
-      "initial",
-      "inherit"
-    ]
+    "values": ["content-box", "border-box", "initial", "inherit"]
   },
   "caption-side": {
     "id": "826399a6-4b39-401c-afb2-6399475750d8",
@@ -925,12 +723,7 @@
     "webkit": false,
     "syntax": "(top)|(bottom)|(initial)|(inherit)",
     "initial": "top",
-    "values": [
-      "top",
-      "bottom",
-      "initial",
-      "inherit"
-    ]
+    "values": ["top", "bottom", "initial", "inherit"]
   },
   "caret-color": {
     "id": "1bb9ba57-81e3-4cb9-92fe-b65237a57029",
@@ -938,10 +731,7 @@
     "webkit": false,
     "syntax": "(auto)|([color])",
     "initial": "auto",
-    "values": [
-      "auto",
-      "[color]"
-    ]
+    "values": ["auto", "[color]"]
   },
   "@charset": {
     "id": "484a440f-4768-4051-b68d-369cb074c0a5",
@@ -949,9 +739,7 @@
     "webkit": false,
     "syntax": "@charset \"charset\"",
     "initial": "charset",
-    "values": [
-      "charset"
-    ]
+    "values": ["charset"]
   },
   "clear": {
     "id": "8fe8114f-d751-40b0-8cb1-e759f951d592",
@@ -959,14 +747,7 @@
     "webkit": false,
     "syntax": "(none)|(left)|(right)|(both)|(initial)|(inherit)",
     "initial": "none",
-    "values": [
-      "none",
-      "left",
-      "right",
-      "both",
-      "initial",
-      "inherit"
-    ]
+    "values": ["none", "left", "right", "both", "initial", "inherit"]
   },
   "clip": {
     "id": "8f110a55-3914-4614-b593-fdb73e5ccce7",
@@ -974,12 +755,7 @@
     "webkit": false,
     "syntax": "(auto)|(shape)|(initial)|(inherit)",
     "initial": "auto",
-    "values": [
-      "auto",
-      "shape",
-      "initial",
-      "inherit"
-    ]
+    "values": ["auto", "shape", "initial", "inherit"]
   },
   "color": {
     "id": "39bd18d0-7989-4b69-a3a7-1c4f33f6efd4",
@@ -987,11 +763,7 @@
     "webkit": false,
     "syntax": "([color])|(initial)|(inherit)",
     "initial": "not specified",
-    "values": [
-      "[color]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[color]", "initial", "inherit"]
   },
   "column-count": {
     "id": "3ef76c64-c933-410e-a9d8-c01771a0fd19",
@@ -999,12 +771,7 @@
     "webkit": true,
     "syntax": "([number])|(auto)|(initial)|(inherit)",
     "initial": "auto",
-    "values": [
-      "[number]",
-      "auto",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[number]", "auto", "initial", "inherit"]
   },
   "column-fill": {
     "id": "6603fc6b-7b41-4f65-bc6b-07727caec9be",
@@ -1012,12 +779,7 @@
     "webkit": true,
     "syntax": "(balance)|(auto)|(initial)|(inherit)",
     "initial": "balance",
-    "values": [
-      "balance",
-      "auto",
-      "initial",
-      "inherit"
-    ]
+    "values": ["balance", "auto", "initial", "inherit"]
   },
   "column-gap": {
     "id": "606cfee2-5133-48eb-bc99-4f07e49c905c",
@@ -1025,12 +787,7 @@
     "webkit": true,
     "syntax": "([length])|(normal)|(initial)|(inherit)",
     "initial": "normal",
-    "values": [
-      "[length]",
-      "normal",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[length]", "normal", "initial", "inherit"]
   },
   "column-rule": {
     "id": "bd712997-e4cb-4e3f-9e2f-e5f3cfb6a613",
@@ -1052,11 +809,7 @@
     "webkit": true,
     "syntax": "([color])|(initial)|(inherit)",
     "initial": "The current color of the element",
-    "values": [
-      "[color]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[color]", "initial", "inherit"]
   },
   "column-rule-style": {
     "id": "4c64dce0-8b2d-4358-980f-763b333bcae3",
@@ -1085,14 +838,7 @@
     "webkit": true,
     "syntax": "(medium)|(thin)|(thick)|([length])|(initial)|(inherit)",
     "initial": "medium",
-    "values": [
-      "medium",
-      "thin",
-      "thick",
-      "[length]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["medium", "thin", "thick", "[length]", "initial", "inherit"]
   },
   "column-span": {
     "id": "3095c9d2-d0ea-4396-a110-53477c33eef9",
@@ -1100,12 +846,7 @@
     "webkit": true,
     "syntax": "(none)|(all)|(initial)|(inherit)",
     "initial": "none",
-    "values": [
-      "none",
-      "all",
-      "initial",
-      "inherit"
-    ]
+    "values": ["none", "all", "initial", "inherit"]
   },
   "column-width": {
     "id": "6b9c6936-8a20-4c91-a791-03458f5b8995",
@@ -1113,12 +854,7 @@
     "webkit": true,
     "syntax": "(auto)|([length])|(initial)|(inherit)",
     "initial": "auto",
-    "values": [
-      "auto",
-      "[length]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["auto", "[length]", "initial", "inherit"]
   },
   "columns": {
     "id": "1a05c193-a3a6-4225-8ef6-a8a93bc457b7",
@@ -1161,12 +897,7 @@
     "webkit": false,
     "syntax": "(none)|([number])|(initial)|(inherit)",
     "initial": "none",
-    "values": [
-      "none",
-      "[number]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["none", "[number]", "initial", "inherit"]
   },
   "counter-reset": {
     "id": "aa26d0ca-fbe8-4e97-bf03-760cf523f9b6",
@@ -1174,12 +905,7 @@
     "webkit": false,
     "syntax": "(none)|([number])|(initial)|(inherit)",
     "initial": "none",
-    "values": [
-      "none",
-      "[number]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["none", "[number]", "initial", "inherit"]
   },
   "cursor": {
     "id": "082e52c9-7eb9-4e1b-9d33-d400af898d7d",
@@ -1235,12 +961,7 @@
     "webkit": false,
     "syntax": "(ltr)|(rtl)|(initial)|(inherit)",
     "initial": "ltr",
-    "values": [
-      "ltr",
-      "rtl",
-      "initial",
-      "inherit"
-    ]
+    "values": ["ltr", "rtl", "initial", "inherit"]
   },
   "display": {
     "id": "c8f91b58-c6f7-41c0-985e-525f1ee23d4e",
@@ -1280,12 +1001,7 @@
     "webkit": false,
     "syntax": "(show)|(hide)|(initial)|(inherit)",
     "initial": "show",
-    "values": [
-      "show",
-      "hide",
-      "initial",
-      "inherit"
-    ]
+    "values": ["show", "hide", "initial", "inherit"]
   },
   "filter": {
     "id": "658e6a46-fde9-4868-9d98-368310fe5e96",
@@ -1332,12 +1048,7 @@
     "webkit": true,
     "syntax": "([number])|(auto)|(initial)|(inherit)",
     "initial": "auto",
-    "values": [
-      "[number]",
-      "auto",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[number]", "auto", "initial", "inherit"]
   },
   "flex-direction": {
     "id": "2edb4dc0-80d8-482a-b913-045d9f9bcff5",
@@ -1360,12 +1071,7 @@
     "webkit": true,
     "syntax": "flex-direction (flex-wrap)|(initial)|(inherit)",
     "initial": "row nowrap",
-    "values": [
-      "flex-direction",
-      "flex-wrap",
-      "initial",
-      "inherit"
-    ]
+    "values": ["flex-direction", "flex-wrap", "initial", "inherit"]
   },
   "flex-grow": {
     "id": "c3b72ddf-3a26-4f3c-ae47-1722098ddcd3",
@@ -1373,11 +1079,7 @@
     "webkit": true,
     "syntax": "([number])|(initial)|(inherit)",
     "initial": "0",
-    "values": [
-      "[number]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[number]", "initial", "inherit"]
   },
   "flex-shrink": {
     "id": "38607bd9-ee6b-47e3-b146-514f9b7e9a3b",
@@ -1385,11 +1087,7 @@
     "webkit": true,
     "syntax": "([number])|(initial)|(inherit)",
     "initial": "1",
-    "values": [
-      "[number]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[number]", "initial", "inherit"]
   },
   "flex-wrap": {
     "id": "7e321bc7-4819-450e-b839-82f95b9d4f62",
@@ -1397,13 +1095,7 @@
     "webkit": true,
     "syntax": "(nowrap)|(wrap)|(wrap-reverse)|(initial)|(inherit)",
     "initial": "nowrap",
-    "values": [
-      "nowrap",
-      "wrap",
-      "wrap-reverse",
-      "initial",
-      "inherit"
-    ]
+    "values": ["nowrap", "wrap", "wrap-reverse", "initial", "inherit"]
   },
   "float": {
     "id": "7e47d6b8-e59a-4d84-a736-9b9350e98d64",
@@ -1411,13 +1103,7 @@
     "webkit": false,
     "syntax": "(none)|(left)|(right)|(initial)|(inherit)",
     "initial": "none",
-    "values": [
-      "none",
-      "left",
-      "right",
-      "initial",
-      "inherit"
-    ]
+    "values": ["none", "left", "right", "initial", "inherit"]
   },
   "font": {
     "id": "611bfc95-6488-4467-be00-1fad45807086",
@@ -1447,12 +1133,7 @@
     "webkit": false,
     "syntax": "([family-name])|([generic-family])|(initial)|(inherit)",
     "initial": "depends on the browser",
-    "values": [
-      "[family-name]",
-      "[generic-family]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[family-name]", "[generic-family]", "initial", "inherit"]
   },
   "font-kerning": {
     "id": "a612a18b-11de-4c14-88ad-fb202dd9efc7",
@@ -1460,11 +1141,7 @@
     "webkit": true,
     "syntax": "(auto)|(normal)|(none)",
     "initial": "auto",
-    "values": [
-      "auto",
-      "normal",
-      "none"
-    ]
+    "values": ["auto", "normal", "none"]
   },
   "font-size": {
     "id": "e108b978-2825-48eb-a81d-173bf29b8bf7",
@@ -1494,12 +1171,7 @@
     "webkit": false,
     "syntax": "([number])|(none)|(initial)|(inherit)",
     "initial": "none",
-    "values": [
-      "[number]",
-      "none",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[number]", "none", "initial", "inherit"]
   },
   "font-stretch": {
     "id": "718d8b44-f3f5-4998-ab39-dc330f3dc209",
@@ -1527,13 +1199,7 @@
     "webkit": false,
     "syntax": "(normal)|(italic)|(oblique)|(initial)|(inherit)",
     "initial": "normal",
-    "values": [
-      "normal",
-      "italic",
-      "oblique",
-      "initial",
-      "inherit"
-    ]
+    "values": ["normal", "italic", "oblique", "initial", "inherit"]
   },
   "font-variant": {
     "id": "c43f4d9d-9663-4cc8-8cc1-5c39d9c553d9",
@@ -1541,12 +1207,7 @@
     "webkit": false,
     "syntax": "(normal)|(small-caps)|(initial)|(inherit)",
     "initial": "normal",
-    "values": [
-      "normal",
-      "small-caps",
-      "initial",
-      "inherit"
-    ]
+    "values": ["normal", "small-caps", "initial", "inherit"]
   },
   "font-weight": {
     "id": "f5a1e440-cf6c-450a-b59b-e5cc705e195d",
@@ -1626,13 +1287,7 @@
     "webkit": false,
     "syntax": "(row)|(column)|(dense)|(row dense)|(column dense)",
     "initial": "row",
-    "values": [
-      "row",
-      "column",
-      "dense",
-      "row dense",
-      "column dense"
-    ]
+    "values": ["row", "column", "dense", "row dense", "column dense"]
   },
   "grid-auto-rows": {
     "id": "4582e9c2-a1e2-449a-9fc3-42ce01249083",
@@ -1640,12 +1295,7 @@
     "webkit": false,
     "syntax": "(auto)|(max-content)|(min-content)|([length])",
     "initial": "auto",
-    "values": [
-      "auto",
-      "max-content",
-      "min-content",
-      "[length]"
-    ]
+    "values": ["auto", "max-content", "min-content", "[length]"]
   },
   "grid-column": {
     "id": "db5f152c-9067-4844-a3de-32813a276435",
@@ -1653,10 +1303,7 @@
     "webkit": false,
     "syntax": "grid-column-start / grid-column-end",
     "initial": "auto / auto",
-    "values": [
-      "[prop:grid-column-start]",
-      "[prop:grid-column-end]"
-    ]
+    "values": ["[prop:grid-column-start]", "[prop:grid-column-end]"]
   },
   "grid-column-end": {
     "id": "6076e630-dea1-4426-b9d0-501430d2c9b3",
@@ -1664,11 +1311,7 @@
     "webkit": false,
     "syntax": "(auto)|((span) ([number]))|(column-line)",
     "initial": "auto",
-    "values": [
-      "auto",
-      "(span) ([number])",
-      "column-line"
-    ]
+    "values": ["auto", "(span) ([number])", "column-line"]
   },
   "grid-column-gap": {
     "id": "79b5e57f-d49b-4b12-acbf-c121605ff39a",
@@ -1676,9 +1319,7 @@
     "webkit": false,
     "syntax": "[length]",
     "initial": "0",
-    "values": [
-      "[length]"
-    ]
+    "values": ["[length]"]
   },
   "grid-column-start": {
     "id": "6cbbd90d-fe56-4155-98ba-8450f6af9d64",
@@ -1686,11 +1327,7 @@
     "webkit": false,
     "syntax": "(auto)|((span) ([number]))|(column-line)",
     "initial": "auto",
-    "values": [
-      "auto",
-      "(span) ([number])",
-      "column-line"
-    ]
+    "values": ["auto", "(span) ([number])", "column-line"]
   },
   "grid-gap": {
     "id": "d03fdbee-ed55-4ecd-a502-29b0207395e5",
@@ -1698,10 +1335,7 @@
     "webkit": false,
     "syntax": "([prop:grid-row-gap]) ([prop:grid-column-gap])",
     "initial": "0 0",
-    "values": [
-      "[prop:grid-row-gap]",
-      "[prop:grid-column-gap]"
-    ]
+    "values": ["[prop:grid-row-gap]", "[prop:grid-column-gap]"]
   },
   "grid-row": {
     "id": "bb1062ab-4250-4e45-8139-d40f4b13a134",
@@ -1709,10 +1343,7 @@
     "webkit": false,
     "syntax": "([prop:grid-row-start]) / ([prop:grid-row-end])",
     "initial": "auto / auto",
-    "values": [
-      "[prop:grid-row-start]",
-      "[prop:grid-row-end]"
-    ]
+    "values": ["[prop:grid-row-start]", "[prop:grid-row-end]"]
   },
   "grid-row-end": {
     "id": "61fbf4f8-9e63-4e85-a30d-8111844f01b3",
@@ -1720,11 +1351,7 @@
     "webkit": false,
     "syntax": "(auto)|(row-line)|((span) ([number]))|(column-line)",
     "initial": "auto",
-    "values": [
-      "auto",
-      "(span) ([number])",
-      "column-line"
-    ]
+    "values": ["auto", "(span) ([number])", "column-line"]
   },
   "grid-row-gap": {
     "id": "08940f57-39d2-4d6a-8f72-a21ee92deac2",
@@ -1732,9 +1359,7 @@
     "webkit": false,
     "syntax": "[length]",
     "initial": "0",
-    "values": [
-      "[length]"
-    ]
+    "values": ["[length]"]
   },
   "grid-row-start": {
     "id": "bf9d199b-390c-4b5b-a522-67396ae25efa",
@@ -1742,10 +1367,7 @@
     "webkit": false,
     "syntax": "(auto)|(row-line)",
     "initial": "auto",
-    "values": [
-      "auto",
-      "row-line"
-    ]
+    "values": ["auto", "row-line"]
   },
   "grid-template": {
     "id": "8d5c8133-f7a4-4e16-ad2f-c8f35fa7257d",
@@ -1767,10 +1389,7 @@
     "webkit": false,
     "syntax": "(none)|(itemnames)",
     "initial": "none",
-    "values": [
-      "none",
-      "itemnames"
-    ]
+    "values": ["none", "itemnames"]
   },
   "grid-template-columns": {
     "id": "5b802f7b-c4cc-4c82-9c3b-561636e6c25d",
@@ -1794,13 +1413,7 @@
     "webkit": false,
     "syntax": "(none)|(auto)|(max-content)|(min-content)|([length])|(initial)|(inherit)",
     "initial": "none",
-    "values": [
-      "none",
-      "auto",
-      "max-content",
-      "min-content",
-      "[length]"
-    ]
+    "values": ["none", "auto", "max-content", "min-content", "[length]"]
   },
   "hanging-punctuation": {
     "id": "e1916387-a436-49d9-bc62-1c2dc9aaf23f",
@@ -1841,13 +1454,7 @@
     "webkit": true,
     "syntax": "(none)|(manual)|(auto)|(initial)|(inherit)",
     "initial": "manual",
-    "values": [
-      "none",
-      "manual",
-      "auto",
-      "initial",
-      "inherit"
-    ]
+    "values": ["none", "manual", "auto", "initial", "inherit"]
   },
   "isolation": {
     "id": "31601f16-4e8c-43b4-87c4-ff2bb01d605d",
@@ -1855,12 +1462,7 @@
     "webkit": false,
     "syntax": "(auto)|(isolate)|(initial)|(inherit)",
     "initial": "auto",
-    "values": [
-      "auto",
-      "isolate",
-      "initial",
-      "inherit"
-    ]
+    "values": ["auto", "isolate", "initial", "inherit"]
   },
   "justify-content": {
     "id": "75a1f12a-a6c1-4128-9aa2-8fdc85b71f7b",
@@ -1884,13 +1486,7 @@
     "webkit": false,
     "syntax": "(auto)|([length])|(initial)|(inherit)",
     "initial": "auto",
-    "values": [
-      "auto",
-      "[length]",
-      "[percent]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["auto", "[length]", "[percent]", "initial", "inherit"]
   },
   "letter-spacing": {
     "id": "fe7ff89a-03f5-4b41-b2b1-8a0b25a0023e",
@@ -1898,12 +1494,7 @@
     "webkit": false,
     "syntax": "(normal)|([length])|(initial)|(inherit)",
     "initial": "normal",
-    "values": [
-      "normal",
-      "[length]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["normal", "[length]", "initial", "inherit"]
   },
   "line-height": {
     "id": "d1dd6943-dd5d-4977-8d97-02044c163531",
@@ -1940,12 +1531,7 @@
     "webkit": false,
     "syntax": "(none)|(url)|(initial)|(inherit)",
     "initial": "none",
-    "values": [
-      "none",
-      "url",
-      "initial",
-      "inherit"
-    ]
+    "values": ["none", "url", "initial", "inherit"]
   },
   "list-style-position": {
     "id": "27b3fb46-c01c-4c55-bd47-dd735fd32f79",
@@ -1953,12 +1539,7 @@
     "webkit": false,
     "syntax": "(inside)|(outside)|(initial)|(inherit)",
     "initial": "outside",
-    "values": [
-      "inside",
-      "outside",
-      "initial",
-      "inherit"
-    ]
+    "values": ["inside", "outside", "initial", "inherit"]
   },
   "list-style-type": {
     "id": "10a30f70-90c6-4978-985f-2de1e2fe9e4a",
@@ -1999,13 +1580,7 @@
     "webkit": false,
     "syntax": "(([length])|([percent])){1,4}|(auto)|(initial)|(inherit)",
     "initial": "0",
-    "values": [
-      "[length]",
-      "[percent]",
-      "auto",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[length]", "[percent]", "auto", "initial", "inherit"]
   },
   "margin-bottom": {
     "id": "2335364b-a8e8-443c-a872-02f391938936",
@@ -2013,13 +1588,7 @@
     "webkit": false,
     "syntax": "([length])|([percent])|(auto)|(initial)|(inherit)",
     "initial": "0",
-    "values": [
-      "[length]",
-      "[percent]",
-      "auto",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[length]", "[percent]", "auto", "initial", "inherit"]
   },
   "margin-left": {
     "id": "8ee6477d-cc47-4ce9-a267-d6900b6fbf8c",
@@ -2027,13 +1596,7 @@
     "webkit": false,
     "syntax": "([length])|([percent])|(auto)|(initial)|(inherit)",
     "initial": "0",
-    "values": [
-      "[length]",
-      "[percent]",
-      "auto",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[length]", "[percent]", "auto", "initial", "inherit"]
   },
   "margin-right": {
     "id": "4994fdcc-0258-44e3-abe0-849dd4a52b58",
@@ -2041,13 +1604,7 @@
     "webkit": false,
     "syntax": "([length])|([percent])|(auto)|(initial)|(inherit)",
     "initial": "0",
-    "values": [
-      "[length]",
-      "[percent]",
-      "auto",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[length]", "[percent]", "auto", "initial", "inherit"]
   },
   "margin-top": {
     "id": "8d452183-3b68-48e8-b401-27bc200f0647",
@@ -2055,13 +1612,7 @@
     "webkit": false,
     "syntax": "([length])|(auto)|(initial)|(inherit)",
     "initial": "0",
-    "values": [
-      "[length]",
-      "[percent]",
-      "auto",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[length]", "[percent]", "auto", "initial", "inherit"]
   },
   "max-height": {
     "id": "90dff650-f5ff-4b06-bb54-37759d9121d0",
@@ -2174,11 +1725,7 @@
     "webkit": false,
     "syntax": "(position)|(initial)|(inherit)",
     "initial": "50% 50%",
-    "values": [
-      "position",
-      "initial",
-      "inherit"
-    ]
+    "values": ["position", "initial", "inherit"]
   },
   "opacity": {
     "id": "28a27b98-ad7e-46ca-a071-4a43c92d6eee",
@@ -2186,11 +1733,7 @@
     "webkit": false,
     "syntax": "([number])|(initial)|(inherit)",
     "initial": "1",
-    "values": [
-      "[number]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[number]", "initial", "inherit"]
   },
   "order": {
     "id": "5b62ebdc-9b9b-4234-bcfb-04a41eaf9bcd",
@@ -2198,11 +1741,7 @@
     "webkit": true,
     "syntax": "([number])|(initial)|(inherit)",
     "initial": "0",
-    "values": [
-      "[number]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[number]", "initial", "inherit"]
   },
   "outline": {
     "id": "6c9a73a3-dc88-4e6b-a71f-7c5eeea9cb32",
@@ -2224,12 +1763,7 @@
     "webkit": false,
     "syntax": "(invert)|([color])|(initial)|(inherit)",
     "initial": "invert",
-    "values": [
-      "invert",
-      "[color]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["invert", "[color]", "initial", "inherit"]
   },
   "outline-offset": {
     "id": "143426a3-0e6d-4512-95fe-48a7da96f5f2",
@@ -2237,11 +1771,7 @@
     "webkit": false,
     "syntax": "([length])|(initial)|(inherit)",
     "initial": "0",
-    "values": [
-      "[length]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[length]", "initial", "inherit"]
   },
   "outline-style": {
     "id": "1947e871-5dc7-432c-9519-ff100a2dd8f9",
@@ -2270,14 +1800,7 @@
     "webkit": false,
     "syntax": "(medium)|(thin)|(thick)|([length])|(initial)|(inherit)",
     "initial": "medium",
-    "values": [
-      "medium",
-      "thin",
-      "thick",
-      "[length]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["medium", "thin", "thick", "[length]", "initial", "inherit"]
   },
   "overflow": {
     "id": "520d5625-a727-4bcc-a80c-f9fec1b5ab03",
@@ -2285,14 +1808,7 @@
     "webkit": false,
     "syntax": "(visible)|(hidden)|(scroll)|(auto)|(initial)|(inherit)",
     "initial": "visible",
-    "values": [
-      "visible",
-      "hidden",
-      "scroll",
-      "auto",
-      "initial",
-      "inherit"
-    ]
+    "values": ["visible", "hidden", "scroll", "auto", "initial", "inherit"]
   },
   "overflow-x": {
     "id": "b9e6e0e4-8d64-4aec-a98f-03d9ecd44a33",
@@ -2300,14 +1816,7 @@
     "webkit": false,
     "syntax": "(visible)|(hidden)|(scroll)|(auto)|(initial)|(inherit)",
     "initial": "visible",
-    "values": [
-      "visible",
-      "hidden",
-      "scroll",
-      "auto",
-      "initial",
-      "inherit"
-    ]
+    "values": ["visible", "hidden", "scroll", "auto", "initial", "inherit"]
   },
   "overflow-y": {
     "id": "b0b23f0c-0d94-468d-9092-fa6eb2a27cc9",
@@ -2315,14 +1824,7 @@
     "webkit": false,
     "syntax": "(visible)|(hidden)|(scroll)|(auto)|(initial)|(inherit)",
     "initial": "visible",
-    "values": [
-      "visible",
-      "hidden",
-      "scroll",
-      "auto",
-      "initial",
-      "inherit"
-    ]
+    "values": ["visible", "hidden", "scroll", "auto", "initial", "inherit"]
   },
   "padding": {
     "id": "5abf6731-3a47-4f6e-a4e5-a8849f0365ef",
@@ -2330,12 +1832,7 @@
     "webkit": false,
     "syntax": "(([length])|([percent])){1,4}|(initial)|(inherit)",
     "initial": "0",
-    "values": [
-      "[length]",
-      "[percent]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[length]", "[percent]", "initial", "inherit"]
   },
   "padding-bottom": {
     "id": "5ae6e47d-e4e3-4f30-b4a0-f79f202fc197",
@@ -2343,12 +1840,7 @@
     "webkit": false,
     "syntax": "([length])|([percent])|(initial)|(inherit)",
     "initial": "0",
-    "values": [
-      "[length]",
-      "[percent]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[length]", "[percent]", "initial", "inherit"]
   },
   "padding-left": {
     "id": "3997d254-00e5-451d-afeb-046f7642a923",
@@ -2356,12 +1848,7 @@
     "webkit": false,
     "syntax": "([length])|(initial)|(inherit)",
     "initial": "0",
-    "values": [
-      "[length]",
-      "[percent]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[length]", "[percent]", "initial", "inherit"]
   },
   "padding-right": {
     "id": "ecbcb209-c7dc-4326-ab75-500fd628ce7f",
@@ -2369,12 +1856,7 @@
     "webkit": false,
     "syntax": "([length])|([percent])|(initial)|(inherit)",
     "initial": "0",
-    "values": [
-      "[length]",
-      "[percent]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[length]", "[percent]", "initial", "inherit"]
   },
   "padding-top": {
     "id": "995eb208-d438-420d-8834-aea197ceefd9",
@@ -2382,12 +1864,7 @@
     "webkit": false,
     "syntax": "([length])|([percent])|(initial)|(inherit)",
     "initial": "0",
-    "values": [
-      "[length]",
-      "[percent]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[length]", "[percent]", "initial", "inherit"]
   },
   "page-break-after": {
     "id": "d6c3f59f-442a-4510-87ae-91c272a0c424",
@@ -2395,15 +1872,7 @@
     "webkit": false,
     "syntax": "(auto)|(always)|(avoid)|(left)|(right)|(initial)|(inherit)",
     "initial": "auto",
-    "values": [
-      "auto",
-      "always",
-      "avoid",
-      "left",
-      "right",
-      "initial",
-      "inherit"
-    ]
+    "values": ["auto", "always", "avoid", "left", "right", "initial", "inherit"]
   },
   "page-break-before": {
     "id": "c0241ffe-2416-4cc6-8cca-cd5a1305f5cc",
@@ -2411,15 +1880,7 @@
     "webkit": false,
     "syntax": "(auto)|(always)|(avoid)|(left)|(right)|(initial)|(inherit)",
     "initial": "auto",
-    "values": [
-      "auto",
-      "always",
-      "avoid",
-      "left",
-      "right",
-      "initial",
-      "inherit"
-    ]
+    "values": ["auto", "always", "avoid", "left", "right", "initial", "inherit"]
   },
   "page-break-inside": {
     "id": "8ff9cebf-a998-4f04-a45e-7caa3756db3b",
@@ -2427,12 +1888,7 @@
     "webkit": false,
     "syntax": "(auto)|(avoid)|(initial)|(inherit)",
     "initial": "auto",
-    "values": [
-      "auto",
-      "avoid",
-      "initial",
-      "inherit"
-    ]
+    "values": ["auto", "avoid", "initial", "inherit"]
   },
   "perspective": {
     "id": "18d6f3d3-eeb1-4a4d-a071-a6a85a98379c",
@@ -2440,12 +1896,7 @@
     "webkit": true,
     "syntax": "([length])|(none)",
     "initial": "none",
-    "values": [
-      "[length]",
-      "none",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[length]", "none", "initial", "inherit"]
   },
   "perspective-origin": {
     "id": "d33c2fbc-2da7-43e1-9ae5-5b81a15692fd",
@@ -2453,12 +1904,7 @@
     "webkit": true,
     "syntax": "x-axis (y-axis)|(initial)|(inherit)",
     "initial": "50% 50%",
-    "values": [
-      "x-axis",
-      "y-axis",
-      "initial",
-      "inherit"
-    ]
+    "values": ["x-axis", "y-axis", "initial", "inherit"]
   },
   "pointer-events": {
     "id": "c3f3a7ce-9169-44fc-8140-9d46c193d9a3",
@@ -2466,12 +1912,7 @@
     "webkit": false,
     "syntax": "(auto)|(none)",
     "initial": "auto",
-    "values": [
-      "auto",
-      "none",
-      "initial",
-      "inherit"
-    ]
+    "values": ["auto", "none", "initial", "inherit"]
   },
   "position": {
     "id": "5777cd66-37a7-4780-a806-9163044bb127",
@@ -2519,14 +1960,7 @@
     "webkit": false,
     "syntax": "(none)|(both)|(horizontal)|(vertical)|(initial)|(inherit)",
     "initial": "none",
-    "values": [
-      "none",
-      "both",
-      "horizontal",
-      "vertical",
-      "initial",
-      "inherit"
-    ]
+    "values": ["none", "both", "horizontal", "vertical", "initial", "inherit"]
   },
   "right": {
     "id": "fdceced1-c76c-4b1a-abc0-8c9e0ac5d804",
@@ -2534,13 +1968,7 @@
     "webkit": false,
     "syntax": "(auto)|([length])|(initial)|(inherit)",
     "initial": "auto",
-    "values": [
-      "auto",
-      "[length]",
-      "[percent]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["auto", "[length]", "[percent]", "initial", "inherit"]
   },
   "scroll-behavior": {
     "id": "baa02604-e614-412a-ba9a-1f5bed082d8f",
@@ -2548,12 +1976,7 @@
     "webkit": false,
     "syntax": "(auto)|(smooth)|(initial)|(inherit)",
     "initial": "auto",
-    "values": [
-      "auto",
-      "smooth",
-      "initial",
-      "inherit"
-    ]
+    "values": ["auto", "smooth", "initial", "inherit"]
   },
   "tab-size": {
     "id": "45554467-329d-4074-9c28-18f0e51f5130",
@@ -2561,12 +1984,7 @@
     "webkit": false,
     "syntax": "([number])|([length])|(initial)|(inherit)",
     "initial": "8",
-    "values": [
-      "[number]",
-      "[length]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[number]", "[length]", "initial", "inherit"]
   },
   "table-layout": {
     "id": "49c7efa0-60c5-446e-b804-2d1deaaf7e10",
@@ -2574,12 +1992,7 @@
     "webkit": false,
     "syntax": "(auto)|(fixed)|(initial)|(inherit)",
     "initial": "auto",
-    "values": [
-      "auto",
-      "fixed",
-      "initial",
-      "inherit"
-    ]
+    "values": ["auto", "fixed", "initial", "inherit"]
   },
   "text-align": {
     "id": "101b9b43-5dc5-4a9e-a407-3b9fc916cd2b",
@@ -2587,14 +2000,7 @@
     "webkit": false,
     "syntax": "(left)|(right)|(center)|(justify)|(initial)|(inherit)",
     "initial": "left if direction is ltr, and right if direction is rtl",
-    "values": [
-      "left",
-      "right",
-      "center",
-      "justify",
-      "initial",
-      "inherit"
-    ]
+    "values": ["left", "right", "center", "justify", "initial", "inherit"]
   },
   "text-align-last": {
     "id": "f1f037d3-89eb-40e9-b366-994eb55238fb",
@@ -2634,11 +2040,7 @@
     "webkit": true,
     "syntax": "([color])|(initial)|(inherit)",
     "initial": "currentColor",
-    "values": [
-      "[color]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[color]", "initial", "inherit"]
   },
   "text-decoration-line": {
     "id": "f58a1bb2-f236-4f81-9371-de453ee5ff0d",
@@ -2677,12 +2079,7 @@
     "webkit": false,
     "syntax": "([length])|(initial)|(inherit)",
     "initial": "0",
-    "values": [
-      "[length]",
-      "[percent]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[length]", "[percent]", "initial", "inherit"]
   },
   "text-justify": {
     "id": "02f88fea-f9b2-4b62-8408-bbc27dcedaef",
@@ -2705,13 +2102,7 @@
     "webkit": false,
     "syntax": "(clip)|(ellipsis)|(string)|(initial)|(inherit)",
     "initial": "clip",
-    "values": [
-      "clip",
-      "ellipsis",
-      "string",
-      "initial",
-      "inherit"
-    ]
+    "values": ["clip", "ellipsis", "string", "initial", "inherit"]
   },
   "text-shadow": {
     "id": "34767e1b-233a-4994-9d5c-ed92de12c290",
@@ -2750,13 +2141,7 @@
     "webkit": false,
     "syntax": "(auto)|([length])|(initial)|(inherit)",
     "initial": "auto",
-    "values": [
-      "auto",
-      "[length]",
-      "[percent]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["auto", "[length]", "[percent]", "initial", "inherit"]
   },
   "transform": {
     "id": "62a79203-cd23-416e-b9be-d70f023347a0",
@@ -2797,13 +2182,7 @@
     "webkit": true,
     "syntax": "x-axis y-axis (z-axis)|(initial)|(inherit)",
     "initial": "50% 50% 0",
-    "values": [
-      "x-axis",
-      "y-axis",
-      "z-axis",
-      "initial",
-      "inherit"
-    ]
+    "values": ["x-axis", "y-axis", "z-axis", "initial", "inherit"]
   },
   "transform-style": {
     "id": "ff6d31d3-8662-4c4d-9746-c32480c25deb",
@@ -2811,12 +2190,7 @@
     "webkit": true,
     "syntax": "(flat)|(preserve-3d)|(initial)|(inherit)",
     "initial": "flat",
-    "values": [
-      "flat",
-      "preserve-3d",
-      "initial",
-      "inherit"
-    ]
+    "values": ["flat", "preserve-3d", "initial", "inherit"]
   },
   "transition": {
     "id": "89c94824-932c-4583-a313-6bca5eb4196c",
@@ -2839,11 +2213,7 @@
     "webkit": true,
     "syntax": "([time])|(initial)|(inherit)",
     "initial": "0s",
-    "values": [
-      "[time]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[time]", "initial", "inherit"]
   },
   "transition-duration": {
     "id": "84ff125d-b8aa-4e83-b5d1-c92b3dd0edbf",
@@ -2851,11 +2221,7 @@
     "webkit": true,
     "syntax": "([time])|(initial)|(inherit)",
     "initial": "0s",
-    "values": [
-      "[time]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["[time]", "initial", "inherit"]
   },
   "transition-property": {
     "id": "d2f7795e-28c0-42c3-acb6-aa60c8934983",
@@ -2863,13 +2229,7 @@
     "webkit": true,
     "syntax": "(none)|(all)|(property)|(initial)|(inherit)",
     "initial": "all",
-    "values": [
-      "none",
-      "all",
-      "property",
-      "initial",
-      "inherit"
-    ]
+    "values": ["none", "all", "property", "initial", "inherit"]
   },
   "transition-timing-function": {
     "id": "55c0d702-c342-445b-8a5e-d070084cccaa",
@@ -2914,12 +2274,7 @@
     "webkit": true,
     "syntax": "(auto)|(none)|(text)|(all)",
     "initial": "auto",
-    "values": [
-      "auto",
-      "none",
-      "text",
-      "all"
-    ]
+    "values": ["auto", "none", "text", "all"]
   },
   "vertical-align": {
     "id": "22cf7efb-527c-4c12-8dcf-a513866ee717",
@@ -2948,13 +2303,7 @@
     "webkit": false,
     "syntax": "(visible)|(hidden)|(collapse)|(initial)|(inherit)",
     "initial": "visible",
-    "values": [
-      "visible",
-      "hidden",
-      "collapse",
-      "initial",
-      "inherit"
-    ]
+    "values": ["visible", "hidden", "collapse", "initial", "inherit"]
   },
   "white-space": {
     "id": "b0251dcc-eabe-4854-b236-fa39b1cbac67",
@@ -3010,12 +2359,7 @@
     "webkit": false,
     "syntax": "(normal)|([length])|(initial)|(inherit)",
     "initial": "normal",
-    "values": [
-      "normal",
-      "[length]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["normal", "[length]", "initial", "inherit"]
   },
   "word-wrap": {
     "id": "24c8df2b-4ac6-4b1b-933c-46c2bb618e46",
@@ -3023,12 +2367,7 @@
     "webkit": false,
     "syntax": "(normal)|(break-word)|(initial)|(inherit)",
     "initial": "normal",
-    "values": [
-      "normal",
-      "break-word",
-      "initial",
-      "inherit"
-    ]
+    "values": ["normal", "break-word", "initial", "inherit"]
   },
   "writing-mode": {
     "id": "91854862-837e-44e2-84c1-3344be2585d9",
@@ -3036,11 +2375,7 @@
     "webkit": false,
     "syntax": "(horizontal-tb)|(vertical-rl)|(vertical-lr)",
     "initial": "horizontal-tb",
-    "values": [
-      "horizontal-tb",
-      "vertical-rl",
-      "vertical-lr"
-    ]
+    "values": ["horizontal-tb", "vertical-rl", "vertical-lr"]
   },
   "z-index": {
     "id": "8663fd80-daaf-49eb-bba9-337a32544e25",
@@ -3048,11 +2383,6 @@
     "webkit": false,
     "syntax": "(auto)|([number])|(initial)|(inherit)",
     "initial": "auto",
-    "values": [
-      "auto",
-      "[number]",
-      "initial",
-      "inherit"
-    ]
+    "values": ["auto", "[number]", "initial", "inherit"]
   }
 }
