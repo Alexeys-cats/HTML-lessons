@@ -3,10 +3,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main # Запускается только при пуше в ветку main
 
 permissions:
-  contents: write
+  contents: write # Необходимо для публикации на GitHub Pages
 
 jobs:
   deploy:

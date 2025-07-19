@@ -3,13 +3,13 @@ name: Feature Branch Preview
 on:
   push:
     branches-ignore:
-      - main
+      - main # Исключаем main, так как она обрабатывается в отдельном пайплайне
   pull_request:
     types: [opened, synchronize, reopened]
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: write # Необходимо для публикации на GitHub Pages
+  pull-requests: write # Необходимо для комментирования PR
 
 jobs:
   deploy-preview:
@@ -34,8 +34,10 @@ jobs:
       - name: Build
         run: npm run build:ci
         env:
+          # Создаем уникальную директорию для каждой ветки
           VITE_BASE_PATH: /HTML-lessons/preview/${{ steps.branch-name.outputs.current_branch }}
 
+      # Добавляем базовый путь в настройки сборки
       - name: Update base path in HTML
         run: |
           # Создаем .nojekyll для GitHub Pages
@@ -45,14 +47,16 @@ jobs:
           BRANCH_PATH=$(echo ${{ steps.branch-name.outputs.current_branch }} | sed 's/\//-/g')
           sed -i "s|<base href=\"/HTML-lessons/\">|<base href=\"/HTML-lessons/preview/${BRANCH_PATH}/\">|" dist/index.html || true
 
+      # Деплой на GitHub Pages в отдельную директорию для ветки
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist
           branch: gh-pages
           target-folder: preview/${{ steps.branch-name.outputs.current_branch }}
-          clean: true
+          clean: true # Удаляем только файлы в папке текущей ветки
 
+      # Добавляем комментарий в PR с ссылкой на фича-стенд
       - name: Find Pull Request
         uses: jwalton/gh-find-current-pr@v1
         id: find-pr

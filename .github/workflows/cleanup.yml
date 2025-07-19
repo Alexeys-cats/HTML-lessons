@@ -5,10 +5,12 @@ on:
     types: [closed]
 
 permissions:
-  contents: write
+  contents: write # Необходимо для доступа к ветке gh-pages
 
 jobs:
   cleanup:
+    # Запускается только когда PR был слит, а не закрыт без слияния
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout gh-pages branch
@@ -16,6 +18,7 @@ jobs:
         with:
           ref: gh-pages
 
+      # Получаем имя ветки из PR
       - name: Extract branch name
         id: extract-branch
         run: |
@@ -23,6 +26,7 @@ jobs:
           echo "branch=${PR_BRANCH}" >> $GITHUB_OUTPUT
           echo "Branch to cleanup: ${PR_BRANCH}"
 
+      # Удаляем директорию фича-стенда
       - name: Remove preview directory
         run: |
           BRANCH_PATH="${{ steps.extract-branch.outputs.branch }}"
@@ -35,6 +39,7 @@ jobs:
             echo "⚠️ Preview directory not found, nothing to remove"
           fi
 
+      # Коммитим изменения
       - name: Commit changes
         run: |
           git config --global user.name "GitHub Actions"
