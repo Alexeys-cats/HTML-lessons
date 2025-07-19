@@ -37,10 +37,8 @@ export const Button: React.FC<MainBtnProps> = ({
       disabled={loading || props.disabled}
       {...props}
     >
-      {loading && (
-        <span className="animate-spin mr-2"></span>
-      )}
-        <span>{children}</span>
+      {loading && <span className="animate-spin mr-2"></span>}
+      <span>{children}</span>
     </button>
   );
 };

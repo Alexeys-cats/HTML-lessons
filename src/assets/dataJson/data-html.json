@@ -1,0 +1,842 @@
+[
+  {
+    "id": "bfafe957-dba8-4b25-b680-3a2ec6ec00ec",
+    "name": "a",
+    "start": "<a>",
+    "end": "</a>",
+    "description": "Создаёт гиперссылку.",
+    "example": "<a href=\"https://example.com\">Перейти на сайт</a>"
+  },
+  {
+    "id": "5ee85c68-62f9-4d87-8ffe-e7fa809fa7bd",
+    "name": "abbr",
+    "start": "<abbr>",
+    "end": "</abbr>",
+    "description": "Обозначает аббревиатуру или акроним.",
+    "example": "<abbr title=\"HyperText Markup Language\">HTML</abbr>"
+  },
+  {
+    "id": "c7f1e2b6-b874-4236-91a6-2adb33e781d1",
+    "name": "address",
+    "start": "<address>",
+    "end": "</address>",
+    "description": "Определяет контактную информацию.",
+    "example": "<address>г. Москва, ул. Пример, д. 1</address>"
+  },
+  {
+    "id": "a812fb42-bc8b-4054-8c71-6a41940262d1",
+    "name": "area",
+    "start": "<area>",
+    "end": null,
+    "description": "Определяет активную область на карте изображения.",
+    "example": "<area shape=\"rect\" coords=\"34,44,270,350\" href=\"example.html\">"
+  },
+  {
+    "id": "8247be13-6d07-4006-8412-4c578f4bbd07",
+    "name": "article",
+    "start": "<article>",
+    "end": "</article>",
+    "description": "Независимый раздел документа.",
+    "example": "<article><h2>Заголовок статьи</h2><p>Содержимое...</p></article>"
+  },
+  {
+    "id": "6c2f1b81-bfe2-4bda-91e0-d2cf05b5d72f",
+    "name": "aside",
+    "start": "<aside>",
+    "end": "</aside>",
+    "description": "Дополнительный контент сбоку от основного.",
+    "example": "<aside><p>Примечание</p></aside>"
+  },
+  {
+    "id": "b710a6bd-8315-4341-803a-b5581375bcac",
+    "name": "audio",
+    "start": "<audio>",
+    "end": "</audio",
+    "description": "Воспроизводит звуковой контент.",
+    "example": "<audio controls><source src=\"audio.mp3\" type=\"audio/mpeg\">Ваш браузер не поддерживает аудио.</audio>"
+  },
+  {
+    "id": "8d251022-1e66-445a-ae22-6a4d7e6660de",
+    "name": "b",
+    "start": "<b>",
+    "end": "</b>",
+    "description": "Жирное начертание текста без логического акцента.",
+    "example": "<b>Важный текст</b>"
+  },
+  {
+    "id": "8cfb25f8-31ab-4710-8710-524a92c8f811",
+    "name": "base",
+    "start": "<base>",
+    "end": null,
+    "description": "Устанавливает базовый URL для всех относительных ссылок в документе.",
+    "example": "<base href=\"https://example.com/\">"
+  },
+  {
+    "id": "d57463be-0bb2-4a5e-a145-ed64b452ce56",
+    "name": "bdi",
+    "start": "<bdi>",
+    "end": "</bdi>",
+    "description": "Изолирует текст, который может иметь другое направление письма.",
+    "example": "<bdi>علي</bdi> выиграл соревнование."
+  },
+  {
+    "id": "0c18b0d7-1320-425e-933b-38c03ecfac8d",
+    "name": "bdo",
+    "start": "<bdo>",
+    "end": "</bdo>",
+    "description": "Переопределяет направление текста.",
+    "example": "<bdo dir=\"rtl\">Текст справа налево</bdo>"
+  },
+  {
+    "id": "c9525baf-2039-490b-8285-ac24eb8dcde2",
+    "name": "blockquote",
+    "start": "<blockquote>",
+    "end": "</blockquote>",
+    "description": "Цитата из другого источника.",
+    "example": "<blockquote cite=\"https://example.com\">Это цитата.</blockquote>"
+  },
+  {
+    "id": "78c2954a-01f1-4c34-8dfa-107aacedc83d",
+    "name": "body",
+    "start": "<body>",
+    "end": "</body>",
+    "description": "Основное содержимое HTML-документа.",
+    "example": "<body><p>Пример текста в теле страницы</p></body>"
+  },
+  {
+    "id": "3d9ae8f3-104f-4cc5-891d-36a62cffa74f",
+    "name": "br",
+    "start": "<br>",
+    "end": null,
+    "description": "Разрыв строки.",
+    "example": "Строка 1<br>Строка 2"
+  },
+  {
+    "id": "955a71b7-0afd-4676-b24f-194a99ee7362",
+    "name": "button",
+    "start": "<button>",
+    "end": null,
+    "description": "Создаёт интерактивную кнопку.",
+    "example": "<button>Нажми меня</button>"
+  },
+  {
+    "id": "1207f00c-38e4-4049-ae8e-fa0595b2bc39",
+    "name": "colgroup",
+    "start": "<colgroup>",
+    "end": "</colgroup>",
+    "description": "Группирует столбцы в таблице.",
+    "example": "<table>\n  <colgroup>\n    <col span='2' style='background-color:lightgrey'>\n  </colgroup>\n  <tr><td>1</td><td>2</td></tr>\n</table>"
+  },
+  {
+    "id": "bf60fecc-0457-4e42-9baa-77988d04f0a6",
+    "name": "datalist",
+    "start": "<datalist>",
+    "end": "</datalist>",
+    "description": "Определяет список предопределённых значений для элемента <input>.",
+    "example": "<input list='browsers'>\n<datalist id='browsers'>\n  <option value='Chrome'>\n  <option value='Firefox'>\n</datalist>"
+  },
+  {
+    "id": "c2328635-31df-4c9e-80b2-a2d2f371ca6d",
+    "name": "dd",
+    "start": "<dd>",
+    "end": "</dd>",
+    "description": "Описание термина в списке описаний.",
+    "example": "<dl>\n  <dt>HTML</dt>\n  <dd>Язык разметки гипертекста</dd>\n</dl>"
+  },
+  {
+    "id": "e7327479-56b0-42fe-821c-ef62a11c8c63",
+    "name": "del",
+    "start": "<del>",
+    "end": "</del>",
+    "description": "Помечает удалённый текст.",
+    "example": "<p>Этот текст был <del>удалён</del>.</p>"
+  },
+  {
+    "id": "a065b6c6-c159-41f0-b250-2644aa17d234",
+    "name": "details",
+    "start": "<details>",
+    "end": "</details>",
+    "description": "Создаёт интерактивный элемент, который можно раскрыть для получения дополнительной информации.",
+    "example": "<details>\n  <summary>Подробнее</summary>\n  <p>Дополнительная информация</p>\n</details>"
+  },
+  {
+    "id": "db8fe854-482d-44e1-b491-cd93e56a417e",
+    "name": "dfn",
+    "start": "<dfn>",
+    "end": "</dfn>",
+    "description": "Определяет термин, который будет описан или определён.",
+    "example": "<p><dfn>HTML</dfn> — это язык разметки.</p>"
+  },
+  {
+    "id": "8e717fc7-e98c-44b0-846b-0e2e62d68506",
+    "name": "dialog",
+    "start": "<dialog>",
+    "end": "</dialog>",
+    "description": "Создаёт диалоговое окно или всплывающее окно.",
+    "example": "<dialog open>Привет! Я диалог.</dialog>"
+  },
+  {
+    "id": "7e41378f-6f22-4eeb-97ce-31ff256f5d7a",
+    "name": "div",
+    "start": "<div>",
+    "end": "</div>",
+    "description": "Контейнер для блочного содержимого без определённого смысла.",
+    "example": "<div class='container'>Контент внутри блока</div>"
+  },
+  {
+    "id": "a20bf2ef-75c4-4aa8-a737-db6926a454de",
+    "name": "dl",
+    "start": "<dl>",
+    "end": "</dl>",
+    "description": "Определяет список описаний.",
+    "example": "<dl>\n  <dt>CSS</dt>\n  <dd>Таблицы каскадных стилей</dd>\n</dl>"
+  },
+  {
+    "id": "2f543521-cf8c-46f8-b8d8-f5ba97e461fc",
+    "name": "dt",
+    "start": "<dt>",
+    "end": "</dt>",
+    "description": "Обозначает термин в списке описаний.",
+    "example": "<dl>\n  <dt>JavaScript</dt>\n  <dd>Язык программирования для веба</dd>\n</dl>"
+  },
+  {
+    "id": "62a3bedc-dae7-44cf-8b37-8cafc60c054b",
+    "name": "em",
+    "start": "<em>",
+    "end": "</em>",
+    "description": "Выделяет текст курсивом, придавая ему смысловую важность.",
+    "example": "<p>Это <em>важный</em> момент.</p>"
+  },
+  {
+    "id": "ebafe281-42a3-408b-92d4-fe297f97ff62",
+    "name": "embed",
+    "start": "<embed>",
+    "end": "</embed>",
+    "description": "Встраивает внешнее приложение, например, видео или флеш-контент.",
+    "example": "<embed src='video.mp4' width='400' height='300'>"
+  },
+  {
+    "id": "952396c7-85c9-4764-8bd1-e1dc5fc27725",
+    "name": "fieldset",
+    "start": "<fieldset>",
+    "end": "</fieldset>",
+    "description": "Группирует связанные элементы формы.",
+    "example": "<fieldset>\n  <legend>Информация</legend>\n  <label>Имя: <input type='text'></label>\n</fieldset>"
+  },
+  {
+    "id": "6c850927-0b62-4d9b-9e3b-0a83a76a1872",
+    "name": "figcaption",
+    "start": "<figcaption>",
+    "end": "</figcaption>",
+    "description": "Подпись к элементу <figure>.",
+    "example": "<figure>\n  <img src='image.jpg'>\n  <figcaption>Описание изображения</figcaption>\n</figure>"
+  },
+  {
+    "id": "60eb24e9-4ab0-404d-a34a-e959c6390047",
+    "name": "figure",
+    "start": "<figure>",
+    "end": "</figure>",
+    "description": "Группирует изображение с подписью.",
+    "example": "<figure>\n  <img src='photo.jpg'>\n  <figcaption>Пейзаж</figcaption>\n</figure>"
+  },
+  {
+    "id": "50ace602-5924-42d8-85be-9705146d0c07",
+    "name": "footer",
+    "start": "<footer>",
+    "end": "</footer>",
+    "description": "Определяет нижний колонтитул (подвал) документа или раздела.",
+    "example": "<footer>\n  <p>&copy; 2025 Мой сайт</p>\n</footer>"
+  },
+  {
+    "id": "c96ce87a-ba56-478e-9543-d964f4b15e0c",
+    "name": "form",
+    "start": "<form>",
+    "end": "</form>",
+    "description": "Определяет форму для ввода данных.",
+    "example": "<form action='/submit' method='post'>\n  <input type='text' name='name'>\n  <button type='submit'>Отправить</button>\n</form>"
+  },
+  {
+    "id": "bbea8a07-2998-41f7-a93e-b1d810d83c15",
+    "name": "h1",
+    "start": "<h1>",
+    "end": "</h1>",
+    "description": "Заголовок первого уровня — самый важный.",
+    "example": "<h1>Главный заголовок</h1>"
+  },
+  {
+    "id": "f3010596-3a4a-4cf3-ba63-94246f7278d3",
+    "name": "h2",
+    "start": "<h2>",
+    "end": "</h2>",
+    "description": "Заголовок второго уровня.",
+    "example": "<h2>Подзаголовок раздела</h2>"
+  },
+  {
+    "id": "d58faed5-e4d0-4d49-b5f6-462f83e8a11b",
+    "name": "h3",
+    "start": "<h3>",
+    "end": "</h3>",
+    "description": "Заголовок третьего уровня.",
+    "example": "<h3>Подраздел темы</h3>"
+  },
+  {
+    "id": "5dbb4717-f7cc-4f25-a675-11b340a83cfc",
+    "name": "h4",
+    "start": "<h4>",
+    "end": "</h4>",
+    "description": "Заголовок четвёртого уровня.",
+    "example": "<h4>Заголовок подраздела</h4>"
+  },
+  {
+    "id": "e26d8a7f-0741-4500-9338-d37df366ac13",
+    "name": "h5",
+    "start": "<h5>",
+    "end": "</h5>",
+    "description": "Заголовок пятого уровня.",
+    "example": "<h5>Дополнительная информация</h5>"
+  },
+  {
+    "id": "b6ba3b31-ac92-465e-a634-ccfaf6249151",
+    "name": "h6",
+    "start": "<h6>",
+    "end": "</h6>",
+    "description": "Заголовок шестого, наименее важного уровня.",
+    "example": "<h6>Мелкий заголовок</h6>"
+  },
+  {
+    "id": "826b4a05-5be6-4d64-a819-c12135a669d6",
+    "name": "head",
+    "start": "<head>",
+    "end": "</head>",
+    "description": "Содержит метаинформацию о документе: теги title, meta, link и др.",
+    "example": "<head>\n  <title>Мой сайт</title>\n  <meta charset='UTF-8'>\n</head>"
+  },
+  {
+    "id": "d5447e54-72bb-40de-9275-925a85f530e5",
+    "name": "header",
+    "start": "<header>",
+    "end": "</header>",
+    "description": "Определяет верхнюю часть страницы или раздела (например, логотип, меню).",
+    "example": "<header>\n  <h1>Мой сайт</h1>\n  <nav>...</nav>\n</header>"
+  },
+  {
+    "id": "ab6a2089-d864-4473-9c06-b317b626d28d",
+    "name": "hr",
+    "start": "<hr>",
+    "end": null,
+    "description": "Горизонтальная линия, используется для разделения контента.",
+    "example": "<p>Первый абзац</p>\n<hr>\n<p>Второй абзац</p>"
+  },
+  {
+    "id": "7183d1a8-f334-42fb-8ba5-167a6a810eba",
+    "name": "html",
+    "start": "<html>",
+    "end": "</html>",
+    "description": "Корневой элемент HTML-документа, содержит все остальные элементы.",
+    "example": "<!DOCTYPE html>\n<html>\n  <head>...</head>\n  <body>...</body>\n</html>"
+  },
+  {
+    "id": "97e48725-73fb-4355-9171-0b87c779f08f",
+    "name": "i",
+    "start": "<i>",
+    "end": "</i>",
+    "description": "Курсивное начертание текста без смыслового выделения.",
+    "example": "<p>Слово на <i>латинском</i> языке.</p>"
+  },
+  {
+    "id": "2e4d82ea-ed84-4d2f-9c89-9d682ffc1dae",
+    "name": "iframe",
+    "start": "<iframe>",
+    "end": "</iframe>",
+    "description": "Встраивает другой HTML-документ в текущую страницу.",
+    "example": "<iframe src='https://www.youtube.com/embed/example'></iframe>"
+  },
+  {
+    "id": "3619aab8-4515-4f8f-aaa6-9cfd5457d17a",
+    "name": "img",
+    "start": "<img>",
+    "end": null,
+    "description": "Вставляет изображение.",
+    "example": "<img src='image.jpg' alt='Описание изображения'>"
+  },
+  {
+    "id": "47cadb66-76e5-4478-8a3f-8d571107f33b",
+    "name": "input",
+    "start": "<input>",
+    "end": null,
+    "description": "Создаёт интерактивный элемент для ввода данных.",
+    "example": "<input type='text' placeholder='Введите текст'>"
+  },
+  {
+    "id": "606c7aa1-fca3-4c42-8374-6780abfd73be",
+    "name": "ins",
+    "start": "<ins>",
+    "end": "</ins>",
+    "description": "Отмечает вставленный текст, обычно с подчеркиванием.",
+    "example": "<p>Этот текст был <ins>добавлен</ins> после редактирования.</p>"
+  },
+  {
+    "id": "cdd329a9-a0e5-4f24-8b44-9e403d844f81",
+    "name": "kbd",
+    "start": "<kbd>",
+    "end": "</kbd>",
+    "description": "Окружает текст, который вводится с клавиатуры.",
+    "example": "<p>Для выхода из программы нажмите <kbd>Ctrl + C</kbd>.</p>"
+  },
+  {
+    "id": "f2d5c502-96f8-477a-b840-ca78dd2d80e4",
+    "name": "keygen",
+    "start": "<keygen>",
+    "end": null,
+    "description": "Создаёт элемент для генерации ключей, используется в формах (устаревший тег).",
+    "example": "<form>\n  <keygen name='name'></keygen>\n</form>"
+  },
+  {
+    "id": "490f5980-ef4d-4015-8565-63c665aa5a8b",
+    "name": "label",
+    "start": "<label>",
+    "end": "</label>",
+    "description": "Связывает метку с элементом формы, например, с полем ввода.",
+    "example": "<label for='name'>Ваше имя:</label>\n<input type='text' id='name'>"
+  },
+  {
+    "id": "8428a0cd-7f0d-4a73-88b8-12b827e93ffb",
+    "name": "legend",
+    "start": "<legend>",
+    "end": "</legend>",
+    "description": "Определяет заголовок для элемента <fieldset>.",
+    "example": "<fieldset>\n  <legend>Личные данные</legend>\n  <input type='text' placeholder='Ваше имя'>\n</fieldset>"
+  },
+  {
+    "id": "619143fc-506d-47d6-8f1a-e59a88a2e13d",
+    "name": "li",
+    "start": "<li>",
+    "end": "</li>",
+    "description": "Определяет элемент списка (неупорядоченного, упорядоченного или меню).",
+    "example": "<ul>\n  <li>Элемент списка 1</li>\n  <li>Элемент списка 2</li>\n</ul>"
+  },
+  {
+    "id": "eef8890e-0313-4d5d-b976-4dba4d8d4632",
+    "name": "link",
+    "start": "<link>",
+    "end": null,
+    "description": "Связывает документ с внешним ресурсом, обычно используется для подключения CSS.",
+    "example": "<link rel='stylesheet' href='styles.css'>"
+  },
+  {
+    "id": "70f5ded9-cb1e-4482-9bed-6ddfc35c2f07",
+    "name": "main",
+    "start": "<main>",
+    "end": "</main>",
+    "description": "Определяет основной контент документа, который связан с основной темой страницы.",
+    "example": "<main>\n  <article>\n    <h1>Основная статья</h1>\n    <p>Контент статьи...</p>\n  </article>\n</main>"
+  },
+  {
+    "id": "7a35820a-240d-46c0-a68c-78bdeb79b403",
+    "name": "map",
+    "start": "<map>",
+    "end": "</map>",
+    "description": "Определяет карту изображения для ссылок, используемая с тегом <area>.",
+    "example": "<map name='image-map'>\n  <area shape='rect' coords='34,44,270,350' alt='Описание' href='https://example.com'>\n</map>"
+  },
+  {
+    "id": "fbed0b21-81f8-4fd9-8442-c86e6faaeb1f",
+    "name": "mark",
+    "start": "<mark>",
+    "end": "</mark>",
+    "description": "Подсвечивает текст, который должен быть выделен как важный.",
+    "example": "<p>Этот текст <mark>выделен</mark> для акцента.</p>"
+  },
+  {
+    "id": "b8ea8cf0-f63a-4258-9db7-c194f3c4998c",
+    "name": "menu",
+    "start": "<menu>",
+    "end": "</menu>",
+    "description": "Определяет список команд, обычно используется для контекстного меню или панели инструментов.",
+    "example": "<menu>\n  <li><a href='#'>Опция 1</a></li>\n  <li><a href='#'>Опция 2</a></li>\n</menu>"
+  },
+  {
+    "id": "75d1ae61-718b-4502-b69a-a0104ac1e1dc",
+    "name": "menuitem",
+    "start": "<menuitem>",
+    "end": "</menuitem>",
+    "description": "Используется внутри тега <menu> для создания пунктов меню (устаревший тег).",
+    "example": "<menu>\n  <menuitem label='Открыть' onclick='openFile()'></menuitem>\n  <menuitem label='Закрыть' onclick='closeFile()'></menuitem>\n</menu>"
+  },
+  {
+    "id": "ca0c4d2d-c923-44e7-8fba-8ce2043660a1",
+    "name": "meta",
+    "start": "<meta>",
+    "end": null,
+    "description": "Представляет метаинформацию о документе, такую как кодировка, описание, автор и ключевые слова.",
+    "example": "<meta charset='UTF-8'>\n<meta name='description' content='Пример сайта'>\n<meta name='author' content='Имя автора'>"
+  },
+  {
+    "id": "e5650c40-06df-4a4f-9c74-c89f6a2a9369",
+    "name": "meter",
+    "start": "<meter>",
+    "end": "</meter>",
+    "description": "Используется для отображения измеренного значения в пределах заданного диапазона, например, прогресса или уровня.",
+    "example": "<meter value='0.7' min='0' max='1'>70%</meter>"
+  },
+  {
+    "id": "af9d5864-f130-4237-9e4b-fa9959cbc3d4",
+    "name": "nav",
+    "start": "<nav>",
+    "end": "</nav>",
+    "description": "Определяет секцию навигации в документе, обычно для ссылок или меню.",
+    "example": "<nav>\n  <ul>\n    <li><a href='#'>Главная</a></li>\n    <li><a href='#'>О нас</a></li>\n  </ul>\n</nav>"
+  },
+  {
+    "id": "8f229234-805f-4a63-8f4f-e1ce47e83036",
+    "name": "noscript",
+    "start": "<noscript>",
+    "end": "</noscript>",
+    "description": "Определяет контент, который будет отображаться, если в браузере отключен JavaScript.",
+    "example": "<noscript>Для просмотра этого контента включите JavaScript в вашем браузере.</noscript>"
+  },
+  {
+    "id": "fb0a6d34-f8f6-4709-8fd1-e41a9890e57b",
+    "name": "object",
+    "start": "<object>",
+    "end": "</object>",
+    "description": "Встраивает внешние ресурсы (например, мультимедийные файлы, приложения), такие как Flash или Java applets.",
+    "example": "<object data='movie.swf' type='application/x-shockwave-flash'></object>"
+  },
+  {
+    "id": "c32baf70-a5f6-4e75-9a2b-77df75eea21d",
+    "name": "ol",
+    "start": "<ol>",
+    "end": "</ol>",
+    "description": "Создаёт упорядоченный список (с номерами или другими маркерами).",
+    "example": "<ol>\n  <li>Первый элемент</li>\n  <li>Второй элемент</li>\n</ol>"
+  },
+  {
+    "id": "a7f44186-94dc-4b6a-857a-b5d1bd495880",
+    "name": "optgroup",
+    "start": "<optgroup>",
+    "end": "</optgroup>",
+    "description": "Группирует элементы <option> в выпадающем списке <select>.",
+    "example": "<select>\n  <optgroup label='Фрукты'>\n    <option value='apple'>Яблоко</option>\n    <option value='banana'>Банан</option>\n  </optgroup>\n  <optgroup label='Овощи'>\n    <option value='carrot'>Морковь</option>\n  </optgroup>\n</select>"
+  },
+  {
+    "id": "73194d0a-23af-429c-815b-dde186763fe8",
+    "name": "option",
+    "start": "<option>",
+    "end": "</option>",
+    "description": "Определяет пункт списка в выпадающем списке <select>.",
+    "example": "<select>\n  <option value='1'>Опция 1</option>\n  <option value='2'>Опция 2</option>\n</select>"
+  },
+  {
+    "id": "3a107776-a1f6-4878-aa83-e9b56890a73d",
+    "name": "output",
+    "start": "<output>",
+    "end": "</output>",
+    "description": "Представляет результат вычислений, например, через формы.",
+    "example": "<form>\n  <input type='number' id='a'>\n  <input type='number' id='b'>\n  <output name='result' for='a b'>Результат</output>\n</form>"
+  },
+  {
+    "id": "43798a3a-6d66-4b78-875b-9caad4d322ae",
+    "name": "p",
+    "start": "<p>",
+    "end": "</p>",
+    "description": "Определяет параграф текста.",
+    "example": "<p>Это пример текста в параграфе.</p>"
+  },
+  {
+    "id": "63cad9ef-3b5d-4bf2-956d-c49a22411af0",
+    "name": "param",
+    "start": "<param>",
+    "end": "</param>",
+    "description": "Представляет параметр для элемента <object>.",
+    "example": "<object data='movie.swf' type='application/x-shockwave-flash'>\n  <param name='autoplay' value='true'>\n</object>"
+  },
+  {
+    "id": "8c761aa6-7a80-4a4f-99dd-6e544fc2bbf7",
+    "name": "pre",
+    "start": "<pre>",
+    "end": "</pre>",
+    "description": "Определяет предварительно отформатированный текст, где сохраняются пробелы и переносы строк.",
+    "example": "<pre>\n  Пример текста с пробелами и\n  новыми строками.\n</pre>"
+  },
+  {
+    "id": "b4cda1ed-7776-4fd2-bfd2-9786fe0e2565",
+    "name": "progress",
+    "start": "<progress>",
+    "end": "</progress>",
+    "description": "Отображает индикатор прогресса для задания задачи.",
+    "example": "<progress value='22' max='100'>22%</progress>"
+  },
+  {
+    "id": "1d091212-d110-445e-b901-0563ab845e27",
+    "name": "q",
+    "start": "<q>",
+    "end": "</q>",
+    "description": "Используется для встраивания кратких цитат в тексте.",
+    "example": "<p>Он сказал: <q>Привет, как дела?</q></p>"
+  },
+  {
+    "id": "1d649ed0-bf1a-45ec-b68b-a92ee71f48cb",
+    "name": "rp",
+    "start": "<rp>",
+    "end": "</rp>",
+    "description": "Используется в сочетании с <ruby>, чтобы определить, как показывать родительские элементы в браузерах, которые не поддерживают ruby-нотации.",
+    "example": "<ruby>漢<rp>(</rp><rt>kan</rt><rp>)</rp></ruby>"
+  },
+  {
+    "id": "15555fed-bcb8-4c13-842d-dc0c659f501e",
+    "name": "rt",
+    "start": "<rt>",
+    "end": "</rt>",
+    "description": "Определяет текст, который будет отображаться как аннотация для символов в теге <ruby>.",
+    "example": "<ruby>漢<rt>kan</rt></ruby>"
+  },
+  {
+    "id": "0c21263b-0437-4d33-9ae4-5dbacd9c51d7",
+    "name": "ruby",
+    "start": "<ruby>",
+    "end": "</ruby>",
+    "description": "Используется для создания текста, который будет иметь дополнительные символы (аннотации), например, в китайских или японских иероглифах.",
+    "example": "<ruby>漢<rt>kan</rt></ruby>"
+  },
+  {
+    "id": "edc67770-7593-41a1-9cc3-3bbf7487114c",
+    "name": "s",
+    "start": "<s>",
+    "end": "</s>",
+    "description": "Определяет текст, который должен быть зачеркнут.",
+    "example": "<p>Это <s>устаревшая информация</s>.</p>"
+  },
+  {
+    "id": "645cbaa6-fee0-48b4-bd12-05b0d207ba18",
+    "name": "samp",
+    "start": "<samp>",
+    "end": "</samp>",
+    "description": "Отображает пример вывода программы или текст, который должен восприниматься как результат обработки данных.",
+    "example": "<p>Командный вывод: <samp>Команда не найдена</samp></p>"
+  },
+  {
+    "id": "870f43d3-13ec-4b11-8f1f-3a77a159ba8e",
+    "name": "script",
+    "start": "<script>",
+    "end": "</script>",
+    "description": "Определяет скрипт, обычно JavaScript, который выполняется в браузере.",
+    "example": "<script>\n  alert('Привет, мир!');\n</script>"
+  },
+  {
+    "id": "801ff109-c581-4cfc-9ee1-6f8f6d57dbe7",
+    "name": "section",
+    "start": "<section>",
+    "end": "</section>",
+    "description": "Определяет секцию документа, которая имеет самостоятельное значение, например, главы или разделы.",
+    "example": "<section>\n  <h2>Заголовок раздела</h2>\n  <p>Содержание раздела.</p>\n</section>"
+  },
+  {
+    "id": "9728bcbe-3d91-4a18-9f36-d5fcb9ef5baa",
+    "name": "select",
+    "start": "<select>",
+    "end": "</select>",
+    "description": "Создаёт выпадающий список для выбора одного или нескольких значений.",
+    "example": "<select>\n  <option value='1'>Опция 1</option>\n  <option value='2'>Опция 2</option>\n</select>"
+  },
+  {
+    "id": "e863c686-774b-43da-a88c-de1b00499d7f",
+    "name": "small",
+    "start": "<small>",
+    "end": "</small>",
+    "description": "Уменьшает размер текста.",
+    "example": "<p>Это <small>мелкий текст</small>.</p>"
+  },
+  {
+    "id": "54c58294-8ac6-40ba-a9ce-a919a634a7e4",
+    "name": "source",
+    "start": "<source>",
+    "end": null,
+    "description": "Используется в элементах <audio> и <video> для указания источников медиафайлов.",
+    "example": "<audio>\n  <source src='audio.mp3' type='audio/mp3'>\n</audio>"
+  },
+  {
+    "id": "a130d5a7-de1a-4d78-9df7-04f21173ef01",
+    "name": "span",
+    "start": "<span>",
+    "end": "</span>",
+    "description": "Создаёт строчный элемент, который может быть использован для стилизации части текста.",
+    "example": "<p>Это <span style='color:red'>красный</span> текст.</p>"
+  },
+  {
+    "id": "5d25ad77-b5be-4e38-9c81-485affdc22bd",
+    "name": "strong",
+    "start": "<strong>",
+    "end": "</strong>",
+    "description": "Определяет важный текст, который обычно отображается жирным шрифтом.",
+    "example": "<p><strong>Внимание!</strong> Это важная информация.</p>"
+  },
+  {
+    "id": "21be85cd-3728-45c3-a799-76a001991e75",
+    "name": "style",
+    "start": "<style>",
+    "end": "</style>",
+    "description": "Определяет внутренние стили CSS для документа.",
+    "example": "<style>\n  p { color: red; }\n</style>"
+  },
+  {
+    "id": "f29e25fb-3546-4391-8bcd-2d25b4a716ed",
+    "name": "sub",
+    "start": "<sub>",
+    "end": "</sub>",
+    "description": "Определяет подстрочный текст.",
+    "example": "<p>H<sub>2</sub>O — вода.</p>"
+  },
+  {
+    "id": "314dfb29-b4cc-431d-9249-37b66b31a214",
+    "name": "summary",
+    "start": "<summary>",
+    "end": "</summary>",
+    "description": "Определяет видимую заголовок для элемента <details>, который может быть раскрыт или скрыт.",
+    "example": "<details>\n  <summary>Подробнее</summary>\n  <p>Текст, который раскрывается.</p>\n</details>"
+  },
+  {
+    "id": "a95d879e-19d8-4ac7-be56-eedb6bd9b5d4",
+    "name": "sup",
+    "start": "<sup>",
+    "end": "</sup>",
+    "description": "Определяет надстрочный текст.",
+    "example": "<p>H<sup>2</sup>O — вода.</p>"
+  },
+  {
+    "id": "f38a6534-f1c3-46f1-af7f-fac47707a83c",
+    "name": "table",
+    "start": "<table>",
+    "end": "</table>",
+    "description": "Создаёт таблицу.",
+    "example": "<table>\n  <tr>\n    <th>Имя</th>\n    <th>Возраст</th>\n  </tr>\n  <tr>\n    <td>Иван</td>\n    <td>25</td>\n  </tr>\n</table>"
+  },
+  {
+    "id": "55bdddd6-0edc-47dc-a031-61966de4c180",
+    "name": "tbody",
+    "start": "<tbody>",
+    "end": "</tbody>",
+    "description": "Группирует тело таблицы, используется в сочетании с <thead> и <tfoot>.",
+    "example": "<table>\n  <thead>\n    <tr><th>Имя</th><th>Возраст</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>Иван</td><td>25</td></tr>\n  </tbody>\n</table>"
+  },
+  {
+    "id": "4c4a9140-6b22-417a-bf29-d3f97a21cbf1",
+    "name": "td",
+    "start": "<td>",
+    "end": "</td>",
+    "description": "Создаёт ячейку таблицы.",
+    "example": "<table>\n  <tr>\n    <td>Иван</td>\n    <td>25</td>\n  </tr>\n</table>"
+  },
+  {
+    "id": "2bad1948-7694-40fb-9a6a-3fa885772778",
+    "name": "template",
+    "start": "<template>",
+    "end": "</template>",
+    "description": "Представляет шаблон HTML-кода, который не отображается при загрузке страницы, но может быть использован в JavaScript.",
+    "example": "<template id='my-template'>\n  <p>Это мой шаблон!</p>\n</template>"
+  },
+  {
+    "id": "07588371-5be6-460f-a097-c30c68e15d29",
+    "name": "textarea",
+    "start": "<textarea>",
+    "end": "</textarea>",
+    "description": "Создаёт многострочное текстовое поле.",
+    "example": "<textarea rows='4' cols='50'>Ваш текст</textarea>"
+  },
+  {
+    "id": "fe4f63b3-ee03-46b7-973b-877d126e748e",
+    "name": "tfoot",
+    "start": "<tfoot>",
+    "end": "</tfoot>",
+    "description": "Группирует футер таблицы, обычно используется для вывода итоговых данных.",
+    "example": "<table>\n  <tfoot>\n    <tr><td>Итого</td><td>100</td></tr>\n  </tfoot>\n</table>"
+  },
+  {
+    "id": "ba00c7dc-ebc7-4542-aba3-dcb7887ce9d0",
+    "name": "th",
+    "start": "<th>",
+    "end": "</th>",
+    "description": "Создаёт заголовочную ячейку таблицы.",
+    "example": "<table>\n  <tr>\n    <th>Имя</th>\n    <th>Возраст</th>\n  </tr>\n</table>"
+  },
+  {
+    "id": "8c30b812-364d-45d3-815f-8c024c38eb92",
+    "name": "thead",
+    "start": "<thead>",
+    "end": "</thead>",
+    "description": "Группирует заголовок таблицы, используется вместе с <tbody> и <tfoot>.",
+    "example": "<table>\n  <thead>\n    <tr><th>Имя</th><th>Возраст</th></tr>\n  </thead>\n</table>"
+  },
+  {
+    "id": "feed740e-f438-41f0-a7cb-17c7bc5bcf31",
+    "name": "time",
+    "start": "<time>",
+    "end": "</time>",
+    "description": "Определяет дату и время.",
+    "example": "<time datetime='2025-05-01'>1 мая 2025 года</time>"
+  },
+  {
+    "id": "941a22bc-5baa-43d7-8adc-95a4f3bc9793",
+    "name": "title",
+    "start": "<title>",
+    "end": "</title>",
+    "description": "Определяет название документа, которое отображается в заголовке вкладки браузера.",
+    "example": "<title>Моя веб-страница</title>"
+  },
+  {
+    "id": "5c3135a8-cb3e-4508-9aa4-5f338dc425f4",
+    "name": "tr",
+    "start": "<tr>",
+    "end": "</tr>",
+    "description": "Создаёт строку таблицы.",
+    "example": "<table>\n  <tr>\n    <td>Иван</td>\n    <td>25</td>\n  </tr>\n</table>"
+  },
+  {
+    "id": "56e0c5ed-122f-4c0b-89e1-b42d2a06fd66",
+    "name": "track",
+    "start": "<track>",
+    "end": null,
+    "description": "Используется для добавления субтитров, аудиотреков или других дорожек в видео или аудио.",
+    "example": "<video>\n  <source src='movie.mp4' type='video/mp4'>\n  <track src='subtitles_en.vtt' kind='subtitles' srclang='en' label='English'>\n</video>"
+  },
+  {
+    "id": "8c7b6b13-776a-4df5-8f48-d751228735c6",
+    "name": "u",
+    "start": "<u>",
+    "end": "</u>",
+    "description": "Определяет текст, который должен быть подчеркнут.",
+    "example": "<p><u>Это подчеркнутый текст</u></p>"
+  },
+  {
+    "id": "e2f7c642-e720-4920-8a14-32f2cfd1fdb7",
+    "name": "ul",
+    "start": "<ul>",
+    "end": "</ul>",
+    "description": "Создаёт неупорядоченный список (с маркерами).",
+    "example": "<ul>\n  <li>Пункт 1</li>\n  <li>Пункт 2</li>\n</ul>"
+  },
+  {
+    "id": "b0568ef4-3954-4a76-9909-e32634d81ef0",
+    "name": "var",
+    "start": "<var>",
+    "end": "</var>",
+    "description": "Определяет переменную в математическом выражении или скрипте.",
+    "example": "<p>Переменная <var>x</var> равна 10.</p>"
+  },
+  {
+    "id": "fad3a042-5d9c-4a04-a2f3-7ce31b5f09ca",
+    "name": "video",
+    "start": "<video>",
+    "end": "</video>",
+    "description": "Определяет элемент для встраивания видеоконтента.",
+    "example": "<video controls>\n  <source src='movie.mp4' type='video/mp4'>\n</video>"
+  },
+  {
+    "id": "af53aa65-92b3-4d86-a4eb-618b853e9f93",
+    "name": "wbr",
+    "start": "<wbr>",
+    "end": null,
+    "description": "Указывает возможное место для разрыва строки в длинных словах или URL.",
+    "example": "<p>Это длинное слово: supercalifragilistic<wbr>expialidocious.</p>"
+  }
+]
