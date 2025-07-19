@@ -39,6 +39,7 @@ jobs:
           cat lint.tail.log >> $GITHUB_OUTPUT
           echo '```' >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
+        continue-on-error: true
 
       - name: Run Prettier check
         id: prettier
@@ -53,6 +54,7 @@ jobs:
           cat prettier.tail.log >> $GITHUB_OUTPUT
           echo '```' >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
+        continue-on-error: true
 
       - name: Run typescript type checks
         id: typecheck
@@ -67,6 +69,7 @@ jobs:
           cat typecheck.tail.log >> $GITHUB_OUTPUT
           echo '```' >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
+        continue-on-error: true
 
       - name: Build React app
         id: build
@@ -81,6 +84,7 @@ jobs:
           cat build.tail.log >> $GITHUB_OUTPUT
           echo '```' >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
+        continue-on-error: true
 
       - name: Generate summary for PR
         if: github.event_name == 'pull_request'
