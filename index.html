@@ -1,94 +1,13 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/root.css?v=20250609.2119" />
-    <title>Справочник HHTML, CSS и JavaScript</title>
+    <title>Vite + ReactP + TS</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <a href="index.html">
-          <img src="assets/img/logo/logo.jpeg" alt="Логотип HTML CSS JS" title="На главную">
-        </a>
-      </div>
-      <nav>
-        <a href="index.html">На главную</a>
-        <a href="#">Написать разработчикам</a>
-        <a href="#">Личный кабинет</a>
-      </nav>
-      <div>
-        <button id="ThemeBtn">🌙 Темная тема</button>
-      </div>
-    </header>
-
-    <main class="main">
-      <div class="container">
-        <h1>Изучаем HTML, CSS и JavaScript</h1>
-
-        <div class="cards">
-          <a href="pages/htmlpage.html">
-            <div class="card html">HTML — структура страницы</div>
-          </a>
-          <a href="pages/csspage.html">
-            <div class="card css">CSS — стилизация и оформление</div>
-          </a>
-          <a href="pages/javascriptpage.html">
-            <div class="card js">JavaScript — поведение и логика</div>
-          </a>
-          <a href="pages/quiz.html">
-            <div class="card quiz">Проверь себя</div>
-          </a>
-        </div>
-        <div id="search-container"></div>
-      </div>
-    </main>
-
-    <!-- <div class="borderfiltres">
-<div class="filters">
-    <div class="filters_header" onclick="toggleSingleFilter(this)">
-        <span>html</span></div>
-        <div class="filters_content">
-            <div class="html-inputs">
-                <label><input type="checkbox">Парные теги</label>
-                <label><input type="checkbox">Одиночные теги</label>
-                <label><input type="checkbox">Блочные теги</label>
-                <label><input type="checkbox">Строчные теги</label>
-                <label><input type="checkbox">Новые теги HTML5</label>
-                <label><input type="checkbox">Устаревшие теги</label>
-                <label><input type="checkbox">Нестандартные теги</label>
-                <label><input type="checkbox">Теги верхнего уровня</label>
-                <label><input type="checkbox">Теги головы HTML-документа</label>
-                <label><input type="checkbox">Семантические теги</label>
-            </div>
-        </div>
-    </div>
-    <div class="filters">
-        <div class="filters_header" onclick="toggleSingleFilter(this)">
-            <span>CSS</span>
-            <div class="filters_content">
-                <div class="html-inputs">
-                    <label><input type="checkbox">Универсальный селектор</label>
-                    <label><input type="checkbox">Селектор по тегу</label>
-                    <label><input type="checkbox">Селектор класса</label>
-                    <label><input type="checkbox">Селектор по идентификатору</label>
-                    <label><input type="checkbox">Селектор атрибута</label>
-                    <label><input type="checkbox">Псевдоклассы</label>
-                    <label><input type="checkbox">Псевдоэлемент</label>
-                    <label><input type="checkbox">Составные селекторы</label>
-                    <label><input type="checkbox">CSS селекторы потомков</label>
-                    <label><input type="checkbox">Дочерние селекторы CSS - сиблинги</label>
-                </div>
-            </div>
-        </div>
-</div>
-</div> -->
-    <script src="assets/js/version-cache.js"></script>
-    <script src="assets/js/searchonsite.js"></script>
-    <script src="assets/js/theme.js"></script>
-    <footer>
-      © 2025 TEST. Все права возможно когда нибудь будут защищены.
-    </footer>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
