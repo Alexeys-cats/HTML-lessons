@@ -28,14 +28,21 @@ jobs:
         id: branch-name
         uses: tj-actions/branch-names@v7
 
+      # Создаем безопасное имя ветки для использования в URL
+      - name: Create safe branch name
+        id: safe-branch-name
+        run: |
+          BRANCH="${{ steps.branch-name.outputs.current_branch }}"
+          SAFE_BRANCH=$(echo $BRANCH | sed 's/\//-/g')
+          echo "safe_branch=${SAFE_BRANCH}" >> $GITHUB_OUTPUT
+          echo "Original branch: ${BRANCH}"
+          echo "Safe branch name: ${SAFE_BRANCH}"
+
       - name: Install dependencies
         run: npm ci
 
       - name: Build
-        run: npm run build:ci
-        env:
-          # Создаем уникальную директорию для каждой ветки
-          VITE_BASE_PATH: /HTML-lessons/preview/${{ steps.branch-name.outputs.current_branch }}
+        run: npm run vite build -- --base=/HTML-lessons/preview/${{ steps.safe-branch-name.outputs.safe_branch }}/
 
       # Добавляем базовый путь в настройки сборки
       - name: Update base path in HTML
@@ -43,17 +50,23 @@ jobs:
           # Создаем .nojekyll для GitHub Pages
           touch dist/.nojekyll
           
+          # Создаем index.html если его нет (страховка)
+          [ -f dist/index.html ] || echo "<html><body>Redirecting...</body></html>" > dist/index.html
+          
           # Обновляем базовый путь в index.html, если это необходимо
-          BRANCH_PATH=$(echo ${{ steps.branch-name.outputs.current_branch }} | sed 's/\//-/g')
-          sed -i "s|<base href=\"/HTML-lessons/\">|<base href=\"/HTML-lessons/preview/${BRANCH_PATH}/\">|" dist/index.html || true
+          SAFE_BRANCH="${{ steps.safe-branch-name.outputs.safe_branch }}"
+          sed -i "s|<base href=\"/HTML-lessons/\">|<base href=\"/HTML-lessons/preview/${SAFE_BRANCH}/\">|" dist/index.html || true
+          
+          echo "Checking dist directory contents:"
+          ls -la dist/
 
-      # Деплой на GitHub Pages в отдельную директорию для ветки
+      # Деплой на GitHub Pages в отдельную директорию для ветки (используем безопасное имя)
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist
           branch: gh-pages
-          target-folder: preview/${{ steps.branch-name.outputs.current_branch }}
+          target-folder: preview/${{ steps.safe-branch-name.outputs.safe_branch }}
           clean: true # Удаляем только файлы в папке текущей ветки
 
       # Добавляем комментарий в PR с ссылкой на фича-стенд
@@ -73,6 +86,6 @@ jobs:
           message: |
             🚀 **Превью фича-стенда готово!**
             
-            Проверить изменения можно по ссылке: [Фича-стенд на GitHub Pages](https://${{ github.repository_owner }}.github.io/HTML-lessons/preview/${{ steps.branch-name.outputs.current_branch }}/)
+            Проверить изменения можно по ссылке: [Фича-стенд на GitHub Pages](https://${{ github.repository_owner }}.github.io/HTML-lessons/preview/${{ steps.safe-branch-name.outputs.safe_branch }}/#/)
             
             _Автоматически создано из ветки: ${{ steps.branch-name.outputs.current_branch }}_
