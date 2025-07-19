@@ -4,7 +4,6 @@
   /* Цвета */
   --primary-color: #00dbdb;
   --input-color: #d9d9d9;
-
 }
 
 @layer customRounded {
@@ -59,29 +58,28 @@ body {
 }
 
 .logo-glow img {
-  filter: drop-shadow(0 0 8px #6DC3F4);
+  filter: drop-shadow(0 0 8px #6dc3f4);
   transition: filter 0.3s;
   animation: logoGlow 3s infinite alternate;
-
 }
 @keyframes logoGlow {
   0% {
-    filter: drop-shadow(0 0 8px #6DC3F4);
+    filter: drop-shadow(0 0 8px #6dc3f4);
   }
 
   25% {
-    filter: drop-shadow(0 0 12px #D840B9);
+    filter: drop-shadow(0 0 12px #d840b9);
   }
 
   50% {
-    filter: drop-shadow(0 0 16px #562FFC);
+    filter: drop-shadow(0 0 16px #562ffc);
   }
 
   75% {
-    filter: drop-shadow(0 0 12px #B46BCD);
+    filter: drop-shadow(0 0 12px #b46bcd);
   }
 
   100% {
-    filter: drop-shadow(0 0 8px #6DC3F4);
+    filter: drop-shadow(0 0 8px #6dc3f4);
   }
 }
