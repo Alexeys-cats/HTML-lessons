@@ -30,44 +30,56 @@ jobs:
         id: lint
         run: |
           npm run lint > lint.log 2>&1 || true
-          tail -n 50 lint.log | npx strip-ansi > lint.clean.log
-          cat lint.clean.log
-          if grep -q "error" lint.clean.log; then echo "::set-output name=lint_status::❌"; else echo "::set-output name=lint_status::✅"; fi
+          npx strip-ansi lint.log > lint.clean.log
+          tail -n 50 lint.clean.log > lint.tail.log
+          cat lint.tail.log
+          if grep -q "error" lint.tail.log; then echo "lint_status=❌" >> $GITHUB_OUTPUT; else echo "lint_status=✅" >> $GITHUB_OUTPUT; fi
           echo "lint_result<<EOF" >> $GITHUB_OUTPUT
-          cat lint.clean.log >> $GITHUB_OUTPUT
+          echo '```' >> $GITHUB_OUTPUT
+          cat lint.tail.log >> $GITHUB_OUTPUT
+          echo '```' >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Run Prettier check
         id: prettier
         run: |
           npm run format:check > prettier.log 2>&1 || true
-          tail -n 50 prettier.log | npx strip-ansi > prettier.clean.log
-          cat prettier.clean.log
-          if grep -q "code style issues found" prettier.clean.log; then echo "::set-output name=prettier_status::❌"; else echo "::set-output name=prettier_status::✅"; fi
+          npx strip-ansi prettier.log > prettier.clean.log
+          tail -n 50 prettier.clean.log > prettier.tail.log
+          cat prettier.tail.log
+          if grep -q "code style issues found" prettier.tail.log; then echo "prettier_status=❌" >> $GITHUB_OUTPUT; else echo "prettier_status=✅" >> $GITHUB_OUTPUT; fi
           echo "prettier_result<<EOF" >> $GITHUB_OUTPUT
-          cat prettier.clean.log >> $GITHUB_OUTPUT
+          echo '```' >> $GITHUB_OUTPUT
+          cat prettier.tail.log >> $GITHUB_OUTPUT
+          echo '```' >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Run typescript type checks
         id: typecheck
         run: |
           npm run typecheck > typecheck.log 2>&1 || true
-          tail -n 50 typecheck.log | npx strip-ansi > typecheck.clean.log
-          cat typecheck.clean.log
-          if grep -q "error" typecheck.clean.log; then echo "::set-output name=typecheck_status::❌"; else echo "::set-output name=typecheck_status::✅"; fi
+          npx strip-ansi typecheck.log > typecheck.clean.log
+          tail -n 50 typecheck.clean.log > typecheck.tail.log
+          cat typecheck.tail.log
+          if grep -q "error" typecheck.tail.log; then echo "typecheck_status=❌" >> $GITHUB_OUTPUT; else echo "typecheck_status=✅" >> $GITHUB_OUTPUT; fi
           echo "typecheck_result<<EOF" >> $GITHUB_OUTPUT
-          cat typecheck.clean.log >> $GITHUB_OUTPUT
+          echo '```' >> $GITHUB_OUTPUT
+          cat typecheck.tail.log >> $GITHUB_OUTPUT
+          echo '```' >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Build React app
         id: build
         run: |
           npm run build:ci > build.log 2>&1 || true
-          tail -n 50 build.log | npx strip-ansi > build.clean.log
-          cat build.clean.log
-          if grep -q "error" build.clean.log; then echo "::set-output name=build_status::❌"; else echo "::set-output name=build_status::✅"; fi
+          npx strip-ansi build.log > build.clean.log
+          tail -n 50 build.clean.log > build.tail.log
+          cat build.tail.log
+          if grep -q "error" build.tail.log; then echo "build_status=❌" >> $GITHUB_OUTPUT; else echo "build_status=✅" >> $GITHUB_OUTPUT; fi
           echo "build_result<<EOF" >> $GITHUB_OUTPUT
-          cat build.clean.log >> $GITHUB_OUTPUT
+          echo '```' >> $GITHUB_OUTPUT
+          cat build.tail.log >> $GITHUB_OUTPUT
+          echo '```' >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Generate summary for PR
