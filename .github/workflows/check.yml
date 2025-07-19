@@ -117,17 +117,17 @@ jobs:
           header: check-result
           message: |
             ✅ Проверка завершена!
-            
+
             #### Линтинг: ${{ steps.lint.outputs.lint_status }}
             ${{ steps.lint.outputs.lint_result }}
-            
+
             #### Prettier: ${{ steps.prettier.outputs.prettier_status }}
             ${{ steps.prettier.outputs.prettier_result }}
-            
+
             #### Typecheck: ${{ steps.typecheck.outputs.typecheck_status }}
             ${{ steps.typecheck.outputs.typecheck_result }}
-            
+
             #### Build: ${{ steps.build.outputs.build_status }}
             ${{ steps.build.outputs.build_result }}
-            
+
             [Логи CI](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
