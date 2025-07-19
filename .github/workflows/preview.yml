@@ -42,7 +42,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run vite build -- --base=/HTML-lessons/preview/${{ steps.safe-branch-name.outputs.safe_branch }}/
+        run: npx vite build --base=/HTML-lessons/preview/${{ steps.safe-branch-name.outputs.safe_branch }}/
 
       # Добавляем базовый путь в настройки сборки
       - name: Update base path in HTML
