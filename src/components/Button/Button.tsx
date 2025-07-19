@@ -1,5 +1,5 @@
 import React from 'react';
-import { cn } from '../utils/utils';
+import { cn } from '../../utils/utils';
 
 interface MainBtnProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'danger' | 'ghost';
@@ -37,12 +37,10 @@ export const Button: React.FC<MainBtnProps> = ({
       disabled={loading || props.disabled}
       {...props}
     >
-      {loading ? (
+      {loading && (
         <span className="animate-spin mr-2"></span>
-      ) : (
-        <span>{children}</span>
       )}
-      {children}
+        <span>{children}</span>
     </button>
   );
 };

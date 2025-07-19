@@ -1,5 +1,5 @@
-// TODO стили вставить в библеотеку cn из tailwind
 import type { JSX } from 'react';
+import { cn } from '../../utils/utils';
 
 type TextType = 'h1' | 'h2' | 'body' | 'helper';
 
@@ -39,7 +39,11 @@ export const Text = (props: Iprops) => {
 
   return (
     <TextTag
-      className={`${textSize[variant]} ${error && 'text-red-500'} border-2 ${readonly && 'opacity-50'} ${className}`}
+      className={cn(textSize[variant],
+        error && 'texr-red-500',
+        readonly && 'opacity-50',
+        className
+      )}
       {...otherProps}
     >
       {text}
