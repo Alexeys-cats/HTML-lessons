@@ -32,21 +32,27 @@ jobs:
         run: |
           npm run lint > lint.log 2>&1 || true
           tail -n 50 lint.log
-          echo "::set-output name=lint_result::$(tail -n 50 lint.log | sed ':a;N;$!ba;s/\n/\\n/g')"
+          echo "lint_result<<EOF" >> $GITHUB_OUTPUT
+          tail -n 50 lint.log >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Run Prettier check
         id: prettier
         run: |
           npm run format:check > prettier.log 2>&1 || true
           tail -n 50 prettier.log
-          echo "::set-output name=prettier_result::$(tail -n 50 prettier.log | sed ':a;N;$!ba;s/\n/\\n/g')"
+          echo "prettier_result<<EOF" >> $GITHUB_OUTPUT
+          tail -n 50 prettier.log >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Run typescript type checks
         id: typecheck
         run: |
           npm run typecheck > typecheck.log 2>&1 || true
           tail -n 50 typecheck.log
-          echo "::set-output name=typecheck_result::$(tail -n 50 typecheck.log | sed ':a;N;$!ba;s/\n/\\n/g')"
+          echo "typecheck_result<<EOF" >> $GITHUB_OUTPUT
+          tail -n 50 typecheck.log >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
   build:
     runs-on: ubuntu-latest
@@ -68,7 +74,9 @@ jobs:
         run: |
           npm run build:ci > build.log 2>&1 || true
           tail -n 50 build.log
-          echo "::set-output name=build_result::$(tail -n 50 build.log | sed ':a;N;$!ba;s/\n/\\n/g')"
+          echo "build_result<<EOF" >> $GITHUB_OUTPUT
+          tail -n 50 build.log >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Generate summary for PR
         run: |

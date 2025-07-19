@@ -7,8 +7,14 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "build:ci": "vite build",
-    "format:check": "prettier --check .",
-    "typecheck": "tsc --noEmit --skipLibCheck"
+    "build:prod": "cross-env BASE_PATH=/HTML-lessons/ vite build",
+    "deploy:prod": "npm run build:prod && gh-pages -d dist -b gh-pages -r https://github.com/Alexeys-cats/HTML-lessons.git",
+    "typecheck": "tsc --noEmit --skipLibCheck",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
