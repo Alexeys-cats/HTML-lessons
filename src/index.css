@@ -83,3 +83,46 @@ body {
     filter: drop-shadow(0 0 8px #6dc3f4);
   }
 }
+
+@layer animateSpin {
+  .animate-spin {
+    animation: spin-slow 5s linear infinite;
+  }
+
+  @keyframes spin-slow {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.home-img-glow img {
+  filter: drop-shadow(0 0 8px #68DBF1);
+  transition: filter 0.3s;
+  animation: home-img 3s infinite alternate;
+
+}
+@keyframes home-img {
+  0% {
+    filter: drop-shadow(0 0 8px #68DBF1);
+  }
+
+  25% {
+    filter: drop-shadow(0 0 12px #3BC9E4);
+  }
+
+  50% {
+    filter: drop-shadow(0 0 16px #04364C);
+  }
+
+  75% {
+    filter: drop-shadow(0 0 12px #3CCAE4);
+  }
+
+  100% {
+    filter: drop-shadow(0 0 8px #68DBF1);
+  }
+}
