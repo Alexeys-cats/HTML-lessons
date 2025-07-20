@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Input } from './Input/Input';
+import logo from '../../public/logo.svg';
 
 const Header = () => {
   const [_search, setSearch] = useState('');
@@ -11,11 +12,7 @@ const Header = () => {
   return (
     <header className="fixed top-2 left-1/2 -translate-x-1/2 max-w-[1200px] w-[95vw] bg-[#AEAEAE] text-[#2D2D2D] py-2 px-2 sm:py-4 sm:px-6 flex justify-between items-center rounded-xl shadow-md z-50">
       <div className="sm:w-[55px] sm:h-[55px] logo-glow flex-shrink-0">
-        <img
-          src="/logo.svg"
-          alt="logo"
-          className="w-full h-full object-contain"
-        />
+        <img src={logo} alt="logo" className="w-full h-full object-contain" />
       </div>
       <div className="flex-1 flex justify-center px-2 sm:px-4">
         <div className="w-full max-w-[120px] sm:max-w-xs">
