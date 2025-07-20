@@ -1,4 +1,4 @@
-import classNames from 'classnames';
+import { cn } from '../../utils/utils';
 import type { ChangeEvent } from 'react';
 
 interface Iprops {
@@ -24,7 +24,7 @@ export const Input = (props: Iprops) => {
     helperText,
   } = props;
 
-  const inputStyles = classNames(
+  const inputStyles = cn(
     'bg-[var(--input-color)]',
     'rounded-2xl',
     'w-full',

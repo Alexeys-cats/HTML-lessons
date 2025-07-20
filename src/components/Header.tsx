@@ -2,8 +2,11 @@ import { useState } from 'react';
 import { Input } from './Input/Input';
 
 const Header = () => {
-  const [search, setSearch] = useState('');
+  const [_search, setSearch] = useState('');
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const search = _search.trim().toLowerCase();
+  console.log('search', search);
 
   return (
     <header className="fixed top-2 left-1/2 -translate-x-1/2 max-w-[1200px] w-[95vw] bg-[#AEAEAE] text-[#2D2D2D] py-2 px-2 sm:py-4 sm:px-6 flex justify-between items-center rounded-xl shadow-md z-50">

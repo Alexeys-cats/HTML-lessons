@@ -275,12 +275,7 @@
   {
     "id": "f9c8b64b-fc40-4437-bbb4-315082a610eb",
     "question": "Как получить текущую дату в JavaScript?",
-    "options": [
-      "new Date()",
-      "Date.now()",
-      "getDate()",
-      "currentDate()"
-    ],
+    "options": ["new Date()", "Date.now()", "getDate()", "currentDate()"],
     "correctAnswer": 0,
     "explanation": "new Date() создает объект с текущей датой и временем.",
     "theme": "js"
@@ -1432,12 +1427,7 @@
   {
     "id": "3e79f236-34eb-4741-8e6d-73ca32be22ce",
     "question": "Какой тег используется для создания заголовка первого уровня?",
-    "options": [
-      "<header>",
-      "<h1>",
-      "<title>",
-      "<h>"
-    ],
+    "options": ["<header>", "<h1>", "<title>", "<h>"],
     "correctAnswer": 1,
     "explanation": "Тег <h1> используется для создания заголовка первого уровня, самого крупного по умолчанию.",
     "theme": "html"
@@ -1445,12 +1435,7 @@
   {
     "id": "bddeb335-4b24-4527-b347-ceb77adb89f4",
     "question": "Какой тег задает основной контент страницы?",
-    "options": [
-      "<body>",
-      "<main>",
-      "<section>",
-      "<article>"
-    ],
+    "options": ["<body>", "<main>", "<section>", "<article>"],
     "correctAnswer": 1,
     "explanation": "Тег <main> определяет основной контент страницы, который должен быть уникальным.",
     "theme": "html"
@@ -1458,12 +1443,7 @@
   {
     "id": "48339d4e-8db5-48a1-bb20-cc77c0b784df",
     "question": "Какой атрибут указывает адрес ссылки в теге <a>?",
-    "options": [
-      "src",
-      "href",
-      "link",
-      "url"
-    ],
+    "options": ["src", "href", "link", "url"],
     "correctAnswer": 1,
     "explanation": "Атрибут href (hypertext reference) задает URL, на который ведет ссылка.",
     "theme": "html"
@@ -1471,12 +1451,7 @@
   {
     "id": "aa2de0f6-84c1-47ad-afdb-054178ab5ec4",
     "question": "Какой тег используется для вставки изображения?",
-    "options": [
-      "<img>",
-      "<image>",
-      "<picture>",
-      "<src>"
-    ],
+    "options": ["<img>", "<image>", "<picture>", "<src>"],
     "correctAnswer": 0,
     "explanation": "Тег <img> используется для вставки изображений, с атрибутом src для указания пути к файлу.",
     "theme": "html"
@@ -1497,12 +1472,7 @@
   {
     "id": "49a322f5-7d10-4bc4-850f-e7965131ecab",
     "question": "Какой тег используется для создания ненумерованного списка?",
-    "options": [
-      "<ol>",
-      "<ul>",
-      "<li>",
-      "<list>"
-    ],
+    "options": ["<ol>", "<ul>", "<li>", "<list>"],
     "correctAnswer": 1,
     "explanation": "Тег <ul> создает ненумерованный (маркированный) список, элементы которого оборачиваются в <li>.",
     "theme": "html"
@@ -1510,12 +1480,7 @@
   {
     "id": "758f3f42-5237-4139-9ff1-2e416f69a78c",
     "question": "Какой тег используется для создания нумерованного списка?",
-    "options": [
-      "<ol>",
-      "<ul>",
-      "<li>",
-      "<dl>"
-    ],
+    "options": ["<ol>", "<ul>", "<li>", "<dl>"],
     "correctAnswer": 0,
     "explanation": "Тег <ol> создает нумерованный (упорядоченный) список, элементы которого оборачиваются в <li>.",
     "theme": "html"
@@ -1523,12 +1488,7 @@
   {
     "id": "46d7fa5d-b4fd-4e54-a471-e82dc3c77ac5",
     "question": "Какой тег задает заголовок HTML-документа?",
-    "options": [
-      "<head>",
-      "<title>",
-      "<header>",
-      "<h1>"
-    ],
+    "options": ["<head>", "<title>", "<header>", "<h1>"],
     "correctAnswer": 1,
     "explanation": "Тег <title> задает заголовок документа, отображаемый на вкладке браузера.",
     "theme": "html"
@@ -1536,12 +1496,7 @@
   {
     "id": "09ec5a92-0200-492b-a18c-f3d1ba8b6e76",
     "question": "Какой тег определяет метаданные документа?",
-    "options": [
-      "<meta>",
-      "<head>",
-      "<info>",
-      "<data>"
-    ],
+    "options": ["<meta>", "<head>", "<info>", "<data>"],
     "correctAnswer": 0,
     "explanation": "Тег <meta> используется для указания метаданных, таких как кодировка или описание страницы.",
     "theme": "html"
@@ -1562,12 +1517,7 @@
   {
     "id": "c1a7ce06-266d-4d27-936c-acf1930b415d",
     "question": "Какой тег используется для создания таблицы?",
-    "options": [
-      "<table>",
-      "<grid>",
-      "<tr>",
-      "<td>"
-    ],
+    "options": ["<table>", "<grid>", "<tr>", "<td>"],
     "correctAnswer": 0,
     "explanation": "Тег <table> создает таблицу, внутри которой используются <tr> для строк и <td> для ячеек.",
     "theme": "html"
@@ -1588,12 +1538,7 @@
   {
     "id": "b9d55edd-a3f0-46d5-9dea-596a5d5e0d7d",
     "question": "Какой тег создает ячейку заголовка в таблице?",
-    "options": [
-      "<td>",
-      "<th>",
-      "<tr>",
-      "<caption>"
-    ],
+    "options": ["<td>", "<th>", "<tr>", "<caption>"],
     "correctAnswer": 1,
     "explanation": "Тег <th> создает ячейку заголовка в таблице, обычно с жирным текстом и выравниванием по центру.",
     "theme": "html"
@@ -1601,12 +1546,7 @@
   {
     "id": "1a7f4836-3418-4334-996a-fbf2848d5bbc",
     "question": "Какой тег используется для создания формы?",
-    "options": [
-      "<form>",
-      "<input>",
-      "<button>",
-      "<field>"
-    ],
+    "options": ["<form>", "<input>", "<button>", "<field>"],
     "correctAnswer": 0,
     "explanation": "Тег <form> создает форму для ввода данных пользователем, с атрибутами action и method.",
     "theme": "html"
@@ -1614,12 +1554,7 @@
   {
     "id": "257f89b8-e7f5-449f-ac95-7adcb14a5cb7",
     "question": "Какой атрибут формы указывает, куда отправлять данные?",
-    "options": [
-      "method",
-      "action",
-      "target",
-      "submit"
-    ],
+    "options": ["method", "action", "target", "submit"],
     "correctAnswer": 1,
     "explanation": "Атрибут action задает URL, на который отправляются данные формы при отправке.",
     "theme": "html"
@@ -1640,12 +1575,7 @@
   {
     "id": "aa49e9a9-099e-4b9f-a2c2-1397d90f5912",
     "question": "Какой тег создает кнопку отправки формы?",
-    "options": [
-      "<button>",
-      "<input type='submit'>",
-      "<submit>",
-      "<send>"
-    ],
+    "options": ["<button>", "<input type='submit'>", "<submit>", "<send>"],
     "correctAnswer": 1,
     "explanation": "Тег <input type='submit'> создает кнопку для отправки данных формы.",
     "theme": "html"
@@ -1653,12 +1583,7 @@
   {
     "id": "58c8ecaa-b8db-4f81-bb32-794eb8ee049f",
     "question": "Какой тег используется для группировки элементов формы?",
-    "options": [
-      "<group>",
-      "<fieldset>",
-      "<form>",
-      "<section>"
-    ],
+    "options": ["<group>", "<fieldset>", "<form>", "<section>"],
     "correctAnswer": 1,
     "explanation": "Тег <fieldset> группирует связанные элементы формы, часто с <legend> для заголовка.",
     "theme": "html"
@@ -1666,12 +1591,7 @@
   {
     "id": "6ab1d3da-5d7c-48b5-ae67-1a3198f6f66e",
     "question": "Какой тег задает подпись для группы элементов формы?",
-    "options": [
-      "<label>",
-      "<legend>",
-      "<caption>",
-      "<title>"
-    ],
+    "options": ["<label>", "<legend>", "<caption>", "<title>"],
     "correctAnswer": 1,
     "explanation": "Тег <legend> задает подпись для группы элементов, обернутых в <fieldset>.",
     "theme": "html"
@@ -1679,12 +1599,7 @@
   {
     "id": "c9daf637-c913-4dc0-88bf-50a8148b9492",
     "question": "Какой тег используется для создания выпадающего списка?",
-    "options": [
-      "<select>",
-      "<dropdown>",
-      "<list>",
-      "<option>"
-    ],
+    "options": ["<select>", "<dropdown>", "<list>", "<option>"],
     "correctAnswer": 0,
     "explanation": "Тег <select> создает выпадающий список, а <option> задает элементы списка.",
     "theme": "html"
@@ -1692,12 +1607,7 @@
   {
     "id": "dfbdb444-0cf5-486c-b9ed-8572fad115e6",
     "question": "Какой тег определяет элемент выпадающего списка?",
-    "options": [
-      "<item>",
-      "<option>",
-      "<select>",
-      "<value>"
-    ],
+    "options": ["<item>", "<option>", "<select>", "<value>"],
     "correctAnswer": 1,
     "explanation": "Тег <option> задает отдельный элемент внутри <select> для выпадающего списка.",
     "theme": "html"
@@ -1705,12 +1615,7 @@
   {
     "id": "c83effce-efca-4639-88b4-cb02ce010c9b",
     "question": "Какой атрибут указывает выбранный по умолчанию элемент в <select>?",
-    "options": [
-      "selected",
-      "default",
-      "checked",
-      "value"
-    ],
+    "options": ["selected", "default", "checked", "value"],
     "correctAnswer": 0,
     "explanation": "Атрибут selected в теге <option> указывает, что этот элемент выбран по умолчанию.",
     "theme": "html"
@@ -1731,12 +1636,7 @@
   {
     "id": "4e20b620-9e0a-482a-b294-bdbb956d3eda",
     "question": "Какой атрибут задает язык документа?",
-    "options": [
-      "lang",
-      "language",
-      "locale",
-      "dir"
-    ],
+    "options": ["lang", "language", "locale", "dir"],
     "correctAnswer": 0,
     "explanation": "Атрибут lang в теге <html> задает язык документа, например, lang='en' для английского.",
     "theme": "html"
@@ -1744,12 +1644,7 @@
   {
     "id": "920087dd-f6ba-44cb-bf9a-b097784855d6",
     "question": "Какой тег используется для семантического выделения текста?",
-    "options": [
-      "<b>",
-      "<strong>",
-      "<i>",
-      "<em>"
-    ],
+    "options": ["<b>", "<strong>", "<i>", "<em>"],
     "correctAnswer": 1,
     "explanation": "Тег <strong> выделяет текст как важный, обычно отображая его жирным шрифтом.",
     "theme": "html"
@@ -1757,12 +1652,7 @@
   {
     "id": "6f0a133e-d4d4-40dd-8267-1d080c77b67d",
     "question": "Какой тег используется для курсивного текста с семантическим акцентом?",
-    "options": [
-      "<i>",
-      "<em>",
-      "<italic>",
-      "<b>"
-    ],
+    "options": ["<i>", "<em>", "<italic>", "<b>"],
     "correctAnswer": 1,
     "explanation": "Тег <em> выделяет текст с акцентом, обычно отображая его курсивом.",
     "theme": "html"
@@ -1770,12 +1660,7 @@
   {
     "id": "97fcbd77-320d-45c1-86ba-1056ef99118f",
     "question": "Какой тег создает горизонтальную линию?",
-    "options": [
-      "<hr>",
-      "<line>",
-      "<br>",
-      "<divider>"
-    ],
+    "options": ["<hr>", "<line>", "<br>", "<divider>"],
     "correctAnswer": 0,
     "explanation": "Тег <hr> создает горизонтальную линию для разделения контента.",
     "theme": "html"
@@ -1783,12 +1668,7 @@
   {
     "id": "5acbec7a-f879-4b4e-9edf-a5701260e3f6",
     "question": "Какой тег используется для переноса строки?",
-    "options": [
-      "<br>",
-      "<nl>",
-      "<break>",
-      "<line>"
-    ],
+    "options": ["<br>", "<nl>", "<break>", "<line>"],
     "correctAnswer": 0,
     "explanation": "Тег <br> создает перенос строки в тексте без начала нового абзаца.",
     "theme": "html"
@@ -1796,12 +1676,7 @@
   {
     "id": "4f935abf-8e40-49b1-b3d3-ddcb6abdbd6a",
     "question": "Какой тег определяет абзац?",
-    "options": [
-      "<p>",
-      "<div>",
-      "<span>",
-      "<text>"
-    ],
+    "options": ["<p>", "<div>", "<span>", "<text>"],
     "correctAnswer": 0,
     "explanation": "Тег <p> создает абзац текста, обычно с отступами сверху и снизу.",
     "theme": "html"
@@ -1809,12 +1684,7 @@
   {
     "id": "e46dbc18-6514-4acc-ad8f-862f96e36e0c",
     "question": "Какой тег используется для вставки видео?",
-    "options": [
-      "<video>",
-      "<media>",
-      "<movie>",
-      "<clip>"
-    ],
+    "options": ["<video>", "<media>", "<movie>", "<clip>"],
     "correctAnswer": 0,
     "explanation": "Тег <video> используется для вставки видеоконтента с атрибутами src или <source>.",
     "theme": "html"
@@ -1822,12 +1692,7 @@
   {
     "id": "27942d94-5914-48b1-aac2-dafc0a25920d",
     "question": "Какой тег используется для вставки аудио?",
-    "options": [
-      "<audio>",
-      "<sound>",
-      "<media>",
-      "<track>"
-    ],
+    "options": ["<audio>", "<sound>", "<media>", "<track>"],
     "correctAnswer": 0,
     "explanation": "Тег <audio> используется для вставки аудиоконтента с атрибутами src или <source>.",
     "theme": "html"
@@ -1835,12 +1700,7 @@
   {
     "id": "e697d0a3-8d30-442b-adbf-d14f113f75df",
     "question": "Какой атрибут тега <video> включает элементы управления?",
-    "options": [
-      "controls",
-      "play",
-      "ui",
-      "showcontrols"
-    ],
+    "options": ["controls", "play", "ui", "showcontrols"],
     "correctAnswer": 0,
     "explanation": "Атрибут controls добавляет стандартные элементы управления, такие как воспроизведение и громкость.",
     "theme": "html"
@@ -1848,12 +1708,7 @@
   {
     "id": "261b8ab7-d0c0-459d-a68a-c32fc9608634",
     "question": "Какой тег используется для определения навигационного меню?",
-    "options": [
-      "<nav>",
-      "<menu>",
-      "<links>",
-      "<header>"
-    ],
+    "options": ["<nav>", "<menu>", "<links>", "<header>"],
     "correctAnswer": 0,
     "explanation": "Тег <nav> определяет блок навигационных ссылок, таких как меню сайта.",
     "theme": "html"
@@ -1861,12 +1716,7 @@
   {
     "id": "09dc68dc-1d51-40ce-b117-9d8bb9998302",
     "question": "Какой тег создает футер страницы?",
-    "options": [
-      "<footer>",
-      "<bottom>",
-      "<end>",
-      "<section>"
-    ],
+    "options": ["<footer>", "<bottom>", "<end>", "<section>"],
     "correctAnswer": 0,
     "explanation": "Тег <footer> определяет нижнюю часть страницы, обычно содержащую авторские права или контакты.",
     "theme": "html"
@@ -1874,12 +1724,7 @@
   {
     "id": "4f2f8a96-10ea-479c-a93e-cb1205cb1b92",
     "question": "Какой тег используется для создания статьи?",
-    "options": [
-      "<article>",
-      "<post>",
-      "<content>",
-      "<section>"
-    ],
+    "options": ["<article>", "<post>", "<content>", "<section>"],
     "correctAnswer": 0,
     "explanation": "Тег <article> определяет независимый, самодостаточный контент, например, новость или пост.",
     "theme": "html"
@@ -1887,12 +1732,7 @@
   {
     "id": "8626e13e-96e4-4391-b511-722daf2eca98",
     "question": "Какой тег используется для группировки контента?",
-    "options": [
-      "<div>",
-      "<group>",
-      "<block>",
-      "<container>"
-    ],
+    "options": ["<div>", "<group>", "<block>", "<container>"],
     "correctAnswer": 0,
     "explanation": "Тег <div> — универсальный контейнер для группировки и стилизации контента.",
     "theme": "html"
@@ -1900,12 +1740,7 @@
   {
     "id": "e51d9a9e-a98d-46f9-9ebb-f7e9f2c1bf0f",
     "question": "Какой тег используется для выделения инлайн-элементов?",
-    "options": [
-      "<span>",
-      "<div>",
-      "<block>",
-      "<inline>"
-    ],
+    "options": ["<span>", "<div>", "<block>", "<inline>"],
     "correctAnswer": 0,
     "explanation": "Тег <span> используется для выделения или стилизации части текста внутри строки.",
     "theme": "html"
@@ -1913,12 +1748,7 @@
   {
     "id": "56943138-2aa2-4041-a022-5d2cf122c9fb",
     "question": "Какой атрибут задает уникальный идентификатор элемента?",
-    "options": [
-      "class",
-      "id",
-      "name",
-      "key"
-    ],
+    "options": ["class", "id", "name", "key"],
     "correctAnswer": 1,
     "explanation": "Атрибут id задает уникальный идентификатор для элемента, используемый в CSS и JavaScript.",
     "theme": "html"
@@ -1926,12 +1756,7 @@
   {
     "id": "82bfa18e-2fa1-4969-aa15-cd0bd35dfe60",
     "question": "Какой атрибут задает класс для стилизации?",
-    "options": [
-      "style",
-      "class",
-      "id",
-      "type"
-    ],
+    "options": ["style", "class", "id", "type"],
     "correctAnswer": 1,
     "explanation": "Атрибут class задает один или несколько классов для стилизации через CSS.",
     "theme": "html"
@@ -1939,12 +1764,7 @@
   {
     "id": "ac166613-0230-4b6c-85a6-dd2e24a243a8",
     "question": "Какой тег используется для вставки JavaScript в HTML?",
-    "options": [
-      "<script>",
-      "<js>",
-      "<code>",
-      "<javascript>"
-    ],
+    "options": ["<script>", "<js>", "<code>", "<javascript>"],
     "correctAnswer": 0,
     "explanation": "Тег <script> используется для вставки или подключения JavaScript-кода.",
     "theme": "html"
@@ -1952,12 +1772,7 @@
   {
     "id": "e6a5b4a2-08eb-45e1-ad8e-5e8d7319bf29",
     "question": "Какой тег подключает внешний CSS-файл?",
-    "options": [
-      "<style>",
-      "<link>",
-      "<css>",
-      "<script>"
-    ],
+    "options": ["<style>", "<link>", "<css>", "<script>"],
     "correctAnswer": 1,
     "explanation": "Тег <link> с атрибутами rel='stylesheet' и href подключает внешний CSS-файл.",
     "theme": "html"
@@ -1965,12 +1780,7 @@
   {
     "id": "013d1a12-6aaf-4a70-b9e2-eaf980d48450",
     "question": "Какой атрибут тега <link> указывает тип подключаемого ресурса?",
-    "options": [
-      "type",
-      "rel",
-      "href",
-      "src"
-    ],
+    "options": ["type", "rel", "href", "src"],
     "correctAnswer": 1,
     "explanation": "Атрибут rel, например, rel='stylesheet', указывает отношение между документом и ресурсом.",
     "theme": "html"
@@ -1978,12 +1788,7 @@
   {
     "id": "15a4b5b5-8ce5-433b-ae8f-0e3552d8aa85",
     "question": "Какой тег используется для определения стилей внутри HTML?",
-    "options": [
-      "<style>",
-      "<css>",
-      "<format>",
-      "<design>"
-    ],
+    "options": ["<style>", "<css>", "<format>", "<design>"],
     "correctAnswer": 0,
     "explanation": "Тег <style> содержит CSS-правила для стилизации элементов документа.",
     "theme": "html"
@@ -1991,12 +1796,7 @@
   {
     "id": "f963bdd4-6f55-4c72-9472-5d5c48c77ae7",
     "question": "Какой тег создает описание для списка определений?",
-    "options": [
-      "<dt>",
-      "<dd>",
-      "<dl>",
-      "<term>"
-    ],
+    "options": ["<dt>", "<dd>", "<dl>", "<term>"],
     "correctAnswer": 1,
     "explanation": "Тег <dd> задает описание термина в списке определений, созданном с помощью <dl>.",
     "theme": "html"
@@ -2004,12 +1804,7 @@
   {
     "id": "56ca50db-ea3c-4f91-8692-b0e413215cf6",
     "question": "Какой тег задает термин в списке определений?",
-    "options": [
-      "<dt>",
-      "<dd>",
-      "<dl>",
-      "<def>"
-    ],
+    "options": ["<dt>", "<dd>", "<dl>", "<def>"],
     "correctAnswer": 0,
     "explanation": "Тег <dt> задает термин в списке определений, за которым следует описание в <dd>.",
     "theme": "html"
@@ -2017,12 +1812,7 @@
   {
     "id": "f1815695-9fc2-4343-9958-19c8b6837def",
     "question": "Какой тег создает список определений?",
-    "options": [
-      "<dl>",
-      "<ul>",
-      "<ol>",
-      "<list>"
-    ],
+    "options": ["<dl>", "<ul>", "<ol>", "<list>"],
     "correctAnswer": 0,
     "explanation": "Тег <dl> создает список определений, содержащий пары терминов (<dt>) и описаний (<dd>).",
     "theme": "html"
@@ -2030,12 +1820,7 @@
   {
     "id": "3da02f34-339e-44c3-a4f2-9b96390a9012",
     "question": "Какой атрибут тега <input> делает поле обязательным?",
-    "options": [
-      "required",
-      "mandatory",
-      "validate",
-      "must"
-    ],
+    "options": ["required", "mandatory", "validate", "must"],
     "correctAnswer": 0,
     "explanation": "Атрибут required делает поле ввода обязательным для заполнения перед отправкой формы.",
     "theme": "html"
@@ -2056,12 +1841,7 @@
   {
     "id": "042712ae-dce9-4a90-a6f0-4b897ae74622",
     "question": "Какой атрибут группирует радиокнопки?",
-    "options": [
-      "group",
-      "name",
-      "id",
-      "class"
-    ],
+    "options": ["group", "name", "id", "class"],
     "correctAnswer": 1,
     "explanation": "Атрибут name с одинаковым значением группирует радиокнопки, позволяя выбрать только одну.",
     "theme": "html"
@@ -2082,12 +1862,7 @@
   {
     "id": "7cb3a75f-8644-4031-840d-0dd817910dd1",
     "question": "Какой атрибут указывает начальное значение поля ввода?",
-    "options": [
-      "value",
-      "default",
-      "placeholder",
-      "text"
-    ],
+    "options": ["value", "default", "placeholder", "text"],
     "correctAnswer": 0,
     "explanation": "Атрибут value задает начальное значение поля ввода, например, в <input>.",
     "theme": "html"
@@ -2095,12 +1870,7 @@
   {
     "id": "ea9d4d16-01d4-4da9-8a4f-718061342ff0",
     "question": "Какой атрибут задает подсказку в поле ввода?",
-    "options": [
-      "hint",
-      "placeholder",
-      "tooltip",
-      "title"
-    ],
+    "options": ["hint", "placeholder", "tooltip", "title"],
     "correctAnswer": 1,
     "explanation": "Атрибут placeholder отображает подсказку в поле ввода до ввода текста.",
     "theme": "html"
@@ -2108,12 +1878,7 @@
   {
     "id": "89886eb7-96e8-4f37-8caf-5665d543eb0c",
     "question": "Какой тег создает область для интерактивного контента?",
-    "options": [
-      "<canvas>",
-      "<draw>",
-      "<graphic>",
-      "<svg>"
-    ],
+    "options": ["<canvas>", "<draw>", "<graphic>", "<svg>"],
     "correctAnswer": 0,
     "explanation": "Тег <canvas> создает область для рисования графики с помощью JavaScript.",
     "theme": "html"
@@ -2121,12 +1886,7 @@
   {
     "id": "f13eaaa0-fcac-4792-a36c-3392203ebef4",
     "question": "Какой тег используется для вставки SVG-графики?",
-    "options": [
-      "<svg>",
-      "<canvas>",
-      "<graphic>",
-      "<vector>"
-    ],
+    "options": ["<svg>", "<canvas>", "<graphic>", "<vector>"],
     "correctAnswer": 0,
     "explanation": "Тег <svg> используется для создания масштабируемой векторной графики.",
     "theme": "html"
@@ -2134,12 +1894,7 @@
   {
     "id": "c1c20458-c5a7-4eab-b594-7872494cd95f",
     "question": "Какой атрибут тега <img> задает ширину изображения?",
-    "options": [
-      "width",
-      "size",
-      "w",
-      "length"
-    ],
+    "options": ["width", "size", "w", "length"],
     "correctAnswer": 0,
     "explanation": "Атрибут width задает ширину изображения в пикселях или процентах.",
     "theme": "html"
@@ -2147,12 +1902,7 @@
   {
     "id": "316c6675-3741-4631-9490-cc0f5b420264",
     "question": "Какой тег используется для создания заголовка таблицы?",
-    "options": [
-      "<caption>",
-      "<title>",
-      "<header>",
-      "<th>"
-    ],
+    "options": ["<caption>", "<title>", "<header>", "<th>"],
     "correctAnswer": 0,
     "explanation": "Тег <caption> задает заголовок таблицы, отображаемый над или под таблицей.",
     "theme": "html"
@@ -2160,12 +1910,7 @@
   {
     "id": "64ded574-5301-47ba-aaa9-fbbdfeaf8faf",
     "question": "Какой атрибут объединяет ячейки по горизонтали в таблице?",
-    "options": [
-      "colspan",
-      "rowspan",
-      "merge",
-      "span"
-    ],
+    "options": ["colspan", "rowspan", "merge", "span"],
     "correctAnswer": 0,
     "explanation": "Атрибут colspan объединяет несколько ячеек по горизонтали в одну.",
     "theme": "html"
@@ -2173,12 +1918,7 @@
   {
     "id": "fcc5ff46-93b8-409c-92b0-01f7f8ef3b31",
     "question": "Какой атрибут объединяет ячейки по вертикали в таблице?",
-    "options": [
-      "rowspan",
-      "colspan",
-      "merge",
-      "span"
-    ],
+    "options": ["rowspan", "colspan", "merge", "span"],
     "correctAnswer": 0,
     "explanation": "Атрибут rowspan объединяет несколько ячеек по вертикали в одну.",
     "theme": "html"
@@ -2186,12 +1926,7 @@
   {
     "id": "c439b73e-a047-404b-a61a-7ac41f997938",
     "question": "Какой тег задает содержимое, которое отображается, если видео не поддерживается?",
-    "options": [
-      "<fallback>",
-      "<source>",
-      "<track>",
-      "Текст внутри <video>"
-    ],
+    "options": ["<fallback>", "<source>", "<track>", "Текст внутри <video>"],
     "correctAnswer": 3,
     "explanation": "Текст, размещенный внутри тега <video>, отображается, если браузер не поддерживает видео.",
     "theme": "html"
@@ -2199,12 +1934,7 @@
   {
     "id": "d52891e6-0085-4446-9184-bb5d99dd8f49",
     "question": "Какой тег задает субтитры для видео?",
-    "options": [
-      "<track>",
-      "<subtitle>",
-      "<caption>",
-      "<text>"
-    ],
+    "options": ["<track>", "<subtitle>", "<caption>", "<text>"],
     "correctAnswer": 0,
     "explanation": "Тег <track> с атрибутом kind='subtitles' задает субтитры или другие текстовые дорожки.",
     "theme": "html"
@@ -2212,12 +1942,7 @@
   {
     "id": "82678643-b2fe-477e-afab-c58822b44df2",
     "question": "Какой атрибут тега <form> задает метод отправки данных?",
-    "options": [
-      "method",
-      "action",
-      "type",
-      "send"
-    ],
+    "options": ["method", "action", "type", "send"],
     "correctAnswer": 0,
     "explanation": "Атрибут method задает HTTP-метод отправки формы, например, GET или POST.",
     "theme": "html"
@@ -2225,12 +1950,7 @@
   {
     "id": "50a390a1-0c4e-4ff2-b396-c88d5d2b3906",
     "question": "Какой тег создает область для встраивания внешнего контента?",
-    "options": [
-      "<iframe>",
-      "<embed>",
-      "<object>",
-      "<frame>"
-    ],
+    "options": ["<iframe>", "<embed>", "<object>", "<frame>"],
     "correctAnswer": 0,
     "explanation": "Тег <iframe> встраивает внешний контент, такой как веб-страницы или видео, в документ.",
     "theme": "html"
@@ -2238,12 +1958,7 @@
   {
     "id": "61db97cb-1621-4521-b1f2-19af0d6487d4",
     "question": "Какой атрибут тега <iframe> задает источник контента?",
-    "options": [
-      "src",
-      "href",
-      "link",
-      "url"
-    ],
+    "options": ["src", "href", "link", "url"],
     "correctAnswer": 0,
     "explanation": "Атрибут src задает URL встраиваемого контента для <iframe>.",
     "theme": "html"
@@ -2251,12 +1966,7 @@
   {
     "id": "9538a522-c18d-4c6c-b9fc-a4f56934896a",
     "question": "Какой тег используется для выделения цитаты?",
-    "options": [
-      "<quote>",
-      "<blockquote>",
-      "<q>",
-      "<cite>"
-    ],
+    "options": ["<quote>", "<blockquote>", "<q>", "<cite>"],
     "correctAnswer": 1,
     "explanation": "Тег <blockquote> выделяет длинные цитаты, обычно с отступом.",
     "theme": "html"
@@ -2264,12 +1974,7 @@
   {
     "id": "d1e6238b-bfd6-447d-8d9d-a86129af5b8d",
     "question": "Какой тег используется для коротких цитат в тексте?",
-    "options": [
-      "<q>",
-      "<blockquote>",
-      "<cite>",
-      "<quote>"
-    ],
+    "options": ["<q>", "<blockquote>", "<cite>", "<quote>"],
     "correctAnswer": 0,
     "explanation": "Тег <q> выделяет короткие цитаты, обычно добавляя кавычки.",
     "theme": "html"
@@ -2277,12 +1982,7 @@
   {
     "id": "e7cdaa14-795b-492a-98d0-20b27b4604d1",
     "question": "Какой тег указывает источник цитаты?",
-    "options": [
-      "<cite>",
-      "<source>",
-      "<ref>",
-      "<link>"
-    ],
+    "options": ["<cite>", "<source>", "<ref>", "<link>"],
     "correctAnswer": 0,
     "explanation": "Тег <cite> указывает источник цитаты, например, название книги или автора.",
     "theme": "html"
@@ -2290,12 +1990,7 @@
   {
     "id": "9e86d094-6d9b-464c-b70a-c0afcb3e653e",
     "question": "Какой атрибут задает направление текста?",
-    "options": [
-      "dir",
-      "align",
-      "lang",
-      "text"
-    ],
+    "options": ["dir", "align", "lang", "text"],
     "correctAnswer": 0,
     "explanation": "Атрибут dir задает направление текста, например, dir='rtl' для письма справа налево.",
     "theme": "html"
@@ -2303,12 +1998,7 @@
   {
     "id": "32f2ec75-c1bd-4f4c-949a-34642c435ad8",
     "question": "Какой тег создает область для вывода результата формы?",
-    "options": [
-      "<output>",
-      "<result>",
-      "<display>",
-      "<value>"
-    ],
+    "options": ["<output>", "<result>", "<display>", "<value>"],
     "correctAnswer": 0,
     "explanation": "Тег <output> отображает результат вычислений или действий в форме.",
     "theme": "html"
@@ -2316,12 +2006,7 @@
   {
     "id": "7c743ab8-3e35-459e-9be5-b8fdfee7487c",
     "question": "Какой атрибут тега <input> задает максимальную длину текста?",
-    "options": [
-      "maxlength",
-      "length",
-      "size",
-      "limit"
-    ],
+    "options": ["maxlength", "length", "size", "limit"],
     "correctAnswer": 0,
     "explanation": "Атрибут maxlength ограничивает количество символов, вводимых в поле.",
     "theme": "html"
@@ -2329,12 +2014,7 @@
   {
     "id": "d61b91fc-b2bd-4aca-8987-540bb627ef2e",
     "question": "Какой тег задает область для прогресс-бара?",
-    "options": [
-      "<progress>",
-      "<meter>",
-      "<bar>",
-      "<status>"
-    ],
+    "options": ["<progress>", "<meter>", "<bar>", "<status>"],
     "correctAnswer": 0,
     "explanation": "Тег <progress> создает индикатор выполнения задачи, например, загрузки.",
     "theme": "html"
@@ -2342,12 +2022,7 @@
   {
     "id": "d2479315-24f8-4920-b8cb-c0fd8709e541",
     "question": "Какой тег отображает измеряемое значение в диапазоне?",
-    "options": [
-      "<meter>",
-      "<progress>",
-      "<range>",
-      "<value>"
-    ],
+    "options": ["<meter>", "<progress>", "<range>", "<value>"],
     "correctAnswer": 0,
     "explanation": "Тег <meter> отображает значение в заданном диапазоне, например, уровень заряда.",
     "theme": "html"
@@ -2368,12 +2043,7 @@
   {
     "id": "479eb826-5d5b-4897-ba81-9646bc403100",
     "question": "Какой тег создает область для всплывающих подсказок?",
-    "options": [
-      "<details>",
-      "<summary>",
-      "<tooltip>",
-      "<info>"
-    ],
+    "options": ["<details>", "<summary>", "<tooltip>", "<info>"],
     "correctAnswer": 0,
     "explanation": "Тег <details> создает раскрывающийся блок с дополнительной информацией.",
     "theme": "html"
@@ -2381,12 +2051,7 @@
   {
     "id": "952c413a-5c34-43b4-bac5-1d7a840dc22f",
     "question": "Какой тег задает заголовок для <details>?",
-    "options": [
-      "<summary>",
-      "<title>",
-      "<header>",
-      "<caption>"
-    ],
+    "options": ["<summary>", "<title>", "<header>", "<caption>"],
     "correctAnswer": 0,
     "explanation": "Тег <summary> задает видимый заголовок для содержимого тега <details>.",
     "theme": "html"
@@ -2394,12 +2059,7 @@
   {
     "id": "0d02b849-6200-40e3-98b3-1c562790cee1",
     "question": "Какой атрибут тега <a> открывает ссылку в новой вкладке?",
-    "options": [
-      "target='_blank'",
-      "newtab",
-      "open='new'",
-      "window='blank'"
-    ],
+    "options": ["target='_blank'", "newtab", "open='new'", "window='blank'"],
     "correctAnswer": 0,
     "explanation": "Атрибут target='_blank' открывает ссылку в новой вкладке или окне.",
     "theme": "html"
@@ -2407,12 +2067,7 @@
   {
     "id": "ec59c004-aaac-46e4-bd54-90c44de160ec",
     "question": "Какой тег используется для выделения кода?",
-    "options": [
-      "<code>",
-      "<pre>",
-      "<kbd>",
-      "<samp>"
-    ],
+    "options": ["<code>", "<pre>", "<kbd>", "<samp>"],
     "correctAnswer": 0,
     "explanation": "Тег <code> выделяет фрагменты кода, обычно с моноширинным шрифтом.",
     "theme": "html"
@@ -2420,12 +2075,7 @@
   {
     "id": "042d42b5-716d-4646-87b1-806fda63804a",
     "question": "Какой тег сохраняет форматирование текста, включая пробелы?",
-    "options": [
-      "<pre>",
-      "<code>",
-      "<text>",
-      "<format>"
-    ],
+    "options": ["<pre>", "<code>", "<text>", "<format>"],
     "correctAnswer": 0,
     "explanation": "Тег <pre> сохраняет пробелы и переносы строк, как они написаны в коде.",
     "theme": "html"
@@ -2433,12 +2083,7 @@
   {
     "id": "f933bf82-b23f-4144-85cb-fbc22fdfe5bd",
     "question": "Какой тег выделяет текст, вводимый пользователем?",
-    "options": [
-      "<kbd>",
-      "<code>",
-      "<samp>",
-      "<input>"
-    ],
+    "options": ["<kbd>", "<code>", "<samp>", "<input>"],
     "correctAnswer": 0,
     "explanation": "Тег <kbd> выделяет текст, представляющий ввод пользователя, например, клавиши.",
     "theme": "html"
@@ -2446,12 +2091,7 @@
   {
     "id": "eda2ba72-52b6-41d5-b1fc-8a6be0db9d4a",
     "question": "Какой тег представляет вывод программы?",
-    "options": [
-      "<samp>",
-      "<code>",
-      "<kbd>",
-      "<output>"
-    ],
+    "options": ["<samp>", "<code>", "<kbd>", "<output>"],
     "correctAnswer": 0,
     "explanation": "Тег <samp> выделяет текст, представляющий вывод программы или скрипта.",
     "theme": "html"
@@ -2459,12 +2099,7 @@
   {
     "id": "0642884a-f687-4d4d-9b05-356f19462a3d",
     "question": "Какой атрибут тега <input> задает шаблон ввода?",
-    "options": [
-      "pattern",
-      "regex",
-      "format",
-      "validate"
-    ],
+    "options": ["pattern", "regex", "format", "validate"],
     "correctAnswer": 0,
     "explanation": "Атрибут pattern задает регулярное выражение для проверки ввода в поле.",
     "theme": "html"
@@ -2472,12 +2107,7 @@
   {
     "id": "b65f3e09-5dba-4f26-9ddc-7e23e3431b0d",
     "question": "Какой тег создает область для семантического раздела?",
-    "options": [
-      "<section>",
-      "<div>",
-      "<block>",
-      "<part>"
-    ],
+    "options": ["<section>", "<div>", "<block>", "<part>"],
     "correctAnswer": 0,
     "explanation": "Тег <section> определяет тематический раздел документа, часто с заголовком.",
     "theme": "html"
@@ -2485,12 +2115,7 @@
   {
     "id": "c25dc639-4606-42b1-b5f0-f7875f813eb4",
     "question": "Какой атрибут указывает доступность элемента для редактирования?",
-    "options": [
-      "contenteditable",
-      "editable",
-      "modify",
-      "write"
-    ],
+    "options": ["contenteditable", "editable", "modify", "write"],
     "correctAnswer": 0,
     "explanation": "Атрибут contenteditable='true' позволяет пользователю редактировать содержимое элемента.",
     "theme": "html"
@@ -2498,12 +2123,7 @@
   {
     "id": "f03dc7c5-297a-4157-8971-8943e450a884",
     "question": "Какой атрибут скрывает элемент от рендеринга?",
-    "options": [
-      "hidden",
-      "visible='false'",
-      "display='none'",
-      "show='false'"
-    ],
+    "options": ["hidden", "visible='false'", "display='none'", "show='false'"],
     "correctAnswer": 0,
     "explanation": "Атрибут hidden скрывает элемент, эквивалентно CSS display: none.",
     "theme": "html"
@@ -2511,12 +2131,7 @@
   {
     "id": "2608353a-d70b-49de-bb62-eb47e3a6b410",
     "question": "Какой тег используется для создания шаблона контента?",
-    "options": [
-      "<template>",
-      "<pattern>",
-      "<model>",
-      "<blueprint>"
-    ],
+    "options": ["<template>", "<pattern>", "<model>", "<blueprint>"],
     "correctAnswer": 0,
     "explanation": "Тег <template> содержит контент, который не отображается, но может быть клонирован через JavaScript.",
     "theme": "html"
@@ -2537,12 +2152,7 @@
   {
     "id": "812879c1-3192-44a7-bf7e-4e03fac13e04",
     "question": "Какой атрибут тега <input> отключает поле ввода?",
-    "options": [
-      "disabled",
-      "readonly",
-      "off",
-      "locked"
-    ],
+    "options": ["disabled", "readonly", "off", "locked"],
     "correctAnswer": 0,
     "explanation": "Атрибут disabled делает поле ввода неактивным и недоступным для взаимодействия.",
     "theme": "html"
@@ -2550,12 +2160,7 @@
   {
     "id": "bd98a971-98de-415b-a3fd-3e88a56b91ef",
     "question": "Какой тег задает содержимое, отображаемое в неподдерживаемых браузерах?",
-    "options": [
-      "<noscript>",
-      "<fallback>",
-      "<nobrowser>",
-      "<default>"
-    ],
+    "options": ["<noscript>", "<fallback>", "<nobrowser>", "<default>"],
     "correctAnswer": 0,
     "explanation": "Тег <noscript> отображает содержимое, если JavaScript отключен в браузере.",
     "theme": "html"
@@ -2628,12 +2233,7 @@
   {
     "id": "b9aad06f-df11-4965-a6e1-b001fea88c3c",
     "question": "Какой селектор выбирает элемент по ID?",
-    "options": [
-      ".id",
-      "#id",
-      "id",
-      "*id"
-    ],
+    "options": [".id", "#id", "id", "*id"],
     "correctAnswer": 1,
     "explanation": "Селектор #id выбирает элемент с уникальным идентификатором, например, #myId.",
     "theme": "css"
@@ -2641,12 +2241,7 @@
   {
     "id": "361c2b01-2f25-4e39-ab3c-b95c75cbcf9a",
     "question": "Какой селектор выбирает элементы по классу?",
-    "options": [
-      ".class",
-      "#class",
-      "class",
-      "*class"
-    ],
+    "options": [".class", "#class", "class", "*class"],
     "correctAnswer": 0,
     "explanation": "Селектор .class выбирает все элементы с указанным классом, например, .myClass.",
     "theme": "css"
@@ -2654,12 +2249,7 @@
   {
     "id": "798dac20-697a-442a-9887-7a26cf9493b5",
     "question": "Какой селектор выбирает все элементы на странице?",
-    "options": [
-      "*",
-      "all",
-      "everything",
-      "global"
-    ],
+    "options": ["*", "all", "everything", "global"],
     "correctAnswer": 0,
     "explanation": "Универсальный селектор * выбирает все элементы в документе.",
     "theme": "css"
@@ -2680,12 +2270,7 @@
   {
     "id": "db65d176-a9d5-4b8b-b44f-3c9952e16071",
     "question": "Какое свойство задает цвет текста?",
-    "options": [
-      "color",
-      "text-color",
-      "font-color",
-      "foreground"
-    ],
+    "options": ["color", "text-color", "font-color", "foreground"],
     "correctAnswer": 0,
     "explanation": "Свойство color задает цвет текста элемента, например, color: red;.",
     "theme": "css"
@@ -2693,12 +2278,7 @@
   {
     "id": "6cadb02e-a88c-4ff9-a7f5-bb54a0a4c2b8",
     "question": "Какое свойство задает размер шрифта?",
-    "options": [
-      "font-size",
-      "text-size",
-      "size",
-      "font-height"
-    ],
+    "options": ["font-size", "text-size", "size", "font-height"],
     "correctAnswer": 0,
     "explanation": "Свойство font-size задает размер шрифта, например, font-size: 16px;.",
     "theme": "css"
@@ -2706,12 +2286,7 @@
   {
     "id": "db756e3c-72cc-4953-be02-82ec90c5db16",
     "question": "Какое свойство задает семейство шрифта?",
-    "options": [
-      "font-family",
-      "font-type",
-      "text-family",
-      "font"
-    ],
+    "options": ["font-family", "font-type", "text-family", "font"],
     "correctAnswer": 0,
     "explanation": "Свойство font-family задает шрифт текста, например, font-family: Arial, sans-serif;.",
     "theme": "css"
@@ -2719,12 +2294,7 @@
   {
     "id": "c428d840-e6a2-41b0-858a-b6fcd3575eb7",
     "question": "Какое свойство задает толщину шрифта?",
-    "options": [
-      "font-weight",
-      "font-size",
-      "font-style",
-      "text-weight"
-    ],
+    "options": ["font-weight", "font-size", "font-style", "text-weight"],
     "correctAnswer": 0,
     "explanation": "Свойство font-weight задает толщину шрифта, например, font-weight: bold;.",
     "theme": "css"
@@ -2745,12 +2315,7 @@
   {
     "id": "1565fd04-45b2-43ea-8564-d006a639826e",
     "question": "Какое свойство задает выравнивание текста?",
-    "options": [
-      "text-align",
-      "align",
-      "text-justify",
-      "justify"
-    ],
+    "options": ["text-align", "align", "text-justify", "justify"],
     "correctAnswer": 0,
     "explanation": "Свойство text-align задает горизонтальное выравнивание текста, например, text-align: center;.",
     "theme": "css"
@@ -2771,12 +2336,7 @@
   {
     "id": "4a12c443-c5f0-487a-baf0-d2fb3a8272db",
     "question": "Какое свойство задает межсловный интервал?",
-    "options": [
-      "word-spacing",
-      "letter-spacing",
-      "text-spacing",
-      "space"
-    ],
+    "options": ["word-spacing", "letter-spacing", "text-spacing", "space"],
     "correctAnswer": 0,
     "explanation": "Свойство word-spacing задает расстояние между словами, например, word-spacing: 5px;.",
     "theme": "css"
@@ -2784,12 +2344,7 @@
   {
     "id": "a1b82e4c-ed66-4f9d-b671-12a012c8a395",
     "question": "Какое свойство задает высоту строки текста?",
-    "options": [
-      "line-height",
-      "text-height",
-      "font-height",
-      "height"
-    ],
+    "options": ["line-height", "text-height", "font-height", "height"],
     "correctAnswer": 0,
     "explanation": "Свойство line-height задает высоту строки, влияя на межстрочный интервал, например, line-height: 1.5;.",
     "theme": "css"
@@ -2797,12 +2352,7 @@
   {
     "id": "d34215c0-7094-4d20-8407-01428a5b3b0b",
     "question": "Какое свойство задает фон элемента?",
-    "options": [
-      "background",
-      "color",
-      "fill",
-      "bg"
-    ],
+    "options": ["background", "color", "fill", "bg"],
     "correctAnswer": 0,
     "explanation": "Свойство background задает фоновые характеристики, например, background: #fff;.",
     "theme": "css"
@@ -2810,12 +2360,7 @@
   {
     "id": "8d7a81b2-1f9f-4de8-a270-0be2b13e67e2",
     "question": "Какое свойство задает цвет фона?",
-    "options": [
-      "background-color",
-      "color",
-      "bg-color",
-      "fill-color"
-    ],
+    "options": ["background-color", "color", "bg-color", "fill-color"],
     "correctAnswer": 0,
     "explanation": "Свойство background-color задает цвет фона элемента, например, background-color: blue;.",
     "theme": "css"
@@ -2823,12 +2368,7 @@
   {
     "id": "0c8cb64d-9045-462c-91d6-563c6ba8f23a",
     "question": "Какое свойство задает фоновое изображение?",
-    "options": [
-      "background-image",
-      "image",
-      "bg-image",
-      "background-src"
-    ],
+    "options": ["background-image", "image", "bg-image", "background-src"],
     "correctAnswer": 0,
     "explanation": "Свойство background-image задает изображение для фона, например, background-image: url('image.jpg');.",
     "theme": "css"
@@ -2836,12 +2376,7 @@
   {
     "id": "92101956-1cff-4641-9d92-1057743acbaf",
     "question": "Какое свойство управляет повторением фонового изображения?",
-    "options": [
-      "background-repeat",
-      "image-repeat",
-      "bg-repeat",
-      "repeat"
-    ],
+    "options": ["background-repeat", "image-repeat", "bg-repeat", "repeat"],
     "correctAnswer": 0,
     "explanation": "Свойство background-repeat определяет, повторяется ли изображение, например, background-repeat: no-repeat;.",
     "theme": "css"
@@ -2862,12 +2397,7 @@
   {
     "id": "d9be5a1b-4092-47ca-b9f4-7cc9f58a2794",
     "question": "Какое свойство задает ширину элемента?",
-    "options": [
-      "width",
-      "size",
-      "w",
-      "element-width"
-    ],
+    "options": ["width", "size", "w", "element-width"],
     "correctAnswer": 0,
     "explanation": "Свойство width задает ширину элемента, например, width: 200px;.",
     "theme": "css"
@@ -2875,12 +2405,7 @@
   {
     "id": "d398bf4e-ec23-4f82-b9ea-c258888c48e7",
     "question": "Какое свойство задает высоту элемента?",
-    "options": [
-      "height",
-      "size",
-      "h",
-      "element-height"
-    ],
+    "options": ["height", "size", "h", "element-height"],
     "correctAnswer": 0,
     "explanation": "Свойство height задает высоту элемента, например, height: 100px;.",
     "theme": "css"
@@ -2888,12 +2413,7 @@
   {
     "id": "1212bc90-d3f2-46d3-bf68-97efe533de3b",
     "question": "Какое свойство задает внешний отступ элемента?",
-    "options": [
-      "margin",
-      "padding",
-      "spacing",
-      "border"
-    ],
+    "options": ["margin", "padding", "spacing", "border"],
     "correctAnswer": 0,
     "explanation": "Свойство margin задает внешний отступ, например, margin: 10px;.",
     "theme": "css"
@@ -2901,12 +2421,7 @@
   {
     "id": "9fa099b0-d84c-4fee-9dd4-8b0273c6b0f0",
     "question": "Какое свойство задает внутренний отступ элемента?",
-    "options": [
-      "padding",
-      "margin",
-      "spacing",
-      "border"
-    ],
+    "options": ["padding", "margin", "spacing", "border"],
     "correctAnswer": 0,
     "explanation": "Свойство padding задает внутренний отступ, например, padding: 15px;.",
     "theme": "css"
@@ -2914,12 +2429,7 @@
   {
     "id": "b2b13379-8293-467d-87a8-eeade975f7ab",
     "question": "Какое свойство задает границу элемента?",
-    "options": [
-      "border",
-      "outline",
-      "edge",
-      "frame"
-    ],
+    "options": ["border", "outline", "edge", "frame"],
     "correctAnswer": 0,
     "explanation": "Свойство border задает стиль, ширину и цвет границы, например, border: 1px solid black;.",
     "theme": "css"
@@ -2927,12 +2437,7 @@
   {
     "id": "adfd5d9a-4680-4a68-9979-a13c0e469482",
     "question": "Какое свойство задает ширину границы?",
-    "options": [
-      "border-width",
-      "border-size",
-      "border-thickness",
-      "width"
-    ],
+    "options": ["border-width", "border-size", "border-thickness", "width"],
     "correctAnswer": 0,
     "explanation": "Свойство border-width задает толщину границы, например, border-width: 2px;.",
     "theme": "css"
@@ -2940,12 +2445,7 @@
   {
     "id": "4ca644f7-6d4c-4636-8b14-3083f2d110ce",
     "question": "Какое свойство задает стиль границы?",
-    "options": [
-      "border-style",
-      "border-type",
-      "border-format",
-      "style"
-    ],
+    "options": ["border-style", "border-type", "border-format", "style"],
     "correctAnswer": 0,
     "explanation": "Свойство border-style задает стиль границы, например, border-style: dashed;.",
     "theme": "css"
@@ -2953,12 +2453,7 @@
   {
     "id": "3781f29e-cf62-45a7-bbd0-455550261fd7",
     "question": "Какое свойство задает цвет границы?",
-    "options": [
-      "border-color",
-      "border-shade",
-      "border-hue",
-      "color"
-    ],
+    "options": ["border-color", "border-shade", "border-hue", "color"],
     "correctAnswer": 0,
     "explanation": "Свойство border-color задает цвет границы, например, border-color: red;.",
     "theme": "css"
@@ -2966,12 +2461,7 @@
   {
     "id": "44a0f3a4-41f5-4caf-864c-ad1b8476aec4",
     "question": "Какое свойство задает скругление углов элемента?",
-    "options": [
-      "border-radius",
-      "corner-radius",
-      "border-curve",
-      "round"
-    ],
+    "options": ["border-radius", "corner-radius", "border-curve", "round"],
     "correctAnswer": 0,
     "explanation": "Свойство border-radius задает радиус скругления углов, например, border-radius: 10px;.",
     "theme": "css"
@@ -2979,12 +2469,7 @@
   {
     "id": "13d0c286-82a3-4e2c-9d96-9e21a33b9aea",
     "question": "Какое свойство управляет отображением элемента?",
-    "options": [
-      "display",
-      "visibility",
-      "show",
-      "render"
-    ],
+    "options": ["display", "visibility", "show", "render"],
     "correctAnswer": 0,
     "explanation": "Свойство display определяет, как элемент отображается, например, display: block; или display: none;.",
     "theme": "css"
@@ -2992,12 +2477,7 @@
   {
     "id": "c69ffbb9-a0e8-457f-8f41-9452aac1bbed",
     "question": "Какое значение display делает элемент блочным?",
-    "options": [
-      "block",
-      "inline",
-      "flex",
-      "grid"
-    ],
+    "options": ["block", "inline", "flex", "grid"],
     "correctAnswer": 0,
     "explanation": "Значение display: block; делает элемент блочным, занимающим всю ширину контейнера.",
     "theme": "css"
@@ -3005,12 +2485,7 @@
   {
     "id": "b053c1fb-af6c-4984-a797-c6d78901673f",
     "question": "Какое значение display делает элемент строчным?",
-    "options": [
-      "inline",
-      "block",
-      "flex",
-      "grid"
-    ],
+    "options": ["inline", "block", "flex", "grid"],
     "correctAnswer": 0,
     "explanation": "Значение display: inline; делает элемент строчным, не создавая перенос строки.",
     "theme": "css"
@@ -3018,12 +2493,7 @@
   {
     "id": "35568bfa-8cb4-4662-a414-ee6fcf91d75c",
     "question": "Какое значение display скрывает элемент?",
-    "options": [
-      "none",
-      "hidden",
-      "invisible",
-      "off"
-    ],
+    "options": ["none", "hidden", "invisible", "off"],
     "correctAnswer": 0,
     "explanation": "Значение display: none; скрывает элемент, убирая его из потока документа.",
     "theme": "css"
@@ -3031,12 +2501,7 @@
   {
     "id": "31beb97a-c4a6-4028-907b-4c488ce82a7e",
     "question": "Какое свойство управляет видимостью элемента?",
-    "options": [
-      "visibility",
-      "display",
-      "opacity",
-      "show"
-    ],
+    "options": ["visibility", "display", "opacity", "show"],
     "correctAnswer": 0,
     "explanation": "Свойство visibility управляет видимостью, например, visibility: hidden; скрывает элемент, сохраняя его место.",
     "theme": "css"
@@ -3044,12 +2509,7 @@
   {
     "id": "ebd8a979-f4da-4875-96a5-a14ceeebd5b6",
     "question": "Какое свойство задает прозрачность элемента?",
-    "options": [
-      "opacity",
-      "visibility",
-      "transparent",
-      "alpha"
-    ],
+    "options": ["opacity", "visibility", "transparent", "alpha"],
     "correctAnswer": 0,
     "explanation": "Свойство opacity задает прозрачность от 0 (полностью прозрачный) до 1, например, opacity: 0.5;.",
     "theme": "css"
@@ -3057,12 +2517,7 @@
   {
     "id": "90324242-6cdf-4e47-a416-5b4bb7973f6f",
     "question": "Какое свойство задает позиционирование элемента?",
-    "options": [
-      "position",
-      "placement",
-      "layout",
-      "align"
-    ],
+    "options": ["position", "placement", "layout", "align"],
     "correctAnswer": 0,
     "explanation": "Свойство position определяет тип позиционирования, например, position: relative; или position: absolute;.",
     "theme": "css"
@@ -3070,12 +2525,7 @@
   {
     "id": "b3647526-4089-422f-a256-f2a299a0e22f",
     "question": "Какое значение position убирает элемент из потока документа?",
-    "options": [
-      "absolute",
-      "relative",
-      "static",
-      "fixed"
-    ],
+    "options": ["absolute", "relative", "static", "fixed"],
     "correctAnswer": 0,
     "explanation": "Значение position: absolute; убирает элемент из потока, позиционируя его относительно ближайшего позиционированного предка.",
     "theme": "css"
@@ -3083,12 +2533,7 @@
   {
     "id": "d2e431b0-87cb-461d-8da5-c45992025c2a",
     "question": "Какое свойство задает смещение сверху для позиционированного элемента?",
-    "options": [
-      "top",
-      "margin-top",
-      "offset-top",
-      "position-top"
-    ],
+    "options": ["top", "margin-top", "offset-top", "position-top"],
     "correctAnswer": 0,
     "explanation": "Свойство top задает смещение сверху для элементов с position: absolute, fixed или relative.",
     "theme": "css"
@@ -3096,12 +2541,7 @@
   {
     "id": "b18fb37a-6d2f-4f68-8e1d-4f1ad2336bdb",
     "question": "Какое свойство задает тень элемента?",
-    "options": [
-      "box-shadow",
-      "shadow",
-      "border-shadow",
-      "element-shadow"
-    ],
+    "options": ["box-shadow", "shadow", "border-shadow", "element-shadow"],
     "correctAnswer": 0,
     "explanation": "Свойство box-shadow задает тень, например, box-shadow: 2px 2px 5px rgba(0,0,0,0.3);.",
     "theme": "css"
@@ -3109,12 +2549,7 @@
   {
     "id": "0945026a-c685-40e4-930e-bb5046dbcd57",
     "question": "Какое свойство задает тень текста?",
-    "options": [
-      "text-shadow",
-      "shadow",
-      "font-shadow",
-      "text-effect"
-    ],
+    "options": ["text-shadow", "shadow", "font-shadow", "text-effect"],
     "correctAnswer": 0,
     "explanation": "Свойство text-shadow задает тень текста, например, text-shadow: 1px 1px 2px black;.",
     "theme": "css"
@@ -3161,12 +2596,7 @@
   {
     "id": "701984e7-9db1-4cc5-946a-b2857fa031a0",
     "question": "Какое свойство задает направление flex-элементов?",
-    "options": [
-      "flex-direction",
-      "flex-flow",
-      "direction",
-      "flex-align"
-    ],
+    "options": ["flex-direction", "flex-flow", "direction", "flex-align"],
     "correctAnswer": 0,
     "explanation": "Свойство flex-direction задает направление главной оси, например, flex-direction: row; или column;.",
     "theme": "css"
@@ -3174,12 +2604,7 @@
   {
     "id": "640c4174-0edc-4cab-8e39-de540a86d0ab",
     "question": "Какое свойство задает перенос flex-элементов на новую строку?",
-    "options": [
-      "flex-wrap",
-      "wrap",
-      "flex-flow",
-      "break"
-    ],
+    "options": ["flex-wrap", "wrap", "flex-flow", "break"],
     "correctAnswer": 0,
     "explanation": "Свойство flex-wrap управляет переносом элементов, например, flex-wrap: wrap;.",
     "theme": "css"
@@ -3213,12 +2638,7 @@
   {
     "id": "6c6c48e5-9c96-4da0-966d-0010da8c4569",
     "question": "Какое свойство задает количество и размеры строк в grid?",
-    "options": [
-      "grid-template-rows",
-      "grid-rows",
-      "rows",
-      "grid-layout"
-    ],
+    "options": ["grid-template-rows", "grid-rows", "rows", "grid-layout"],
     "correctAnswer": 0,
     "explanation": "Свойство grid-template-rows задает структуру строк, например, grid-template-rows: 100px 200px;.",
     "theme": "css"
@@ -3226,12 +2646,7 @@
   {
     "id": "d4986732-3961-4420-a03f-43d10cc8f2cb",
     "question": "Какое свойство задает промежутки между grid-элементами?",
-    "options": [
-      "gap",
-      "grid-gap",
-      "spacing",
-      "margin"
-    ],
+    "options": ["gap", "grid-gap", "spacing", "margin"],
     "correctAnswer": 0,
     "explanation": "Свойство gap задает промежутки между grid-элементами, например, gap: 10px;.",
     "theme": "css"
@@ -3239,12 +2654,7 @@
   {
     "id": "72c4f7cf-ac9b-47bf-83c4-9da18a86da45",
     "question": "Какое свойство управляет анимацией элемента?",
-    "options": [
-      "animation",
-      "transition",
-      "animate",
-      "effect"
-    ],
+    "options": ["animation", "transition", "animate", "effect"],
     "correctAnswer": 0,
     "explanation": "Свойство animation задает параметры анимации, например, animation: slide 2s ease-in-out;.",
     "theme": "css"
@@ -3252,12 +2662,7 @@
   {
     "id": "2dd74d7b-4e9f-4585-a98f-eaa94878d96f",
     "question": "Какое свойство управляет плавным изменением стилей?",
-    "options": [
-      "transition",
-      "animation",
-      "transform",
-      "effect"
-    ],
+    "options": ["transition", "animation", "transform", "effect"],
     "correctAnswer": 0,
     "explanation": "Свойство transition задает плавное изменение стилей, например, transition: all 0.3s ease;.",
     "theme": "css"
@@ -3265,12 +2670,7 @@
   {
     "id": "ed499e0f-2074-4d2e-8f52-96c40a376f19",
     "question": "Какое свойство задает трансформацию элемента?",
-    "options": [
-      "transform",
-      "transition",
-      "animation",
-      "rotate"
-    ],
+    "options": ["transform", "transition", "animation", "rotate"],
     "correctAnswer": 0,
     "explanation": "Свойство transform изменяет внешний вид элемента, например, transform: rotate(45deg);.",
     "theme": "css"
@@ -3278,12 +2678,7 @@
   {
     "id": "297564bb-bfb7-46fa-a29a-d53c2bbb3138",
     "question": "Какое свойство задает порядок наложения элементов?",
-    "options": [
-      "z-index",
-      "layer",
-      "stack",
-      "order"
-    ],
+    "options": ["z-index", "layer", "stack", "order"],
     "correctAnswer": 0,
     "explanation": "Свойство z-index определяет порядок наложения элементов, например, z-index: 10;.",
     "theme": "css"
@@ -3291,12 +2686,7 @@
   {
     "id": "2b8a1f17-47e4-45cc-8d5e-6c99ec5e22a9",
     "question": "Какое свойство задает тип курсора при наведении?",
-    "options": [
-      "cursor",
-      "pointer",
-      "hover",
-      "mouse"
-    ],
+    "options": ["cursor", "pointer", "hover", "mouse"],
     "correctAnswer": 0,
     "explanation": "Свойство cursor задает тип курсора, например, cursor: pointer;.",
     "theme": "css"
@@ -3304,12 +2694,7 @@
   {
     "id": "37469f48-27e0-448b-8728-ecf782b603db",
     "question": "Какое свойство задает режим обтекания элемента?",
-    "options": [
-      "float",
-      "flow",
-      "wrap",
-      "clear"
-    ],
+    "options": ["float", "flow", "wrap", "clear"],
     "correctAnswer": 0,
     "explanation": "Свойство float определяет обтекание элемента, например, float: left;.",
     "theme": "css"
@@ -3317,12 +2702,7 @@
   {
     "id": "7a24cfd3-ee62-4502-a23b-e9628a9cc8f7",
     "question": "Какое свойство отменяет обтекание вокруг элемента?",
-    "options": [
-      "clear",
-      "float",
-      "overflow",
-      "wrap"
-    ],
+    "options": ["clear", "float", "overflow", "wrap"],
     "correctAnswer": 0,
     "explanation": "Свойство clear отменяет обтекание, например, clear: both;.",
     "theme": "css"
@@ -3330,12 +2710,7 @@
   {
     "id": "cbf87cdc-023c-42a0-94fa-c62cbab7a808",
     "question": "Какое свойство задает максимальную ширину элемента?",
-    "options": [
-      "max-width",
-      "width-max",
-      "limit-width",
-      "max-size"
-    ],
+    "options": ["max-width", "width-max", "limit-width", "max-size"],
     "correctAnswer": 0,
     "explanation": "Свойство max-width ограничивает максимальную ширину, например, max-width: 500px;.",
     "theme": "css"
@@ -3343,12 +2718,7 @@
   {
     "id": "6aea43bb-16b1-46d4-ad1b-ee2abb96221c",
     "question": "Какое свойство задает минимальную высоту элемента?",
-    "options": [
-      "min-height",
-      "height-min",
-      "limit-height",
-      "min-size"
-    ],
+    "options": ["min-height", "height-min", "limit-height", "min-size"],
     "correctAnswer": 0,
     "explanation": "Свойство min-height задает минимальную высоту, например, min-height: 100px;.",
     "theme": "css"
@@ -3356,12 +2726,7 @@
   {
     "id": "02e3b131-68e7-47fc-ac8d-d3dc6e536319",
     "question": "Какое свойство управляет поведением содержимого при переполнении?",
-    "options": [
-      "overflow",
-      "clip",
-      "scroll",
-      "hidden"
-    ],
+    "options": ["overflow", "clip", "scroll", "hidden"],
     "correctAnswer": 0,
     "explanation": "Свойство overflow управляет переполнением, например, overflow: auto; добавляет прокрутку.",
     "theme": "css"
@@ -3369,12 +2734,7 @@
   {
     "id": "c271ea51-c19c-4d7c-a7fd-f14b8e212276",
     "question": "Какое свойство задает тип списка для <ul> или <ol>?",
-    "options": [
-      "list-style-type",
-      "list-type",
-      "style-list",
-      "list-marker"
-    ],
+    "options": ["list-style-type", "list-type", "style-list", "list-marker"],
     "correctAnswer": 0,
     "explanation": "Свойство list-style-type задает тип маркера списка, например, list-style-type: disc;.",
     "theme": "css"
@@ -3382,12 +2742,7 @@
   {
     "id": "cf1e1190-d4d0-46be-af48-acfe7ccf0bf1",
     "question": "Какое свойство задает изображение для маркера списка?",
-    "options": [
-      "list-style-image",
-      "list-image",
-      "marker-image",
-      "list-style"
-    ],
+    "options": ["list-style-image", "list-image", "marker-image", "list-style"],
     "correctAnswer": 0,
     "explanation": "Свойство list-style-image задает изображение для маркера, например, list-style-image: url('marker.png');.",
     "theme": "css"
@@ -3434,12 +2789,7 @@
   {
     "id": "ccca7925-fb0d-47a3-b472-3be7aec0e8ed",
     "question": "Какое свойство задает порядок элементов во flex-контейнере?",
-    "options": [
-      "order",
-      "flex-order",
-      "position",
-      "z-index"
-    ],
+    "options": ["order", "flex-order", "position", "z-index"],
     "correctAnswer": 0,
     "explanation": "Свойство order задает порядок flex-элементов, например, order: 1;.",
     "theme": "css"
@@ -3447,12 +2797,7 @@
   {
     "id": "98e07740-549e-4fa6-a765-fb00be3e82c8",
     "question": "Какое свойство задает базовую ширину flex-элемента?",
-    "options": [
-      "flex-basis",
-      "flex-size",
-      "basis",
-      "width"
-    ],
+    "options": ["flex-basis", "flex-size", "basis", "width"],
     "correctAnswer": 0,
     "explanation": "Свойство flex-basis задает начальный размер flex-элемента, например, flex-basis: 200px;.",
     "theme": "css"
@@ -3460,12 +2805,7 @@
   {
     "id": "02bd8de7-9763-4b9f-a719-baea8939c2d4",
     "question": "Какое свойство задает способность flex-элемента расти?",
-    "options": [
-      "flex-grow",
-      "flex-expand",
-      "grow",
-      "flex-size"
-    ],
+    "options": ["flex-grow", "flex-expand", "grow", "flex-size"],
     "correctAnswer": 0,
     "explanation": "Свойство flex-grow определяет, насколько элемент может увеличиваться, например, flex-grow: 1;.",
     "theme": "css"
@@ -3473,12 +2813,7 @@
   {
     "id": "7c848f45-8f40-49da-bb56-35396a3c3a99",
     "question": "Какое свойство задает способность flex-элемента сжиматься?",
-    "options": [
-      "flex-shrink",
-      "flex-reduce",
-      "shrink",
-      "flex-size"
-    ],
+    "options": ["flex-shrink", "flex-reduce", "shrink", "flex-size"],
     "correctAnswer": 0,
     "explanation": "Свойство flex-shrink определяет, насколько элемент может сжиматься, например, flex-shrink: 1;.",
     "theme": "css"
@@ -3499,12 +2834,7 @@
   {
     "id": "50d31184-14cc-406d-a0ac-0c770030e7a9",
     "question": "Какое свойство задает выравнивание grid-элементов по вертикали?",
-    "options": [
-      "align-items",
-      "justify-items",
-      "grid-align",
-      "align-content"
-    ],
+    "options": ["align-items", "justify-items", "grid-align", "align-content"],
     "correctAnswer": 0,
     "explanation": "Свойство align-items выравнивает grid-элементы по вертикали, например, align-items: center;.",
     "theme": "css"
@@ -3551,12 +2881,7 @@
   {
     "id": "ddefc6aa-2478-41f7-91a3-64a1ecace14d",
     "question": "Какое свойство задает перспективу для 3D-трансформаций?",
-    "options": [
-      "perspective",
-      "depth",
-      "3d",
-      "view"
-    ],
+    "options": ["perspective", "depth", "3d", "view"],
     "correctAnswer": 0,
     "explanation": "Свойство perspective задает глубину перспективы, например, perspective: 1000px;.",
     "theme": "css"
@@ -3564,12 +2889,7 @@
   {
     "id": "83deb92b-9b6b-4c02-a544-eb771c2de672",
     "question": "Какое свойство задает стиль обводки элемента?",
-    "options": [
-      "outline",
-      "border",
-      "stroke",
-      "frame"
-    ],
+    "options": ["outline", "border", "stroke", "frame"],
     "correctAnswer": 0,
     "explanation": "Свойство outline задает обводку вокруг элемента, не влияя на поток, например, outline: 2px solid blue;.",
     "theme": "css"
@@ -3577,12 +2897,7 @@
   {
     "id": "f32d1111-1efc-478e-8d4d-1c485f80ad18",
     "question": "Какое свойство задает смещение обводки?",
-    "options": [
-      "outline-offset",
-      "outline-margin",
-      "offset",
-      "outline-space"
-    ],
+    "options": ["outline-offset", "outline-margin", "offset", "outline-space"],
     "correctAnswer": 0,
     "explanation": "Свойство outline-offset задает расстояние обводки от границы, например, outline-offset: 5px;.",
     "theme": "css"
@@ -3590,12 +2905,7 @@
   {
     "id": "72764adf-f439-4671-9c3f-80601d085e02",
     "question": "Какое свойство задает режим наложения элементов?",
-    "options": [
-      "mix-blend-mode",
-      "blend-mode",
-      "overlay",
-      "mix-mode"
-    ],
+    "options": ["mix-blend-mode", "blend-mode", "overlay", "mix-mode"],
     "correctAnswer": 0,
     "explanation": "Свойство mix-blend-mode задает режим наложения, например, mix-blend-mode: multiply;.",
     "theme": "css"
