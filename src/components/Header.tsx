@@ -2,7 +2,13 @@ import { useState } from 'react';
 import { Input } from './Input/Input';
 import logo from '../../public/logo.svg';
 
-const Header = () => {
+interface IProps {
+  setIsOpen: (isOpen: boolean) => void;
+}
+
+const Header = (props: IProps) => {
+  const { setIsOpen } = props;
+
   const [_search, setSearch] = useState('');
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -26,6 +32,13 @@ const Header = () => {
       </div>
 
       <div className="hidden sm:flex gap-4 sm:gap-6 text-base sm:text-md font-medium text-[#2D2D2D]">
+        {/* TODO кнопка для теста модалки */}
+        <button
+          className="cursor-pointer hover:text-[var(--primary-color]"
+          onClick={() => setIsOpen(true)}
+        >
+          Авторизация
+        </button>
         <a
           href="#"
           className="hover:text-[#00DBDB] transition-colors duration-200"

@@ -5,18 +5,24 @@ interface MainBtnProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'danger' | 'ghost';
   size?: 'small' | 'medium' | 'large';
   loading?: boolean;
+  type?: 'button' | 'submit' | 'reset';
+  disabled?: boolean;
+  onClick?: () => void;
 }
 
 export const Button: React.FC<MainBtnProps> = ({
   variant = 'primary',
   size = 'medium',
   loading = false,
+  type = 'button',
+  disabled = false,
+  onClick,
   children,
   className,
   ...props
 }) => {
   const base =
-    'inline-flex items-center justify-center font-medium transition-colors';
+    'inline-flex items-center justify-center font-medium transition-colors cursor-pointer';
 
   const variants = {
     primary: 'bg-[#00DBDB] text-[#2D2D2D] hover:bg-[#00A3A3] rounded-custom',
@@ -33,8 +39,16 @@ export const Button: React.FC<MainBtnProps> = ({
 
   return (
     <button
-      className={cn(base, variants[variant], sizes[size], className)}
-      disabled={loading || props.disabled}
+      className={cn(
+        base,
+        variants[variant],
+        sizes[size],
+        disabled && 'opacity-50 cursor-not-allowed',
+        className
+      )}
+      disabled={loading || disabled}
+      type={type}
+      onClick={onClick}
       {...props}
     >
       {loading && <span className="animate-spin mr-2"></span>}

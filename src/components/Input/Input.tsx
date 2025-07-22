@@ -10,6 +10,7 @@ interface Iprops {
   id?: string;
   errortext?: string;
   helperText?: string;
+  classNames?: string;
 }
 
 export const Input = (props: Iprops) => {
@@ -22,6 +23,7 @@ export const Input = (props: Iprops) => {
     error = false,
     errortext,
     helperText,
+    classNames,
   } = props;
 
   const inputStyles = cn(
@@ -35,11 +37,9 @@ export const Input = (props: Iprops) => {
     'focus:ring-2',
     'transition-all duration-300',
     'focus:ring-[var(--primary-color)]',
-    // объект это additional classes - добавляет классы в зависимости от условий
-    {
-      'focus:ring-red-500': error,
-      'opacity-50': readOnly,
-    }
+    error && 'focus:ring-red-500',
+    readOnly && 'opacity-50',
+    classNames
   );
 
   return (

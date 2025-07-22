@@ -9,6 +9,7 @@ interface Iprops {
   error?: boolean;
   readonly?: boolean;
   className?: string;
+  fontW?: 'font-light' | 'font-normal' | 'font-semibold' | 'font-bold';
 }
 
 const VariantText: Record<TextType, string> = {
@@ -31,6 +32,7 @@ export const Text = (props: Iprops) => {
     variant = 'body',
     error = false,
     readonly = false,
+    fontW = 'font-normal',
     className,
     ...otherProps
   } = props;
@@ -43,6 +45,7 @@ export const Text = (props: Iprops) => {
         textSize[variant],
         error && 'texr-red-500',
         readonly && 'opacity-50',
+        fontW,
         className
       )}
       {...otherProps}

@@ -4,6 +4,9 @@
   /* Цвета */
   --primary-color: #00dbdb;
   --input-color: #d9d9d9;
+
+  /* Z-index */
+  --modal-z-index: 50;
 }
 
 @layer customRounded {

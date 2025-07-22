@@ -9,14 +9,28 @@ import TS from './pages/TS';
 import ReactP from './pages/React-p';
 import Quiz from './pages/Quiz';
 
+import { AuthByUserName } from './features/AuthByUserName';
+import { useState } from 'react';
+
 const App = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <HashRouter>
       <div className="">
-        <Header />
+        <Header setIsOpen={setIsOpen} />
         <Menu />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/"
+            element={
+              isOpen ? (
+                <AuthByUserName isOpen={isOpen} setIsOpen={setIsOpen} />
+              ) : (
+                <Home />
+              )
+            }
+          />
           <Route path="/html" element={<HTML />} />
           <Route path="/css" element={<CSS />} />
           <Route path="/js" element={<JS />} />
