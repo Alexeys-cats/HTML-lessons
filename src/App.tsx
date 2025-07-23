@@ -1,30 +1,14 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
+import AppRoutes from './routes/AppRoutes';
 import Header from './components/Header';
 import Menu from './components/Menu';
-import Home from './pages/Home';
-import HTML from './pages/HTML';
-import CSS from './pages/CSS';
-import JS from './pages/JS';
-import TS from './pages/TS';
-import ReactP from './pages/React-p';
-import Quiz from './pages/Quiz';
 
 const App = () => {
   return (
     <HashRouter>
-      <div className="">
-        <Header />
-        <Menu />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/html" element={<HTML />} />
-          <Route path="/css" element={<CSS />} />
-          <Route path="/js" element={<JS />} />
-          <Route path="/ts" element={<TS />} />
-          <Route path="/react" element={<ReactP />} />
-          <Route path="/quiz" element={<Quiz />} />
-        </Routes>
-      </div>
+      <AppRoutes />
+      <Header />
+      <Menu />
     </HashRouter>
   );
 };
