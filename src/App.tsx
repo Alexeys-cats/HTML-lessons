@@ -13,19 +13,25 @@ import { AuthByUserName } from './features/AuthByUserName';
 import { useState } from 'react';
 
 const App = () => {
+  // TODO состояние авторизации и тригер временно в App позже вынести в стор
   const [isOpen, setIsOpen] = useState(false);
+  const [user, setUser] = useState<{ username: string } | null>(null);
 
   return (
     <HashRouter>
       <div className="">
-        <Header setIsOpen={setIsOpen} />
+        <Header setIsOpen={setIsOpen} user={user} setUser={setUser} />
         <Menu />
         <Routes>
           <Route
             path="/"
             element={
               isOpen ? (
-                <AuthByUserName isOpen={isOpen} setIsOpen={setIsOpen} />
+                <AuthByUserName
+                  isOpen={isOpen}
+                  setIsOpen={setIsOpen}
+                  setUser={setUser}
+                />
               ) : (
                 <Home />
               )

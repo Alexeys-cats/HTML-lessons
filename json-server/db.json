@@ -4,7 +4,43 @@
       "id": 1,
       "password": "qwerty",
       "username": "Admin",
-      "email": "admin@example.com"
+      "email": "admin@example.com",
+      "avatar": "https://e7.pngegg.com/pngimages/84/165/png-clipart-united-states-avatar-organization-information-user-avatar-service-computer-wallpaper-thumbnail.png"
+    },
+    {
+      "id": 2,
+      "password": "qwerty",
+      "username": "Alexei",
+      "email": "alexei@example.com",
+      "avatar": "https://e7.pngegg.com/pngimages/84/165/png-clipart-united-states-avatar-organization-information-user-avatar-service-computer-wallpaper-thumbnail.png"
+    },
+    {
+      "id": 3,
+      "password": "qwerty",
+      "username": "Anton",
+      "email": "anton@example.com",
+      "avatar": "https://e7.pngegg.com/pngimages/84/165/png-clipart-united-states-avatar-organization-information-user-avatar-service-computer-wallpaper-thumbnail.png"
+    },
+    {
+      "id": 4,
+      "password": "qwerty",
+      "username": "Ioann",
+      "email": "ioaan@example.com",
+      "avatar": "https://e7.pngegg.com/pngimages/84/165/png-clipart-united-states-avatar-organization-information-user-avatar-service-computer-wallpaper-thumbnail.png"
+    },
+    {
+      "id": 5,
+      "password": "qwerty",
+      "username": "Evgeni",
+      "email": "evgeni@example.com",
+      "avatar": "https://e7.pngegg.com/pngimages/84/165/png-clipart-united-states-avatar-organization-information-user-avatar-service-computer-wallpaper-thumbnail.png"
+    },
+    {
+      "id": 6,
+      "password": "qwerty",
+      "username": "Kostya",
+      "email": "kostya@example.com",
+      "avatar": "https://e7.pngegg.com/pngimages/84/165/png-clipart-united-states-avatar-organization-information-user-avatar-service-computer-wallpaper-thumbnail.png"
     }
   ]
 }

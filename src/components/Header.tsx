@@ -1,13 +1,17 @@
 import { useState } from 'react';
 import { Input } from './Input/Input';
 import logo from '../../public/logo.svg';
+import { Text } from './Text/Text';
+import { Button } from './Button/Button';
 
 interface IProps {
   setIsOpen: (isOpen: boolean) => void;
+  user: { username: string } | null;
+  setUser: (user: null) => void;
 }
 
 const Header = (props: IProps) => {
-  const { setIsOpen } = props;
+  const { setIsOpen, user, setUser } = props;
 
   const [_search, setSearch] = useState('');
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,37 +24,54 @@ const Header = (props: IProps) => {
       <div className="sm:w-[55px] sm:h-[55px] logo-glow flex-shrink-0">
         <img src={logo} alt="logo" className="w-full h-full object-contain" />
       </div>
-      <div className="flex-1 flex justify-center px-2 sm:px-4">
-        <div className="w-full max-w-[120px] sm:max-w-xs">
-          <Input
-            placeholder="Поиск..."
-            onChange={(e) => setSearch(e.target.value)}
-            helperText=""
-            id="header-search"
-          />
+      {user && (
+        <div className="flex-1 flex justify-center px-2 sm:px-4">
+          <div className="w-full max-w-[120px] sm:max-w-xs">
+            <Input
+              placeholder="Поиск..."
+              onChange={(e) => setSearch(e.target.value)}
+              helperText=""
+              id="header-search"
+            />
+          </div>
         </div>
-      </div>
+      )}
 
-      <div className="hidden sm:flex gap-4 sm:gap-6 text-base sm:text-md font-medium text-[#2D2D2D]">
-        {/* TODO кнопка для теста модалки */}
-        <button
-          className="cursor-pointer hover:text-[var(--primary-color]"
-          onClick={() => setIsOpen(true)}
-        >
-          Авторизация
-        </button>
-        <a
-          href="#"
-          className="hover:text-[#00DBDB] transition-colors duration-200"
-        >
-          Связь с разработчиками
-        </a>
-        <a
-          href="#"
-          className="hover:text-[#00DBDB] transition-colors duration-200"
-        >
-          Личный кабинет
-        </a>
+      <div className="hidden items-center sm:flex gap-4 sm:gap-6 text-base sm:text-md font-medium text-[#2D2D2D]">
+        {!user ? (
+          <Button className="cursor-pointer" onClick={() => setIsOpen(true)}>
+            Авторизация
+          </Button>
+        ) : (
+          <>
+            <a
+              href="#"
+              className="hover:text-[#00DBDB] transition-colors duration-200"
+            >
+              Связь с разработчиками
+            </a>
+            <a
+              href="#"
+              className="hover:text-[#00DBDB] transition-colors duration-200"
+            >
+              Личный кабинет
+            </a>
+            <Text
+              className="rounded-md border-1"
+              text={user.username}
+              fontW="font-bold"
+              color="primary"
+            />
+            <Button
+              size="small"
+              variant="danger"
+              className="text-white"
+              onClick={() => setUser(null)}
+            >
+              Выйти
+            </Button>
+          </>
+        )}
       </div>
 
       <button

@@ -29,7 +29,6 @@ export const Input = (props: Iprops) => {
     'w-full',
     'h-9', // 0.25rem(16px) * 9
     'p-4',
-    'mt-2',
     'focus:outline-none',
     'focus:ring-2',
     'transition-all duration-300',
@@ -51,11 +50,11 @@ export const Input = (props: Iprops) => {
         className={inputStyles}
         {...otherProps}
       />
-      {error ? (
-        <span className="text-red-500 text-xs">{errortext}</span>
-      ) : (
-        <span className="text-xs">{helperText}</span>
-      )}
+      <span
+        className={`text-xs block min-h-[12px] ${error ? 'text-[var(--error-color)]' : 'text-[var(--input-color)]'}`}
+      >
+        {error ? errortext : (helperText ?? '')}
+      </span>
     </>
   );
 };

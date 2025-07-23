@@ -15,10 +15,12 @@ import { useState } from 'react';
 interface IProps {
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
+  setUser: (user: { username: string }) => void;
 }
 
 export const AuthByUserName = (props: IProps) => {
-  const { isOpen, setIsOpen } = props;
+  const { isOpen, setIsOpen, setUser } = props;
+
   const [triggerLogin, { isFetching }] = useLazyLoginByUsernameQuery();
   const [error, setError] = useState<string | null>('');
 
@@ -28,6 +30,8 @@ export const AuthByUserName = (props: IProps) => {
     formState: { errors },
   } = useForm<LoginForm>({
     resolver: zodResolver(loginValidateSchema),
+    mode: 'onBlur',
+    reValidateMode: 'onChange',
   });
 
   const onCloseModal = () => {
@@ -39,7 +43,8 @@ export const AuthByUserName = (props: IProps) => {
     try {
       const result = await triggerLogin(data).unwrap();
       if (result.length) {
-        console.log('Autoriazade', result[0]);
+        const loggedUser = result[0];
+        setUser({ username: loggedUser.username });
         onCloseModal();
       } else {
         setError('Неверный логин или пароль');
@@ -54,7 +59,7 @@ export const AuthByUserName = (props: IProps) => {
     <Modal rounded="rounded-xl" isOpen={isOpen} onClose={onCloseModal}>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <Text variant="h2" text="Вход в приложение" fontW="font-bold" />
-        <div>
+        <div className="mb-2">
           <Input
             {...register('username')}
             placeholder="ваш логин"
@@ -62,7 +67,7 @@ export const AuthByUserName = (props: IProps) => {
             errortext={errors.username?.message}
           />
         </div>
-        <div>
+        <div className="mb-2">
           <Input
             {...register('password')}
             placeholder="Ваш пароль"
@@ -79,7 +84,7 @@ export const AuthByUserName = (props: IProps) => {
             Отмена
           </Button>
           <Button type="submit" disabled={isFetching}>
-            Войти
+            {isFetching ? 'загрузка...' : 'Войти'}
           </Button>
         </div>
       </form>
