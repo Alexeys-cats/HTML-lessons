@@ -1,16 +1,12 @@
 import { cn } from '../../utils/utils';
-import type { ChangeEvent } from 'react';
+import type { InputHTMLAttributes } from 'react';
 
-interface Iprops {
-  placeholder: string;
-  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+interface Iprops extends InputHTMLAttributes<HTMLInputElement> {
+  classNames?: string;
   title?: string;
   error?: boolean;
-  readOnly?: boolean;
-  id?: string;
   errortext?: string;
   helperText?: string;
-  classNames?: string;
 }
 
 export const Input = (props: Iprops) => {
@@ -24,6 +20,7 @@ export const Input = (props: Iprops) => {
     errortext,
     helperText,
     classNames,
+    ...otherProps
   } = props;
 
   const inputStyles = cn(
@@ -52,6 +49,7 @@ export const Input = (props: Iprops) => {
         disabled={readOnly}
         type="text"
         className={inputStyles}
+        {...otherProps}
       />
       {error ? (
         <span className="text-red-500 text-xs">{errortext}</span>

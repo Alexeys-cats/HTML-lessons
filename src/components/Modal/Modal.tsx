@@ -1,4 +1,3 @@
-// TODO Сейчас не работает анимация при закрытии на кнопу отмена и при открытии модалки при клике на тригер
 import type { ReactNode, MouseEvent } from 'react';
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { cn } from '../../utils/utils';

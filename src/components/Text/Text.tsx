@@ -2,10 +2,12 @@ import type { JSX } from 'react';
 import { cn } from '../../utils/utils';
 
 type TextType = 'h1' | 'h2' | 'body' | 'helper';
+type TextColor = 'primary' | 'default' | 'error';
 
 interface Iprops {
   text: string;
   variant?: TextType;
+  color?: TextColor;
   error?: boolean;
   readonly?: boolean;
   className?: string;
@@ -25,11 +27,17 @@ const textSize: Record<TextType, string> = {
   body: 'text-base p-1',
   helper: 'text-xs',
 };
+const textColorVariants: Record<TextColor, string> = {
+  default: 'text-[var(--default-color)]',
+  primary: 'text-[var(--primary-color)]',
+  error: 'text-[var(--error-color)]',
+};
 
 export const Text = (props: Iprops) => {
   const {
     text,
     variant = 'body',
+    color = 'default',
     error = false,
     readonly = false,
     fontW = 'font-normal',
@@ -43,7 +51,8 @@ export const Text = (props: Iprops) => {
     <TextTag
       className={cn(
         textSize[variant],
-        error && 'texr-red-500',
+        textColorVariants[color],
+        error && 'text-[var(--error-color)]',
         readonly && 'opacity-50',
         fontW,
         className
