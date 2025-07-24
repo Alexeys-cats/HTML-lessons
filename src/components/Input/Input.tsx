@@ -1,13 +1,10 @@
 import { cn } from '../../utils/utils';
-import type { ChangeEvent } from 'react';
+import type { InputHTMLAttributes } from 'react';
 
-interface Iprops {
-  placeholder: string;
-  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+interface Iprops extends InputHTMLAttributes<HTMLInputElement> {
+  classNames?: string;
   title?: string;
   error?: boolean;
-  readOnly?: boolean;
-  id?: string;
   errortext?: string;
   helperText?: string;
 }
@@ -22,6 +19,8 @@ export const Input = (props: Iprops) => {
     error = false,
     errortext,
     helperText,
+    classNames,
+    ...otherProps
   } = props;
 
   const inputStyles = cn(
@@ -30,16 +29,13 @@ export const Input = (props: Iprops) => {
     'w-full',
     'h-9', // 0.25rem(16px) * 9
     'p-4',
-    'mt-2',
     'focus:outline-none',
     'focus:ring-2',
     'transition-all duration-300',
     'focus:ring-[var(--primary-color)]',
-    // объект это additional classes - добавляет классы в зависимости от условий
-    {
-      'focus:ring-red-500': error,
-      'opacity-50': readOnly,
-    }
+    error && 'focus:ring-red-500',
+    readOnly && 'opacity-50',
+    classNames
   );
 
   return (
@@ -52,12 +48,13 @@ export const Input = (props: Iprops) => {
         disabled={readOnly}
         type="text"
         className={inputStyles}
+        {...otherProps}
       />
-      {error ? (
-        <span className="text-red-500 text-xs">{errortext}</span>
-      ) : (
-        <span className="text-xs">{helperText}</span>
-      )}
+      <span
+        className={`text-xs block min-h-[12px] ${error ? 'text-[var(--error-color)]' : 'text-[var(--input-color)]'}`}
+      >
+        {error ? errortext : (helperText ?? '')}
+      </span>
     </>
   );
 };

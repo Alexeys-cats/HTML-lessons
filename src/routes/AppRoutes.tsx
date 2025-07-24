@@ -6,11 +6,30 @@ import JS from '../pages/JS';
 import TS from '../pages/TS';
 import ReactP from '../pages/React-p';
 import Quiz from '../pages/Quiz';
+import { AuthByUserName } from '../features/AuthByUserName';
+interface IProps {
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
+  setUser: (user: { username: string }) => void;
+}
 
-const AppRoutes = () => {
+const AppRoutes = ({ isOpen, setIsOpen, setUser }: IProps) => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route
+        path="/"
+        element={
+          isOpen ? (
+            <AuthByUserName
+              isOpen={isOpen}
+              setIsOpen={setIsOpen}
+              setUser={setUser}
+            />
+          ) : (
+            <Home />
+          )
+        }
+      />
       <Route path="/html" element={<HTML />} />
       <Route path="/css" element={<CSS />} />
       <Route path="/js" element={<JS />} />
