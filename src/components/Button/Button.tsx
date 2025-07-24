@@ -43,7 +43,7 @@ export const Button: React.FC<MainBtnProps> = ({
         base,
         variants[variant],
         sizes[size],
-        disabled && 'opacity-50 cursor-not-allowed',
+        { ['opacity-50 cursor-not-allowed']: disabled },
         className
       )}
       disabled={loading || disabled}

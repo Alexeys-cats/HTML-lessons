@@ -10,9 +10,7 @@ interface IProps {
   setUser: (user: null) => void;
 }
 
-const Header = (props: IProps) => {
-  const { setIsOpen, user, setUser } = props;
-
+const Header = ({ setIsOpen, user, setUser }: IProps) => {
   const [_search, setSearch] = useState('');
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -30,7 +28,6 @@ const Header = (props: IProps) => {
             <Input
               placeholder="Поиск..."
               onChange={(e) => setSearch(e.target.value)}
-              helperText=""
               id="header-search"
             />
           </div>

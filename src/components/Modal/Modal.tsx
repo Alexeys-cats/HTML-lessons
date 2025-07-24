@@ -1,5 +1,6 @@
 import type { ReactNode, MouseEvent } from 'react';
 import { useState, useRef, useEffect, useCallback } from 'react';
+import { ANIMATION_DELAY } from '../../utils/constants';
 import { cn } from '../../utils/utils';
 
 interface IProps {
@@ -10,10 +11,13 @@ interface IProps {
   onClose?: () => void;
 }
 
-const ANIMATION_DELAY = 300;
-
-export const Modal = (props: IProps) => {
-  const { children, className, rounded, isOpen = false, onClose } = props;
+export const Modal = ({
+  children,
+  className,
+  rounded,
+  isOpen = false,
+  onClose,
+}: IProps) => {
   // состояния для работы с анимацией
   const [isMounted, setIsmounted] = useState<boolean>(false);
   const [isClosing, setIsClosing] = useState<boolean>(false);
@@ -58,7 +62,7 @@ export const Modal = (props: IProps) => {
     <div
       className={cn(
         'fixed inset-0 z-[var(--modal-z-index)] flex items-center justify-center cursor-pointer',
-        !isVisible && 'opacity-0 pointer-events-none',
+        { 'opacity-0 pointer-events-none': !isVisible },
         className
       )}
     >
