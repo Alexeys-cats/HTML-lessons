@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { FaHtml5, FaCss3Alt, FaJs, FaHome, FaGamepad } from 'react-icons/fa';
-import clsx from 'clsx';
+import { cn } from '../utils/utils';
 
 interface MenuItem {
   name: string;
@@ -36,7 +36,7 @@ const Menu = () => {
             <Link
               key={index}
               to={link.path}
-              className={clsx(
+              className={cn(
                 'flex items-center gap-x-2',
                 isActive
                   ? 'text-[#00DBDB] animate-bounce-short drop-shadow-xl/50'

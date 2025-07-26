@@ -1,6 +1,6 @@
 import { HashRouter } from 'react-router-dom';
 import AppRoutes from './routes/AppRoutes';
-import Header from './components/widgets/Header/Header';
+import Header from './widgets/Header/Header';
 import Menu from './components/Menu';
 
 import { useState } from 'react';

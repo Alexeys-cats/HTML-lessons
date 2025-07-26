@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import logo from '../../../shared/assets/logo.svg';
+import logo from '../../shared/assets/logo.svg';
 import SearchInput from './HeaderComponents/SearchInput';
 import DesktopNav from './HeaderComponents/DesktopNav';
 import MobileMenu from './HeaderComponents/MobileMenu';

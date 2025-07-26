@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import React from 'react';
-import { clsx } from 'clsx';
+import { cn } from '../../utils/utils';
 
 interface AppLinkProps {
   to: string;
@@ -13,7 +13,7 @@ const AppLink = ({ to, children, className }: AppLinkProps) => {
     <NavLink
       to={to}
       className={({ isActive }) =>
-        clsx('transition-colors duration-200 hover:text-[#00DBDB]', className, {
+        cn('transition-colors duration-200 hover:text-[#00DBDB]', className, {
           'text-[#00DBDB] font-semibold': isActive,
         })
       }

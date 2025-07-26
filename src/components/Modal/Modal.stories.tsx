@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { Modal } from './Modal';
 import { Text } from '../../shared/ui/Text/Text';
 import { Input } from '../../shared/ui/Input/Input';
-import { Button } from '../Button/Button';
+import { Button } from '../../shared/ui/Button/Button';
 
 const meta: Meta<typeof Modal> = {
   title: 'Components/Modal',

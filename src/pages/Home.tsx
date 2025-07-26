@@ -120,7 +120,7 @@ const Home = () => {
                 }}
               />
             </div>
-            <div className="absolute top-40 -left-16 transform rotate-30">
+            <div className="absolute top-19 -left-38 transform rotate-30">
               <img
                 src={nextImg}
                 alt="Next.js"
