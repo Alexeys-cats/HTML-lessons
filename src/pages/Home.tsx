@@ -14,7 +14,7 @@ const Home = () => {
       <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[1200px] w-full">
         <div
           className="w-full bg-gradient-to-r from-[#AEAEAE]/80 via-[#AEAEAE]/40
-        to-transparent rounded-xl shadow-md py-4 px-6 relative"
+        to-transparent rounded-xl py-4 px-6 relative"
         >
           <div
             className="text-center flex flex-col justify-center xl:pt-20 
@@ -48,10 +48,10 @@ const Home = () => {
                 alt="HTML"
                 className="w-[55px] h-[55px] object-contain"
                 style={{
-                  width: '55px',
-                  height: '55px',
-                  minWidth: '55px',
-                  minHeight: '55px',
+                  width: '35px',
+                  height: '35px',
+                  minWidth: '35px',
+                  minHeight: '35px',
                 }}
               />
             </div>
@@ -61,10 +61,10 @@ const Home = () => {
                 alt="CSS"
                 className="w-[55px] h-[55px] object-contain"
                 style={{
-                  width: '55px',
-                  height: '55px',
-                  minWidth: '55px',
-                  minHeight: '55px',
+                  width: '40px',
+                  height: '40px',
+                  minWidth: '40px',
+                  minHeight: '40px',
                 }}
               />
             </div>
@@ -74,10 +74,10 @@ const Home = () => {
                 alt="JavaScript"
                 className="w-[55px] h-[55px] object-contain"
                 style={{
-                  width: '55px',
-                  height: '55px',
-                  minWidth: '55px',
-                  minHeight: '55px',
+                  width: '40px',
+                  height: '40px',
+                  minWidth: '40px',
+                  minHeight: '40px',
                 }}
               />
             </div>
@@ -87,10 +87,10 @@ const Home = () => {
                 alt="TypeScript"
                 className="w-[55px] h-[55px] object-contain"
                 style={{
-                  width: '55px',
-                  height: '55px',
-                  minWidth: '55px',
-                  minHeight: '55px',
+                  width: '45px',
+                  height: '45px',
+                  minWidth: '45px',
+                  minHeight: '45px',
                 }}
               />
             </div>
@@ -100,10 +100,10 @@ const Home = () => {
                 alt="Tailwind"
                 className="w-[55px] h-[55px] object-contain"
                 style={{
-                  width: '55px',
-                  height: '55px',
-                  minWidth: '55px',
-                  minHeight: '55px',
+                  width: '45px',
+                  height: '45px',
+                  minWidth: '45px',
+                  minHeight: '45px',
                 }}
               />
             </div>
@@ -120,7 +120,7 @@ const Home = () => {
                 }}
               />
             </div>
-            <div className="absolute top-40 -left-16 transform rotate-30">
+            <div className="absolute top-19 -left-38 transform rotate-30">
               <img
                 src={nextImg}
                 alt="Next.js"
