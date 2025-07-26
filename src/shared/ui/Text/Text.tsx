@@ -1,5 +1,5 @@
 import type { JSX } from 'react';
-import { cn } from '../../utils/utils';
+import { cn } from '../../../utils/utils';
 
 type TextType = 'h1' | 'h2' | 'body' | 'helper';
 type TextColor = 'primary' | 'default' | 'error';

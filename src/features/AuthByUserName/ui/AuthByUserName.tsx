@@ -7,9 +7,9 @@ import {
 } from '../model/types/LoginValidateShema';
 
 import { Modal } from '../../../components/Modal/Modal';
-import { Input } from '../../../components/Input/Input';
-import { Text } from '../../../components/Text/Text';
-import { Button } from '../../../components/Button/Button';
+import { Input } from '../../../shared/ui/Input/Input';
+import { Text } from '../../../shared/ui/Text/Text';
+import { Button } from '../../../shared/ui/Button/Button';
 import { useState } from 'react';
 
 interface IProps {
