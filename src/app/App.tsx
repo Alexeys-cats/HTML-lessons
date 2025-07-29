@@ -1,9 +1,9 @@
-import { HashRouter } from 'react-router-dom';
-import AppRoutes from './routes/AppRoutes';
-import Header from '../widgets/Header/Header';
-import { Menu } from '../shared/ui';
-
 import { useState } from 'react';
+import { HashRouter } from 'react-router-dom';
+import Header from '../widgets/Header/Header';
+import Footer from '@/widgets/Footer/Footer';
+import AppRoutes from './routes/AppRoutes';
+import { Menu } from '../shared/ui';
 
 const App = () => {
   // TODO состояние авторизации и тригер временно в App позже вынести в стор
@@ -15,6 +15,7 @@ const App = () => {
       <AppRoutes isOpen={isOpen} setIsOpen={setIsOpen} setUser={setUser} />
       <Header setIsOpen={setIsOpen} user={user} setUser={setUser} />
       <Menu />
+      <Footer />
     </HashRouter>
   );
 };
