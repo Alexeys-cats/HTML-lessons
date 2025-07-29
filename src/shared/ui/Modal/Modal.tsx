@@ -11,6 +11,15 @@ interface IProps {
   onClose?: () => void;
 }
 
+/**
+ * Модальное окно с анимацией открытия/закрытия.
+ * Закрывается по клику на фон или клавишей Escape.
+ * @param {ReactNode} Контент модального окна.
+ * @param {string}  Дополнительные классы Tailwind.
+ * @param {'rounded-md' | 'rounded-lg' | 'rounded-xl'} Скругление углов.
+ * @param {boolean} Состояние модалки (открыта/закрыта).
+ * @param {() => void} Колбэк при закрытии.
+ */
 export const Modal = ({
   children,
   className,
@@ -61,7 +70,7 @@ export const Modal = ({
   return (
     <div
       className={cn(
-        'fixed inset-0 z-[var(--modal-z-index)] flex items-center justify-center cursor-pointer',
+        'fixed inset-0 z-[var(--50z-index)] flex items-center justify-center cursor-pointer',
         { 'opacity-0 pointer-events-none': !isVisible },
         className
       )}

@@ -1,5 +1,4 @@
-import { Button } from '../../../shared/ui/Button/Button';
-import { Text } from '../../../shared/ui/Text/Text';
+import { Text, Button } from '@/shared/ui';
 import AppLink from '../AppLink';
 
 interface Props {

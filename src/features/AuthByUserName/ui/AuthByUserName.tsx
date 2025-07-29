@@ -6,10 +6,7 @@ import {
   type LoginForm,
 } from '../model/types/LoginValidateShema';
 
-import { Modal } from '../../../components/Modal/Modal';
-import { Input } from '../../../shared/ui/Input/Input';
-import { Text } from '../../../shared/ui/Text/Text';
-import { Button } from '../../../shared/ui/Button/Button';
+import { Modal, Input, Text, Button } from '@/shared/ui';
 import { useState } from 'react';
 
 interface IProps {

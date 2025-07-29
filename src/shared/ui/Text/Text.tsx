@@ -1,5 +1,5 @@
 import type { JSX } from 'react';
-import { cn } from '../../../utils/utils';
+import { cn } from '../../utils/utils';
 
 type TextType = 'h1' | 'h2' | 'body' | 'helper';
 type TextColor = 'primary' | 'default' | 'error';
@@ -33,18 +33,27 @@ const textColorVariants: Record<TextColor, string> = {
   error: 'text-[var(--error-color)]',
 };
 
-export const Text = (props: Iprops) => {
-  const {
-    text,
-    variant = 'body',
-    color = 'default',
-    error = false,
-    readonly = false,
-    fontW = 'font-normal',
-    className,
-    ...otherProps
-  } = props;
+/**
+ * Переиспользуемый компонент текста
+ * @param {string}  Сам текст.
+ * @param {'h1' | 'h2' | 'body' | 'helper'} Тип текста (размер и тэг).
+ * @param {'primary' | 'default' | 'error'} Цвет текста.
+ * @param {boolean} Ошибочный стиль.
+ * @param {boolean} Если true, делает текст полупрозрачным.
+ * @param {string} Вес шрифта.
+ * @param {string} Дополнительные классы Tailwind.
+ */
 
+export const Text = ({
+  text,
+  variant = 'body',
+  color = 'default',
+  error = false,
+  readonly = false,
+  fontW = 'font-normal',
+  className,
+  ...otherProps
+}: Iprops) => {
   const TextTag = VariantText[variant] as keyof JSX.IntrinsicElements;
 
   return (
