@@ -6,6 +6,10 @@ import JS from '../pages/JS';
 import TS from '../pages/TS';
 import ReactP from '../pages/React-p';
 import Quiz from '../pages/Quiz';
+import { Reconcilation } from '../pages/Reconcilation';
+import { VirtualDOM } from '../pages/VirtualDOM';
+import { DiffingAlgorithm } from '../pages/DiffingAlgorithm';
+import { Fiber } from '../pages/Fiber';
 import { AuthByUserName } from '../features/AuthByUserName';
 interface IProps {
   isOpen: boolean;
@@ -35,6 +39,10 @@ const AppRoutes = ({ isOpen, setIsOpen, setUser }: IProps) => {
       <Route path="/js" element={<JS />} />
       <Route path="/ts" element={<TS />} />
       <Route path="/react" element={<ReactP />} />
+      <Route path="/reconciliation" element={<Reconcilation />} />
+      <Route path="/virtual-dom" element={<VirtualDOM />} />
+      <Route path="/diffing-algorithm" element={<DiffingAlgorithm />} />
+      <Route path="/fiber" element={<Fiber />} />
       <Route path="/quiz" element={<Quiz />} />
     </Routes>
   );

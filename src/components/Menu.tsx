@@ -1,5 +1,12 @@
 import { Link, useLocation } from 'react-router-dom';
-import { FaHtml5, FaCss3Alt, FaJs, FaHome, FaGamepad } from 'react-icons/fa';
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaHome,
+  FaGamepad,
+  FaReact,
+} from 'react-icons/fa';
 import { cn } from '../utils/utils';
 
 interface MenuItem {
@@ -13,6 +20,7 @@ export const menuItems: MenuItem[] = [
   { name: 'HTML', icon: <FaHtml5 />, path: '/html' },
   { name: 'CSS', icon: <FaCss3Alt />, path: '/css' },
   { name: 'JS', icon: <FaJs />, path: '/js' },
+  { name: 'React', icon: <FaReact />, path: '/reconciliation' },
   { name: 'Quiz', icon: <FaGamepad />, path: '/quiz' },
 ];
 
