@@ -1,22 +1,20 @@
-import { cn } from '@/shared/utils';
+import { cn, type AnimationTypes, type Sizes } from '@/shared/utils';
 
-type ImageSize = 'sm' | 'md' | 'lg';
-type AnimationType = 'spin' | 'bounce' | 'pulse' | 'none';
 interface IProps {
   src: string;
   alt: string;
-  size?: 'sm' | 'md' | 'lg';
-  animation?: 'spin' | 'bounce' | 'pulse' | 'none';
+  size?: Sizes;
+  animation?: AnimationTypes;
   className?: string;
 }
 
-const sizeClasses: Record<ImageSize, string> = {
+const sizeClasses: Record<Sizes, string> = {
   sm: 'w-16 h-16',
   md: 'w-24 h-24 sm:w-32 sm:h-32',
   lg: 'w-36 h-36 sm:w-44 sm:h-44 md:w-52 md:h-52',
 };
 
-const animatedClasses: Record<AnimationType, string> = {
+const animatedClasses: Record<AnimationTypes, string> = {
   spin: 'animate-spin',
   bounce: 'animate-bounce',
   pulse: 'animate-pulse',

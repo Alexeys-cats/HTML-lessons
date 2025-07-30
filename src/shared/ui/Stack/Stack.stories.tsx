@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import type { Meta, StoryFn, StoryObj } from '@storybook/react-vite';
 import { Stack } from './Stack';
 import { Button } from '../Button/Button';
 
@@ -31,8 +31,8 @@ const meta: Meta<typeof Stack> = {
 
 export default meta;
 type Story = StoryObj<typeof meta>;
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const Template = (args: any) => (
+
+const Template: StoryFn<typeof Stack> = (args) => (
   <div style={{ width: '100%' }}>
     <Stack {...args}>
       <Button variant="primary">Кнопка с текстом</Button>
