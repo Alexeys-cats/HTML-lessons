@@ -10,7 +10,7 @@ const HtmlPage = () => {
           name={item.name}
           description={item.description}
           start={item.start}
-          end={item.end}
+          end={item.end ?? undefined}
           example={item.example}
         />
       ))}
