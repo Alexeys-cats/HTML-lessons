@@ -1,12 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
-import Home from '../pages/Home';
-import HTML from '../pages/HTML';
-import CSS from '../pages/CSS';
-import JS from '../pages/JS';
-import TS from '../pages/TS';
-import ReactP from '../pages/React-p';
-import Quiz from '../pages/Quiz';
-import { AuthByUserName } from '../features/AuthByUserName';
+import Home from '../../pages/Home';
+import HTML from '../../pages/HTML';
+import CSS from '../../pages/CSS';
+import JS from '../../pages/JS';
+import TS from '../../pages/TS';
+import ReactP from '../../pages/React-p';
+import Quiz from '../../pages/Quiz';
+import { AuthByUserName } from '../../features/AuthByUserName';
 interface IProps {
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;

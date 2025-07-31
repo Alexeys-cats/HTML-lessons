@@ -1,4 +1,4 @@
-import { cn } from '../../../utils/utils';
+import { cn } from '../../utils/utils';
 import type { InputHTMLAttributes } from 'react';
 
 interface Iprops extends InputHTMLAttributes<HTMLInputElement> {
@@ -8,7 +8,15 @@ interface Iprops extends InputHTMLAttributes<HTMLInputElement> {
   errortext?: string;
   helperText?: string;
 }
-
+/**
+ * Переиспользуемый компонент инпута
+ * @param {string} Лейбл над инпутом.
+ * @param {boolean} Если true, меняет стиль на ошибочный.
+ * @param {string} Текст ошибки (если error=true).
+ * @param {string} Вспомогательный текст под полем.
+ * @param {boolean} Блокирует редактирование.
+ * @param {string} Дополнительные классы Tailwind.
+ */
 export const Input = (props: Iprops) => {
   const {
     title,

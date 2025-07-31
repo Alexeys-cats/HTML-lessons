@@ -1,5 +1,5 @@
 import React from 'react';
-import { cn } from '../../../utils/utils';
+import { cn } from '../../utils/utils';
 
 interface MainBtnProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'danger' | 'ghost';
@@ -10,6 +10,16 @@ interface MainBtnProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   onClick?: () => void;
 }
 
+/**
+ * Переиспользуемы компонент кнопки
+ * @param {'primary' | 'secondary' | 'danger' | 'ghost'} Вариант кнопки (цвет и фон).
+ * @param {'small' | 'medium' | 'large'} Размер кнопки.
+ * @param {boolean} Если true, показывает индикатор загрузки и блокирует кнопку.
+ * @param {'button' | 'submit' | 'reset'} HTML-тип кнопки.
+ * @param {boolean} Отключает кнопку.
+ * @param {() => void} Обработчик клика.
+ * @param {React.ReactNode} Текст или контент внутри кнопки.
+ */
 export const Button: React.FC<MainBtnProps> = ({
   variant = 'primary',
   size = 'medium',

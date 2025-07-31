@@ -1,10 +1,9 @@
-import { HashRouter } from 'react-router-dom';
-import AppRoutes from './routes/AppRoutes';
-import Header from './widgets/Header/Header';
-import Footer from './widgets/Footer/Footer';
-import Menu from './components/Menu';
-
 import { useState } from 'react';
+import { HashRouter } from 'react-router-dom';
+import Header from '../widgets/Header/Header';
+import Footer from '@/widgets/Footer/Footer';
+import AppRoutes from './routes/AppRoutes';
+import { Menu } from '../shared/ui';
 
 const App = () => {
   // TODO состояние авторизации и тригер временно в App позже вынести в стор

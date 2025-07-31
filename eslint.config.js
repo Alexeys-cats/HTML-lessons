@@ -8,6 +8,7 @@ import tsPlugin from '@typescript-eslint/eslint-plugin';
 import reactPlugin from 'eslint-plugin-react';
 import prettierPlugin from 'eslint-plugin-prettier';
 import prettier from 'eslint-config-prettier';
+import importPlugin from 'eslint-plugin-import';
 
 export default [
   {
@@ -31,6 +32,7 @@ export default [
       react: reactPlugin,
       'react-hooks': reactHooks,
       prettier: prettierPlugin,
+      import: importPlugin,
     },
     settings: {
       react: {
@@ -50,6 +52,9 @@ export default [
           endOfLine: 'auto',
         },
       ],
+      "no-restricted-imports": ["error", {
+        "patterns": ["../../../*"]
+      }]
     },
   },
   ...storybook.configs['flat/recommended'],

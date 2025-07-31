@@ -1,12 +1,4 @@
-import AnimatedImg from '../components/AnimatedImg';
-import homeImg from '../../public/homeImg.png';
-import HTMLImg from '../../public/HTMLImg.png';
-import CSSImg from '../../public/CSSImg.png';
-import JSImg from '../../public/JSImg.png';
-import nextImg from '../../public/nextImg.png';
-import ReacktImg from '../../public/ReacktImg.png';
-import tailwindImg from '../../public/tailwindImg.png';
-import tsImg from '../../public/tsImg.png';
+import { Image } from '@/shared/ui';
 
 const Home = () => {
   return (
@@ -29,13 +21,17 @@ const Home = () => {
               HTML тэги, CSS классы, JS..
             </p>
             <div className="flex justify-center xl:justify-start">
-              <AnimatedImg />
+              <Image
+                src="./animatedHomePageImg.svg"
+                alt="Анимирванное лого"
+                animation="spin"
+              />
             </div>
           </div>
 
           <div className="hidden xl:block absolute top-1/2 right-6 -translate-y-1/2 home-img-glow">
             <img
-              src={homeImg}
+              src="./homeImg.png"
               alt="Home illustration"
               className="max-w-[600px] max-h-[700px] object-contain"
             />
@@ -44,7 +40,7 @@ const Home = () => {
           <div className="hidden xl:block absolute top-85 right-55 rotate-45 -translate-y-1/2">
             <div className="absolute -top-20 -left-12 transform rotate-12">
               <img
-                src={HTMLImg}
+                src="./HTMLImg.png"
                 alt="HTML"
                 className="w-[55px] h-[55px] object-contain"
                 style={{
@@ -57,7 +53,7 @@ const Home = () => {
             </div>
             <div className="absolute -top-5 -right-9 transform -rotate-6">
               <img
-                src={CSSImg}
+                src="./CSSImg.png"
                 alt="CSS"
                 className="w-[55px] h-[55px] object-contain"
                 style={{
@@ -70,7 +66,7 @@ const Home = () => {
             </div>
             <div className="absolute top-0 -left-20 transform rotate-45">
               <img
-                src={JSImg}
+                src="./JSImg.png"
                 alt="JavaScript"
                 className="w-[55px] h-[55px] object-contain"
                 style={{
@@ -83,7 +79,7 @@ const Home = () => {
             </div>
             <div className="absolute top-10 -right-16 transform -rotate-15">
               <img
-                src={tsImg}
+                src="./tsImg.png"
                 alt="TypeScript"
                 className="w-[55px] h-[55px] object-contain"
                 style={{
@@ -96,7 +92,7 @@ const Home = () => {
             </div>
             <div className="absolute top-20 -left-13 transform rotate-8">
               <img
-                src={tailwindImg}
+                src="./tailwindImg.png"
                 alt="Tailwind"
                 className="w-[55px] h-[55px] object-contain"
                 style={{
@@ -109,7 +105,7 @@ const Home = () => {
             </div>
             <div className="absolute top-33 -right-13 transform -rotate-25">
               <img
-                src={ReacktImg}
+                src="./ReacktImg.png"
                 alt="React"
                 className="w-[55px] h-[55px] object-contain"
                 style={{
@@ -122,7 +118,7 @@ const Home = () => {
             </div>
             <div className="absolute top-19 -left-38 transform rotate-30">
               <img
-                src={nextImg}
+                src="./nextImg.png"
                 alt="Next.js"
                 className="w-[55px] h-[55px] object-contain"
                 style={{

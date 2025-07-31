@@ -1,5 +1,5 @@
 import AppLink from '../AppLink';
-import { Text } from '../../../shared/ui/Text/Text';
+import { Text } from '@/shared/ui';
 
 interface Props {
   user: { username: string } | null;

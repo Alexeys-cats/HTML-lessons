@@ -1,4 +1,4 @@
-import { Input } from '../../../shared/ui/Input/Input';
+import { Input } from '@/shared/ui';
 
 interface Props {
   search: string;

@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import React from 'react';
-import { cn } from '../../utils/utils';
+import { cn } from '@/shared/utils';
 
 interface AppLinkProps {
   to: string;
