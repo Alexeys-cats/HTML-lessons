@@ -1,2 +1,21 @@
-const HTML = () => <h1>Тут будут теги по HTML</h1>;
-export default HTML;
+import htmlData from '../shared/api/data-html.json';
+import HtmlCard from '../shared/ui/Cards/HtmlCard';
+
+const HtmlPage = () => {
+  return (
+    <div className="p-8 flex flex-wrap gap-6 justify-center">
+      {htmlData.map((item) => (
+        <HtmlCard
+          key={item.id}
+          name={item.name}
+          description={item.description}
+          start={item.start}
+          end={item.end ?? undefined}
+          example={item.example}
+        />
+      ))}
+    </div>
+  );
+};
+
+export default HtmlPage;
