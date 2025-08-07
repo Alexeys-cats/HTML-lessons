@@ -27,7 +27,9 @@ const Header = ({ setIsOpen, user, setUser }: IProps) => {
 
       <BurgerButton isOpen={menuOpen} onClick={() => setMenuOpen(!menuOpen)} />
 
-      {menuOpen && <MobileMenu user={user} />}
+      {menuOpen && (
+        <MobileMenu user={user} setIsOpen={setIsOpen} setUser={setUser} />
+      )}
     </header>
   );
 };

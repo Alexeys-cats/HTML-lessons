@@ -78,13 +78,13 @@ export const Modal = ({
       <div
         onClick={onCloseHandler}
         className={cn(
-          'fixed flex items-center justify-center inset-0 bg-black/50 transition-opacity duration-300 ease-in-out'
+          'fixed flex items-center justify-center inset-0 bg-[var(--default-color)]/50 transition-opacity duration-300 ease-in-out'
         )}
       >
         <div
           onClick={onContentClicked}
           className={cn(
-            'relative z-10 w-full max-w-lg p-6 bg-white shadow-lg transition-transform duration-300 ease-in',
+            'relative z-10 w-[95%] sm:w-full max-w-lg p-6 bg-[var(--white-color)] shadow-lg transition-transform duration-300 ease-in',
             isOpen && !isClosing ? 'scale-100' : 'scale-20',
             rounded
           )}
