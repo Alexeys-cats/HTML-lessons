@@ -3,7 +3,6 @@ import logo from '../../shared/assets/logo.svg';
 import SearchInput from './HeaderComponents/SearchInput';
 import DesktopNav from './HeaderComponents/DesktopNav';
 import MobileMenu from './HeaderComponents/MobileMenu';
-import BurgerButton from './HeaderComponents/BurgerButton';
 
 interface IProps {
   setIsOpen: (isOpen: boolean) => void;
@@ -12,7 +11,6 @@ interface IProps {
 }
 
 const Header = ({ setIsOpen, user, setUser }: IProps) => {
-  const [menuOpen, setMenuOpen] = useState(false);
   const [search, setSearch] = useState('');
 
   return (
@@ -25,11 +23,10 @@ const Header = ({ setIsOpen, user, setUser }: IProps) => {
 
       <DesktopNav user={user} setIsOpen={setIsOpen} setUser={setUser} />
 
-      <BurgerButton isOpen={menuOpen} onClick={() => setMenuOpen(!menuOpen)} />
-
-      {menuOpen && (
-        <MobileMenu user={user} setIsOpen={setIsOpen} setUser={setUser} />
-      )}
+      <MobileMenu user={user} setIsOpen={setIsOpen} setUser={setUser} />
+      {/* {menuOpen && (
+        
+      )} */}
     </header>
   );
 };

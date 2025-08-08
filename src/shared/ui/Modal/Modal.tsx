@@ -1,4 +1,5 @@
 import type { ReactNode, MouseEvent } from 'react';
+import { motion } from 'framer-motion';
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { ANIMATION_DELAY } from '../../utils/constants';
 import { cn } from '../../utils/utils';
@@ -81,16 +82,20 @@ export const Modal = ({
           'fixed flex items-center justify-center inset-0 bg-[var(--default-color)]/50 transition-opacity duration-300 ease-in-out'
         )}
       >
-        <div
+        <motion.div
           onClick={onContentClicked}
           className={cn(
-            'relative z-10 w-[95%] sm:w-full max-w-lg p-6 bg-[var(--white-color)] shadow-lg transition-transform duration-300 ease-in',
+            'relative z-10 w-[95%] sm:w-full max-w-lg p-6 bg-[var(--white-color)] shadow-lg',
             isOpen && !isClosing ? 'scale-100' : 'scale-20',
             rounded
           )}
+          initial={{ scale: 0 }}
+          animate={{ scale: isOpen && !isClosing ? 1 : 0 }}
+          exit={{ scale: 0 }}
+          transition={{ duration: ANIMATION_DELAY / 1000 }}
         >
           {children}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
