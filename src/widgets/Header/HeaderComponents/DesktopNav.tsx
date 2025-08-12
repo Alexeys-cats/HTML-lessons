@@ -1,4 +1,4 @@
-import { Text, Button } from '@/shared/ui';
+import { Text, Button, Stack } from '@/shared/ui';
 import AppLink from '../AppLink';
 
 interface Props {
@@ -9,7 +9,11 @@ interface Props {
 
 const DesktopNav = ({ user, setIsOpen, setUser }: Props) => {
   return (
-    <div className="hidden sm:flex items-center gap-4 sm:gap-6 text-base sm:text-md font-medium">
+    <Stack
+      gap={4}
+      align="center"
+      className="hidden sm:flex text-base sm:text-md font-medium"
+    >
       <AppLink to="/feedback">
         <Text text="Связь с разработчиками" />
       </AppLink>
@@ -33,7 +37,7 @@ const DesktopNav = ({ user, setIsOpen, setUser }: Props) => {
           Авторизация
         </Button>
       )}
-    </div>
+    </Stack>
   );
 };
 

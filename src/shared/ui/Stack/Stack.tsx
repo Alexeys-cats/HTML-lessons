@@ -4,12 +4,13 @@ import type { ReactNode } from 'react';
 type Direction = 'row' | 'column';
 type Align = 'start' | 'center' | 'end';
 type justify = 'start' | 'end' | 'center' | 'between' | 'around' | 'evenly';
+type Gap = 0 | 1 | 2 | 4 | 6 | 8 | 16 | 32;
 
 interface Iprops {
   direction?: Direction;
   align?: Align;
   justify?: justify;
-  gap?: number;
+  gap?: Gap;
   className?: string;
   children: ReactNode;
 }
@@ -34,6 +35,17 @@ const justifyMap: Record<justify, string> = {
   evenly: 'justify-evenly',
 };
 
+const gapMap: Record<Gap, string> = {
+  0: 'gap-0',
+  1: 'gap-1',
+  2: 'gap-2',
+  4: 'gap-4',
+  6: 'gap-6',
+  8: 'gap-8',
+  16: 'gap-16',
+  32: 'gap-32',
+};
+
 export const Stack = ({
   direction = 'row',
   align = 'center',
@@ -49,7 +61,7 @@ export const Stack = ({
         directionMap[direction],
         alignMap[align],
         justifyMap[justify],
-        gap && `gap-${gap}`,
+        gapMap[gap],
         className
       )}
     >

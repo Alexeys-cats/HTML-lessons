@@ -6,7 +6,7 @@ import {
   type LoginForm,
 } from '../model/types/LoginValidateShema';
 
-import { Modal, Input, Text, Button } from '@/shared/ui';
+import { Modal, Input, Text, Button, Stack } from '@/shared/ui';
 import { useState } from 'react';
 
 interface IProps {
@@ -76,14 +76,14 @@ export const AuthByUserName = (props: IProps) => {
           <Text text={error} variant="helper" color="primary" error={true} />
         )}
 
-        <div className="flex justify-end items-center gap-4">
+        <Stack justify="end" align="center" gap={4}>
           <Button onClick={onCloseModal} variant="ghost" type="button">
             Отмена
           </Button>
           <Button type="submit" disabled={isFetching}>
             {isFetching ? 'загрузка...' : 'Войти'}
           </Button>
-        </div>
+        </Stack>
       </form>
     </Modal>
   );
